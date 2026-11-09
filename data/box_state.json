@@ -1,27 +1,27 @@
 {
   "box_id": "cb-6a…",
-  "checked_at_ms": 1794224367529,
-  "checked_at_label": "2026-11-09 19:39 Asia/Shanghai",
+  "checked_at_ms": 1794225438845,
+  "checked_at_label": "2026-11-09 19:57 Asia/Shanghai",
   "actions": [
     "Ensure(wake) op=started"
   ],
-  "ok": true,
+  "ok": false,
   "state_before": "BOX_STATE_HIBERNATED",
   "failure_reason": "",
-  "engine_b_age_min": 12,
+  "engine_b_age_min": 30,
   "wake_reasons": [
     "手动强制唤醒",
     "服务器状态为「休眠」"
   ],
-  "state_after": "BOX_STATE_RUNNING",
-  "state_after_zh": "运行中",
+  "state_after": "BOX_STATE_FAILED",
+  "state_after_zh": "故障",
   "image": "sbxdesk:v13",
   "last_saved_label": "2026-11-09 19:28 Asia/Shanghai",
   "wake_schedule": {
     "cron": "0 * * * *",
     "tz": "Asia/Shanghai",
     "awake_for_s": 3600,
-    "next_label": "2026-11-09 20:00 Asia/Shanghai",
-    "last_wake_label": "2026-11-09 18:59 Asia/Shanghai"
+    "next_label": "2026-11-09 21:00 Asia/Shanghai",
+    "last_wake_label": "2026-11-09 19:59 Asia/Shanghai"
   }
 }
