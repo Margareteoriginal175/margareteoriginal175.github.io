@@ -268,5 +268,7 @@
   "0cf8332cdce63186c38608117981e4dc7dd5b446": "显示 HN：软件职称家谱",
   "15b9f7fd53952ebcfa6cb42a0fb9195bbaa34750": "显示 HN：软件职称家谱 我一直想看到的东西，现在通过人工智能成为可能：计算/软件职称的家谱。<p>希望人们看起来很有趣。它收集的一些历史细节对我来说非常有趣，例如“计算机”节点（1880-1940 年代）中有关 ENIAC 的内容。",
   "154c9e4ebe2eeaa46fa482c595db78fcfad2cea3": "下一代概念建模：快速、并行的粗到细文本生成",
-  "1e69a59fd85aec157d5abe9450e2506ac3488302": "显示 HN：具有 WASM 布局和 GPU 渲染的 JavaScript Web 应用程序（280 KB）"
+  "1e69a59fd85aec157d5abe9450e2506ac3488302": "显示 HN：具有 WASM 布局和 GPU 渲染的 JavaScript Web 应用程序（280 KB）",
+  "526027bfbc5e74a0488574302c835eff57d43605": "告诉 HN：您可以在 GitHub 上拥有单独的代理帐户",
+  "fd4a25f837550bf86efa6728e865b00685686bc4": "告诉 HN：您可以在 GitHub 上拥有单独的代理帐户 您可以为您的代理拥有一个单独的 GitHub 帐户（GitHub ToS 实际上从 4 月起就允许这样做），并且该帐户可以分叉您的存储库并打开 PR。这样它不会造成任何真正的损害，但仍然可以推送。<p>请参阅此用户，例如：https://github.com/filippo-agent<p>https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#3-account-requirements<p>3。帐户要求<p>我们对 GitHub 服务上的帐户有一些简单的规则。<p>您必须是人类才能创建帐户。不允许通过“机器人”或其他自动化方法注册帐户。我们确实允许机器帐户：<p>机器帐户是由接受"
 }

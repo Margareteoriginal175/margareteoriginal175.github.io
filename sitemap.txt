@@ -54,7 +54,6 @@ https://aiym168.github.io/item/hn-makoda-codex-claude-api-22cd5d82c1.html
 https://aiym168.github.io/item/show-hn-infinity-ai-git-1f16d7515a.html
 https://aiym168.github.io/item/hn-botel-a56a6b0659.html
 https://aiym168.github.io/item/show-hn-ski-dab13472a8.html
-https://aiym168.github.io/item/hn-kino-ai-yc-s23-ai-2b5f926b26.html
 https://aiym168.github.io/item/hn-opus-5-5-df19d1541d.html
 https://aiym168.github.io/item/python-vibe-2025-108e10c6cf.html
 https://aiym168.github.io/item/show-hn-fireside-folio-remarkable-3cb7fb09f2.html
@@ -63,10 +62,8 @@ https://aiym168.github.io/item/hn-claude-code-codex-08c6391fce.html
 https://aiym168.github.io/item/hn-pok-mon-roi-9eb8ec7172.html
 https://aiym168.github.io/item/show-hn-gitbet-linux-sourcetree-git-17f1a15782.html
 https://aiym168.github.io/item/show-hn-mac-e0afa7d737.html
+https://aiym168.github.io/item/hn-github-a4723f4eef.html
 https://aiym168.github.io/item/show-hn-1946734f5f.html
-https://aiym168.github.io/item/show-hn-mac-en-a8c0afd787.html
-https://aiym168.github.io/item/show-hn-7cf24d3f98.html
-https://aiym168.github.io/item/show-hn-claude-1-070-3-59fdee3f5d.html
 https://aiym168.github.io/item/mianfei-gpu-yunfuwu-415a0c613f.html
 https://aiym168.github.io/item/hn-android-9-bitwarden-396c217a9a.html
 https://aiym168.github.io/item/hn-ios-cloudshare-s3-322b33d5c5.html
@@ -86,4 +83,7 @@ https://aiym168.github.io/item/orchestrator-7cbabeafa5.html
 https://aiym168.github.io/item/super-x9-llm-freewatch-aceb051ea9.html
 https://aiym168.github.io/item/mvalentsev-4fe169034b.html
 https://aiym168.github.io/item/mnfst-awesome-free-llm-apis-05ce2220cc.html
+https://aiym168.github.io/item/llm-api-awesome-freellm-apis-548d4c67f8.html
+https://aiym168.github.io/item/priestkos-awesome-free-llm-apis-bfe0eceeef.html
+https://aiym168.github.io/item/monstergaming4u-ai-awesome-free-llm-ae4478b752.html
 https://aiym168.github.io/archives/2026-11-09.html
