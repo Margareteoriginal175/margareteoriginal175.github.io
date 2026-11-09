@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-09T19:13:04+08:00",
-  "generated_at_label": "2026-11-09 19:13 Asia/Shanghai",
+  "generated_at": "2026-11-09T19:19:11+08:00",
+  "generated_at_label": "2026-11-09 19:19 Asia/Shanghai",
   "site": "https://aiym168.github.io/",
   "engines": {
     "A": {
@@ -37,15 +37,36 @@
   "sources": {},
   "translators": {},
   "discovery": {
-    "last_run_label": null,
-    "items": 0,
-    "new_this_run": null,
-    "learned_topics": []
+    "last_run_label": "2026-11-09 19:18 Asia/Shanghai",
+    "items": 30,
+    "new_this_run": 30,
+    "learned_topics": [
+      "openai-compatible",
+      "claude-code",
+      "ai-api-gateway",
+      "llm-api-gateway",
+      "deepseek-harness",
+      "free-llm-api",
+      "gemini-api",
+      "llm-inference",
+      "llm-gateway",
+      "free-llm-access",
+      "llm-agents",
+      "llm-provider",
+      "ai-api",
+      "llm-agent",
+      "llm-proxy",
+      "free-ai-api",
+      "free-claude-api",
+      "free-gpt5",
+      "unlimited-ai-api",
+      "claude-skills"
+    ]
   },
   "links": {
-    "checked_at_label": null,
-    "checked": null,
-    "dead_count": null
+    "checked_at_label": "2026-11-09 19:16 Asia/Shanghai",
+    "checked": 104,
+    "dead_count": 0
   },
   "x": {
     "updated_at_label": "2026-11-09 18:43 Asia/Shanghai",
