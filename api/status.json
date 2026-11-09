@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-09T19:39:46+08:00",
-  "generated_at_label": "2026-11-09 19:39 Asia/Shanghai",
+  "generated_at": "2026-11-09T19:56:55+08:00",
+  "generated_at_label": "2026-11-09 19:56 Asia/Shanghai",
   "site": "https://aiym168.github.io/",
   "engines": {
     "A": {
@@ -30,7 +30,7 @@
       "runs_total": 2,
       "schedule": "每小时第 7 分钟 + 每 2 小时第 37 分钟（备用）",
       "next_run_label": "2026-11-09 20:07 Asia/Shanghai",
-      "age_min": 7
+      "age_min": 24
     },
     "B": {
       "engine": "B",
@@ -60,11 +60,11 @@
       "schedule": "服务器每小时第 25 分钟检查；GitHub 超过 90 分钟没更新就接管",
       "next_run_label": "2026-11-09 20:25 Asia/Shanghai",
       "last_seen_at": "2026-11-09T19:27:06+08:00",
-      "age_min": 12
+      "age_min": 29
     },
     "watchdog": {
       "schedule": "每 30 分钟（第 23 / 53 分钟）",
-      "next_run_label": "2026-11-09 19:53 Asia/Shanghai"
+      "next_run_label": "2026-11-09 20:23 Asia/Shanghai"
     }
   },
   "counts": {
