@@ -29,3 +29,14 @@
 python3 fetch_auto.py
 python3 build.py
 ```
+
+## 双引擎自治（无需人工）
+
+| 组件 | 位置 | 计划 |
+|---|---|---|
+| 引擎 A | `.github/workflows/update.yml` → `engine/pipeline.sh` | 每小时 :07（UTC）+ 每 2 小时 :37 备用 |
+| 看门狗 | `.github/workflows/watchdog.yml` → `engine/gh_watch.py heal` | 每 30 分钟：停用即启用、失败/超时即补跑、故障写入 Issue |
+| 引擎 B | Simular 云服务器 `~/engine/engine/engine_b.sh`（systemd timer + cron） | 每小时 :25（北京时间）巡检；线上数据 > 90 分钟未更新即接管发布，并反向修复引擎 A |
+| 自愈 | `selfheal.py` → `data/sources_health.json` | 数据源连续失败 3 次自动暂停、指数退避自动重试；翻译服务按健康分轮换；产出骤降 (<60%) 自动回滚 |
+| 自我进化 | `discover.py`（每日）/ `prune.py`（每日） | 自动发现新的免费大模型/AI 资源并学习新关键词；HEAD 检查下线死链 |
+| 状态 | `/m/status.html`、`/api/status.json` | 每次运行刷新 |

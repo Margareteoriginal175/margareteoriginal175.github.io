@@ -3,7 +3,7 @@
   "title": "AI 开发工具与编程助手",
   "description": "编程助手、Agent、开发效率工具",
   "href": "c/ai-kaifa-gongju.html",
-  "count": 21,
+  "count": 20,
   "items": [
     {
       "id": "x-2112974723659247896",
@@ -222,23 +222,6 @@
         "impressions": 92
       },
       "path": "item/github-copilot-9bd5edfd6f.html"
-    },
-    {
-      "id": "hn-50418158",
-      "title": "Show HN：我的第一个项目，人工智能驱动的金融新闻分析器",
-      "summary": "Show HN：我的第一个项目，一个人工智能驱动的金融新闻分析器。我今年 17 岁，几个月前我启动了 NotBot，看看是否可以将一个想法变成一个可行的项目。我的主要兴趣是经济学，而不是成为一名程序员，但我喜欢尝试代码。<p>几个月前，我想到创建一个程序来分析特定股票的最新新闻，并计算其极性的加权平均值，以创建一种情绪指标。<p>在研究过程中，我发现了一个有关创建简单 GitHub 存储库的 YouTube 视频，该视频以一种简化且不精确的方式实现了我的想法。乍一看，我意识到这是一个非常简单的程序：feedparser从Google News中检索新闻，beautifulsoup4提取内容，分析情绪",
-      "url": "https://github.com/lamarcol/NotBot",
-      "category": "AI 开发工具与编程助手",
-      "source": "Hacker News",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "author": "lamarcol",
-      "deadline": null,
-      "posted_at": "2026-11-09 06:34 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 0
-      },
-      "path": "item/show-hn-14bf5e0f88.html"
     },
     {
       "id": "hn-50414095",

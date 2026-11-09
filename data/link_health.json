@@ -1,0 +1,633 @@
+{
+ "checked_at": "2026-11-09T19:16:32+08:00",
+ "checked_at_label": "2026-11-09 19:16 Asia/Shanghai",
+ "checked": 104,
+ "dead_count": 0,
+ "dead": [],
+ "links": {
+  "https://apps.apple.com/us/app/cloudshare-s3-file-sharing/id6823902669": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://arxiv.org/abs/2610.14162": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://blog.zortax.de/posts/a-critique-of-gpui": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://botel.dev": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://chiptunes.studio/": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://firesidefolio.com/": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/0x4rch/gradeorskip": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/Arsh624/llm4jobs-v2": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/Comfy-Org/ComfyUI": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/D4Vinci/Scrapling": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/DIYgod/pinky": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/DKKD13/dsh-finance": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/DominikScholz/open-bot-avatar": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/Graphify-Labs/graphify": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/Interactive-Active-AI/NextTransformer": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/JosssphZhou/poki": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/MasterUaKi/pycognition": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/N1nEmAn/sapper-v2": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/OmniJev/Flide": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/Outsideclofilter/aion-2-trainer-tool": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/Owaid0723666/free-llm-radar": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/PaddlePaddle/PaddleOCR": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/PaladinSmash84/aida-64-extreme": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/Panniantong/Agent-Reach": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/SAOS-3624/dsh-see-now": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/Sandflow-ai/sand3d": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/Shubhamsaboo/awesome-llm-apps": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/Significant-Gravitas/AutoGPT": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/Snailclimb/JavaGuide": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/TIGER-AI-Lab/WebsiteBench": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/TngSHoO/agentcase-lab": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/YT-Proteus-bot/MineAgent": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/aa1143/NamiAgent": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/affaan-m/ECC": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/alex0ptr/aigude": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/andrew-babo/muse4ai": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/bioogo/free-api-radar": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/blixt/phonon": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/browser-use/browser-use": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/c00lpeace/free-llm-tracker": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/debpalash/VoiceStudio": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/dhaulagani/awesome-free-ai-apis": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/elunboundfiremail/LiveWall---Live-Wallpaper-For-Desktop": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/enapt/SwarmLLM": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/ensignalp/kota": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/f/prompts.chat": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/fanhuayishiy/ai-crew-pass": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/farion1231/cc-switch": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/firecrawl/firecrawl": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/garrytan/gstack": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/gogoymh/auto-ontology-mcp": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/hamza01055/hotpulse": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/harry0703/MoneyPrinterTurbo": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/huggingface/transformers": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/jackwener/DSH-Android": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/jmanico/grim-prompter": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/lamarcol/NotBot": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/langchain-ai/langchain": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/mankidev/codixel": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/modelflare-ai/AnyModelBot": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/modem-dev/boxery": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/mrhlaingbwardev/agentic-hacking-skills": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/nexu-io/open-design": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/ollama/ollama": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/paperclipai/paperclip": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/public-apis/public-apis": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/punkpeye/awesome-mcp-servers": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/pytorch/pytorch": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/rasbt/LLMs-from-scratch": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/reason-machines/aspen": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/ripienaar/free-for-dev": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/ruvnet/RuView": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/shanselman/gputaskman": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/sshah03/recalc": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/stablyai/orca": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/synchopate/llama-modchip": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/tavern-labs-ai/persona-ai-sdk": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/thedotmack/claude-mem": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/tt-a1i/archify": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/wanghao-SunSky/cs329z-chinese": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://github.com/wangzan101/Mika": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://ianmiell.github.io/sw-job-title-family-tree/": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://infinitychat.app/": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://inhouse.jurex.ai/login": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://justski.it/": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://ketchup3d.github.io/app/": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://kidsshelf.org/": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://makoda.ai/": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://news.ycombinator.com/item?id=50406993": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://news.ycombinator.com/item?id=50419019": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://nvidianews.nvidia.com/news/a-message-to-our-company": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://offstage.cloud/": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://okstays.com": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://rsnel.github.io/passkeychain/": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://sergeykuhne.com/blog/fighting-ai-brain-fry": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://tellthesky.com": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://vc067.github.io/win-stats/": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://velork.com": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://vivonco.com/": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://www.aiplannermail.com/free-resale-price-api/": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://www.quotelinks.com/api/sec-fundamentals/": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  },
+  "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers": {
+   "status": 200,
+   "checked": "2026-11-09 19:16",
+   "bad_streak": 0,
+   "dead": false
+  }
+ }
+}

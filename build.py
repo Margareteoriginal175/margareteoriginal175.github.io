@@ -164,6 +164,18 @@ def item_slug(item: dict) -> str:
     return f"{cat}-{h}"
 
 
+SCOPE_BLOCK = (
+    "stock market", "stock price", "trading bot", "forex", "bitcoin", "cryptocurrency", "crypto token", "airdrop", "nft mint", "coupon", "cashback",
+    "credit card", "loan", "金融", "股票", "炒股", "比特币", "加密货币", "空投", "优惠券", "信用卡", "贷款", "返现", "银行",
+)
+
+
+def out_of_scope(item: dict) -> bool:
+    """Content scope guard: only LLM / AI / tech freebies."""
+    text = " ".join(str(item.get(k) or "") for k in ("title", "original_title", "summary")).lower()
+    return any(b in text for b in SCOPE_BLOCK)
+
+
 def collect_deal_items():
     now = datetime.now(TZ)
     items = []
@@ -194,9 +206,10 @@ def collect_deal_items():
             items.append(it)
     seen = set()
     uniq = []
+    dead = {norm_url(u) for u in ((load_json(DATA / "link_health.json") or {}).get("dead") or [])} if (DATA / "link_health.json").exists() else set()
     for it in items:
         u = norm_url(it.get("url") or "")
-        if not u or u in seen or is_expired(it, now):
+        if not u or u in seen or is_expired(it, now) or u in dead or out_of_scope(it):
             continue
         if (it.get("category") or "其他科技") not in CATEGORIES:
             it["category"] = "其他科技"
@@ -326,6 +339,7 @@ def topnav(prefix="./"):
         for _, title, _, href, _, _ in MODULES
     )
     links += f'<a href="{prefix}m/api.html">CLI / API</a>'
+    links += f'<a href="{prefix}m/status.html">运行状态</a>'
     return f"""
 <header class="topnav">
   <a class="brand-mini" href="{prefix}"><span class="mark"></span>{esc(SITE_NAME)}</a>
@@ -1075,7 +1089,7 @@ curl -fsSL https://aiym168.github.io/cli.sh | bash -s -- list</code></pre>
 </body></html>"""
     (SITE / "index.html").write_text(page, encoding="utf-8")
 
-    url_entries = [("", date, "hourly", "1.0"), ("404.html", date, "yearly", "0.1"), ("m/api.html", date, "weekly", "0.8"), ("feed.xml", date, "hourly", "0.6"), ("api/index.json", date, "hourly", "0.5")]
+    url_entries = [("", date, "hourly", "1.0"), ("404.html", date, "yearly", "0.1"), ("m/api.html", date, "weekly", "0.8"), ("m/status.html", date, "hourly", "0.5"), ("feed.xml", date, "hourly", "0.6"), ("api/index.json", date, "hourly", "0.5")]
     for pth in cat_paths + mod_paths:
         url_entries.append((pth, date, "daily", "0.9"))
     for pth in item_paths:

@@ -1,8 +1,8 @@
 {
   "updated_at_label": "2026-11-09 18:44 Asia/Shanghai",
-  "generated_at_label": "2026-11-09 18:45 Asia/Shanghai",
+  "generated_at_label": "2026-11-09 19:13 Asia/Shanghai",
   "date": "2026-11-09",
-  "count": 159,
+  "count": 153,
   "items": [
     {
       "id": "xrss-4855024706",
@@ -1061,24 +1061,6 @@
       "path": "item/damoxing-mianfei-api-90f5369502.html"
     },
     {
-      "id": "xrss-1338812156",
-      "title": "介绍 ChatGPT、Claude 等的 SEC 数据 向您的代理人询问以下问题： - 哪些生物技术公司的药物试验失败了？",
-      "summary": "介绍 ChatGPT、Claude 等的 SEC 数据 向您的代理人询问以下问题： - 哪些生物技术公司的药物试验失败了？ - 贝莱德上季度购买了什么？ - 哪些耐克高管出售了股票？开始与 Alexandria 一起研究 8,000 多家上市公司 https://t - X\n介绍 ChatGPT、Claude 等的 SEC 数据 向您的代理人询问以下问题： - 哪些生物技术公司的药物试验失败了？ - 贝莱德上季度购买了什么？ - 哪些耐克高管出售了股票？开始与 Alexandria 合作研究 8,000 多家上市公司 https://t    X",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBoV3lndXZBa0V3aGFqamM4R0hDOEZCd25MekZiZ2lQR1VxYWNpTXBPLWpmV1VUQXdPTk00Ql80WkZWdEgyU3hWb3QtWHVKNzFNenNtNG9iMmYtbTM0M0Fr?oc=5",
-      "category": "大模型 API 免费额度",
-      "source": "X",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "author": "news",
-      "deadline": null,
-      "posted_at": "Fri, 06 Nov 2026 16:49:09 GMT",
-      "engagement": {
-        "likes": 0,
-        "bookmarks": 0,
-        "impressions": 0
-      },
-      "path": "item/chatgpt-claude-sec-4f8a16749d.html"
-    },
-    {
       "id": "xrss-3917186130",
       "title": "中大将于2027年1月起为黄大仙区2,700名长者提供免费人工智能视网膜认知障碍症筛查。",
       "summary": "中大将于2027年1月起为黄大仙区2,700名长者提供免费的人工智能视网膜认知障碍症筛查。在试验中，831名认知正常的参与者中，有21%的风险较高。 https://t.co/r5BCW039NN #AI #Dementia #Healthcare - X\n中大将于2027年1月起为黄大仙区2,700名长者提供免费的人工智能视网膜认知障碍症筛查。在试验中，831名认知正常的参与者中，有21%的风险较高。 https://t.co/r5BCW039NN #AI #Dementia #Healthcare X",
@@ -1889,24 +1871,6 @@
       "path": "item/5-20gb-890fd35eb8.html"
     },
     {
-      "id": "nvidia-nim-kimi",
-      "title": "NVIDIA NIM：Kimi / DeepSeek / GLM 免信用卡试用",
-      "summary": "登录 build.nvidia.com 即可试用 Kimi K3.1 Pro（2.8T、百万上下文）、DeepSeek V4.1 Flash、GLM 5.3 Flash；免费层约 40 次/分限速，不按 Token 扣费。部分模型网页可预览、API 开放情况以官网为准。",
-      "url": "https://x.com/chichu187/status/2119008302432690299",
-      "category": "大模型 API 免费额度",
-      "source": "X",
-      "how": "打开 build.nvidia.com → 登录 → 选择对应模型试用",
-      "author": "chichu187",
-      "deadline": null,
-      "posted_at": "2026-11-07 18:05 Asia/Shanghai",
-      "engagement": {
-        "likes": 4,
-        "bookmarks": 0,
-        "impressions": 119
-      },
-      "path": "item/nvidia-nim-kimi-deepseek-glm-3b5f44eee3.html"
-    },
-    {
       "id": "cloudflare-neurons",
       "title": "Cloudflare Workers AI：每天 1 万 Neurons",
       "summary": "Cloudflare 免费计划每天赠送约 1 万 Neurons（UTC 0 点 / 北京时间早 8 点重置），超额不扣费只报错。可跑 Llama、Qwen、Gemma、Mistral 等开源模型，也支持生图与语音转文字。有人换算约等于每天 490 次 Llama 3.1 8B、或 83 次 70B、或约 57 张图。注意：额度账号共享；Kimi/GLM 5/DeepSeek V4 等前沿模型不在免费档，要绑付费方式。",
@@ -1923,24 +1887,6 @@
         "impressions": 86
       },
       "path": "item/cloudflare-workers-ai-1-neurons-7f9eb88172.html"
-    },
-    {
-      "id": "gemini-flash-api",
-      "title": "Gemini 3.5 Flash：每天约 500 次免费 API",
-      "summary": "Google AI Studio 生成 API Key 即可用，免绑信用卡。适合跑自动化脚本、本地 CLI、翻译和小项目测试。注意：免费层数据可能用于模型训练，勿上传敏感代码。",
-      "url": "https://x.com/Stargridcompass/status/2119384439457477086",
-      "category": "大模型 API 免费额度",
-      "source": "X",
-      "how": "打开 Google AI Studio → 生成 API Key → 调用 Gemini 3.5 Flash",
-      "author": "Stargridcompass",
-      "deadline": null,
-      "posted_at": "2026-11-08 19:00 Asia/Shanghai",
-      "engagement": {
-        "likes": 30,
-        "bookmarks": 7,
-        "impressions": 4165
-      },
-      "path": "item/gemini-3-5-flash-500-api-f9751b349a.html"
     },
     {
       "id": "aliyun-bailian",
@@ -2229,23 +2175,6 @@
         "impressions": 92
       },
       "path": "item/github-copilot-9bd5edfd6f.html"
-    },
-    {
-      "id": "hn-50418158",
-      "title": "Show HN：我的第一个项目，人工智能驱动的金融新闻分析器",
-      "summary": "Show HN：我的第一个项目，一个人工智能驱动的金融新闻分析器。我今年 17 岁，几个月前我启动了 NotBot，看看是否可以将一个想法变成一个可行的项目。我的主要兴趣是经济学，而不是成为一名程序员，但我喜欢尝试代码。<p>几个月前，我想到创建一个程序来分析特定股票的最新新闻，并计算其极性的加权平均值，以创建一种情绪指标。<p>在研究过程中，我发现了一个有关创建简单 GitHub 存储库的 YouTube 视频，该视频以一种简化且不精确的方式实现了我的想法。乍一看，我意识到这是一个非常简单的程序：feedparser从Google News中检索新闻，beautifulsoup4提取内容，分析情绪",
-      "url": "https://github.com/lamarcol/NotBot",
-      "category": "AI 开发工具与编程助手",
-      "source": "Hacker News",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "author": "lamarcol",
-      "deadline": null,
-      "posted_at": "2026-11-09 06:34 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 0
-      },
-      "path": "item/show-hn-14bf5e0f88.html"
     },
     {
       "id": "hn-50414111",
@@ -2622,23 +2551,6 @@
       "path": "item/hn-ios-cloudshare-s3-322b33d5c5.html"
     },
     {
-      "id": "hn-50411013",
-      "title": "显示 HN：SEC 基础知识 – 免费金融 API",
-      "summary": "显示 HN：SEC 基础知识 – 免费金融 API",
-      "url": "https://www.quotelinks.com/api/sec-fundamentals/",
-      "category": "大模型 API 免费额度",
-      "source": "Hacker News",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "author": "chartwidgets",
-      "deadline": null,
-      "posted_at": "2026-11-08 14:51 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "path": "item/hn-sec-api-4270e345da.html"
-    },
-    {
       "id": "hn-50407241",
       "title": "Show HN：我构建了一个免费的问答托管应用程序，没有帐户或订阅",
       "summary": "Show HN：我构建了一个免费的问答托管应用程序，无需帐户或订阅。它基本上是围绕您的测验数据的精美包装，以便作为主持人，您可以像电视节目主持人一样展示表演技巧和演示。专为与朋友和家人现场或通过变焦主持现场测验/问答的用例而构建。 \n这个网络应用程序解决了我一直缺乏的一些功能以及其他替代方案的一些问题：\n1. 保持低成本或免费，因为大多数应用程序都需要订阅，而且就像 geoguessr 一样，我不想为我偶尔使用的东西支付月费。由于我不存储任何数据并且它保留在本地浏览器存储中，因此不需要帐户/身份验证和云存储（当然需要权衡）\n2. 进行蜂鸣器回合或音频/视频",
@@ -2816,22 +2728,6 @@
         "stars": 1
       },
       "path": "item/masteruaki-pycognition-42c248229e.html"
-    },
-    {
-      "id": "ghdeal-enapt-swarmllm",
-      "title": "enapt/SwarmLLM",
-      "summary": "enapt/SwarmLLM 免费的开源应用程序，可在您自己的计算机上运行人工智能聊天模型，并允许计算机通过互联网组队运行对于一台机器来说太大的模型。没有账户，就没有加密货币。 OpenAI 和 Anthropic 兼容的 API。",
-      "url": "https://github.com/enapt/SwarmLLM",
-      "category": "大模型 API 免费额度",
-      "source": "GitHub",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "author": "enapt",
-      "deadline": null,
-      "posted_at": "2026-11-09 18:14 Asia/Shanghai",
-      "engagement": {
-        "stars": 83
-      },
-      "path": "item/enapt-swarmllm-1b82ff3203.html"
     },
     {
       "id": "ghdeal-owaid0723666-free-llm-radar",

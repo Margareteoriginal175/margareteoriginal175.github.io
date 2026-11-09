@@ -22,6 +22,9 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent
+import sys as _sys
+_sys.path.insert(0, str(ROOT))
+import selfheal  # noqa: E402
 DATA_AUTO = ROOT / "data" / "auto"
 TZ = ZoneInfo("Asia/Shanghai")
 UTC = timezone.utc
@@ -305,19 +308,19 @@ def free_translate(text: str) -> str:
         return cache[key]
 
     out = None
-    for name, fn in (
-        ("google", _via_google),
-        ("mymemory", _via_mymemory),
-        ("libre", _via_libre),
-    ):
+    providers = {"google": _via_google, "mymemory": _via_mymemory, "libre": _via_libre}
+    for name in selfheal.translator_order(list(providers)):
+        fn = providers[name]
         try:
             out = fn(text)
         except Exception as e:
             print(f"[warn] translate {name}: {type(e).__name__}")
             out = None
         if out and out.strip():
+            selfheal.record(name, True, kind="translators")
             print(f"[translate] ok via {name} len={len(text)}")
             break
+        selfheal.record(name, False, error="no result", kind="translators")
         time.sleep(0.35)
 
     if out and out.strip():
@@ -938,17 +941,33 @@ def main():
         ("DEV.to", fetch_devto_deals),
         ("Lobsters", fetch_lobsters_deals),
     ]:
+        if selfheal.should_skip(name):
+            print(f"[heal] {name} auto-skipped (backoff until {selfheal.load()['sources'][name].get('skip_until_label')})")
+            continue
         try:
             got = fn()
             print(f"[fetch] {name}: {len(got)}")
             raw.extend(got)
+            selfheal.record(name, len(got) > 0, len(got), "" if got else "0 items")
         except Exception as e:
             print(f"[fetch] {name} ERROR {type(e).__name__}: {e} (keeping other sources)")
+            selfheal.record(name, False, 0, f"{type(e).__name__}: {e}")
+    # self-discovered items (discover.py) are merged as an extra source
+    try:
+        disc = load_prev_json(DATA_AUTO / "discovered.json") or {}
+        known = {it.get("url") for it in raw}
+        extra = [dict(it) for it in (disc.get("items") or []) if it.get("url") not in known]
+        print(f"[fetch] Discovery: {len(extra)}")
+    except Exception as e:
+        print(f"[heal] discovery merge failed: {e}")
+        extra = []
 
     day = today_str()
     deal_path = DATA_AUTO / f"{day}.json"
     try:
         deals = finalize_deals(raw)
+        have = {it.get("url") for it in deals}
+        deals.extend(it for it in extra if it.get("url") not in have)
     except Exception as e:
         print(f"[heal] finalize_deals failed: {e}; keeping previous deals")
         deals = []
@@ -967,11 +986,16 @@ def main():
 
     x_items = load_latest_x_items()
     hot_path = DATA_AUTO / "github_hot.json"
-    try:
-        hot_repos = fetch_github_hot()
-    except Exception as e:
-        print(f"[heal] github_hot failed: {e}")
-        hot_repos = []
+    hot_repos = []
+    if selfheal.should_skip("GitHubHot"):
+        print("[heal] GitHubHot auto-skipped")
+    else:
+        try:
+            hot_repos = fetch_github_hot()
+            selfheal.record("GitHubHot", bool(hot_repos), len(hot_repos))
+        except Exception as e:
+            print(f"[heal] github_hot failed: {e}")
+            selfheal.record("GitHubHot", False, 0, str(e))
     write_json_safe(
         hot_path,
         {
@@ -983,11 +1007,16 @@ def main():
     )
 
     topics_path = DATA_AUTO / "hot_topics.json"
-    try:
-        hot_topics = fetch_hot_topics(x_items)
-    except Exception as e:
-        print(f"[heal] hot_topics failed: {e}")
-        hot_topics = []
+    hot_topics = []
+    if selfheal.should_skip("HotTopics"):
+        print("[heal] HotTopics auto-skipped")
+    else:
+        try:
+            hot_topics = fetch_hot_topics(x_items)
+            selfheal.record("HotTopics", bool(hot_topics), len(hot_topics))
+        except Exception as e:
+            print(f"[heal] hot_topics failed: {e}")
+            selfheal.record("HotTopics", False, 0, str(e))
     write_json_safe(
         topics_path,
         {
@@ -1006,6 +1035,7 @@ def main():
     print("[summary] deals by source", by_src)
     print(f"[summary] models_ok={MODELS_OK} models_fail={MODELS_FAIL} translate_ok={TRANSLATE_OK} translate_fail={TRANSLATE_FAIL}")
     save_translate_cache()
+    selfheal.save()
 
 
 if __name__ == "__main__":

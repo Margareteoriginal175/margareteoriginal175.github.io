@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-11-09T19:13:04+08:00",
+  "generated_at_label": "2026-11-09 19:13 Asia/Shanghai",
+  "site": "https://aiym168.github.io/",
+  "engines": {
+    "A": {
+      "schedule": "每小时第 7 分钟 + 每 2 小时第 37 分钟（备用）",
+      "next_run_label": "2026-11-09 20:07 Asia/Shanghai",
+      "age_min": null
+    },
+    "B": {
+      "schedule": "服务器每小时第 25 分钟检查；GitHub 超过 90 分钟没更新就接管",
+      "next_run_label": "2026-11-09 19:25 Asia/Shanghai",
+      "last_seen_at": null,
+      "age_min": null
+    },
+    "watchdog": {
+      "schedule": "每 30 分钟（第 23 / 53 分钟）",
+      "next_run_label": "2026-11-09 19:23 Asia/Shanghai"
+    }
+  },
+  "counts": {
+    "deals": 153,
+    "github_hot": 30,
+    "hot": 40,
+    "modules": {
+      "damoxing-mianfei-api": 84,
+      "ai-huiyuan-shiyong": 9,
+      "ai-kaifa-gongju": 20,
+      "mianfei-gpu-yunfuwu": 13,
+      "keji-app-xianmian": 2,
+      "github-hot": 30,
+      "hot-topics": 40
+    }
+  },
+  "data_updated_label": "2026-11-09 18:44 Asia/Shanghai",
+  "sources": {},
+  "translators": {},
+  "discovery": {
+    "last_run_label": null,
+    "items": 0,
+    "new_this_run": null,
+    "learned_topics": []
+  },
+  "links": {
+    "checked_at_label": null,
+    "checked": null,
+    "dead_count": null
+  },
+  "x": {
+    "updated_at_label": "2026-11-09 18:43 Asia/Shanghai",
+    "primary_route": "syndication",
+    "kept": 25
+  },
+  "heartbeat_label": "2026-11-09 18:42:39 Asia/Shanghai"
+}

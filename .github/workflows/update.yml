@@ -1,5 +1,7 @@
 name: Auto update site
 
+# Engine A (GitHub Actions). Engine B = Simular server (engine/engine_b.sh).
+# Watchdog (.github/workflows/watchdog.yml) re-enables / re-dispatches this if it stops.
 on:
   schedule:
     # Primary: hourly (UTC minute 7)
@@ -8,14 +10,11 @@ on:
     - cron: "37 */2 * * *"
   workflow_dispatch:
   push:
+    branches: [main]
     paths:
-      - "data/**"
       - "build.py"
-      - "fetch_auto.py"
-      - "fetch_x.py"
-      - "baidu_push.py"
+      - "status.py"
       - "health_check.py"
-      - "heartbeat.py"
       - "seo_config.json"
       - "fx.css"
       - "fx.js"
@@ -23,7 +22,6 @@ on:
       - "cli/**"
       - "cli.sh"
       - "package.json"
-    branches: [main]
 
 permissions:
   contents: write
@@ -35,7 +33,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 40
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -48,100 +46,18 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Snapshot last good publish tree
-        run: |
-          set -e
-          rm -rf .last_good
-          mkdir -p .last_good
-          # Preserve currently checked-out (last published) site artifacts
-          for p in index.html 404.html feed.xml cli.sh fx.css fx.js robots.txt sitemap.xml sitemap.txt sitemap_index.xml netlify.toml; do
-            [ -e "$p" ] && cp -a "$p" .last_good/ || true
-          done
-          for d in api m c item archives vendor data; do
-            [ -d "$d" ] && cp -a "$d" .last_good/ || true
-          done
-          echo "[alive] snapshot ready"
-
-      - name: Fetch X freebies (every 3h UTC, or manual)
-        if: github.event_name != 'push'
-        run: |
-          set -e
-          HOUR_UTC=$(date -u +%H)
-          HOUR_UTC=$((10#$HOUR_UTC))
-          EVENT="${{ github.event_name }}"
-          if [ "$EVENT" = "workflow_dispatch" ] || [ $((HOUR_UTC % 3)) -eq 0 ]; then
-            echo "[x] fetch (event=$EVENT utc_hour=$HOUR_UTC cadence=3h)"
-            set +e
-            python3 fetch_x.py
-            code=$?
-            set -e
-            if [ $code -ne 0 ]; then
-              echo "[heal] fetch_x exited $code — continuing with previous data"
-            fi
-          else
-            echo "[x] skip — reuse previous X data (event=$EVENT utc_hour=$HOUR_UTC; next at UTC hour%3==0)"
-          fi
-          exit 0
-
-      - name: Fetch auto sources (self-healing)
-        if: github.event_name != 'push'
+      - name: Self-healing pipeline (fetch → discover → translate → build → health/rollback → status)
         env:
+          ENGINE: A
+          ENGINE_MODE: ${{ github.event_name == 'schedule' && 'scheduled' || github.event_name }}
+          FETCH: ${{ github.event_name == 'push' && '0' || '1' }}
+          STATUS_MARK: ${{ github.event_name == 'push' && '0' || '1' }}
+          FORCE_X: ${{ github.event_name == 'workflow_dispatch' && '1' || '0' }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           GITHUB_TOKEN: ${{ secrets.PAGES_DEPLOY_TOKEN || secrets.GITHUB_TOKEN }}
-        run: |
-          set +e
-          python3 fetch_auto.py
-          code=$?
-          set -e
-          if [ $code -ne 0 ]; then
-            echo "[heal] fetch_auto exited $code — continuing with previous data"
-          fi
-          exit 0
-
-      - name: Build site (deep Baidu SEO)
-        env:
           VERIFY_BAIDU: ${{ secrets.VERIFY_BAIDU }}
-        run: python3 build.py
-
-      - name: Health check (revert if broken)
-        run: |
-          set +e
-          python3 health_check.py
-          code=$?
-          set -e
-          if [ $code -ne 0 ]; then
-            echo "[alive] health check failed — restoring last good build"
-            if [ -d .last_good ]; then
-              # Restore publishable artifacts; keep scripts/workflow intact
-              for p in index.html 404.html feed.xml cli.sh fx.css fx.js robots.txt sitemap.xml sitemap.txt sitemap_index.xml; do
-                [ -e ".last_good/$p" ] && cp -a ".last_good/$p" ./
-              done
-              for d in api m c item archives vendor; do
-                if [ -d ".last_good/$d" ]; then
-                  rm -rf "$d"
-                  cp -a ".last_good/$d" ./
-                fi
-              done
-              # Prefer previous day JSON under data/ if present in snapshot
-              if [ -d .last_good/data ]; then
-                mkdir -p data
-                cp -a .last_good/data/. data/ || true
-              fi
-              echo "[alive] restored from .last_good"
-              # Re-run check on restored tree (must pass, else abort publish)
-              python3 health_check.py
-            else
-              echo "[alive] no snapshot — refusing to publish broken build"
-              exit 1
-            fi
-          fi
-
-      - name: Heartbeat keepalive (at most once/day)
-        run: python3 heartbeat.py
-
-      - name: Baidu URL push (optional)
-        env:
           BAIDU_PUSH_TOKEN: ${{ secrets.BAIDU_PUSH_TOKEN }}
-        run: python3 baidu_push.py
+        run: bash engine/pipeline.sh
 
       - name: Commit and push (GitHub Pages)
         env:
@@ -153,14 +69,23 @@ jobs:
           if [ -n "$DEPLOY_TOKEN" ]; then
             git remote set-url origin "https://x-access-token:${DEPLOY_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           fi
-          # never commit backup snapshot or pycache
-          rm -rf .last_good
+          rm -rf .last_good __pycache__
           git add -A
-          git reset HEAD -- __pycache__ .last_good 2>/dev/null || true
-          # Drop pure-noise paths if somehow empty; keep real data changes
+          git reset -q HEAD -- __pycache__ .last_good 2>/dev/null || true
           if git diff --cached --quiet; then
-            echo "No changes — skip commit (hourly heartbeat suppressed)"
-          else
-            git commit -m "auto update $(TZ=Asia/Shanghai date '+%F %H:%M')"
-            git push
+            echo "No changes — skip commit"
+            exit 0
           fi
+          git commit -q -m "auto update $(TZ=Asia/Shanghai date '+%F %H:%M') [engine A]"
+          for i in 1 2 3 4 5; do
+            if git push -q origin HEAD:main; then echo "pushed (try $i)"; exit 0; fi
+            echo "push rejected — rebase on remote (engine B may have pushed)"
+            git fetch -q origin main
+            if ! git rebase -q -X ours origin/main; then
+              git rebase --abort || true
+              git reset -q --soft origin/main
+              git commit -q -m "auto update $(TZ=Asia/Shanghai date '+%F %H:%M') [engine A, merged]" || true
+            fi
+            sleep $((i * 5))
+          done
+          echo "push failed after retries"; exit 1

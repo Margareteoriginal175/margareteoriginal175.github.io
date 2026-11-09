@@ -66,6 +66,17 @@ def main() -> int:
     if len(items) <= 0:
         fail("api/latest.json items empty")
 
+    # Abnormal shrink guard: new build must keep >= 60% of last good item count
+    lg = ROOT / ".last_good" / "api" / "latest.json"
+    if lg.exists():
+        try:
+            prev_n = len(json.loads(lg.read_text(encoding="utf-8")).get("items") or [])
+        except Exception:
+            prev_n = 0
+        if prev_n >= 10 and len(items) < 0.6 * prev_n:
+            fail(f"items shrank abnormally: {len(items)} < 60% of last good {prev_n}")
+        ok(f"shrink guard: {len(items)} vs last good {prev_n}")
+
     cats = list((ROOT / "c").glob("*.html")) if (ROOT / "c").exists() else []
     if len(cats) < 3:
         fail(f"category pages too few: {len(cats)}")

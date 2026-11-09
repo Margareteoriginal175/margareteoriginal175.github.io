@@ -1,6 +1,7 @@
 https://aiym168.github.io/
 https://aiym168.github.io/404.html
 https://aiym168.github.io/m/api.html
+https://aiym168.github.io/m/status.html
 https://aiym168.github.io/feed.xml
 https://aiym168.github.io/api/index.json
 https://aiym168.github.io/c/damoxing-mianfei-api.html
@@ -65,7 +66,6 @@ https://aiym168.github.io/item/claude-code-1ab072c67e.html
 https://aiym168.github.io/item/no-ai-slop-4k-github-star-160281f796.html
 https://aiym168.github.io/item/12-mit-claude-x-c181f035e5.html
 https://aiym168.github.io/item/damoxing-mianfei-api-90f5369502.html
-https://aiym168.github.io/item/chatgpt-claude-sec-4f8a16749d.html
 https://aiym168.github.io/item/2027-1-2-700-6d1bae6102.html
 https://aiym168.github.io/item/pdf-158-4cced95bf4.html
 https://aiym168.github.io/item/damoxing-mianfei-api-e4923c77b4.html
@@ -111,9 +111,7 @@ https://aiym168.github.io/item/1-lilly-verve-angptl3-prim-ldl-ebfc06e654.html
 https://aiym168.github.io/item/llama-cpp-ai-vram-localmaxxers-strat-353e3226cc.html
 https://aiym168.github.io/item/pro-max-ultra-claude-code-w-f4064fd7db.html
 https://aiym168.github.io/item/5-20gb-890fd35eb8.html
-https://aiym168.github.io/item/nvidia-nim-kimi-deepseek-glm-3b5f44eee3.html
 https://aiym168.github.io/item/cloudflare-workers-ai-1-neurons-7f9eb88172.html
-https://aiym168.github.io/item/gemini-3-5-flash-500-api-f9751b349a.html
 https://aiym168.github.io/item/100-tokens-b783987689.html
 https://aiym168.github.io/item/amd-15-286432b5d2.html
 https://aiym168.github.io/item/lg-k-exaone-2-5-api-1c1c00d89a.html
@@ -130,7 +128,6 @@ https://aiym168.github.io/item/qoder-qoduck-0-75a4ff13ff.html
 https://aiym168.github.io/item/coderabbit-2213c64bb9.html
 https://aiym168.github.io/item/devin-desktop-windsurf-6e7c4cf2cf.html
 https://aiym168.github.io/item/github-copilot-9bd5edfd6f.html
-https://aiym168.github.io/item/show-hn-14bf5e0f88.html
 https://aiym168.github.io/item/show-hn-velork-307fbb10a0.html
 https://aiym168.github.io/item/show-hn-jurex-in-house-7ffe02d223.html
 https://aiym168.github.io/item/damoxing-mianfei-api-70b5352893.html
@@ -153,7 +150,6 @@ https://aiym168.github.io/item/show-hn-g-ameboy-url-49b9c74877.html
 https://aiym168.github.io/item/hn-claude-code-codex-08c6391fce.html
 https://aiym168.github.io/item/hn-android-9-bitwarden-396c217a9a.html
 https://aiym168.github.io/item/hn-ios-cloudshare-s3-322b33d5c5.html
-https://aiym168.github.io/item/hn-sec-api-4270e345da.html
 https://aiym168.github.io/item/show-hn-a066c2dd36.html
 https://aiym168.github.io/item/hn-hn-0ca4e24576.html
 https://aiym168.github.io/item/show-hn-1946734f5f.html
@@ -165,7 +161,6 @@ https://aiym168.github.io/item/2026-11-dynadot-com-f602598e0e.html
 https://aiym168.github.io/item/arsh624-llm4jobs-v2-100f265b5e.html
 https://aiym168.github.io/item/hamza01055-d90d45d387.html
 https://aiym168.github.io/item/masteruaki-pycognition-42c248229e.html
-https://aiym168.github.io/item/enapt-swarmllm-1b82ff3203.html
 https://aiym168.github.io/item/owaid0723666-llm-131fd7bade.html
 https://aiym168.github.io/item/awesome-free-ai-apis-3912a17b5a.html
 https://aiym168.github.io/item/c00lpeace-free-llm-tracker-f080428dd2.html

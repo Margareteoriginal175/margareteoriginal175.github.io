@@ -3,6 +3,7 @@
   <url><loc>https://aiym168.github.io/</loc><lastmod>2026-11-09</lastmod><changefreq>hourly</changefreq><priority>1.0</priority></url>
   <url><loc>https://aiym168.github.io/404.html</loc><lastmod>2026-11-09</lastmod><changefreq>yearly</changefreq><priority>0.1</priority></url>
   <url><loc>https://aiym168.github.io/m/api.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/m/status.html</loc><lastmod>2026-11-09</lastmod><changefreq>hourly</changefreq><priority>0.5</priority></url>
   <url><loc>https://aiym168.github.io/feed.xml</loc><lastmod>2026-11-09</lastmod><changefreq>hourly</changefreq><priority>0.6</priority></url>
   <url><loc>https://aiym168.github.io/api/index.json</loc><lastmod>2026-11-09</lastmod><changefreq>hourly</changefreq><priority>0.5</priority></url>
   <url><loc>https://aiym168.github.io/c/damoxing-mianfei-api.html</loc><lastmod>2026-11-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
@@ -67,7 +68,6 @@
   <url><loc>https://aiym168.github.io/item/no-ai-slop-4k-github-star-160281f796.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/12-mit-claude-x-c181f035e5.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/damoxing-mianfei-api-90f5369502.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://aiym168.github.io/item/chatgpt-claude-sec-4f8a16749d.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/2027-1-2-700-6d1bae6102.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/pdf-158-4cced95bf4.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/damoxing-mianfei-api-e4923c77b4.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -113,9 +113,7 @@
   <url><loc>https://aiym168.github.io/item/llama-cpp-ai-vram-localmaxxers-strat-353e3226cc.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/pro-max-ultra-claude-code-w-f4064fd7db.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/5-20gb-890fd35eb8.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://aiym168.github.io/item/nvidia-nim-kimi-deepseek-glm-3b5f44eee3.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/cloudflare-workers-ai-1-neurons-7f9eb88172.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://aiym168.github.io/item/gemini-3-5-flash-500-api-f9751b349a.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/100-tokens-b783987689.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/amd-15-286432b5d2.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/lg-k-exaone-2-5-api-1c1c00d89a.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -132,7 +130,6 @@
   <url><loc>https://aiym168.github.io/item/coderabbit-2213c64bb9.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/devin-desktop-windsurf-6e7c4cf2cf.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/github-copilot-9bd5edfd6f.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://aiym168.github.io/item/show-hn-14bf5e0f88.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/show-hn-velork-307fbb10a0.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/show-hn-jurex-in-house-7ffe02d223.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/damoxing-mianfei-api-70b5352893.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -155,7 +152,6 @@
   <url><loc>https://aiym168.github.io/item/hn-claude-code-codex-08c6391fce.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/hn-android-9-bitwarden-396c217a9a.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/hn-ios-cloudshare-s3-322b33d5c5.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://aiym168.github.io/item/hn-sec-api-4270e345da.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/show-hn-a066c2dd36.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/hn-hn-0ca4e24576.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/show-hn-1946734f5f.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -167,7 +163,6 @@
   <url><loc>https://aiym168.github.io/item/arsh624-llm4jobs-v2-100f265b5e.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/hamza01055-d90d45d387.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/masteruaki-pycognition-42c248229e.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://aiym168.github.io/item/enapt-swarmllm-1b82ff3203.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/owaid0723666-llm-131fd7bade.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/awesome-free-ai-apis-3912a17b5a.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/c00lpeace-free-llm-tracker-f080428dd2.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>

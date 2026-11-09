@@ -1,0 +1,35 @@
+name: Watchdog (self-heal)
+
+# Every 30 min: re-enable disabled workflows, re-dispatch the main update if it
+# failed or has not succeeded for > 90 min, record incidents in an issue,
+# and report Engine B (Simular server) liveness.
+on:
+  schedule:
+    - cron: "23,53 * * * *"
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+  issues: write
+
+concurrency:
+  group: watchdog
+  cancel-in-progress: true
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: engine
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Heal
+        env:
+          GH_TOKEN: ${{ secrets.PAGES_DEPLOY_TOKEN || secrets.GITHUB_TOKEN }}
+          GH_TOKEN_ALT: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 engine/gh_watch.py heal --who "GitHub 看门狗"
