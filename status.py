@@ -158,7 +158,7 @@ NAME_ZH = {
     "GitHubHot": "GitHub 热门", "HotTopics": "最近热议", "X": "X 平台", "Discovery": "自动发现",
     "google": "谷歌翻译(免费)", "mymemory": "MyMemory 翻译", "libre": "LibreTranslate",
 }
-MODE_ZH = {"scheduled": "定时", "takeover": "接管", "forced": "手动强制", "dispatch": "手动触发", "push": "代码更新", "standby": "待命"}
+MODE_ZH = {"scheduled": "定时", "takeover": "接管", "forced": "手动强制", "dispatch": "手动触发", "workflow_dispatch": "手动/看门狗触发", "push": "代码更新", "standby": "待命"}
 RES_ZH = {"ok": "成功", "rolled_back": "已自动回滚到上一版", "failed": "失败"}
 
 
