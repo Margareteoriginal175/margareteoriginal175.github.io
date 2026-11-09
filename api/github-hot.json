@@ -1,5 +1,5 @@
 {
-  "updated_at_label": "2026-11-09 18:07 Asia/Shanghai",
+  "updated_at_label": "2026-11-09 18:12 Asia/Shanghai",
   "count": 30,
   "items": [
     {
@@ -8,7 +8,7 @@
       "summary": "适用于Android的设备上AI代理，可运行应用程序和网络，为您完成任务。",
       "url": "https://github.com/wangzan101/Mika",
       "source": "GitHub",
-      "stars": 7839,
+      "stars": 7840,
       "language": "Kotlin",
       "heat": ""
     },
@@ -38,7 +38,7 @@
       "summary": "Python中的3D建模，专为LLM构建。",
       "url": "https://github.com/Sandflow-ai/sand3d",
       "source": "GitHub",
-      "stars": 1521,
+      "stars": 1522,
       "language": "HTML",
       "heat": ""
     },
@@ -48,7 +48,7 @@
       "summary": "适用于Windows、Linux和WSL的GPU任务管理器：每进程VRAM、GPU活动和LLM模型/KV缓存洞察（ Windows AMD和NVIDIA ）。",
       "url": "https://github.com/shanselman/gputaskman",
       "source": "GitHub",
-      "stars": 1278,
+      "stars": 1280,
       "language": "Python",
       "heat": ""
     },
@@ -58,7 +58,7 @@
       "summary": "让人工智能代理与您一起使用您的手机。",
       "url": "https://github.com/DIYgod/pinky",
       "source": "GitHub",
-      "stars": 1221,
+      "stars": 1222,
       "language": "Go",
       "heat": ""
     },
@@ -118,7 +118,7 @@
       "summary": "Muse4AI —让您的AI代理制作图片和视频。通过REST、MCP和OAuth为Muse提供本地Windows网桥。",
       "url": "https://github.com/andrew-babo/muse4ai",
       "source": "GitHub",
-      "stars": 426,
+      "stars": 428,
       "language": "TypeScript",
       "heat": ""
     },

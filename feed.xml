@@ -5,7 +5,309 @@
 <link>https://aiym168.github.io/</link>
 <description>AI大模型免费资源导航汇总大模型免费API、免费GPT、Claude免费、DeepSeek免费额度、AI工具免费、免费GPU与GitHub热门项目，每日更新。</description>
 <language>zh-CN</language>
-<lastBuildDate>2026-11-09 18:07 Asia/Shanghai</lastBuildDate>
+<lastBuildDate>2026-11-09 18:12 Asia/Shanghai</lastBuildDate>
+  <item>
+    <title>🎉令人兴奋的消息！我们开源了 DeepSeek-V2-0628 检查点，这是 LMSYS Chatbot Arena Leade 上的第一款开源模型</title>
+    <link>https://x.com/deepseek_ai/status/1813921111694053644</link>
+    <guid isPermaLink="false">x-1813921111694053644</guid>
+    <description>🎉令人兴奋的消息！我们开源了 DeepSeek-V2-0628 检查点，这是 LMSYS Chatbot Arena 排行榜 @lmsysorg 上排名第一的开源模型。
+
+详细竞技场排名：总体排名第 11，硬提示排名第 3，编码排名第 3，较长查询排名第 4，数学排名第 7。
+
+DeepSeek-V2-0628 发布于 https://t.co/p9J16vA48b</description>
+    <category>大模型 API 免费额度</category>
+  </item>
+  <item>
+    <title>📊 与之前的版本相比，DeepSeek-V3.1-Terminus 在各个基准测试中提供更稳定、更可靠的输出。</title>
+    <link>https://x.com/deepseek_ai/status/1970117812279718197</link>
+    <guid isPermaLink="false">x-1970117812279718197</guid>
+    <description>📊 与之前的版本相比，DeepSeek-V3.1-Terminus 在各个基准测试中提供更稳定、更可靠的输出。
+
+👉 现已推出：App / Web / API
+🔗 开源权重在这里：https://t.co/Jh4RudofKm
+
+感谢大家的反馈。它促使我们不断改进 https://t.co/6fdLvl4LG3</description>
+    <category>大模型 API 免费额度</category>
+  </item>
+  <item>
+    <title>模型更新🤖</title>
+    <link>https://x.com/deepseek_ai/status/1958417072536608952</link>
+    <guid isPermaLink="false">x-1958417072536608952</guid>
+    <description>模型更新🤖
+
+🔹V3.1 基础：840B 令牌继续预训练，以在 V3 之上进行长上下文扩展
+🔹 更新了分词器和聊天模板 — 新的分词器配置：https://t.co/r3y717EVFp
+🔗 V3.1 基础开源权重：https://t.co/5wlDui34hH
+🔗 V3.1 开源权重：</description>
+    <category>大模型 API 免费额度</category>
+  </item>
+  <item>
+    <title>🚀 推出 DeepSeek-V2：尖端开源 MoE 模型！</title>
+    <link>https://x.com/deepseek_ai/status/1787478986731429933</link>
+    <guid isPermaLink="false">x-1787478986731429933</guid>
+    <description>🚀 推出 DeepSeek-V2：尖端开源 MoE 模型！
+
+🌟亮点：
+&gt; 在 AlignBench 中排名前 3，超过 GPT-4，接近 GPT-4-Turbo。
+&gt; 在 MT-Bench 中排名顶级，可与 LLaMA3-70B 相媲美，并优于 Mixtral 8x22B。
+&gt; 专攻数学、代码和推理。 https://t.co/izQyGjKCX4</description>
+    <category>大模型 API 免费额度</category>
+  </item>
+  <item>
+    <title>🌌 开源精神+长远主义，共创包容性AGI</title>
+    <link>https://x.com/deepseek_ai/status/1872242666265801105</link>
+    <guid isPermaLink="false">x-1872242666265801105</guid>
+    <description>🌌 开源精神+长远主义，共创包容性AGI
+
+🌟 DeepSeek 的使命坚定不移。我们很高兴与社区分享我们的进展，并看到开放模型和封闭模型之间的差距正在缩小。
+
+🚀这只是开始！期待多式联运支持和</description>
+    <category>大模型 API 免费额度</category>
+  </item>
+  <item>
+    <title>⚠️重要通知：</title>
+    <link>https://x.com/deepseek_ai/status/1879465514898272693</link>
+    <guid isPermaLink="false">x-1879465514898272693</guid>
+    <description>⚠️重要通知：
+
+✅ 100% 免费 - 无广告，无应用内购买
+🛡️仅从官方渠道下载，以免被误导
+📲 在您的应用商店中搜索“DeepSeek”或访问我们的网站获取直接链接
+
+🌟3/3</description>
+    <category>大模型 API 免费额度</category>
+  </item>
+  <item>
+    <title>DeepSeek-Coder-V2：第一个开源模型在编码和数学方面击败 GPT4-Turbo</title>
+    <link>https://x.com/deepseek_ai/status/1802680388256768145</link>
+    <guid isPermaLink="false">x-1802680388256768145</guid>
+    <description>DeepSeek-Coder-V2：第一个开源模型在编码和数学方面击败 GPT4-Turbo
+
+&gt; 擅长编码和数学，击败了 GPT4-Turbo、Claude3-Opus、Gemini-1.5Pro、Codestral。
+&gt; 支持338种编程语言和128K上下文长度。
+&gt; 完全开源，有两种尺寸：230B（另见 https://t.co/6wocYVPPrj</description>
+    <category>大模型 API 免费额度</category>
+  </item>
+  <item>
+    <title>🔥 奖励：开源蒸馏模型！</title>
+    <link>https://x.com/deepseek_ai/status/1881318135850213834</link>
+    <guid isPermaLink="false">x-1881318135850213834</guid>
+    <description>🔥 奖励：开源蒸馏模型！
+
+🔬 提炼自 DeepSeek-R1，6 个小模型完全开源
+📏 32B 和 70B 型号与 OpenAI-o1-mini 相当
+🤝 为开源社区赋能
+
+🌍 突破**开放人工智能**的界限！
+
+🐋 2/n https://t.co/tfXLM2xtZZ</description>
+    <category>大模型 API 免费额度</category>
+  </item>
+  <item>
+    <title>🎉 隆重推出 DeepSeek 应用程序！</title>
+    <link>https://x.com/deepseek_ai/status/1879465495788917166</link>
+    <guid isPermaLink="false">x-1879465495788917166</guid>
+    <description>🎉 隆重推出 DeepSeek 应用程序！
+
+💡 由世界一流的 DeepSeek-V3 提供支持
+🆓 免费使用，无缝交互
+📱 现已在 App Store 和 Google Play 以及主要 Android 市场正式上线
+🔗立即下载：https://t.co/DIwqqkbK93
+
+🌟 1/3 https://t.co/QorHk2lEwj</description>
+    <category>大模型 API 免费额度</category>
+  </item>
+  <item>
+    <title>🚀 DeepSeek-R1-Lite-Preview 现已上线：释放超强推理能力！</title>
+    <link>https://x.com/deepseek_ai/status/1859200141355536422</link>
+    <guid isPermaLink="false">x-1859200141355536422</guid>
+    <description>🚀 DeepSeek-R1-Lite-Preview 现已上线：释放超强推理能力！
+
+🔍 AIME 和 MATH 基准测试中的 o1 预览级性能。
+💡 实时透明的思维过程。
+🛠️ 开源模型和 API 即将推出！
+
+🌐 立即尝试 https://t.co/v1TFy7LHNy
+#DeepSeek https://t.co/saslkq4a1s</description>
+    <category>大模型 API 免费额度</category>
+  </item>
+  <item>
+    <title>🚀 #OpenSourceWeek 第 4 天：优化并行策略</title>
+    <link>https://x.com/deepseek_ai/status/1894931931554558199</link>
+    <guid isPermaLink="false">x-1894931931554558199</guid>
+    <description>🚀 #OpenSourceWeek 第 4 天：优化并行策略
+
+✅ DualPipe - 一种双向管道并行算法，用于 V3/R1 训练中的计算通信重叠。
+🔗 https://t.co/GBtxSvWLT4
+
+✅ EPLB - V3/R1 的专家并行负载均衡器。
+🔗</description>
+    <category>其他科技</category>
+  </item>
+  <item>
+    <title>🚀 #OpenSourceWeek 第 3 天：DeepGEMM</title>
+    <link>https://x.com/deepseek_ai/status/1894553164235640933</link>
+    <guid isPermaLink="false">x-1894553164235640933</guid>
+    <description>🚀 #OpenSourceWeek 第 3 天：DeepGEMM
+
+隆重推出 DeepGEMM - 一个 FP8 GEMM 库，支持密集 GEMM 和 MoE GEMM，为 V3/R1 训练和推理提供支持。
+
+⚡ Hopper GPU 上高达 1350+ FP8 TFLOPS
+✅ 没有重度依赖，像教程一样干净
+✅ 完全即时编译</description>
+    <category>云服务/GPU/开发者资源</category>
+  </item>
+  <item>
+    <title>🚀 #OpenSourceWeek 的第二天：DeepEP</title>
+    <link>https://x.com/deepseek_ai/status/1894211757604049133</link>
+    <guid isPermaLink="false">x-1894211757604049133</guid>
+    <description>🚀 #OpenSourceWeek 的第二天：DeepEP
+
+很高兴推出 DeepEP - 第一个用于 MoE 模型训练和推理的开源 EP 通信库。
+
+✅ 高效且优化的全方位沟通
+✅ 通过 NVLink 和 RDMA 支持节点内和节点间
+✅</description>
+    <category>其他科技</category>
+  </item>
+  <item>
+    <title>🚀 #OpenSourceWeek 第 6 天：还有一件事 – DeepSeek-V3/R1 推理系统概述</title>
+    <link>https://x.com/deepseek_ai/status/1895688300574462431</link>
+    <guid isPermaLink="false">x-1895688300574462431</guid>
+    <description>🚀 #OpenSourceWeek 第 6 天：还有一件事 – DeepSeek-V3/R1 推理系统概述
+
+通过以下方式优化吞吐量和延迟：
+🔧 跨节点 EP 支持的批量扩展
+🔄 计算与通信重叠
+⚖️负载均衡
+
+DeepSeek在线服务统计：
+⚡ 73.7k/14.8k</description>
+    <category>大模型 API 免费额度</category>
+  </item>
+  <item>
+    <title>🚀 #OpenSourceWeek 第一天：FlashMLA</title>
+    <link>https://x.com/deepseek_ai/status/1893836827574030466</link>
+    <guid isPermaLink="false">x-1893836827574030466</guid>
+    <description>🚀 #OpenSourceWeek 第一天：FlashMLA
+
+很荣幸分享 FlashMLA - 我们用于 Hopper GPU 的高效 MLA 解码内核，针对可变长度序列进行了优化，现已投入生产。
+
+✅ BF16 支持
+✅ 分页 KV 缓存（块大小 64）
+⚡ 3000 GB/s 内存限制和 580 TFLOPS</description>
+    <category>云服务/GPU/开发者资源</category>
+  </item>
+  <item>
+    <title>🚀 #OpenSourceWeek 第 5 天：3FS，用于所有 DeepSeek 数据访问的推进器</title>
+    <link>https://x.com/deepseek_ai/status/1895279409185390655</link>
+    <guid isPermaLink="false">x-1895279409185390655</guid>
+    <description>🚀 #OpenSourceWeek 第 5 天：3FS，用于所有 DeepSeek 数据访问的推进器
+
+Fire-Flyer 文件系统 (3FS) - 一种并行文件系统，利用现代 SSD 和 RDMA 网络的全部带宽。
+
+⚡ 180 节点集群中 6.6 TiB/s 的聚合读取吞吐量
+⚡ 3.66 TiB/分钟</description>
+    <category>大模型 API 免费额度</category>
+  </item>
+  <item>
+    <title>🚀 隆重推出 DeepSeek-V3！</title>
+    <link>https://x.com/deepseek_ai/status/1872242657348710721</link>
+    <guid isPermaLink="false">x-1872242657348710721</guid>
+    <description>🚀 隆重推出 DeepSeek-V3！
+
+迄今为止最大的飞跃：
+⚡ 60 个令牌/秒（比 V2 快 3 倍！）
+💪 增强的能力
+🛠 API 兼容性完好
+🌍 完全开源的模型和论文
+
+🐋 1/n https://t.co/p1dV9gJ2Sd</description>
+    <category>大模型 API 免费额度</category>
+  </item>
+  <item>
+    <title>🚀 第 0 天：#OpenSourceWeek 热身！</title>
+    <link>https://x.com/deepseek_ai/status/1892786555494019098</link>
+    <guid isPermaLink="false">x-1892786555494019098</guid>
+    <description>🚀 第 0 天：#OpenSourceWeek 热身！ 
+
+我们是一个小团队 @deepseek_ai 探索 AGI。从下周开始，我们将开源 5 个存储库，以完全透明的方式分享我们微小但真诚的进展。
+
+我们的在线服务中这些不起眼的构建块已被记录下来，</description>
+    <category>大模型 API 免费额度</category>
+  </item>
+  <item>
+    <title>🚀 DeepSeek-R1 来了！</title>
+    <link>https://x.com/deepseek_ai/status/1881318130334814301</link>
+    <guid isPermaLink="false">x-1881318130334814301</guid>
+    <description>🚀 DeepSeek-R1 来了！
+
+⚡ 性能与 OpenAI-o1 相当
+📖 完全开源的模型和技术报告
+🏆 麻省理工学院许可：自由蒸馏和商业化！
+
+🌐 网站和 API 现已上线！立即尝试 DeepThink：https://t.co/v1TFy7LHNy！
+
+🐋 1/n https://t.co/7BlpWAPu6y</description>
+    <category>大模型 API 免费额度</category>
+  </item>
+  <item>
+    <title>6) 3D GPU 毛皮模拟</title>
+    <link>https://x.com/GoogleAIStudio/status/2110461526628851943</link>
+    <guid isPermaLink="false">x-2110461526628851943</guid>
+    <description>6) 3D GPU 毛皮模拟
+
+https://t.co/MZVdVH4k7Q https://t.co/5OPgHPltWH</description>
+    <category>云服务/GPU/开发者资源</category>
+  </item>
+  <item>
+    <title>Gemini 4 Argon 结合了三个开源数据集来构建人体解剖学的交互式 3D 可视化。</title>
+    <link>https://x.com/GoogleDeepMind/status/2112974723659247896</link>
+    <guid isPermaLink="false">x-2112974723659247896</guid>
+    <description>Gemini 4 Argon 结合了三个开源数据集来构建人体解剖学的交互式 3D 可视化。
+
+切换不同的运动层、隔离肌肉或放大跳动的心脏。 https://t.co/60nfQ0QVkl</description>
+    <category>AI 开发工具与编程助手</category>
+  </item>
+  <item>
+    <title>ForTy 2020 地图和 2017-2025 年时间序列发布于@ScientificData，现已在 Google Earth 上免费提供</title>
+    <link>https://x.com/GoogleDeepMind/status/2113278722337804299</link>
+    <guid isPermaLink="false">x-2113278722337804299</guid>
+    <description>ForTy 2020 地图和 2017-2025 年时间序列发布于 @ScientificData，现已在 Google Earth Engine 上免费提供 - 帮助组织建立零砍伐的供应链并保护最重要的天然森林。  
+了解更多→</description>
+    <category>其他科技</category>
+  </item>
+  <item>
+    <title>我们的 Frontier Red Team 博客上的新内容：使用 Claude 大规模正式验证软件。</title>
+    <link>https://x.com/AnthropicAI/status/2113390212911083894</link>
+    <guid isPermaLink="false">x-2113390212911083894</guid>
+    <description>我们的 Frontier Red Team 博客上的新内容：使用 Claude 大规模正式验证软件。
+
+形式验证可以证明代码不存在某些错误，但从历史上看，它仅适用于小型代码库（或需要大量专家时间）。
+
+借助人工智能模型，</description>
+    <category>大模型 API 免费额度</category>
+  </item>
+  <item>
+    <title>完整运行花费了 1,213,430 美元的 API 积分，每个不同的本地权限升级漏洞大约需要 1,279 美元。</title>
+    <link>https://x.com/OpenAI/status/2118119459772862490</link>
+    <guid isPermaLink="false">x-2118119459772862490</guid>
+    <description>完整运行花费了 1,213,430 美元的 API 积分，每个不同的本地权限升级漏洞大约需要 1,279 美元。
+
+作为背景，应用历史 Pwn2Own 和 TyphoonPWN 赏金率得出的假设价值为 1890 万美元至 6630 万美元。
+
+这证明了使用人工智能的相对功效</description>
+    <category>大模型 API 免费额度</category>
+  </item>
+  <item>
+    <title>在这个狭窄的防御者窗口中，我们的目标是将 Daybreak 的访问范围扩大到各种规模的组织、独立研究人员</title>
+    <link>https://x.com/OpenAI/status/2118390192356700383</link>
+    <guid isPermaLink="false">x-2118390192356700383</guid>
+    <description>在这个狭窄的防御者窗口中，我们的目标是将 Daybreak 的访问范围扩大到各种规模的组织、独立研究人员和开源维护者。
+
+Daybreak Blue 可帮助经过验证的防御者验证漏洞并进行修复，减少拒绝次数。黎明红启用</description>
+    <category>其他科技</category>
+  </item>
   <item>
     <title>您现在可以免费在本地运行 Claude Code。 → 使用开源模型 → 本地且完全私有 → 完整代理 + 工具</title>
     <link>https://news.google.com/rss/articles/CBMiX0FVX3lxTE51NTdMekZGMXU1c1l2UnR5OUNZOFpFRFVIaWRLMHAybmZvQzV3RjloQlV6bTFLMDRvRzlUSmY0RnJicWgtalNTdkpoYXRLSW9MeWQwRlRSUmNmWFhjN1VV?oc=5</link>
@@ -284,196 +586,6 @@ Qwen 3.8 27B Abliterated 已在 NEAR AI Cloud 上上线。有远见地消除了�
     <guid isPermaLink="false">xrss-6391613711</guid>
     <description>建立您自己的 Grok Bot + Claude 团队。免费演练：https://t.co/FjNvKTiTie → Grok Bot Agent OS 永远改变了 AI Agent！ → 新的 Grok Bot Teams 更新太疯狂了！ -X
 建立您自己的 Grok Bot + Claude 团队。免费演练：https://t.co/FjNvKTiTie → Grok Bot Agent OS 永远改变了 AI Agent！ → 新的 Grok Bot Teams 更新太疯狂了！    X</description>
-    <category>大模型 API 免费额度</category>
-  </item>
-  <item>
-    <title>让您的网站在 Google 的 AI 概述中被引用。免费：https://t.co/dEzNOZmEdg → 克劳德被 AI 引用的 16 项技巧 →</title>
-    <link>https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBiLU9nZFNuZTBsbDY2OHlRNkM0UXJNeHBxYm0tM1JQdngxanl0Z1pQVE9pM3V6dHV1UVFqcm5ZcjhTREphdWoyc3AwWG9hazE1MmRrTEZabGN2dFRmXy1NcHN1cmFMN2s?oc=5</link>
-    <guid isPermaLink="false">xrss-1196746551</guid>
-    <description>让您的网站在 Google 的 AI 概述中被引用。免费：https://t.co/dEzNOZmEdg → Claude 被 AI 引用的 16 种技巧 → Claude 链接构建工具包（30 个工具）→ AI SEO 指南（12 章）2,700 多名会员 - X
-让您的网站在 Google 的 AI 概述中被引用。免费：https://t.co/dEzNOZmEdg → Claude 被 AI 引用的 16 种技巧 → Claude 链接构建工具包（30 个工具）→ AI SEO 指南（12 章）2,700 多名会员    X</description>
-    <category>大模型 API 免费额度</category>
-  </item>
-  <item>
-    <title>中国的 DeepSeek 放弃了免费的 Claude Code 竞争对手，并且在本周 14 个最大的人工智能更新中处于领先地位。我把完整的圆形</title>
-    <link>https://news.google.com/rss/articles/CBMiZkFVX3lxTE8wNm5CUF8tTERSUXppZTBNNG10UW51dDU1UjFxaW81MVoxb085UFpQRW4tY3FmcW1zU0FETzZlZ042R1h1ZEttdEVsUWc2WW5xcXN5UElQT1FfdTBQSGJMdkpiX2pNZw?oc=5</link>
-    <guid isPermaLink="false">xrss-729713294</guid>
-    <description>中国的 DeepSeek 放弃了免费的 Claude Code 竞争对手，并且在本周 14 个最大的人工智能更新中处于领先地位。我将完整的综述放在一个新视频中。 Gemini 4 Carbon 在人工智能模型方面位居榜首，在网络安全方面取得了最大的进步。 Anthropic 申请上市，Open - X
-中国的 DeepSeek 放弃了免费的 Claude Code 竞争对手，并且在本周 14 个最大的人工智能更新中处于领先地位。我将完整的综述放在一个新视频中。 Gemini 4 Carbon 在人工智能模型方面位居榜首，在网络安全方面取得了最大的进步。 Anthropic 申请上市，Open X</description>
-    <category>大模型 API 免费额度</category>
-  </item>
-  <item>
-    <title>中国的 DeepSeek 放弃了免费的 Claude Code 竞争对手，并且在本周 14 个最大的人工智能更新中处于领先地位。我把完整的圆形</title>
-    <link>https://news.google.com/rss/articles/CBMicEFVX3lxTE5iUVpQZE1HWVB6dUJGVXFRdlNYYmluNFBKSnYxTUx5QlpDUVBxN2Qybm5GRWhmWUJJNkxlWGlhWTFMNy1lTmJ5ZG5QYURvU1JBYmtwaUEyZ2FpMmZTdi1GeVYxWW5odGtWTEJIbkdlSXQ?oc=5</link>
-    <guid isPermaLink="false">xrss-3206945329</guid>
-    <description>中国的 DeepSeek 放弃了免费的 Claude Code 竞争对手，并且在本周 14 个最大的人工智能更新中处于领先地位。我将完整的综述放在一个新视频中。 Gemini 4 Carbon 在人工智能模型方面位居榜首，在网络安全方面取得了最大的进步。 Anthropic 申请上市，Open - X
-中国的 DeepSeek 放弃了免费的 Claude Code 竞争对手，并且在本周 14 个最大的人工智能更新中处于领先地位。我将完整的综述放在一个新视频中。 Gemini 4 Carbon 在人工智能模型方面位居榜首，在网络安全方面取得了最大的进步。 Anthropic 申请上市，Open X</description>
-    <category>大模型 API 免费额度</category>
-  </item>
-  <item>
-    <title>在一项随机试验中，使用人工智能的软件开发人员完成任务的时间延长了 19%。然而他们相信人工智能已经创造了</title>
-    <link>https://news.google.com/rss/articles/CBMiXkFVX3lxTE52OG5GWHVZbDVvbkJyTXlqQjZGVjBILUFxT09UcFNPS2dkclp5a2p3cnhld0xpRlVRYWdVS1FheWswemJJNE9lM1ZOYlBNZHpPWklXYXdoMEVybEo3WlE?oc=5</link>
-    <guid isPermaLink="false">xrss-9050466373</guid>
-    <description>在一项随机试验中，使用人工智能的软件开发人员完成任务的时间延长了 19%。然而他们相信人工智能已经让他们的速度提高了 20%。在“行动中的证据”活动中，我主张政府应该测试有效的方法，并通过从研究结果中学习来节省资金 - X
-在一项随机试验中，使用人工智能的软件开发人员完成任务的时间延长了 19%。然而他们相信人工智能已经让他们的速度提高了 20%。在“行动中的证据”活动中，我主张政府应该测试有效的方法，并通过从研究结果中学习来节省资金 X</description>
-    <category>AI 产品会员/试用</category>
-  </item>
-  <item>
-    <title>立即观看免费 GPU！在 X 上直播。加入对话并获取实时更新。 -X</title>
-    <link>https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vdktCUmk1Njd2emtEeERscXZCbDQ1ZFZybUVvbW95UFF6cU9hWFhWU1RSX2RtZ2czbXdqb3I2MzNmZlpqSFM4NTM1YmNZRDRTUnNR?oc=5</link>
-    <guid isPermaLink="false">xrss-5543377276</guid>
-    <description>立即观看免费 GPU！在 X 上直播。加入对话并获取实时更新。 -X
-立即观看免费 GPU！在 X 上直播。加入对话并获取实时更新。    X</description>
-    <category>云服务/GPU/开发者资源</category>
-  </item>
-  <item>
-    <title>今天免费 GPU...也许免费 PC！ https://t.co/vYccvn47ix-X</title>
-    <link>https://news.google.com/rss/articles/CBMiXkFVX3lxTE1LSTk5Z1RQMVpBWDlScl9ZSUdNVXBKam9MZVVSUkNFUzQ4QzVUdWVHbHJuNV9nMlF5TWdrS2lCLW5SWUZaYy14OXFrWjZCWDhSLWRKSnlhUjJRR0hUbVE?oc=5</link>
-    <guid isPermaLink="false">xrss-6480097936</guid>
-    <description>今天免费 GPU...也许免费 PC！ https://t.co/vYccvn47ix-X
-今天免费 GPU...也许免费 PC！ https://t.co/vYccvn47ix X</description>
-    <category>云服务/GPU/开发者资源</category>
-  </item>
-  <item>
-    <title>今日免费 GPU，是的，全球范围内都有！ https://t.co/ZlpOUH00UC-X</title>
-    <link>https://news.google.com/rss/articles/CBMiXkFVX3lxTFAxX25BTzZLT2dmSDhhXzZ3dndldFJrZUdfWDh3RVBGTS1fZ2tkVWwyNTFxLTJsUFphMWRFaU1qRFdHMGNrVHY5ZUNFRTB3TmtTODN5c3A3dXl4XzMwREE?oc=5</link>
-    <guid isPermaLink="false">xrss-7930910754</guid>
-    <description>今日免费 GPU，是的，全球范围内都有！ https://t.co/ZlpOUH00UC-X
-今日免费 GPU，是的，全球范围内都有！ https://t.co/ZlpOUH00UC X</description>
-    <category>AI 开发工具与编程助手</category>
-  </item>
-  <item>
-    <title>️ DeepSeek 的免费、可下载的 AI 模型在黑客攻击方面几乎与 OpenAI 受到限制的模型一样出色</title>
-    <link>https://news.google.com/rss/articles/CBMiZkFVX3lxTFBmWFp0Mk9jLWNncmtGdXRyTXZneXd2UjVQLUhwTF8wR2RhYmFTZW4xel9OeTlBdkN2WloyLVdfT05wMlE4SHJZZkN4Qk9UOHBMRE5LbDgyYlk2RlAzY21jRnctbkV0dw?oc=5</link>
-    <guid isPermaLink="false">xrss-5835073768</guid>
-    <description>️ DeepSeek 的免费、可下载的 AI 模型在黑客攻击方面几乎与 OpenAI 被锁定在受限网络程序后面的模型一样出色。在 Vals AI 的测试中，人工智能代理闯入模拟公司网络，窃取凭证并从机器 - X 中移动
-️ DeepSeek 的免费、可下载的 AI 模型在黑客攻击方面几乎与 OpenAI 被锁定在受限网络程序后面的模型一样出色。在 Vals AI 的测试中，AI 代理闯入模拟公司网络，窃取凭证并从机器 X 移动</description>
-    <category>大模型 API 免费额度</category>
-  </item>
-  <item>
-    <title>日期：2026 年 11 月 7 日 排灯节暂停：轻度。学习。思考。部分会议的快速时间戳指南：7:20 Divi’s La</title>
-    <link>https://news.google.com/rss/articles/CBMiYkFVX3lxTFB1TXFMSGxyaDN1c1FyT1NtUzZjT0lzYm12SWhaOEdMUl9BYUpBUHJPdHFRZE9GcThrVXBvazQ4X0RWY0tSSVgzcDRiSHZpUTZSMXhhX2tuci1hNlpBa3NuWGJR?oc=5</link>
-    <guid isPermaLink="false">xrss-7036524449</guid>
-    <description>日期：2026 年 11 月 7 日 排灯节暂停：轻度。学习。思考。会议部分内容的快速时间戳指南： 7:20 Divi 实验室：无人工智能、自然分析 22:00 之前分享的关键框架 26:30 “Bane raho pagla，kaam karega agla。” 28:00 为什么要进行技术分析 - X
-日期：2026 年 11 月 7 日 排灯节暂停：轻度。学习。思考。会议部分内容的快速时间戳指南： 7:20 Divi 实验室：无人工智能、自然分析 22:00 之前分享的关键框架 26:30 “Bane raho pagla，kaam karega agla。” 28:00 为什么要进行技术分析 X</description>
-    <category>AI 开发工具与编程助手</category>
-  </item>
-  <item>
-    <title>本地人工智能会让你自由。无使用限制。没有涨价。没有哪个模型会在一夜之间悄然恶化。你选择模式</title>
-    <link>https://news.google.com/rss/articles/CBMiX0FVX3lxTE85azlXRnBwTzVDLUFGU1lQbkNYVEk1TnZ6VmxiVWphejhBQVA2SFE4QS1FdS1VUTJVMExrdm1BZEdhNG9sY3JJeVVrNGtuSENFUV83b3Y2c3lXN1NreUVJ?oc=5</link>
-    <guid isPermaLink="false">xrss-1626079832</guid>
-    <description>本地人工智能会让你自由。无使用限制。没有涨价。没有哪个模型会在一夜之间悄然恶化。您选择模型，运行它，它保持不变。您的提示永远不会离开您的机器。拥有你的智慧。完全私人。 -X
-本地人工智能会让你自由。无使用限制。没有涨价。没有哪个模型会在一夜之间悄然恶化。您选择模型，运行它，它保持不变。您的提示永远不会离开您的机器。拥有你的智慧。完全私人。    X</description>
-    <category>其他科技</category>
-  </item>
-  <item>
-    <title>谷歌新论文发现，与人工智能队友一起练习的学生写出的商业计划比学生写得更好</title>
-    <link>https://news.google.com/rss/articles/CBMiY0FVX3lxTE9zNV9lZllMRzBjTkFpSUZ3YUpON0cxUnp5NjdYRXlLUmRMMF84MnRqMjhNZ2pHOXhhZ3poXzVhTmIwRUlpWHo0QldvNWFmVDZ6MnNTSFpkS2JoV0FTekV4RUdCTQ?oc=5</link>
-    <guid isPermaLink="false">xrss-3997317130</guid>
-    <description>谷歌的新论文发现，与使用反驳的人工智能队友一起练习的学生比使用普通人工智能工具的学生写出了更好的商业计划。批判性思维和协作等技能对于创业很重要，但很难教授和掌握 - X
-谷歌的新论文发现，与使用反驳的人工智能队友一起练习的学生比使用普通人工智能工具的学生写出了更好的商业计划。批判性思维和协作等技能对于创业很重要，但很难教授和掌握 X</description>
-    <category>其他科技</category>
-  </item>
-  <item>
-    <title>本周医学 1. Lilly/Verve 的一次性 ANGPTL3 碱基编辑器可降低 prim 中的 LDL 胆固醇和甘油三酯</title>
-    <link>https://news.google.com/rss/articles/CBMiZEFVX3lxTE5idzJOZks5azZpR1dzeTJzaUZmVTN0LUZDalpmaDc2S0ZvTm93Y3RfX2JvU0M1NWU0Z0pyc21lc3VzUlE1ZTljVVNQSUZoSlI1QXpCY2pJSE1jZXBHNmNlVUxDc0o?oc=5</link>
-    <guid isPermaLink="false">xrss-5455981785</guid>
-    <description>本周医学 1. Lilly/Verve 的一次性 ANGPTL3 碱基编辑器可降低灵长类动物的 LDL 胆固醇和甘油三酯（临床试验已经开始！）。 2. 谷歌的人工智能智能手表无需血压袖带即可检测高血压。 3. 中国生物技术，- X
-本周医学 1. Lilly/Verve 的一次性 ANGPTL3 碱基编辑器可降低灵长类动物的 LDL 胆固醇和甘油三酯（临床试验已经开始！）。 2. 谷歌的人工智能智能手表无需血压袖带即可检测高血压。 3. 中国生物技术，    X</description>
-    <category>AI 产品会员/试用</category>
-  </item>
-  <item>
-    <title>llama.cpp 为那些 AI 模型不适合 VRAM 的 Localmaxxers 合并了一些重要内容。 👀🔥（Strata也有这个）升级</title>
-    <link>https://news.google.com/rss/articles/CBMiXkFVX3lxTE9wbHNUeUJPQm5kMWFxeVBQRnFEN1JHOHRMLXZIcGxVTFNtbW1KZVJkeER3ZU80VnlwQ0l3anNZclVCaHAyb0dxQUV6WjJBd0l3Y2pyeUxqdmtCZnIxQkE?oc=5</link>
-    <guid isPermaLink="false">xrss-1342022940</guid>
-    <description>llama.cpp 为那些 AI 模型不适合 VRAM 的 Localmaxxers 合并了一些重要内容。 👀🔥（Strata 也有这个）升级是纯软件，不需要昂贵或难以找到的新 GPU。 PR #30966 于 11 月 7 日合并。以下是他们添加的内容。 Wh-X
-llama.cpp 为那些 AI 模型不适合 VRAM 的 Localmaxxers 合并了一些重要内容。 👀🔥（Strata 也有这个）升级是纯软件，不需要昂贵或难以找到的新 GPU。 PR #30966 于 11 月 7 日合并。以下是他们添加的内容。当 X</description>
-    <category>云服务/GPU/开发者资源</category>
-  </item>
-  <item>
-    <title>我们让您可以更轻松地在 Pro、Max 和 Ultra 上的 Claude Code 云会话中运行您的存储库。克劳德算出w</title>
-    <link>https://news.google.com/rss/articles/CBMiYEFVX3lxTE5CWTRoNVBiTzN4aG1fUDVLRHpXQ0dqT0hmbWRuNF9Oc3N2M04tU3EzWERNeUk4SXp6d2kwV20yMktOeG1KMkdBX1FJWmlFQzk4Y2NDMkctOHczcUNFN1RCZA?oc=5</link>
-    <guid isPermaLink="false">xrss-7831709116</guid>
-    <description>我们让您可以更轻松地在 Pro、Max 和 Ultra 上的 Claude Code 云会话中运行您的存储库。 Claude 找出它需要哪些依赖项、网络访问权限和 API 密钥，然后保存环境以供下次使用。 API 密钥被安全保存，因此 Cla - X
-我们让您可以更轻松地在 Pro、Max 和 Ultra 上的 Claude Code 云会话中运行您的存储库。 Claude 找出它需要哪些依赖项、网络访问权限和 API 密钥，然后保存环境以供下次使用。 API 密钥被安全保存，因此 Cla X</description>
-    <category>大模型 API 免费额度</category>
-  </item>
-  <item>
-    <title>我求求你，这个周末下载一个开源人工智能模型。它是一个文件，大小 5 到 20GB，可在您的笔记本电脑上运行</title>
-    <link>https://news.google.com/rss/articles/CBMiYEFVX3lxTE1lUURtT05QSUlmRTVSemMzMHdKMDd4QTlNZVBKMlBXcTFUOHZma3RONzZxQ2pRT2NHSklINGU1YzJCRW84OFo0ZE9GVDg5Wk1NaGtSWnhEM01JQ0VMUVE1MQ?oc=5</link>
-    <guid isPermaLink="false">xrss-3345069056</guid>
-    <description>我求求你，这个周末下载一个开源人工智能模型。它是一个文件，大小为 5 到 20GB，并且可以在您已有的笔记本电脑上运行。一旦存储在您的硬盘上，您就不需要帐户、订阅或互联网连接。你的付费人工智能可能会在夜间发生变化 - X
-我求求你，这个周末下载一个开源人工智能模型。它是一个文件，大小为 5 到 20GB，并且可以在您已有的笔记本电脑上运行。一旦存储在您的硬盘上，您就不需要帐户、订阅或互联网连接。您的付费人工智能可能会在夜间发生变化 X</description>
-    <category>其他科技</category>
-  </item>
-  <item>
-    <title>NVIDIA NIM：Kimi / DeepSeek / GLM 免信用卡试用</title>
-    <link>https://x.com/chichu187/status/2119008302432690299</link>
-    <guid isPermaLink="false">nvidia-nim-kimi</guid>
-    <description>登录 build.nvidia.com 即可试用 Kimi K3.1 Pro（2.8T、百万上下文）、DeepSeek V4.1 Flash、GLM 5.3 Flash；免费层约 40 次/分限速，不按 Token 扣费。部分模型网页可预览、API 开放情况以官网为准。</description>
-    <category>大模型 API 免费额度</category>
-  </item>
-  <item>
-    <title>Cloudflare Workers AI：每天 1 万 Neurons</title>
-    <link>https://x.com/AWG48488/status/2119415638494204051</link>
-    <guid isPermaLink="false">cloudflare-neurons</guid>
-    <description>Cloudflare 免费计划每天赠送约 1 万 Neurons（UTC 0 点 / 北京时间早 8 点重置），超额不扣费只报错。可跑 Llama、Qwen、Gemma、Mistral 等开源模型，也支持生图与语音转文字。有人换算约等于每天 490 次 Llama 3.1 8B、或 83 次 70B、或约 57 张图。注意：额度账号共享；Kimi/GLM 5/DeepSeek V4 等前沿模型不在免费档，要绑付费方式。</description>
-    <category>大模型 API 免费额度</category>
-  </item>
-  <item>
-    <title>Gemini 3.5 Flash：每天约 500 次免费 API</title>
-    <link>https://x.com/Stargridcompass/status/2119384439457477086</link>
-    <guid isPermaLink="false">gemini-flash-api</guid>
-    <description>Google AI Studio 生成 API Key 即可用，免绑信用卡。适合跑自动化脚本、本地 CLI、翻译和小项目测试。注意：免费层数据可能用于模型训练，勿上传敏感代码。</description>
-    <category>大模型 API 免费额度</category>
-  </item>
-  <item>
-    <title>阿里云百炼：新用户每模型约 100 万 Tokens</title>
-    <link>https://x.com/0x_chaoran/status/2119379991226105957</link>
-    <guid isPermaLink="false">aliyun-bailian</guid>
-    <description>新用户开通百炼可调 70+ 主流大模型，每模型约 100 万 Tokens，总计 7000 万+ Tokens，约 90 天有效；需实名认证，国内直连。</description>
-    <category>大模型 API 免费额度</category>
-  </item>
-  <item>
-    <title>AMD 国区：15 个大模型免费调用</title>
-    <link>https://x.com/0x_chaoran/status/2119319917963206980</link>
-    <guid isPermaLink="false">amd-free-models</guid>
-    <description>DeepSeek-V4.1-Flash 、GLM-5.3、 Qwen3.8 等约 15 个模型可免费调，支持约 1M 上下文免绑卡，每天 0 点重置额度。登录官网领 rc- Key 后可接入 Cherry Studio。</description>
-    <category>大模型 API 免费额度</category>
-  </item>
-  <item>
-    <title>LG K-EXAONE 2.5：API 彻底免费开放</title>
-    <link>https://x.com/Super_Nius/status/2119635733048852485</link>
-    <guid isPermaLink="false">lg-exaone</guid>
-    <description>LG 在英伟达首尔 AI 日宣布 K-EXAONE 2.5 API 对开发者/企业/研究机构免费。宣传约 7500 亿参数、约 51.2 万上下文、兼容 OpenAI 接口；目前主要支持韩语和英语。帖中对比 AutomationBench/BrowseComp 等分数接近或超过 DeepSeek-V4.1-Flash。</description>
-    <category>大模型 API 免费额度</category>
-  </item>
-  <item>
-    <title>Perch AI：每月约 $20 / 2 万 PT，免绑卡</title>
-    <link>https://x.com/jhl880617/status/2119618098743451875</link>
-    <guid isPermaLink="false">perch-ai-pt</guid>
-    <description>Starter 免费账号每月自动领约 20,000 PT（约合 $20），可用 DeepSeek 等模型；网页/桌面/命令行三端可用。Qwen 3.8 Max 限免至 11 月 21 日凌晨 1 点（吃月度额度，非无限）。</description>
-    <category>大模型 API 免费额度</category>
-  </item>
-  <item>
-    <title>IteraCompute ： Qwen3.8-27B 每月约 3000万代币 免费</title>
-    <link>https://x.com/Jonnyhlkw/status/2119269427845988819</link>
-    <guid isPermaLink="false">iteracompute-qwen</guid>
-    <description>每月约 3000 万 Token 免费额度，Qwen3.8-27B 输入/缓存/输出标价为 0，约 128K 上下文，OpenAI 兼容接口；邮箱验证拿 Key，不用绑卡。额度每月 1 号重置，超额回 429 不自动扣费。帖称推广约到 11 月 24 日，高峰共享算力可能排队。同作者还提到 AMD 开发者计划约 100 美元 MI300X 额度（激活后约 30 天过期）等。</description>
-    <category>大模型 API 免费额度</category>
-  </item>
-  <item>
-    <title>国内平台额度速领：硅基流动 / 百炼 / 千帆 / 方舟</title>
-    <link>https://x.com/jiangxuhe/status/2119159437164425567</link>
-    <guid isPermaLink="false">domestic-token-pack</guid>
-    <description>帖主实测汇总：硅基流动注册送约 14 元券；阿里云百炼每模型约 100 万 tokens；百度千帆 DeepSeek 每模型约 100 万；火山方舟每模型约 50 万，实名后还可每日再领。</description>
-    <category>大模型 API 免费额度</category>
-  </item>
-  <item>
-    <title>Token 羊毛聚合站：多平台免费额度一页看</title>
-    <link>https://x.com/TianciZhutc/status/2119664524512858243</link>
-    <guid isPermaLink="false">token-wool-site</guid>
-    <description>卡兹克「Token 羊毛」聚合站：把官网/公众号/X 上的免费 Token 福利收进一页，按每日、每周、每月、新人礼包和限免分组，首页显示今天还能领多少；领过的会变成可升级卡片。另有帖提到豆包每天 200、秒悟 2000 积分、Cloudflare 每天 1 万 Neurons、Qoder 每天 100 Credits、MiniMax 400 积分等卡牌，并标注核实日期与是否要实名。</description>
     <category>大模型 API 免费额度</category>
   </item>
 </channel>

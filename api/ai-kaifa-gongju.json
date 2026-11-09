@@ -3,8 +3,28 @@
   "title": "AI 开发工具与编程助手",
   "description": "编程助手、Agent、开发效率工具",
   "href": "c/ai-kaifa-gongju.html",
-  "count": 21,
+  "count": 23,
   "items": [
+    {
+      "id": "x-2112974723659247896",
+      "title": "Gemini 4 Argon 结合了三个开源数据集来构建人体解剖学的交互式 3D 可视化。",
+      "summary": "Gemini 4 Argon 结合了三个开源数据集来构建人体解剖学的交互式 3D 可视化。\n\n切换不同的运动层、隔离肌肉或放大跳动的心脏。 https://t.co/60nfQ0QVkl",
+      "url": "https://x.com/GoogleDeepMind/status/2112974723659247896",
+      "category": "AI 开发工具与编程助手",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "GoogleDeepMind",
+      "deadline": null,
+      "posted_at": "Wed Oct 21 18:30:05 +0000 2026",
+      "engagement": {
+        "likes": 3214,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 312
+      },
+      "path": "item/gemini-4-argon-3d-b4342dbc95.html"
+    },
     {
       "id": "xrss-3917186130",
       "title": "中大将于2027年1月起为黄大仙区2,700名长者提供免费人工智能视网膜认知障碍症筛查。",
@@ -341,6 +361,23 @@
         "comments": 1
       },
       "path": "item/show-hn-1946734f5f.html"
+    },
+    {
+      "id": "hn-50380433",
+      "title": "Show HN：儿童架，您孩子自己的小互联网",
+      "summary": "Show HN：Kids Shelf，你孩子们自己的小互联网 大家好，我制作了这个服务器，用于为我们（年幼的）孩子建立一个本地网络页面来托管视频并管理视频观看时间，而无需让他们在主 YouTube 上放松，以及所有随机的脑力消耗和参与度提升优化（这里没有自动播放下一个视频）。<p>- 麻省理工学院许可，任何地方都没有跟踪脚本，用它做任何你想做的事，我没有兴趣将其商业化<p>- 每天给他们“视频分钟津贴”，并且为我们强制执行（我们每个人有 10 分钟的时间，他们一起观看，然后会滚动，所以有些日子他们什么都不看，其他时候他们看一个小时）。<p>- 科学/教育视频可以设置为半价或免费<p>- 包括内置的 yt-dlp，管理屏幕会获取 YouTube URL 和",
+      "url": "https://kidsshelf.org/",
+      "category": "AI 开发工具与编程助手",
+      "source": "Hacker News",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "ericd",
+      "deadline": null,
+      "posted_at": "2026-11-05 23:35 Asia/Shanghai",
+      "engagement": {
+        "points": 8,
+        "comments": 2
+      },
+      "path": "item/show-hn-7cf24d3f98.html"
     },
     {
       "id": "hn-50412316",

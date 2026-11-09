@@ -1,9 +1,509 @@
 {
-  "updated_at_label": "2026-11-09 18:07 Asia/Shanghai",
-  "generated_at_label": "2026-11-09 18:07 Asia/Shanghai",
+  "updated_at_label": "2026-11-09 18:12 Asia/Shanghai",
+  "generated_at_label": "2026-11-09 18:12 Asia/Shanghai",
   "date": "2026-11-09",
-  "count": 128,
+  "count": 153,
   "items": [
+    {
+      "id": "x-1813921111694053644",
+      "title": "🎉令人兴奋的消息！我们开源了 DeepSeek-V2-0628 检查点，这是 LMSYS Chatbot Arena Leade 上的第一款开源模型",
+      "summary": "🎉令人兴奋的消息！我们开源了 DeepSeek-V2-0628 检查点，这是 LMSYS Chatbot Arena 排行榜 @lmsysorg 上排名第一的开源模型。\n\n详细竞技场排名：总体排名第 11，硬提示排名第 3，编码排名第 3，较长查询排名第 4，数学排名第 7。\n\nDeepSeek-V2-0628 发布于 https://t.co/p9J16vA48b",
+      "url": "https://x.com/deepseek_ai/status/1813921111694053644",
+      "category": "大模型 API 免费额度",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "deepseek_ai",
+      "deadline": null,
+      "posted_at": "Thu Jul 18 12:57:48 +0000 2024",
+      "engagement": {
+        "likes": 764,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 143
+      },
+      "path": "item/deepseek-v2-0628-lmsys-chatbot-arena-9918af3008.html"
+    },
+    {
+      "id": "x-1970117812279718197",
+      "title": "📊 与之前的版本相比，DeepSeek-V3.1-Terminus 在各个基准测试中提供更稳定、更可靠的输出。",
+      "summary": "📊 与之前的版本相比，DeepSeek-V3.1-Terminus 在各个基准测试中提供更稳定、更可靠的输出。\n\n👉 现已推出：App / Web / API\n🔗 开源权重在这里：https://t.co/Jh4RudofKm\n\n感谢大家的反馈。它促使我们不断改进 https://t.co/6fdLvl4LG3",
+      "url": "https://x.com/deepseek_ai/status/1970117812279718197",
+      "category": "大模型 API 免费额度",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "deepseek_ai",
+      "deadline": null,
+      "posted_at": "Mon Sep 22 13:27:44 +0000 2025",
+      "engagement": {
+        "likes": 860,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 67
+      },
+      "path": "item/deepseek-v3-1-terminus-4f837a5b11.html"
+    },
+    {
+      "id": "x-1958417072536608952",
+      "title": "模型更新🤖",
+      "summary": "模型更新🤖\n\n🔹V3.1 基础：840B 令牌继续预训练，以在 V3 之上进行长上下文扩展\n🔹 更新了分词器和聊天模板 — 新的分词器配置：https://t.co/r3y717EVFp\n🔗 V3.1 基础开源权重：https://t.co/5wlDui34hH\n🔗 V3.1 开源权重：",
+      "url": "https://x.com/deepseek_ai/status/1958417072536608952",
+      "category": "大模型 API 免费额度",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "deepseek_ai",
+      "deadline": null,
+      "posted_at": "Thu Aug 21 06:33:10 +0000 2025",
+      "engagement": {
+        "likes": 858,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 45
+      },
+      "path": "item/damoxing-mianfei-api-b9afb00322.html"
+    },
+    {
+      "id": "x-1787478986731429933",
+      "title": "🚀 推出 DeepSeek-V2：尖端开源 MoE 模型！",
+      "summary": "🚀 推出 DeepSeek-V2：尖端开源 MoE 模型！\n\n🌟亮点：\n> 在 AlignBench 中排名前 3，超过 GPT-4，接近 GPT-4-Turbo。\n> 在 MT-Bench 中排名顶级，可与 LLaMA3-70B 相媲美，并优于 Mixtral 8x22B。\n> 专攻数学、代码和推理。 https://t.co/izQyGjKCX4",
+      "url": "https://x.com/deepseek_ai/status/1787478986731429933",
+      "category": "大模型 API 免费额度",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "deepseek_ai",
+      "deadline": null,
+      "posted_at": "Mon May 06 13:46:14 +0000 2024",
+      "engagement": {
+        "likes": 993,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 232
+      },
+      "path": "item/deepseek-v2-moe-f3a93e8a9b.html"
+    },
+    {
+      "id": "x-1872242666265801105",
+      "title": "🌌 开源精神+长远主义，共创包容性AGI",
+      "summary": "🌌 开源精神+长远主义，共创包容性AGI\n\n🌟 DeepSeek 的使命坚定不移。我们很高兴与社区分享我们的进展，并看到开放模型和封闭模型之间的差距正在缩小。\n\n🚀这只是开始！期待多式联运支持和",
+      "url": "https://x.com/deepseek_ai/status/1872242666265801105",
+      "category": "大模型 API 免费额度",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "deepseek_ai",
+      "deadline": null,
+      "posted_at": "Thu Dec 26 11:26:50 +0000 2024",
+      "engagement": {
+        "likes": 1206,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 91
+      },
+      "path": "item/damoxing-mianfei-api-e14c2dc511.html"
+    },
+    {
+      "id": "x-1879465514898272693",
+      "title": "⚠️重要通知：",
+      "summary": "⚠️重要通知：\n\n✅ 100% 免费 - 无广告，无应用内购买\n🛡️仅从官方渠道下载，以免被误导\n📲 在您的应用商店中搜索“DeepSeek”或访问我们的网站获取直接链接\n\n🌟3/3",
+      "url": "https://x.com/deepseek_ai/status/1879465514898272693",
+      "category": "大模型 API 免费额度",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "deepseek_ai",
+      "deadline": null,
+      "posted_at": "Wed Jan 15 09:47:52 +0000 2025",
+      "engagement": {
+        "likes": 1472,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 118
+      },
+      "path": "item/damoxing-mianfei-api-77852952e5.html"
+    },
+    {
+      "id": "x-1802680388256768145",
+      "title": "DeepSeek-Coder-V2：第一个开源模型在编码和数学方面击败 GPT4-Turbo",
+      "summary": "DeepSeek-Coder-V2：第一个开源模型在编码和数学方面击败 GPT4-Turbo\n\n> 擅长编码和数学，击败了 GPT4-Turbo、Claude3-Opus、Gemini-1.5Pro、Codestral。\n> 支持338种编程语言和128K上下文长度。\n> 完全开源，有两种尺寸：230B（另见 https://t.co/6wocYVPPrj",
+      "url": "https://x.com/deepseek_ai/status/1802680388256768145",
+      "category": "大模型 API 免费额度",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "deepseek_ai",
+      "deadline": null,
+      "posted_at": "Mon Jun 17 12:31:11 +0000 2024",
+      "engagement": {
+        "likes": 1605,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 323
+      },
+      "path": "item/deepseek-coder-v2-gpt4-turbo-c9ce39b795.html"
+    },
+    {
+      "id": "x-1881318135850213834",
+      "title": "🔥 奖励：开源蒸馏模型！",
+      "summary": "🔥 奖励：开源蒸馏模型！\n\n🔬 提炼自 DeepSeek-R1，6 个小模型完全开源\n📏 32B 和 70B 型号与 OpenAI-o1-mini 相当\n🤝 为开源社区赋能\n\n🌍 突破**开放人工智能**的界限！\n\n🐋 2/n https://t.co/tfXLM2xtZZ",
+      "url": "https://x.com/deepseek_ai/status/1881318135850213834",
+      "category": "大模型 API 免费额度",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "deepseek_ai",
+      "deadline": null,
+      "posted_at": "Mon Jan 20 12:29:31 +0000 2025",
+      "engagement": {
+        "likes": 3139,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 321
+      },
+      "path": "item/damoxing-mianfei-api-bec7e00c40.html"
+    },
+    {
+      "id": "x-1879465495788917166",
+      "title": "🎉 隆重推出 DeepSeek 应用程序！",
+      "summary": "🎉 隆重推出 DeepSeek 应用程序！\n\n💡 由世界一流的 DeepSeek-V3 提供支持\n🆓 免费使用，无缝交互\n📱 现已在 App Store 和 Google Play 以及主要 Android 市场正式上线\n🔗立即下载：https://t.co/DIwqqkbK93\n\n🌟 1/3 https://t.co/QorHk2lEwj",
+      "url": "https://x.com/deepseek_ai/status/1879465495788917166",
+      "category": "大模型 API 免费额度",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "deepseek_ai",
+      "deadline": null,
+      "posted_at": "Wed Jan 15 09:47:47 +0000 2025",
+      "engagement": {
+        "likes": 3987,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 718
+      },
+      "path": "item/deepseek-3c101d40a6.html"
+    },
+    {
+      "id": "x-1859200141355536422",
+      "title": "🚀 DeepSeek-R1-Lite-Preview 现已上线：释放超强推理能力！",
+      "summary": "🚀 DeepSeek-R1-Lite-Preview 现已上线：释放超强推理能力！\n\n🔍 AIME 和 MATH 基准测试中的 o1 预览级性能。\n💡 实时透明的思维过程。\n🛠️ 开源模型和 API 即将推出！\n\n🌐 立即尝试 https://t.co/v1TFy7LHNy\n#DeepSeek https://t.co/saslkq4a1s",
+      "url": "https://x.com/deepseek_ai/status/1859200141355536422",
+      "category": "大模型 API 免费额度",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "deepseek_ai",
+      "deadline": null,
+      "posted_at": "Wed Nov 20 11:40:30 +0000 2024",
+      "engagement": {
+        "likes": 4373,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 771
+      },
+      "path": "item/deepseek-r1-lite-preview-508ea51397.html"
+    },
+    {
+      "id": "x-1894931931554558199",
+      "title": "🚀 #OpenSourceWeek 第 4 天：优化并行策略",
+      "summary": "🚀 #OpenSourceWeek 第 4 天：优化并行策略\n\n✅ DualPipe - 一种双向管道并行算法，用于 V3/R1 训练中的计算通信重叠。\n🔗 https://t.co/GBtxSvWLT4\n\n✅ EPLB - V3/R1 的专家并行负载均衡器。\n🔗",
+      "url": "https://x.com/deepseek_ai/status/1894931931554558199",
+      "category": "其他科技",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "deepseek_ai",
+      "deadline": null,
+      "posted_at": "Thu Feb 27 02:05:53 +0000 2025",
+      "engagement": {
+        "likes": 5731,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 782
+      },
+      "path": "item/opensourceweek-4-79e4ae6b95.html"
+    },
+    {
+      "id": "x-1894553164235640933",
+      "title": "🚀 #OpenSourceWeek 第 3 天：DeepGEMM",
+      "summary": "🚀 #OpenSourceWeek 第 3 天：DeepGEMM\n\n隆重推出 DeepGEMM - 一个 FP8 GEMM 库，支持密集 GEMM 和 MoE GEMM，为 V3/R1 训练和推理提供支持。\n\n⚡ Hopper GPU 上高达 1350+ FP8 TFLOPS\n✅ 没有重度依赖，像教程一样干净\n✅ 完全即时编译",
+      "url": "https://x.com/deepseek_ai/status/1894553164235640933",
+      "category": "云服务/GPU/开发者资源",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "deepseek_ai",
+      "deadline": null,
+      "posted_at": "Wed Feb 26 01:00:48 +0000 2025",
+      "engagement": {
+        "likes": 6298,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 847
+      },
+      "path": "item/opensourceweek-3-deepgemm-35a810a78b.html"
+    },
+    {
+      "id": "x-1894211757604049133",
+      "title": "🚀 #OpenSourceWeek 的第二天：DeepEP",
+      "summary": "🚀 #OpenSourceWeek 的第二天：DeepEP\n\n很高兴推出 DeepEP - 第一个用于 MoE 模型训练和推理的开源 EP 通信库。\n\n✅ 高效且优化的全方位沟通\n✅ 通过 NVLink 和 RDMA 支持节点内和节点间\n✅",
+      "url": "https://x.com/deepseek_ai/status/1894211757604049133",
+      "category": "其他科技",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "deepseek_ai",
+      "deadline": null,
+      "posted_at": "Tue Feb 25 02:24:10 +0000 2025",
+      "engagement": {
+        "likes": 7991,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 1035
+      },
+      "path": "item/opensourceweek-deepep-917abde357.html"
+    },
+    {
+      "id": "x-1895688300574462431",
+      "title": "🚀 #OpenSourceWeek 第 6 天：还有一件事 – DeepSeek-V3/R1 推理系统概述",
+      "summary": "🚀 #OpenSourceWeek 第 6 天：还有一件事 – DeepSeek-V3/R1 推理系统概述\n\n通过以下方式优化吞吐量和延迟：\n🔧 跨节点 EP 支持的批量扩展\n🔄 计算与通信重叠\n⚖️负载均衡\n\nDeepSeek在线服务统计：\n⚡ 73.7k/14.8k",
+      "url": "https://x.com/deepseek_ai/status/1895688300574462431",
+      "category": "大模型 API 免费额度",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "deepseek_ai",
+      "deadline": null,
+      "posted_at": "Sat Mar 01 04:11:25 +0000 2025",
+      "engagement": {
+        "likes": 8982,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 1183
+      },
+      "path": "item/opensourceweek-6-deepseek-v3-r1-573f979027.html"
+    },
+    {
+      "id": "x-1893836827574030466",
+      "title": "🚀 #OpenSourceWeek 第一天：FlashMLA",
+      "summary": "🚀 #OpenSourceWeek 第一天：FlashMLA\n\n很荣幸分享 FlashMLA - 我们用于 Hopper GPU 的高效 MLA 解码内核，针对可变长度序列进行了优化，现已投入生产。\n\n✅ BF16 支持\n✅ 分页 KV 缓存（块大小 64）\n⚡ 3000 GB/s 内存限制和 580 TFLOPS",
+      "url": "https://x.com/deepseek_ai/status/1893836827574030466",
+      "category": "云服务/GPU/开发者资源",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "deepseek_ai",
+      "deadline": null,
+      "posted_at": "Mon Feb 24 01:34:20 +0000 2025",
+      "engagement": {
+        "likes": 10022,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 1304
+      },
+      "path": "item/opensourceweek-flashmla-d6a14b1648.html"
+    },
+    {
+      "id": "x-1895279409185390655",
+      "title": "🚀 #OpenSourceWeek 第 5 天：3FS，用于所有 DeepSeek 数据访问的推进器",
+      "summary": "🚀 #OpenSourceWeek 第 5 天：3FS，用于所有 DeepSeek 数据访问的推进器\n\nFire-Flyer 文件系统 (3FS) - 一种并行文件系统，利用现代 SSD 和 RDMA 网络的全部带宽。\n\n⚡ 180 节点集群中 6.6 TiB/s 的聚合读取吞吐量\n⚡ 3.66 TiB/分钟",
+      "url": "https://x.com/deepseek_ai/status/1895279409185390655",
+      "category": "大模型 API 免费额度",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "deepseek_ai",
+      "deadline": null,
+      "posted_at": "Fri Feb 28 01:06:38 +0000 2025",
+      "engagement": {
+        "likes": 10027,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 1207
+      },
+      "path": "item/opensourceweek-5-3fs-deepseek-b538aec1c4.html"
+    },
+    {
+      "id": "x-1872242657348710721",
+      "title": "🚀 隆重推出 DeepSeek-V3！",
+      "summary": "🚀 隆重推出 DeepSeek-V3！\n\n迄今为止最大的飞跃：\n⚡ 60 个令牌/秒（比 V2 快 3 倍！）\n💪 增强的能力\n🛠 API 兼容性完好\n🌍 完全开源的模型和论文\n\n🐋 1/n https://t.co/p1dV9gJ2Sd",
+      "url": "https://x.com/deepseek_ai/status/1872242657348710721",
+      "category": "大模型 API 免费额度",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "deepseek_ai",
+      "deadline": null,
+      "posted_at": "Thu Dec 26 11:26:48 +0000 2024",
+      "engagement": {
+        "likes": 12887,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 2083
+      },
+      "path": "item/deepseek-v3-f29d073c93.html"
+    },
+    {
+      "id": "x-1892786555494019098",
+      "title": "🚀 第 0 天：#OpenSourceWeek 热身！",
+      "summary": "🚀 第 0 天：#OpenSourceWeek 热身！ \n\n我们是一个小团队 @deepseek_ai 探索 AGI。从下周开始，我们将开源 5 个存储库，以完全透明的方式分享我们微小但真诚的进展。\n\n我们的在线服务中这些不起眼的构建块已被记录下来，",
+      "url": "https://x.com/deepseek_ai/status/1892786555494019098",
+      "category": "大模型 API 免费额度",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "deepseek_ai",
+      "deadline": null,
+      "posted_at": "Fri Feb 21 04:00:55 +0000 2025",
+      "engagement": {
+        "likes": 20181,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 2543
+      },
+      "path": "item/0-opensourceweek-ab3e9a9d44.html"
+    },
+    {
+      "id": "x-1881318130334814301",
+      "title": "🚀 DeepSeek-R1 来了！",
+      "summary": "🚀 DeepSeek-R1 来了！\n\n⚡ 性能与 OpenAI-o1 相当\n📖 完全开源的模型和技术报告\n🏆 麻省理工学院许可：自由蒸馏和商业化！\n\n🌐 网站和 API 现已上线！立即尝试 DeepThink：https://t.co/v1TFy7LHNy！\n\n🐋 1/n https://t.co/7BlpWAPu6y",
+      "url": "https://x.com/deepseek_ai/status/1881318130334814301",
+      "category": "大模型 API 免费额度",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "deepseek_ai",
+      "deadline": null,
+      "posted_at": "Mon Jan 20 12:29:30 +0000 2025",
+      "engagement": {
+        "likes": 34984,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 6656
+      },
+      "path": "item/deepseek-r1-2b6c4daba8.html"
+    },
+    {
+      "id": "x-2110461526628851943",
+      "title": "6) 3D GPU 毛皮模拟",
+      "summary": "6) 3D GPU 毛皮模拟\n\nhttps://t.co/MZVdVH4k7Q https://t.co/5OPgHPltWH",
+      "url": "https://x.com/GoogleAIStudio/status/2110461526628851943",
+      "category": "云服务/GPU/开发者资源",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "GoogleAIStudio",
+      "deadline": null,
+      "posted_at": "Wed Oct 14 20:03:33 +0000 2026",
+      "engagement": {
+        "likes": 33,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 2
+      },
+      "path": "item/6-3d-gpu-a309f8d712.html"
+    },
+    {
+      "id": "x-2112974723659247896",
+      "title": "Gemini 4 Argon 结合了三个开源数据集来构建人体解剖学的交互式 3D 可视化。",
+      "summary": "Gemini 4 Argon 结合了三个开源数据集来构建人体解剖学的交互式 3D 可视化。\n\n切换不同的运动层、隔离肌肉或放大跳动的心脏。 https://t.co/60nfQ0QVkl",
+      "url": "https://x.com/GoogleDeepMind/status/2112974723659247896",
+      "category": "AI 开发工具与编程助手",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "GoogleDeepMind",
+      "deadline": null,
+      "posted_at": "Wed Oct 21 18:30:05 +0000 2026",
+      "engagement": {
+        "likes": 3214,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 312
+      },
+      "path": "item/gemini-4-argon-3d-b4342dbc95.html"
+    },
+    {
+      "id": "x-2113278722337804299",
+      "title": "ForTy 2020 地图和 2017-2025 年时间序列发布于@ScientificData，现已在 Google Earth 上免费提供",
+      "summary": "ForTy 2020 地图和 2017-2025 年时间序列发布于 @ScientificData，现已在 Google Earth Engine 上免费提供 - 帮助组织建立零砍伐的供应链并保护最重要的天然森林。  \n了解更多→",
+      "url": "https://x.com/GoogleDeepMind/status/2113278722337804299",
+      "category": "其他科技",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "GoogleDeepMind",
+      "deadline": null,
+      "posted_at": "Thu Oct 22 14:38:04 +0000 2026",
+      "engagement": {
+        "likes": 50,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 3
+      },
+      "path": "item/forty-2020-2017-2025-scientificdata-1ce1328216.html"
+    },
+    {
+      "id": "x-2113390212911083894",
+      "title": "我们的 Frontier Red Team 博客上的新内容：使用 Claude 大规模正式验证软件。",
+      "summary": "我们的 Frontier Red Team 博客上的新内容：使用 Claude 大规模正式验证软件。\n\n形式验证可以证明代码不存在某些错误，但从历史上看，它仅适用于小型代码库（或需要大量专家时间）。\n\n借助人工智能模型，",
+      "url": "https://x.com/AnthropicAI/status/2113390212911083894",
+      "category": "大模型 API 免费额度",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "AnthropicAI",
+      "deadline": null,
+      "posted_at": "Thu Oct 22 22:01:06 +0000 2026",
+      "engagement": {
+        "likes": 9802,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 1074
+      },
+      "path": "item/frontier-red-team-claude-27392338b6.html"
+    },
+    {
+      "id": "x-2118119459772862490",
+      "title": "完整运行花费了 1,213,430 美元的 API 积分，每个不同的本地权限升级漏洞大约需要 1,279 美元。",
+      "summary": "完整运行花费了 1,213,430 美元的 API 积分，每个不同的本地权限升级漏洞大约需要 1,279 美元。\n\n作为背景，应用历史 Pwn2Own 和 TyphoonPWN 赏金率得出的假设价值为 1890 万美元至 6630 万美元。\n\n这证明了使用人工智能的相对功效",
+      "url": "https://x.com/OpenAI/status/2118119459772862490",
+      "category": "大模型 API 免费额度",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "OpenAI",
+      "deadline": null,
+      "posted_at": "Wed Nov 04 23:13:26 +0000 2026",
+      "engagement": {
+        "likes": 723,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 28
+      },
+      "path": "item/1-213-430-api-1-279-6120e7ddef.html"
+    },
+    {
+      "id": "x-2118390192356700383",
+      "title": "在这个狭窄的防御者窗口中，我们的目标是将 Daybreak 的访问范围扩大到各种规模的组织、独立研究人员",
+      "summary": "在这个狭窄的防御者窗口中，我们的目标是将 Daybreak 的访问范围扩大到各种规模的组织、独立研究人员和开源维护者。\n\nDaybreak Blue 可帮助经过验证的防御者验证漏洞并进行修复，减少拒绝次数。黎明红启用",
+      "url": "https://x.com/OpenAI/status/2118390192356700383",
+      "category": "其他科技",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "OpenAI",
+      "deadline": null,
+      "posted_at": "Thu Nov 05 17:09:14 +0000 2026",
+      "engagement": {
+        "likes": 1001,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 37
+      },
+      "path": "item/daybreak-d11663c719.html"
+    },
     {
       "id": "xrss-7606337647",
       "title": "您现在可以免费在本地运行 Claude Code。 → 使用开源模型 → 本地且完全私有 → 完整代理 + 工具",
@@ -1861,23 +2361,6 @@
       "path": "item/show-hn-mac-e0afa7d737.html"
     },
     {
-      "id": "hn-50400475",
-      "title": "告诉 HN：您可以在 GitHub 上拥有单独的代理帐户",
-      "summary": "告诉 HN：您可以在 GitHub 上拥有单独的代理帐户 您可以为您的代理拥有一个单独的 GitHub 帐户（GitHub ToS 实际上从 4 月起就允许这样做），并且该帐户可以分叉您的存储库并打开 PR。这样它不会造成任何真正的损害，但仍然可以推送。<p>请参阅此用户，例如：https://github.com/filippo-agent<p>https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#3-account-requirements<p>3。帐户要求<p>我们对 GitHub 服务上的帐户有一些简单的规则。<p>您必须是人类才能创建帐户。不允许通过“机器人”或其他自动化方法注册帐户。我们确实允许机器帐户：<p>机器帐户是由接受",
-      "url": "https://news.ycombinator.com/item?id=50400475",
-      "category": "其他科技",
-      "source": "Hacker News",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "author": "lukax",
-      "deadline": null,
-      "posted_at": "2026-11-07 08:42 Asia/Shanghai",
-      "engagement": {
-        "points": 3,
-        "comments": 2
-      },
-      "path": "item/hn-github-a4723f4eef.html"
-    },
-    {
       "id": "hn-50397561",
       "title": "Show HN：告诉天空——根据实时天气数据信息灯笼随风飘移",
       "summary": "Show HN：告诉天空 – 消息灯笼根据实时天气数据随风飘移 我创建了一个网络/移动应用程序，可让您在灯笼上写下故事/秘密/鼓励/等等。然后，您可以放开它，它就会使用 NOAA 公共风预报的实时风数据漂浮在世界地图上。然后，当它们漂浮在头顶上并添加到消息链中时，其他用户可以在定时窗口中捕获它们。然后他们释放它们以继续。<p>这只是我尝试的一件有趣的事情 - 有点像瓶子里的消息，但在天空中。我觉得这听起来是一个很酷的主意，在玩过之后，我真的很喜欢它，但很好奇其他人是否也认为它很酷或者只是看起来很蹩脚。哈哈<p>如果你愿意去看看，你可以在没有任何 si 的情况下观看灯笼",
@@ -1893,6 +2376,40 @@
         "comments": 1
       },
       "path": "item/show-hn-1946734f5f.html"
+    },
+    {
+      "id": "hn-50383785",
+      "title": "Show HN：在 Mac 上通过说出一次名称来教语音模型 (en) 命名",
+      "summary": "Show HN：在 Mac 上通过说一次来教语音模型 (en) 一个名字。我想看看语音模型如果听到它，而不仅仅是读到它，是否可以更好地拼写一个名字。<p>大多数 STT 工具将自定义单词作为文本处理（关键术语列表、用 llm 修复后的文字记录等）。<p>因此，我训练了一个适配器来尝试它，特别是 Qwen3-ASR 1.7b 上的 LoRA（请参阅基准测试）。此 LoRA 仅在听到每个自定义单词的录音后才会转录单词。<p>为了使该模型在日常生活中更易于使用，我们还构建了 Detail Keeper。这是一个 Mac 应用程序，您可以通过指定难以正确转录的单词，然后在录音中正确拾取它们来使用此适配器。<p>我们发现这在两种特定情况下很有帮助： \n1. STT从未听说过的词：发明的",
+      "url": "https://detailkeeper.com/",
+      "category": "科技软件/App 限免",
+      "source": "Hacker News",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "Angus1192",
+      "deadline": null,
+      "posted_at": "2026-11-06 04:06 Asia/Shanghai",
+      "engagement": {
+        "points": 3,
+        "comments": 1
+      },
+      "path": "item/show-hn-mac-en-a8c0afd787.html"
+    },
+    {
+      "id": "hn-50380433",
+      "title": "Show HN：儿童架，您孩子自己的小互联网",
+      "summary": "Show HN：Kids Shelf，你孩子们自己的小互联网 大家好，我制作了这个服务器，用于为我们（年幼的）孩子建立一个本地网络页面来托管视频并管理视频观看时间，而无需让他们在主 YouTube 上放松，以及所有随机的脑力消耗和参与度提升优化（这里没有自动播放下一个视频）。<p>- 麻省理工学院许可，任何地方都没有跟踪脚本，用它做任何你想做的事，我没有兴趣将其商业化<p>- 每天给他们“视频分钟津贴”，并且为我们强制执行（我们每个人有 10 分钟的时间，他们一起观看，然后会滚动，所以有些日子他们什么都不看，其他时候他们看一个小时）。<p>- 科学/教育视频可以设置为半价或免费<p>- 包括内置的 yt-dlp，管理屏幕会获取 YouTube URL 和",
+      "url": "https://kidsshelf.org/",
+      "category": "AI 开发工具与编程助手",
+      "source": "Hacker News",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "ericd",
+      "deadline": null,
+      "posted_at": "2026-11-05 23:35 Asia/Shanghai",
+      "engagement": {
+        "points": 8,
+        "comments": 2
+      },
+      "path": "item/show-hn-7cf24d3f98.html"
     },
     {
       "id": "hn-50423113",
@@ -2214,9 +2731,9 @@
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "author": "mnfst",
       "deadline": null,
-      "posted_at": "2026-11-09 18:06 Asia/Shanghai",
+      "posted_at": "2026-11-09 18:08 Asia/Shanghai",
       "engagement": {
-        "stars": 12710
+        "stars": 12712
       },
       "path": "item/mnfst-awesome-free-llm-apis-05ce2220cc.html"
     },
@@ -2235,22 +2752,6 @@
         "stars": 5437
       },
       "path": "item/llm-api-awesome-freellm-apis-548d4c67f8.html"
-    },
-    {
-      "id": "ghdeal-priestkos-awesome-free-llm-apis",
-      "title": "priestkos/awesome-free-llm-apis",
-      "summary": "priestkos/awesome-free-llm-apis 每个免费 LLM API 的目录：可折叠的提供商卡、一键基本 URL 复制、每周刷新。内容逐字镜像自 mnfst/awesome-free-llm-apis (CC0-1.0)。",
-      "url": "https://github.com/priestkos/awesome-free-llm-apis",
-      "category": "大模型 API 免费额度",
-      "source": "GitHub",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "author": "priestkos",
-      "deadline": null,
-      "posted_at": "2026-11-06 20:39 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "path": "item/priestkos-awesome-free-llm-apis-bfe0eceeef.html"
     }
   ]
 }
