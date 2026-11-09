@@ -31,7 +31,26 @@ AccuracySec=30s
 [Install]
 WantedBy=timers.target
 UNIT
-sudo -n systemctl daemon-reload && sudo -n systemctl enable --now engine-b.timer
+sudo -n tee /etc/systemd/system/engine-b-resume.service >/dev/null <<UNIT
+[Unit]
+Description=aiym168 Engine B wake detector
+[Service]
+Type=oneshot
+User=$U
+Environment=HOME=$H
+ExecStart=$E/engine/resume_tick.sh
+TimeoutStartSec=55min
+UNIT
+sudo -n tee /etc/systemd/system/engine-b-resume.timer >/dev/null <<'UNIT'
+[Unit]
+Description=Detect wake-up of the box every 5 min and run Engine B after a sleep
+[Timer]
+OnCalendar=*:0/5
+AccuracySec=20s
+[Install]
+WantedBy=timers.target
+UNIT
+sudo -n systemctl daemon-reload && sudo -n systemctl enable --now engine-b.timer engine-b-resume.timer
 
 # 2) cron (secondary, same minute; the lock file prevents double runs) + @reboot
 if ! command -v crontab >/dev/null 2>&1; then
