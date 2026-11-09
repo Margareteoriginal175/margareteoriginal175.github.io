@@ -8,6 +8,12 @@ set -uo pipefail
 # run from a private copy: the repo checkout (and this file) is reset during the run
 if [ -z "${ENGINE_B_COPY:-}" ]; then cp -f "$0" /tmp/engine_b_run.sh; ENGINE_B_COPY=1 exec bash /tmp/engine_b_run.sh "$@"; fi
 E="$HOME/engine"
+# cron/systemd start with a bare env: load the box's network proxy + CA settings
+for f in /etc/profile.d/cocoonbox-proxy.sh /etc/profile.d/cocoonbox-mise.sh; do [ -r "$f" ] && . "$f" 2>/dev/null; done
+if [ -z "${https_proxy:-}" ] && (exec 3<>/dev/tcp/127.0.0.1/3128) 2>/dev/null; then
+  export http_proxy=http://127.0.0.1:3128 https_proxy=http://127.0.0.1:3128 HTTP_PROXY=http://127.0.0.1:3128 HTTPS_PROXY=http://127.0.0.1:3128
+fi
+export no_proxy="${no_proxy:-localhost,127.0.0.1,::1}" SSL_CERT_FILE="${SSL_CERT_FILE:-/etc/ssl/certs/ca-certificates.crt}" REQUESTS_CA_BUNDLE="${REQUESTS_CA_BUNDLE:-/etc/ssl/certs/ca-certificates.crt}"
 LOGDIR="$E/logs"; mkdir -p "$LOGDIR"
 STALE_MIN="${STALE_MIN:-90}"
 SEEN_EVERY_MIN="${SEEN_EVERY_MIN:-180}"
