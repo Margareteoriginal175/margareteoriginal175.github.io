@@ -85,8 +85,8 @@ except Exception: print(99999)')
   ENGINE=B ENGINE_SEEN_ONLY=1 python3 status.py
   git add data/engine_b.json api/status.json m/status.html
   git diff --cached --quiet && exit 0
-  git commit -q -m "engine B standby heartbeat $(date '+%F %H:%M')"
-  push_retry "engine B standby heartbeat" "ENGINE=B ENGINE_SEEN_ONLY=1 python3 status.py"
+  git commit -q -m "update $(date "+%F %H:%M")"
+  push_retry "update" "ENGINE=B ENGINE_SEEN_ONLY=1 python3 status.py"
   exit $?
 fi
 
@@ -96,7 +96,7 @@ echo "[engine-b] pipeline rc=$rc"
 rm -rf .last_good __pycache__
 git add -A; git reset -q HEAD -- .last_good __pycache__ logs .lock 2>/dev/null || true
 if git diff --cached --quiet; then echo "[engine-b] no changes"; exit 0; fi
-MSG="auto update $(date '+%F %H:%M') [engine B · $MODE]"
+MSG="auto update $(date "+%F %H:%M")"
 git commit -q -m "$MSG"
 push_retry "$MSG" "ENGINE=B ENGINE_MODE=$MODE FETCH=0 bash engine/pipeline.sh"
 rc=$?

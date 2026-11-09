@@ -1,76 +1,11 @@
 {
-  "generated_at": "2026-11-09T20:03:34+08:00",
-  "generated_at_label": "2026-11-09 20:03 Asia/Shanghai",
-  "site": "https://aiym168.github.io/",
-  "engines": {
-    "A": {
-      "engine": "A",
-      "name": "GitHub Actions 云端引擎",
-      "mode": "workflow_dispatch",
-      "result": "ok",
-      "last_run_at": "2026-11-09T19:32:21+08:00",
-      "last_run_label": "2026-11-09 19:32 Asia/Shanghai",
-      "last_success_label": "2026-11-09 19:32 Asia/Shanghai",
-      "run_url": "https://github.com/aiym168/aiym168.github.io/actions/runs/42609660324",
-      "host": "github-actions",
-      "counts": {
-        "deals": 186,
-        "github_hot": 30,
-        "hot": 40,
-        "modules": {
-          "damoxing-mianfei-api": 98,
-          "ai-huiyuan-shiyong": 7,
-          "ai-kaifa-gongju": 13,
-          "mianfei-gpu-yunfuwu": 20,
-          "keji-app-xianmian": 4,
-          "github-hot": 30,
-          "hot-topics": 40
-        }
-      },
-      "runs_total": 2,
-      "schedule": "每小时第 7 分钟 + 每 2 小时第 37 分钟（备用）",
-      "next_run_label": "2026-11-09 20:07 Asia/Shanghai",
-      "age_min": 31
-    },
-    "B": {
-      "engine": "B",
-      "name": "Simular 云服务器引擎",
-      "mode": "forced",
-      "result": "ok",
-      "last_run_at": "2026-11-09T19:27:06+08:00",
-      "last_run_label": "2026-11-09 19:27 Asia/Shanghai",
-      "last_success_label": "2026-11-09 19:27 Asia/Shanghai",
-      "run_url": "https://github.com/aiym168/aiym168.github.io/commits/main",
-      "host": "main",
-      "counts": {
-        "deals": 182,
-        "github_hot": 30,
-        "hot": 40,
-        "modules": {
-          "damoxing-mianfei-api": 106,
-          "ai-huiyuan-shiyong": 9,
-          "ai-kaifa-gongju": 18,
-          "mianfei-gpu-yunfuwu": 17,
-          "keji-app-xianmian": 5,
-          "github-hot": 30,
-          "hot-topics": 40
-        }
-      },
-      "runs_total": 1,
-      "schedule": "服务器每小时第 25 分钟检查；GitHub 超过 90 分钟没更新就接管",
-      "next_run_label": "2026-11-09 20:25 Asia/Shanghai",
-      "last_seen_at": "2026-11-09T19:27:06+08:00",
-      "age_min": 36
-    },
-    "watchdog": {
-      "schedule": "每 30 分钟（第 23 / 53 分钟）",
-      "next_run_label": "2026-11-09 20:23 Asia/Shanghai"
-    }
-  },
-  "counts": {
-    "deals": 186,
+  "last_update": "2026-11-09 20:06 Asia/Shanghai",
+  "next_update": "2026-11-09 20:07 Asia/Shanghai",
+  "update_frequency": "每小时",
+  "totals": {
+    "free_resources": 186,
     "github_hot": 30,
-    "hot": 40,
+    "hot_topics": 40,
     "modules": {
       "damoxing-mianfei-api": 98,
       "ai-huiyuan-shiyong": 7,
@@ -81,187 +16,310 @@
       "hot-topics": 40
     }
   },
-  "data_updated_label": "2026-11-09 19:31 Asia/Shanghai",
-  "sources": {
-    "HN": {
-      "ok_total": 3,
-      "fail_total": 0,
-      "fail_streak": 0,
-      "score": 100,
-      "last_run": "2026-11-09T19:32:01+08:00",
-      "last_run_label": "2026-11-09 19:32 Asia/Shanghai",
-      "last_count": 27,
-      "last_ok": "2026-11-09T19:32:01+08:00",
-      "last_ok_label": "2026-11-09 19:32 Asia/Shanghai",
-      "state": "healthy"
-    },
-    "V2EX": {
-      "ok_total": 3,
-      "fail_total": 0,
-      "fail_streak": 0,
-      "score": 100,
-      "last_run": "2026-11-09T19:32:03+08:00",
-      "last_run_label": "2026-11-09 19:32 Asia/Shanghai",
-      "last_count": 7,
-      "last_ok": "2026-11-09T19:32:03+08:00",
-      "last_ok_label": "2026-11-09 19:32 Asia/Shanghai",
-      "state": "healthy"
-    },
-    "GitHub": {
-      "ok_total": 3,
-      "fail_total": 0,
-      "fail_streak": 0,
-      "score": 100,
-      "last_run": "2026-11-09T19:32:08+08:00",
-      "last_run_label": "2026-11-09 19:32 Asia/Shanghai",
-      "last_count": 20,
-      "last_ok": "2026-11-09T19:32:08+08:00",
-      "last_ok_label": "2026-11-09 19:32 Asia/Shanghai",
-      "state": "healthy"
-    },
-    "DEV.to": {
-      "ok_total": 0,
-      "fail_total": 3,
-      "fail_streak": 3,
-      "score": 40,
-      "last_run": "2026-11-09T19:32:09+08:00",
-      "last_run_label": "2026-11-09 19:32 Asia/Shanghai",
-      "last_count": 0,
-      "last_error": "0 items",
-      "state": "skipped",
-      "skip_until": "2026-11-09T20:32:09+08:00",
-      "skip_until_label": "2026-11-09 20:32 Asia/Shanghai"
-    },
-    "Lobsters": {
-      "ok_total": 0,
-      "fail_total": 3,
-      "fail_streak": 3,
-      "score": 40,
-      "last_run": "2026-11-09T19:32:10+08:00",
-      "last_run_label": "2026-11-09 19:32 Asia/Shanghai",
-      "last_count": 0,
-      "last_error": "0 items",
-      "state": "skipped",
-      "skip_until": "2026-11-09T20:32:10+08:00",
-      "skip_until_label": "2026-11-09 20:32 Asia/Shanghai"
-    },
-    "GitHubHot": {
-      "ok_total": 3,
-      "fail_total": 0,
-      "fail_streak": 0,
-      "score": 100,
-      "last_run": "2026-11-09T19:32:19+08:00",
-      "last_run_label": "2026-11-09 19:32 Asia/Shanghai",
-      "last_count": 30,
-      "last_ok": "2026-11-09T19:32:19+08:00",
-      "last_ok_label": "2026-11-09 19:32 Asia/Shanghai",
-      "state": "healthy"
-    },
-    "HotTopics": {
-      "ok_total": 3,
-      "fail_total": 0,
-      "fail_streak": 0,
-      "score": 100,
-      "last_run": "2026-11-09T19:32:21+08:00",
-      "last_run_label": "2026-11-09 19:32 Asia/Shanghai",
-      "last_count": 40,
-      "last_ok": "2026-11-09T19:32:21+08:00",
-      "last_ok_label": "2026-11-09 19:32 Asia/Shanghai",
-      "state": "healthy"
-    },
-    "X": {
-      "ok_total": 2,
-      "fail_total": 0,
-      "fail_streak": 0,
-      "score": 100,
-      "last_run": "2026-11-09T19:31:56+08:00",
-      "last_run_label": "2026-11-09 19:31 Asia/Shanghai",
-      "last_count": 25,
-      "last_ok": "2026-11-09T19:31:56+08:00",
-      "last_ok_label": "2026-11-09 19:31 Asia/Shanghai",
-      "state": "healthy"
-    }
-  },
-  "translators": {
-    "google": {
-      "ok_total": 9,
-      "fail_total": 0,
-      "fail_streak": 0,
-      "score": 100,
-      "last_run": "2026-11-09T19:32:10+08:00",
-      "last_run_label": "2026-11-09 19:32 Asia/Shanghai",
-      "last_ok": "2026-11-09T19:32:10+08:00",
-      "last_ok_label": "2026-11-09 19:32 Asia/Shanghai",
-      "state": "healthy"
-    },
-    "mymemory": {
-      "ok_total": 0,
-      "fail_total": 0,
-      "fail_streak": 0,
-      "score": 100
-    },
-    "libre": {
-      "ok_total": 0,
-      "fail_total": 0,
-      "fail_streak": 0,
-      "score": 100
-    }
-  },
-  "discovery": {
-    "last_run_label": "2026-11-09 19:18 Asia/Shanghai",
-    "items": 30,
-    "new_this_run": 30,
-    "learned_topics": [
-      "openai-compatible",
-      "claude-code",
-      "ai-api-gateway",
-      "llm-api-gateway",
-      "deepseek-harness",
-      "free-llm-api",
-      "gemini-api",
-      "llm-inference",
-      "llm-gateway",
-      "free-llm-access",
-      "llm-agents",
-      "llm-provider",
-      "ai-api",
-      "llm-agent",
-      "llm-proxy",
-      "free-ai-api",
-      "free-claude-api",
-      "free-gpt5",
-      "unlimited-ai-api",
-      "claude-skills"
+  "recent_additions": {
+    "last_7_days": 197,
+    "by_day": [
+      {
+        "date": "2026-11-09",
+        "added": 197,
+        "updates": 13
+      },
+      {
+        "date": "2026-11-08",
+        "added": 0,
+        "updates": 0
+      },
+      {
+        "date": "2026-11-07",
+        "added": 0,
+        "updates": 0
+      },
+      {
+        "date": "2026-11-06",
+        "added": 0,
+        "updates": 0
+      },
+      {
+        "date": "2026-11-05",
+        "added": 0,
+        "updates": 0
+      },
+      {
+        "date": "2026-11-04",
+        "added": 0,
+        "updates": 0
+      },
+      {
+        "date": "2026-11-03",
+        "added": 0,
+        "updates": 0
+      }
+    ],
+    "recent_updates": [
+      {
+        "at": "2026-11-09 19:56 Asia/Shanghai",
+        "added": 0
+      },
+      {
+        "at": "2026-11-09 19:38 Asia/Shanghai",
+        "added": 0
+      },
+      {
+        "at": "2026-11-09 19:33 Asia/Shanghai",
+        "added": 0
+      },
+      {
+        "at": "2026-11-09 19:32 Asia/Shanghai",
+        "added": 37
+      },
+      {
+        "at": "2026-11-09 19:30 Asia/Shanghai",
+        "added": 29
+      },
+      {
+        "at": "2026-11-09 19:30 Asia/Shanghai",
+        "added": 26
+      },
+      {
+        "at": "2026-11-09 19:29 Asia/Shanghai",
+        "added": 31
+      },
+      {
+        "at": "2026-11-09 19:27 Asia/Shanghai",
+        "added": 40
+      },
+      {
+        "at": "2026-11-09 19:19 Asia/Shanghai",
+        "added": 0
+      },
+      {
+        "at": "2026-11-09 19:19 Asia/Shanghai",
+        "added": 0
+      },
+      {
+        "at": "2026-11-09 18:45 Asia/Shanghai",
+        "added": 0
+      },
+      {
+        "at": "2026-11-09 18:44 Asia/Shanghai",
+        "added": 34
+      },
+      {
+        "at": "2026-11-09 18:42 Asia/Shanghai",
+        "added": 0
+      }
     ]
   },
-  "links": {
-    "checked_at_label": "2026-11-09 19:16 Asia/Shanghai",
-    "checked": 104,
-    "dead_count": 0
-  },
-  "x": {
-    "updated_at_label": "2026-11-09 19:31 Asia/Shanghai",
-    "primary_route": "google-news-rss",
-    "kept": 25
-  },
-  "heartbeat_label": "2026-11-09 18:42:39 Asia/Shanghai",
-  "server": {
-    "box_id": "已隐藏",
-    "checked_at_label": "2026-11-09 20:03 Asia/Shanghai",
-    "state_before": "BOX_STATE_RUNNING",
-    "state_after": "BOX_STATE_RUNNING",
-    "state_after_zh": "运行中",
-    "wake_reasons": [],
-    "actions": [],
-    "wake_schedule": {
-      "cron": "0 * * * *",
-      "tz": "Asia/Shanghai",
-      "awake_for_s": 3600,
-      "next_label": "2026-11-09 21:00 Asia/Shanghai",
-      "last_wake_label": "2026-11-09 19:59 Asia/Shanghai"
+  "newest_items": [
+    {
+      "title": "为任何感兴趣的人提供免费的人工智能电影制作课程。截止日期为11月15日，查看详情及报名情况",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9aeGFDdmVoSXIwZDVzYlFMUTBOQU9RbWJ1UGZwMFNIcmZabFBVYndxWlpTbUNfTWVHUWtMc2Vxd0hOa0xiQlVMREdUZFd3TmNHS0ZqTHdpUUtWMXVGNHVyYjdWYw?oc=5",
+      "path": "item/11-15-741c7f546b.html",
+      "category": "其他科技",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
     },
-    "last_saved_label": "2026-11-09 19:28 Asia/Shanghai",
-    "ok": true,
-    "engine_b_age_min": 36
-  }
+    {
+      "title": "让我的年长家庭成员摆脱 facebook Ai 🤖 😩 - X",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5JcnFfQzlTMFlDTm1IYk14Wlo1aFN0X3dlR2NiWFQ2SFM3V1J6azFpUWJXUWltSHVxMzdENjlTRE9kdU1CUUJQaDdMd1M4T3Nxa05qLWs5TXVVYkMtOWpR?oc=5",
+      "path": "item/facebook-ai-x-79345c7814.html",
+      "category": "其他科技",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "也可与免费 AI 工具配合使用：Mac、Windows 或 Linux 上的 Claude Code、Gemini CLI 或 Codex。在realme 7和Red上测试",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5uSmdqaXNoaUN1a3dxTkpKakJzRDVEdXJYLUxwNDI5UzRieTZqY0M0THBrR01Ja3h5V0VMOTUzMVhtT282UW92UnZtOWF2NVJnTU5sYTdfS1N4d3k0T1lXQlV1RWNCZWJ2WUt3NkN3?oc=5",
+      "path": "item/ai-mac-windows-linux-claude-code-gem-3c41630686.html",
+      "category": "大模型 API 免费额度",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "积分可用于消息 API、Claude Managed Agents 和 Agent SDK，但不能用于交互式",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE85QUpXV2QydTJGZFV2bTZfRlhRUUVXQlV4NUdObFpIcXYyN0NEYWFvZ3FSU3FuX2VRWlVBQjdUZGhUTC1faWJqdEZaQVVPZzVxS1Fla2tBWW91eW9Ndy10NQ?oc=5",
+      "path": "item/api-claude-managed-agents-agent-sdk-c14aa781c0.html",
+      "category": "大模型 API 免费额度",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "免费人工智能讲座坎帕拉维多利亚大学很高兴地宣布免费人工智能 (AI) 讲座向全球开放",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1wSmh5T0NhZjhhUkxKOG5UdDdBN3FsOWVCZjY4YXZsWExGcHNmVUFsNVNWUl9oWE9xV3ZmOURZeFM3ZklyQTdjYlpZU1BCUnZfelBXMlVDVU8xRXdHLXhv?oc=5",
+      "path": "item/keji-app-xianmian-ae704a9101.html",
+      "category": "科技软件/App 限免",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "🚨 3D 手机、游戏和应用程序的文本提示 - 移动应用程序和游戏的文本提示 - 免费后端和身份验证 - 构建 compell",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9XWFpIdVVZMEdzXzRRZ25LdllNWXNadEZ4SEpHNnpzeDNZeEh1cW9EOE9LUW1xV0RtMjdFZW5zZ2NFQmFkRzFCcTM2dzBmYVlsV3JxbHNJdUgzRTd1Smc?oc=5",
+      "path": "item/3d-compell-306664e2f8.html",
+      "category": "科技软件/App 限免",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "免费人工智能研讨会提醒！我的教育主管科林·马修斯将在接下来的几周内举办一系列免费研讨会",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9DZWhuaEhsYlN5V21TR3lrTHE2RGF4WlFfUUVIU3pyMVhBZFQ4blJ0bHJzZnRMeTdHclB1ajA3R25vMjNfcXg1bjdaNzBOWi1pNTcxdW0yTWp5SS1RZnc?oc=5",
+      "path": "item/ai-kaifa-gongju-7e0904ca55.html",
+      "category": "AI 开发工具与编程助手",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "这周我一直在测试我能找到的所有免费人工智能模型。如果您现在正在构建一些东西，那么这些就是",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB5NVJYWmRZYXBhUEZMX09iQXhUdlJXWldNOHVUWE5IZ255N1lSYW9KWkxWMkhVdkVPZjBhZDQ5ZnRub3B1dFJldm41Y0EtbG84dEtkTGE3bHR1UDJ6STRpVkxleXZWX0xHM1dQTWtXTXk?oc=5",
+      "path": "item/qita-keji-7910228a33.html",
+      "category": "其他科技",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "我正在与 Mark Cuban 一起为 20,000 人举办免费的人工智能代理研讨会，讨论人工智能代理如何改变我的工作方式。你",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBJWFVxUTQ5dWF2N3Zqa3hNdFNWYk5uYlk5Y0o4OGU5dFpZOVJ6d0FsSlJtWndNQzJLcmJZUG9WcHhnMDN4TW1OckFwRG9JSEx6QU9MdFpmR20ycGM2U1YzWU12MA?oc=5",
+      "path": "item/mark-cuban-20-000-1defeec491.html",
+      "category": "其他科技",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "4 个免费的 AI 代理现在可以使用（我测试了所有这些）- X",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5PNkN5TDdBQzdVRGFWVGJLN3c1dGNuZTMtcUtLTk54ajctSzNZRUN1bFhWNS1maVllSnkzSThrVWxQSGU3VzhEcUd0Zlh5eVBPbzZIWXhPd3p6d20ySDNZa0IxZmthZ3RI?oc=5",
+      "path": "item/4-ai-x-667f8729ca.html",
+      "category": "其他科技",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "我为学术演示幻灯片构建了免费的克劳德技能 - 强制执行动作标题、结构化论证、引文",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1tQUFud3ozaUt5ZElzSG9fMC1BNGFBbmhBcHpWdzhCaGNKQVIxakxDMTE1UlRmVWxNVGptanVTeEUtTjM1VVJHLTYtWEVDV2RBUHZHMTg1VFo3WGNYUmFEVw?oc=5",
+      "path": "item/damoxing-mianfei-api-43a4d51058.html",
+      "category": "大模型 API 免费额度",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "16 分钟教程，介绍如何与 Claude 一起自动制作不露脸的 YouTube Shorts 短片（分步） 脚本、视觉效果、语音",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1JNlFVMkk5TXo2TkdrNVVrQUpHdWRYNHFhR29KTDl4dkJfSjhSb25icHJUS19zTkFfdVUzWnpJdXR2TWttQm5DcjR2U0VKVm5Wak5UblhiR2tVSVlxT1lBcE9MVQ?oc=5",
+      "path": "item/16-claude-youtube-shorts-1a64014c90.html",
+      "category": "大模型 API 免费额度",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "这是第一个免费的 Claude Code Pro 访客通行证 👇 https://t.co/naKNq60FkY - X",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5uY1NGSU9WSGh4VTRnMVBYNkw2Um8zQnNTUGxqeTNXcmRoLThUU0ZkZk12Q3hBOU5jeGNiUUduc3k0TWxiLTNQQWFaSHE3UC1NSDBXeldsNUxfTHc?oc=5",
+      "path": "item/claude-code-pro-https-t-co-naknq60fk-b69f6648e3.html",
+      "category": "大模型 API 免费额度",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "连接器现在可在免费计划中使用。从 150 多个连接器中进行选择，涉及编码、数据、设计、财务、销售、",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBrNU1oU0c5aVZSVE9TUkFYZ0VsM1BOLXY0MEZhVFpMOVF1RTQ0MGcwYUtRRE1rcndXYlpSMXJiTWdWcnhpMmVoUU1tdGRaZXhka19ESXhjTnpyXzdzU3c?oc=5",
+      "path": "item/qita-keji-f739fe7876.html",
+      "category": "其他科技",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "我们开始在 ChatGPT 免费和 Go（新的 8 美元/月选项）级别测试广告。这是我们的原则。最重要的是",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBqVUlXVGM1UU5KN0pVb1d5NGxhLWVFcVlGR1NPbjRBcVMyYWNHX3JjU19tbmVHeDYzcTgwYWgzdldfUEF1bjhnaHRFYl9HZE5STE9KeDI0QUo?oc=5",
+      "path": "item/chatgpt-go-8-a25f4ff46c.html",
+      "category": "其他科技",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "人工智能领域的发展速度令人难以置信。仅上周，就有 63 条重大人工智能新闻报道掉落！我试图涵盖所有主要开发人员",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5xekI5RU1yaFMzNjVqSXpvbVRFekpwS0tvVlNiWl9NYVZZMjIwbjF6YUh5Rl9jWkF0ZzctWkU5UjU2S2p5UUFIb3dQcVVSYlpfMzBYMmN5MUJWZW8yQTBhY1d1eDVZUQ?oc=5",
+      "path": "item/qita-keji-514d7cf807.html",
+      "category": "其他科技",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "如何免费获得克劳德认证：- X",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE10Njh6bm44N2lLTXQ2U2R2cWpHTURudHoxbFpfNG5ZdXBiVzgzUEFsTXF5bFlHZ2VHTUtpa3pkMnpsYjFVeDBSTkhNRFdaWjBfbXg2blE2TjdUbTk1UTZVR3o5RQ?oc=5",
+      "path": "item/damoxing-mianfei-api-28bea79f74.html",
+      "category": "大模型 API 免费额度",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "周六，在美国心脏协会会议上，Cleerly 介绍了 PARAMOUNT，这是第一个 AI-rea 随机试验",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA2UUExUEFrN28yVFNnbjk3cU9tZWJuQVBwY0xmYk5VdG5iczNpQlpDWmlOc0c4YzJNWURLbVl6OHQtSVRxYlNjWkszaHN1RnVrXzZZTjR0LVFNdEtudXdMVA?oc=5",
+      "path": "item/cleerly-paramount-ai-rea-e02c73dfee.html",
+      "category": "AI 产品会员/试用",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "最大的医学人工智能随机试验— 瑞典超过 100,000 名女性 — 放射科医生 + AI 与 2 名放射科医生，如下",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5ya0hjMGljLUtPVElNczlLMWZ5RjZ5NlBtN2ZlYlJOSE9ualc0Y3VIdW1qbzVLQ3lkc0FoZnIzTWx6NXB6ZndTMmdZZ29MTHhWZ1lfWnltQ0dJcFc3dFY4?oc=5",
+      "path": "item/100-000-ai-2-a3ae320e07.html",
+      "category": "AI 产品会员/试用",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "克劳德学院现已上线。无论您是正在了解人工智能是什么，还是已经每天使用 Claude，都有一条道路可以帮助您",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1QN0lRS0VnanhoVGJzMWFXeXA2ZDFvQTl2eDFUNmJxUGlPdVVlRUtqZE01WTBPSWY2aTFtaXJvX0MybEVaRVFQSktobDRPUXE2X2VmdjUyejBFaTFPTVE?oc=5",
+      "path": "item/claude-279b881e10.html",
+      "category": "大模型 API 免费额度",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "- 免费的 Galaxy AI 仍将保留，但它会有使用限制，用户可能需要积分或 Max 套餐才能更多使用。 - 拜县",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBXODRLQ1RTejZ4QXpXWk9SX25Fck9FUlZXd0dsU0V3VTJaWUtJLWdFQTdBcGRRSlV3aVVkZGpoWW9vRmNpckFjdmF0Mm50WUw1NE52cWgxRVRDWnBQY3ZTRQ?oc=5",
+      "path": "item/galaxy-ai-max-28ce6cb969.html",
+      "category": "大模型 API 免费额度",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "谷歌新论文发现，与人工智能队友一起练习的学生写出的商业计划比学生写得更好",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9zNV9lZllMRzBjTkFpSUZ3YUpON0cxUnp5NjdYRXlLUmRMMF84MnRqMjhNZ2pHOXhhZ3poXzVhTmIwRUlpWHo0QldvNWFmVDZ6MnNTSFpkS2JoV0FTekV4RUdCTQ?oc=5",
+      "path": "item/qita-keji-71dc33aa95.html",
+      "category": "其他科技",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "本周医学 1. Lilly/Verve 的一次性 ANGPTL3 碱基编辑器可降低 prim 中的 LDL 胆固醇和甘油三酯",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5idzJOZks5azZpR1dzeTJzaUZmVTN0LUZDalpmaDc2S0ZvTm93Y3RfX2JvU0M1NWU0Z0pyc21lc3VzUlE1ZTljVVNQSUZoSlI1QXpCY2pJSE1jZXBHNmNlVUxDc0o?oc=5",
+      "path": "item/1-lilly-verve-angptl3-prim-ldl-ebfc06e654.html",
+      "category": "AI 产品会员/试用",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "llama.cpp 为那些 AI 模型不适合 VRAM 的 Localmaxxers 合并了一些重要内容。 👀🔥（Strata也有这个）升级",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9wbHNUeUJPQm5kMWFxeVBQRnFEN1JHOHRMLXZIcGxVTFNtbW1KZVJkeER3ZU80VnlwQ0l3anNZclVCaHAyb0dxQUV6WjJBd0l3Y2pyeUxqdmtCZnIxQkE?oc=5",
+      "path": "item/llama-cpp-ai-vram-localmaxxers-strat-353e3226cc.html",
+      "category": "云服务/GPU/开发者资源",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "我求求你，这个周末下载一个开源人工智能模型。它是一个文件，大小 5 到 20GB，可在您的笔记本电脑上运行",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1lUURtT05QSUlmRTVSemMzMHdKMDd4QTlNZVBKMlBXcTFUOHZma3RONzZxQ2pRT2NHSklINGU1YzJCRW84OFo0ZE9GVDg5Wk1NaGtSWnhEM01JQ0VMUVE1MQ?oc=5",
+      "path": "item/5-20gb-890fd35eb8.html",
+      "category": "其他科技",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "Show HN：儿童架，您孩子自己的小互联网",
+      "url": "https://kidsshelf.org/",
+      "path": "item/show-hn-7cf24d3f98.html",
+      "category": "AI 开发工具与编程助手",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "Show HN ：我向Claude支付了1,070 $ ，以阅读3万个房源的最差评价",
+      "url": "https://okstays.com",
+      "path": "item/show-hn-claude-1-070-3-59fdee3f5d.html",
+      "category": "大模型 API 免费额度",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "Show HN：Vivonco – 将患者的癌症报告与靶向药物和试验相匹配",
+      "url": "https://vivonco.com/",
+      "path": "item/show-hn-vivonco-b073d93200.html",
+      "category": "AI 产品会员/试用",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "Show HN: Win Stats – Windows 任务栏中的开源系统监控",
+      "url": "https://vc067.github.io/win-stats/",
+      "path": "item/show-hn-win-stats-windows-12dd6bc44b.html",
+      "category": "云服务/GPU/开发者资源",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    },
+    {
+      "title": "显示 HN：WebGPU 上的 Phonon TTS，44MB，115 倍实时，带有实时字计时",
+      "url": "https://github.com/blixt/phonon",
+      "path": "item/hn-webgpu-phonon-tts-44mb-115-f76f73fc3b.html",
+      "category": "大模型 API 免费额度",
+      "added_at_label": "2026-11-09 19:32 Asia/Shanghai"
+    }
+  ]
 }

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Write engine marker + /api/status.json + /m/status.html (Chinese, dark).
+"""Write run marker, update log, public /api/status.json + /m/status.html (更新动态) and data/_internal_status.json.
 
 env:
   ENGINE=A|B          which engine ran (marker data/engine_a.json / engine_b.json)
@@ -163,79 +163,103 @@ def _server(b: dict) -> dict:
     return out
 
 
-STATE_ZH = {"healthy": "正常", "degraded": "波动", "skipped": "暂停中(自动重试)", "retrying": "重试中"}
-NAME_ZH = {
-    "HN": "Hacker News", "V2EX": "V2EX", "GitHub": "GitHub 搜索", "DEV.to": "DEV 社区", "Lobsters": "Lobsters",
-    "GitHubHot": "GitHub 热门", "HotTopics": "最近热议", "X": "X 平台", "Discovery": "自动发现",
-    "google": "谷歌翻译(免费)", "mymemory": "MyMemory 翻译", "libre": "LibreTranslate",
-}
-MODE_ZH = {"scheduled": "定时", "takeover": "接管", "forced": "手动强制", "dispatch": "手动触发", "workflow_dispatch": "手动/看门狗触发", "push": "代码更新", "standby": "待命"}
-RES_ZH = {"ok": "成功", "rolled_back": "已自动回滚到上一版", "failed": "失败"}
+UPDATE_LOG = DATA / "_update_log.json"
+INTERNAL = DATA / "_internal_status.json"
 
 
-def server_card(sv: dict) -> str:
-    esc = B.esc
-    if not sv:
-        return ""
-    ws = sv.get("wake_schedule") or {}
-    ok = sv.get("state_after") == "BOX_STATE_RUNNING"
-    dot = "#5ef0c0" if ok else "#ff7a90"
-    acts = "；".join(sv.get("wake_reasons") or []) or "无需唤醒"
-    return f"""<section class="section"><h2>服务器守护</h2>
-    <div class="panel-box"><div class="badge"><i class="live-dot" style="background:{dot}"></i> Simular 云服务器</div>
-    <table class="api-table">
-      <tr><td>当前状态</td><td><b>{esc(sv.get("state_after_zh") or sv.get("error") or "-")}</b></td></tr>
-      <tr><td>最近检查</td><td>{esc(sv.get("checked_at_label") or "-")}（GitHub 看门狗每 30 分钟检查）</td></tr>
-      <tr><td>最近处理</td><td>{esc(acts)}</td></tr>
-      <tr><td>定时唤醒</td><td>每小时整点唤醒，保持在线 {esc((ws.get("awake_for_s") or 0) // 60)} 分钟；下次 {esc(ws.get("next_label") or "-")}</td></tr>
-      <tr><td>规则</td><td>服务器故障、休眠，或引擎 B 超过 2 小时没有心跳，GitHub 会自动唤醒它并重设定时唤醒。</td></tr>
-    </table></div></section>"""
+def record_update(now: datetime) -> None:
+    """Append this run's newly added items to data/_update_log.json (kept 7 days)."""
+    if (os.environ.get("ENGINE") or "") == "" or os.environ.get("STATUS_MARK", "1") == "0" or os.environ.get("ENGINE_SEEN_ONLY") == "1":
+        return
+    prev_p = ROOT / ".last_good" / "api" / "latest.json"
+    cur = j(ROOT / "api" / "latest.json").get("items") or []
+    if not prev_p.exists() or not cur:
+        return
+    prev_urls = {(it.get("url") or "").rstrip("/") for it in (j(prev_p).get("items") or [])}
+    new = [it for it in cur if not it.get("pinned") and (it.get("url") or "").rstrip("/") not in prev_urls]
+    log = j(UPDATE_LOG, {"entries": []})
+    entries = log.get("entries") or []
+    entries.insert(0, {
+        "at": now.isoformat(timespec="seconds"),
+        "at_label": lbl(now),
+        "added": len(new),
+        "total": len([it for it in cur if not it.get("pinned")]),
+        "new": [{"title": it.get("title"), "url": it.get("url"), "path": it.get("path"), "category": it.get("category")} for it in new[:30]],
+    })
+    cutoff = now - timedelta(days=7)
+    entries = [e for e in entries if datetime.fromisoformat(e["at"]) >= cutoff][:400]
+    UPDATE_LOG.write_text(json.dumps({"entries": entries}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+
+def public_status(now: datetime) -> dict:
+    meta = j(ROOT / "api" / "meta.json")
+    latest = j(ROOT / "api" / "latest.json").get("items") or []
+    entries = j(UPDATE_LOG, {"entries": []}).get("entries") or []
+    days = {}
+    for k in range(7):
+        d = (now - timedelta(days=k)).strftime("%Y-%m-%d")
+        days[d] = {"date": d, "added": 0, "updates": 0}
+    for e in entries:
+        d = e["at_label"][:10]
+        if d in days:
+            days[d]["added"] += int(e.get("added") or 0)
+            days[d]["updates"] += 1
+    newest, seen = [], set()
+    for e in entries:
+        for it in e.get("new") or []:
+            u = it.get("url")
+            if u and u not in seen:
+                seen.add(u)
+                newest.append(dict(it, added_at_label=e["at_label"]))
+    if len(newest) < 20:
+        rest = sorted((it for it in latest if not it.get("pinned") and it.get("url") not in seen),
+                      key=lambda x: x.get("posted_at") or "", reverse=True)
+        for it in rest[: 20 - len(newest)]:
+            newest.append({"title": it.get("title"), "url": it.get("url"), "path": it.get("path"),
+                           "category": it.get("category"), "added_at_label": it.get("posted_at")})
+    c = meta.get("counts") or {}
+    return {
+        "last_update": meta.get("generated_at_label") or meta.get("updated_at_label"),
+        "next_update": lbl(next_engine_a(now)),
+        "update_frequency": "每小时",
+        "totals": {"free_resources": c.get("deals", 0), "github_hot": c.get("github_hot", 0), "hot_topics": c.get("hot", 0),
+                   "modules": c.get("modules") or {}},
+        "recent_additions": {
+            "last_7_days": sum(v["added"] for v in days.values()),
+            "by_day": list(days.values()),
+            "recent_updates": [{"at": e["at_label"], "added": e.get("added", 0)} for e in entries[:24]],
+        },
+        "newest_items": newest[:30],
+    }
 
 
 def render(st: dict) -> str:
     esc = B.esc
-    A, Bn, W = st["engines"]["A"], st["engines"]["B"], st["engines"]["watchdog"]
-
-    def eng_card(e, title, extra=""):
-        ok = e.get("result") in ("ok", "rolled_back")
-        dot = "#5ef0c0" if ok and (e.get("age_min") or 9999) < 180 else "#ffd08a"
-        link = f'<a href="{esc(e.get("run_url"))}" target="_blank" rel="noopener">查看运行记录 →</a>' if e.get("run_url", "").startswith("http") else ""
-        return f"""<div class="card st-card">
-  <div class="badge"><i class="live-dot" style="background:{dot}"></i> {esc(title)}</div>
-  <h3>{esc(e.get("name") or title)}</h3>
-  <table class="api-table">
-   <tr><td>最近运行</td><td><b class="rel" data-iso="{esc(e.get('last_run_at') or '')}">{esc(e.get("last_run_label") or "暂无")}</b></td></tr>
-   <tr><td>运行方式</td><td>{esc(MODE_ZH.get(e.get("mode"), e.get("mode") or "-"))}</td></tr>
-   <tr><td>结果</td><td>{esc(RES_ZH.get(e.get("result"), e.get("result") or "-"))}</td></tr>
-   {extra}
-   <tr><td>计划</td><td>{esc(e.get("schedule"))}</td></tr>
-   <tr><td>下次运行</td><td>{esc(e.get("next_run_label"))}</td></tr>
-  </table>
-  <p class="linkrow">{link}</p>
-</div>"""
-
-    b_extra = ""
-    if Bn.get("standby_seen_label"):
-        b_extra = f'<tr><td>最近在线</td><td><b class="rel" data-iso="{esc(Bn.get("standby_seen_at") or "")}">{esc(Bn.get("standby_seen_label"))}</b>（待命巡检）</td></tr>'
-
-    rows = []
-    for kind, data in (("数据源", st["sources"]), ("翻译", st["translators"])):
-        for name, e in sorted(data.items()):
-            rows.append(
-                f"<tr><td>{esc(kind)}</td><td>{esc(NAME_ZH.get(name, name))}</td><td>{esc(STATE_ZH.get(e.get('state'), e.get('state') or '-'))}</td>"
-                f"<td>{esc(e.get('score'))}</td><td>{esc(e.get('last_count', '-'))}</td><td>{esc(e.get('last_ok_label') or '-')}</td>"
-                f"<td>{esc(e.get('skip_until_label') or '-')}</td></tr>"
-            )
-    c = st["counts"]
-    mods = c.get("modules") or {}
-    count_pills = "".join(
-        f'<div class="pill">{esc(title)} <b data-count="{mods.get(mid, 0)}">{mods.get(mid, 0)}</b></div>'
-        for mid, title, *_ in B.MODULES
+    t = st["totals"]
+    days = st["recent_additions"]["by_day"]
+    mx = max([d["added"] for d in days] + [1])
+    bars = "".join(
+        f'<div class="ud-bar"><i style="height:{max(4, int(100 * d["added"] / mx))}%"></i><b>{d["added"]}</b><span>{esc(d["date"][5:])}</span></div>'
+        for d in reversed(days)
     )
-    d, lk, x = st["discovery"], st["links"], st["x"]
-    topics = "、".join(d.get("learned_topics") or []) or "（积累中）"
+    ups = "".join(
+        f'<tr><td>{esc(u["at"])}</td><td>{"+" + str(u["added"]) + " 条" if u["added"] else "内容刷新"}</td></tr>'
+        for u in st["recent_additions"]["recent_updates"][:12]
+    ) or '<tr><td colspan="2">暂无记录</td></tr>'
+    items = "".join(
+        f'<li><a href="../{esc(it.get("path"))}">{esc(it.get("title"))}</a> <span class="badge">{esc(it.get("category") or "")}</span>'
+        f' <a class="src" href="{esc(it.get("url"))}" target="_blank" rel="noopener nofollow">来源 ↗</a>'
+        f'<div class="meta">{esc(it.get("added_at_label") or "")}</div></li>'
+        for it in st["newest_items"] if it.get("title")
+    )
+    mods = t.get("modules") or {}
+    pills = "".join(f'<div class="pill">{esc(title)} <b data-count="{mods.get(mid, 0)}">{mods.get(mid, 0)}</b></div>' for mid, title, *_ in B.MODULES)
+    stats = (f'<div class="pill live">最近更新 <b>{esc((st.get("last_update") or "-")[:16])}</b></div>'
+             f'<div class="pill">下次更新 <b>{esc(st["next_update"][:16])}</b></div>'
+             f'<div class="pill">免费资源 <b data-count="{t["free_resources"]}">{t["free_resources"]}</b></div>'
+             f'<div class="pill">近 7 天新增 <b data-count="{st["recent_additions"]["last_7_days"]}">{st["recent_additions"]["last_7_days"]}</b></div>')
     canonical = f"{B.CANONICAL}m/status.html"
-    return f"""{B.head_block(f"运行状态 · {B.SITE_NAME}", f"{B.SITE_NAME} 双引擎自动更新运行状态：GitHub 云端引擎与服务器引擎互为备份，数据源健康度、条目数量与下次更新时间。", canonical)}
+    return f"""{B.head_block(f"更新动态 · {B.SITE_NAME}", f"{B.SITE_NAME}更新动态：最近更新时间、下次更新时间、近 7 天新增的大模型免费资源与最新收录条目。", canonical)}
 <body>
 <div class="fx-aurora" aria-hidden="true"></div>
 <div class="fx-grid" aria-hidden="true"></div>
@@ -243,80 +267,50 @@ def render(st: dict) -> str:
 <div class="fx-scan" aria-hidden="true"></div>
 <div class="fx-spot" aria-hidden="true"></div>
 <canvas id="fx-particles" aria-hidden="true"></canvas>
+{B.topnav("../")}
+{B.mod_hero("UPDATES", "更新动态", "本站每小时自动收录新的大模型免费资源、GitHub 热门项目与 AI 热议。这里是最近的更新记录与最新收录。", stats, '<a href="../">首页</a> › 更新动态', "../vendor/", [("每小时", ""), ("新增", st["recent_additions"]["last_7_days"]), ("资源", t["free_resources"]), ("最新", "")])}
 <div class="wrap">
-  {B.topnav("../")}
-  <div class="crumbs"><a href="../">首页</a> › 运行状态</div>
-  <header class="hero">
-    <div class="eyebrow"><i class="live-dot"></i> SELF-ALIVE · DUAL ENGINE</div>
-    <h1 class="hero-title">运行状态</h1>
-    <p class="lead">本站由两套独立引擎自动维护：GitHub 云端引擎每小时更新；Simular 云服务器引擎每小时巡检，GitHub 停摆超过 90 分钟就自动接管。看门狗每 30 分钟检查一次，发现停用或失败会自动重新启用并补跑。全程无需人工。</p>
-    <div class="stats">
-      <div class="pill">数据更新 <b>{esc(st.get("data_updated_label") or "-")}</b></div>
-      <div class="pill">状态生成 <b class="rel" data-iso="{esc(st["generated_at"])}">{esc(st["generated_at_label"])}</b></div>
-      <div class="pill">免费资源 <b data-count="{c.get('deals', 0)}">{c.get('deals', 0)}</b></div>
-    </div>
-  </header>
-
-  <section class="section"><h2>双引擎</h2>
-    <div class="grid st-grid">
-      {eng_card(A, "引擎 A · GitHub")}
-      {eng_card(Bn, "引擎 B · 服务器", b_extra)}
-      <div class="card st-card"><div class="badge"><i class="live-dot"></i> 看门狗</div><h3>互相守护</h3>
-        <table class="api-table">
-          <tr><td>计划</td><td>{esc(W["schedule"])}</td></tr>
-          <tr><td>下次检查</td><td>{esc(W["next_run_label"])}</td></tr>
-          <tr><td>职责</td><td>主流程被停用则自动启用；失败或超时则自动补跑并记录故障；服务器端同样会反向检查 GitHub。</td></tr>
-          <tr><td>保活</td><td>每日心跳 {esc(st.get("heartbeat_label") or "-")}，防止 GitHub 因长期无活动停用定时任务。</td></tr>
-        </table></div>
-    </div>
+  <section class="section"><div class="sec-head"><span class="sec-idx">01 / LAST 7 DAYS</span><h2>近 7 天新增</h2>
+    <p class="sec-desc">每天新收录的免费资源条数。</p></div>
+    <div class="panel-box"><div class="ud-chart">{bars}</div></div>
   </section>
-
-  {server_card(st.get("server") or {})}
-
-  <section class="section"><h2>条目数量</h2><div class="stats">{count_pills}</div></section>
-
-  <section class="section"><h2>数据源健康度</h2>
-    <p class="sec-desc">连续失败 3 次的数据源会自动暂停，并按 1→2→4…最长 24 小时的间隔自动重试；翻译服务按健康分自动轮换。</p>
-    <div class="panel-box" style="overflow:auto"><table class="api-table">
-      <tr><th>类型</th><th>名称</th><th>状态</th><th>健康分</th><th>最近条数</th><th>最近成功</th><th>暂停到</th></tr>
-      {''.join(rows) or '<tr><td colspan="7">暂无记录</td></tr>'}
-    </table></div>
+  <section class="section"><div class="sec-head"><span class="sec-idx">02 / TOTALS</span><h2>收录总量</h2></div>
+    <div class="stats">{pills}</div>
   </section>
-
-  <section class="section"><h2>自我进化</h2>
-    <div class="panel-box"><table class="api-table">
-      <tr><td>自动发现</td><td>最近 {esc(d.get("last_run_label") or "-")}，本次新发现 {esc(d.get("new_this_run") if d.get("new_this_run") is not None else "-")} 条，累计 {esc(d.get("items"))} 条</td></tr>
-      <tr><td>自学关键词</td><td>{esc(topics)}</td></tr>
-      <tr><td>死链清理</td><td>最近 {esc(lk.get("checked_at_label") or "-")}，检查 {esc(lk.get("checked") or 0)} 个链接，下线 {esc(lk.get("dead_count") or 0)} 个失效链接</td></tr>
-      <tr><td>X 平台</td><td>最近 {esc(x.get("updated_at_label") or "-")}，保留 {esc(x.get("kept") or 0)} 条</td></tr>
-    </table></div>
+  <section class="section"><div class="sec-head"><span class="sec-idx">03 / NEWEST</span><h2>最新收录</h2></div>
+    <div class="panel-box"><ol class="ud-list">{items or "<li>暂无</li>"}</ol></div>
   </section>
-  <p class="linkrow">机器可读：<a href="../api/status.json">api/status.json</a></p>
-  <footer>{esc(B.SITE_NAME)}</footer>
+  <section class="section"><div class="sec-head"><span class="sec-idx">04 / RECENT</span><h2>最近更新记录</h2></div>
+    <div class="panel-box" style="overflow:auto"><table class="api-table"><tr><th>时间</th><th>新增</th></tr>{ups}</table></div>
+  </section>
+  <p class="linkrow">数据接口：<a href="../api/status.json">api/status.json</a></p>
+  {B.site_footer("../")}
 </div>
-<style>.st-grid{{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}}.st-card h3{{margin:10px 0}}.st-card td:first-child{{color:var(--muted);white-space:nowrap}}</style>
-<script>{B.FX_JS}
-(function(){{
-  function rel(){{document.querySelectorAll('.rel').forEach(function(el){{
-    var iso=el.getAttribute('data-iso'); if(!iso) return; var t=Date.parse(iso); if(isNaN(t)) return;
-    var m=Math.round((Date.now()-t)/60000); var base=el.getAttribute('data-base')||el.textContent; el.setAttribute('data-base',base);
-    el.textContent=base+'（'+(m<1?'刚刚':m<60?m+' 分钟前':Math.floor(m/60)+' 小时 '+(m%60)+' 分钟前')+'）';
-  }});}}
-  rel(); setInterval(rel,60000);
-}})();
-</script>
+<style>
+.ud-chart{{display:flex;align-items:flex-end;gap:12px;height:180px;padding:10px 4px 0}}
+.ud-bar{{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:6px}}
+.ud-bar i{{display:block;width:100%;max-width:56px;border-radius:10px 10px 4px 4px;background:linear-gradient(180deg,var(--cyan),var(--violet));box-shadow:0 0 18px rgba(92,225,255,.35);animation:udgrow 1s ease-out both}}
+.ud-bar b{{font-family:var(--mono);color:var(--cyan);font-size:.85rem}} .ud-bar span{{font-family:var(--mono);color:var(--muted);font-size:.75rem}}
+@keyframes udgrow{{from{{transform:scaleY(0);transform-origin:bottom}}to{{transform:scaleY(1);transform-origin:bottom}}}}
+.ud-list{{margin:0;padding-left:1.3rem;line-height:1.7}} .ud-list li{{margin:10px 0}} .ud-list .src{{font-size:.8rem;margin-left:6px}}
+@media (prefers-reduced-motion:reduce){{.ud-bar i{{animation:none}}}}
+</style>
+<script>{B.SITE_JS}</script>
 </body></html>"""
 
 
 def main() -> int:
     now = datetime.now(TZ)
     write_marker(now)
-    st = build_status(now)
+    record_update(now)
+    internal = build_status(now)
+    INTERNAL.write_text(json.dumps(internal, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    pub = public_status(now)
     (ROOT / "api").mkdir(exist_ok=True)
     (ROOT / "m").mkdir(exist_ok=True)
-    (ROOT / "api" / "status.json").write_text(json.dumps(st, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    (ROOT / "m" / "status.html").write_text(render(st), encoding="utf-8")
-    print("[status] wrote api/status.json + m/status.html")
+    (ROOT / "api" / "status.json").write_text(json.dumps(pub, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (ROOT / "m" / "status.html").write_text(render(pub), encoding="utf-8")
+    print("[status] wrote api/status.json + m/status.html (+ data/_internal_status.json)")
     return 0
 
 

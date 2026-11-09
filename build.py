@@ -407,7 +407,7 @@ def topnav(prefix="./"):
         f'<a href="{prefix}{esc(href)}" title="{esc(title)}">{esc(NAV_SHORT.get(mid, title))}</a>'
         for mid, title, _, href, _, _ in MODULES
     )
-    links += f'<a href="{prefix}m/status.html" title="运行状态">状态</a>'
+    links += f'<a href="{prefix}m/status.html" title="更新动态">更新动态</a>'
     links += f'<a class="cta" href="{prefix}m/api.html" title="CLI / API">CLI / API</a>'
     return f"""
 <header class="topnav">
@@ -418,8 +418,8 @@ def topnav(prefix="./"):
 
 def site_footer(prefix="./", extra="") -> str:
     return f"""<footer>
-  <div><span class="foot-brand">{esc(SITE_NAME)}</span>{(" · " + esc(extra)) if extra else ""}<br/>双引擎自动更新 · GitHub Actions + Simular 云服务器 · 每小时刷新</div>
-  <div><a href="{prefix}m/api.html">CLI / API</a> · <a href="{prefix}m/status.html">运行状态</a> · <a href="{prefix}feed.xml">RSS</a> · <a href="{prefix}sitemap.xml">网站地图</a> · <kbd>Ctrl</kbd>+<kbd>K</kbd> 搜索</div>
+  <div><span class="foot-brand">{esc(SITE_NAME)}</span>{(" · " + esc(extra)) if extra else ""}<br/>每小时自动更新</div>
+  <div><a href="{prefix}m/api.html">CLI / API</a> · <a href="{prefix}m/status.html">更新动态</a> · <a href="{prefix}feed.xml">RSS</a> · <a href="{prefix}sitemap.xml">网站地图</a> · <kbd>Ctrl</kbd>+<kbd>K</kbd> 搜索</div>
 </footer>"""
 
 
@@ -552,10 +552,16 @@ def write_sitemaps(urls):
     (SITE / "robots.txt").write_text(
         f"""User-agent: *
 Allow: /
+Disallow: /data/
+Disallow: /engine/
 User-agent: Baiduspider
 Allow: /
+Disallow: /data/
+Disallow: /engine/
 User-agent: Baiduspider-render
 Allow: /
+Disallow: /data/
+Disallow: /engine/
 Sitemap: {CANONICAL}sitemap_index.xml
 Sitemap: {CANONICAL}sitemap.xml
 Sitemap: {CANONICAL}sitemap.txt
@@ -932,7 +938,7 @@ def write_api_docs_page(date, ym):
     canonical = f"{CANONICAL}m/api.html"
     intro = (
         f"{SITE_NAME} 提供零依赖静态 JSON API 与命令行入口，方便开发者用 curl / npx 快速拉取大模型免费资源、"
-        f"GitHub 热门与社区热议。数据由 GitHub Actions 自动更新，无需密钥。"
+        f"GitHub 热门与社区热议。数据每小时自动更新，无需密钥。"
     )
     code_npx = "npx github:aiym168/aiym168.github.io list\nnpx github:aiym168/aiym168.github.io search 免费GPU\nnpx github:aiym168/aiym168.github.io hot --limit 10"
     code_curl = f"curl -fsSL {CANONICAL}cli.sh | bash -s -- list\ncurl -fsSL {CANONICAL}api/latest.json | head\ncurl -fsSL {CANONICAL}api/meta.json"
@@ -1136,7 +1142,7 @@ def build():
       <div class="eyebrow"><i class="live-dot"></i> LIVE FREE AI RESOURCES <span class="sep">/</span> <span class="eb-x">北京时间</span> <span data-clock>--:--:--</span></div>
       <h1 class="hero-title">{h1_lines}</h1>
       <p class="lead">帮你一站看清大模型免费API、免费GPT、Claude免费额度、DeepSeek免费额度、AI工具免费试用、免费GPU，以及值得关注的 GitHub 热门项目与最新AI新闻。每个模块独立成页，信息每日自动更新；参与前请以官网规则为准。</p>
-      <div class="hero-cta"><a class="btn primary" href="#modules">浏览全部模块 →</a><a class="btn" href="m/api.html">CLI / API 接口</a><a class="btn" href="m/status.html"><i class="live-dot"></i> 运行状态</a></div>
+      <div class="hero-cta"><a class="btn primary" href="#modules">浏览全部模块 →</a><a class="btn" href="m/api.html">CLI / API 接口</a><a class="btn" href="m/status.html"><i class="live-dot"></i> 更新动态</a></div>
       <div class="stats">
         <div class="pill">更新日期 <b>{esc(date)}</b></div>
         <div class="pill">免费资源 <b data-count="{len(items)}">{len(items)}</b></div>
@@ -1171,7 +1177,7 @@ def build():
         <li><code>api/latest.json</code> 全部免费资源（置顶条目排在最前）</li>
         <li><code>api/github-hot.json</code> GitHub 新热门项目</li>
         <li><code>api/hot.json</code> 最近热议 · <code>feed.xml</code> RSS 订阅</li>
-        <li>每小时自动刷新，GitHub 与服务器双引擎互为备份</li>
+        <li>每小时自动刷新，<a href="m/status.html">查看更新动态</a></li>
         <li><a class="btn" href="m/api.html" style="margin-top:8px">查看完整文档 →</a></li>
       </ul>
       <div class="term-block">

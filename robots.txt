@@ -1,9 +1,15 @@
 User-agent: *
 Allow: /
+Disallow: /data/
+Disallow: /engine/
 User-agent: Baiduspider
 Allow: /
+Disallow: /data/
+Disallow: /engine/
 User-agent: Baiduspider-render
 Allow: /
+Disallow: /data/
+Disallow: /engine/
 Sitemap: https://aiym168.github.io/sitemap_index.xml
 Sitemap: https://aiym168.github.io/sitemap.xml
 Sitemap: https://aiym168.github.io/sitemap.txt

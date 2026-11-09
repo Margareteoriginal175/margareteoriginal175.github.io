@@ -1,12 +1,12 @@
 {
-  "_note": "置顶条目配置：build.py 每次重建都会把这里的条目渲染在首页最上方，并以 pinned:true 放在 /api/latest.json 首位。自动抓取流程不会修改此文件。",
+  "_note": "置顶条目配置：每次重建都会把这里的条目放在最前，并在 /api/latest.json 中标记 pinned:true。",
   "items": [
     {
       "id": "pinned-simular-box",
       "pinned": true,
-      "badge": "置顶 · 本站在用",
+      "badge": "置顶推荐",
       "title": "Simular Box：免费领一台给 AI 用的云端电脑（Linux 云桌面 / 云服务器）",
-      "summary": "Simular 推出的免费云端 Ubuntu 桌面，自带 Chrome 浏览器和命令行，可作为远程 MCP 服务器接入 Claude、ChatGPT、Claude Code、Codex、Cursor、OpenCode、DeepSeek Harness 等 AI 工具，让 AI 在云端打开网页、点击输入、读屏幕、执行命令，不占用你自己的电脑。本站的第二套自动更新引擎就运行在这台免费云电脑上。",
+      "summary": "Simular 推出的免费云端 Ubuntu 桌面，自带 Chrome 浏览器和命令行，可作为远程 MCP 服务器接入 Claude、ChatGPT、Claude Code、Codex、Cursor、OpenCode、DeepSeek Harness 等 AI 工具，让 AI 在云端打开网页、点击输入、读屏幕、执行命令，不占用你自己的电脑。",
       "features": [
         "云电脑本身免费：每个账号一台 Linux 云桌面（Ubuntu 24.04），自带 Chrome 和终端",
         "每天赠送免费积分，用于云电脑内的模型调用（据公开报道为每天 1,000 积分，UTC 零点重置）；用你自己的 AI 来操作则不消耗",
