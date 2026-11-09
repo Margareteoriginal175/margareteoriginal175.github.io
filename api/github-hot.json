@@ -1,5 +1,5 @@
 {
-  "updated_at_label": "2026-11-09 19:30 Asia/Shanghai",
+  "updated_at_label": "2026-11-09 19:32 Asia/Shanghai",
   "count": 30,
   "items": [
     {
@@ -8,7 +8,7 @@
       "summary": "适用于Android的设备上AI代理，可运行应用程序和网络，为您完成任务。",
       "url": "https://github.com/wangzan101/Mika",
       "source": "GitHub",
-      "stars": 7846,
+      "stars": 7847,
       "language": "Kotlin",
       "heat": ""
     },
@@ -38,7 +38,7 @@
       "summary": "Python中的3D建模，专为LLM构建。",
       "url": "https://github.com/Sandflow-ai/sand3d",
       "source": "GitHub",
-      "stars": 1539,
+      "stars": 1540,
       "language": "HTML",
       "heat": ""
     },
@@ -58,7 +58,7 @@
       "summary": "让人工智能代理与您一起使用您的手机。",
       "url": "https://github.com/DIYgod/pinky",
       "source": "GitHub",
-      "stars": 1244,
+      "stars": 1247,
       "language": "Go",
       "heat": ""
     },

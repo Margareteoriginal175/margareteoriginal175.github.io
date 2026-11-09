@@ -2,19 +2,19 @@
   "name": "AI大模型免费资源导航",
   "canonical": "https://aiym168.github.io/",
   "version": "1.0.0",
-  "updated_at_label": "2026-11-09 19:29 Asia/Shanghai",
-  "generated_at_label": "2026-11-09 19:30 Asia/Shanghai",
+  "updated_at_label": "2026-11-09 19:31 Asia/Shanghai",
+  "generated_at_label": "2026-11-09 19:32 Asia/Shanghai",
   "date": "2026-11-09",
   "counts": {
-    "deals": 185,
+    "deals": 186,
     "github_hot": 30,
     "hot": 40,
     "modules": {
-      "damoxing-mianfei-api": 95,
-      "ai-huiyuan-shiyong": 4,
-      "ai-kaifa-gongju": 18,
-      "mianfei-gpu-yunfuwu": 24,
-      "keji-app-xianmian": 5,
+      "damoxing-mianfei-api": 98,
+      "ai-huiyuan-shiyong": 7,
+      "ai-kaifa-gongju": 13,
+      "mianfei-gpu-yunfuwu": 20,
+      "keji-app-xianmian": 4,
       "github-hot": 30,
       "hot-topics": 40
     }

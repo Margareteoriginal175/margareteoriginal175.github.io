@@ -1,5 +1,5 @@
 {
-  "updated_at_label": "2026-11-09 19:29 Asia/Shanghai",
+  "updated_at_label": "2026-11-09 19:32 Asia/Shanghai",
   "items": [
     {
       "id": "ghot-wangzan101-mika",
@@ -8,7 +8,7 @@
       "title": "适用于Android的设备上AI代理，可运行应用程序和网络，为您完成任务（wangzan101/Mika）",
       "summary": "适用于Android的设备上AI代理，可运行应用程序和网络，为您完成任务。",
       "summary_en": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
-      "stars": 7846,
+      "stars": 7847,
       "language": "Kotlin",
       "created_at": "2026-10-29 Asia/Shanghai",
       "url": "https://github.com/wangzan101/Mika",
@@ -53,7 +53,7 @@
       "title": "Python中的3D建模，专为LLM构建（Sandflow-ai/sand3d）",
       "summary": "Python中的3D建模，专为LLM构建。",
       "summary_en": "3D modeling in Python, built for LLMs.",
-      "stars": 1539,
+      "stars": 1540,
       "language": "HTML",
       "created_at": "2026-11-03 Asia/Shanghai",
       "url": "https://github.com/Sandflow-ai/sand3d",
@@ -83,7 +83,7 @@
       "title": "让人工智能代理与您一起使用您的手机（DIYgod/pinky）",
       "summary": "让人工智能代理与您一起使用您的手机。",
       "summary_en": "Let AI agents use your phone, with you in the loop.",
-      "stars": 1244,
+      "stars": 1247,
       "language": "Go",
       "created_at": "2026-11-07 Asia/Shanghai",
       "url": "https://github.com/DIYgod/pinky",

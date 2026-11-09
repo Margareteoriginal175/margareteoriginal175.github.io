@@ -3,25 +3,78 @@
   "title": "AI 产品会员/试用",
   "description": "AI工具免费试用与会员限免",
   "href": "c/ai-huiyuan-shiyong.html",
-  "count": 4,
+  "count": 7,
   "items": [
     {
-      "id": "xrss-9050466373",
-      "title": "在一项随机试验中，使用人工智能的软件开发人员完成任务的时间延长了 19%。然而他们相信人工智能已经创造了",
-      "summary": "在一项随机试验中，使用人工智能的软件开发人员完成任务的时间延长了 19%。然而他们相信人工智能已经让他们的速度提高了 20%。在“行动中的证据”活动中，我主张政府应该测试有效的方法，并通过从研究结果中学习来节省资金 - X\n在一项随机试验中，使用人工智能的软件开发人员完成任务的时间延长了 19%。然而他们相信人工智能已经让他们的速度提高了 20%。在“行动中的证据”活动中，我主张政府应该测试有效的方法，并通过从研究结果中学习来节省资金 X",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE52OG5GWHVZbDVvbkJyTXlqQjZGVjBILUFxT09UcFNPS2dkclp5a2p3cnhld0xpRlVRYWdVS1FheWswemJJNE9lM1ZOYlBNZHpPWklXYXdoMEVybEo3WlE?oc=5",
+      "id": "xrss-3895841380",
+      "title": "周六，在美国心脏协会会议上，Cleerly 介绍了 PARAMOUNT，这是第一个 AI-rea 随机试验",
+      "summary": "周六，在美国心脏协会会议上，Cleerly 介绍了 PARAMOUNT，这是第一个针对胸痛患者的 AI 读取冠状动脉 CT 与常规压力测试的随机试验。美国 21 个地点的 530 名患者的 LDL 胆固醇均为 100 或 mo - X\n周六，在美国心脏协会会议上，Cleerly 介绍了 PARAMOUNT，这是第一个针对胸痛患者的 AI 读取冠状动脉 CT 与常规压力测试的随机试验。美国 21 个地点的 530 名患者的 LDL 胆固醇均为 100 或以上 X",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA2UUExUEFrN28yVFNnbjk3cU9tZWJuQVBwY0xmYk5VdG5iczNpQlpDWmlOc0c4YzJNWURLbVl6OHQtSVRxYlNjWkszaHN1RnVrXzZZTjR0LVFNdEtudXdMVA?oc=5",
       "category": "AI 产品会员/试用",
       "source": "X",
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "author": "news",
       "deadline": null,
-      "posted_at": "Fri, 06 Nov 2026 04:00:19 GMT",
+      "posted_at": "Mon, 09 Nov 2026 03:03:53 GMT",
       "engagement": {
         "likes": 0,
         "bookmarks": 0,
         "impressions": 0
       },
-      "path": "item/ai-huiyuan-shiyong-9f49694e68.html"
+      "path": "item/cleerly-paramount-ai-rea-e02c73dfee.html"
+    },
+    {
+      "id": "xrss-3265350611",
+      "title": "最大的医学人工智能随机试验— 瑞典超过 100,000 名女性 — 放射科医生 + AI 与 2 名放射科医生，如下",
+      "summary": "最大的医学人工智能随机试验— 瑞典超过 100,000 名女性 — 放射科医生 + AI 与 2 名放射科医生，在随访中 — 添加人工智能导致癌症检出率增加 29%，工作量减少 44%，并且 — 随后 2 年内癌症 dx 减少，并且，当发现时 - X\n最大的医学人工智能随机试验— 瑞典超过 100,000 名女性 — 放射科医生 + AI 与 2 名放射科医生，在随访中 — 添加人工智能导致癌症检出率增加 29%，工作量减少 44%，并且 — 在随后的 2 年内，癌症 dx 减少，并且，当发现时 X",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5ya0hjMGljLUtPVElNczlLMWZ5RjZ5NlBtN2ZlYlJOSE9ualc0Y3VIdW1qbzVLQ3lkc0FoZnIzTWx6NXB6ZndTMmdZZ29MTHhWZ1lfWnltQ0dJcFc3dFY4?oc=5",
+      "category": "AI 产品会员/试用",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "news",
+      "deadline": null,
+      "posted_at": "Thu, 29 Jan 2026 08:00:00 GMT",
+      "engagement": {
+        "likes": 0,
+        "bookmarks": 0,
+        "impressions": 0
+      },
+      "path": "item/100-000-ai-2-a3ae320e07.html"
+    },
+    {
+      "id": "xrss-7603991996",
+      "title": "本周医学 1. Lilly/Verve 的一次性 ANGPTL3 碱基编辑器可降低 prim 中的 LDL 胆固醇和甘油三酯",
+      "summary": "本周医学 1. Lilly/Verve 的一次性 ANGPTL3 碱基编辑器可降低灵长类动物的 LDL 胆固醇和甘油三酯（临床试验已经开始！）。 2. 谷歌的人工智能智能手表无需血压袖带即可检测高血压。 3. 中国生物技术，- X\n本周医学 1. Lilly/Verve 的一次性 ANGPTL3 碱基编辑器可降低灵长类动物的 LDL 胆固醇和甘油三酯（临床试验已经开始！）。 2. 谷歌的人工智能智能手表无需血压袖带即可检测高血压。 3. 中国生物技术，    X",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5idzJOZks5azZpR1dzeTJzaUZmVTN0LUZDalpmaDc2S0ZvTm93Y3RfX2JvU0M1NWU0Z0pyc21lc3VzUlE1ZTljVVNQSUZoSlI1QXpCY2pJSE1jZXBHNmNlVUxDc0o?oc=5",
+      "category": "AI 产品会员/试用",
+      "source": "X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "news",
+      "deadline": null,
+      "posted_at": "Sun, 08 Nov 2026 14:58:00 GMT",
+      "engagement": {
+        "likes": 0,
+        "bookmarks": 0,
+        "impressions": 0
+      },
+      "path": "item/1-lilly-verve-angptl3-prim-ldl-ebfc06e654.html"
+    },
+    {
+      "id": "hn-50378094",
+      "title": "Show HN：Vivonco – 将患者的癌症报告与靶向药物和试验相匹配",
+      "summary": "显示 HN：Vivonco – 将患者的癌症报告与靶向药物和试验相匹配 Hi HN。我制作了一个轻量级应用程序，您可以在其中添加患者的癌症报告（病理学、扫描、基因测试，甚至手机照片），并根据美国、欧洲、印度的护理指南获得战术计划。该计划针对其基因变化提供精确的靶向药物，并具有 FDA 资格、标准护理之外的选择、缺失的测试和匹配试验。我已确保（每条）线路跟踪到报告或主要来源，以及报告中未提及的任何内容都显示为缺失。<p>暂时免费。<p>它很新，以 gpt 5.6 luna 作为骨干，编写了一堆评估，因此非常欢迎反馈和错误报告。<p>PS：如果您想在精度上合作，请发送电子邮件 rohan@vivonco.com",
+      "url": "https://vivonco.com/",
+      "category": "AI 产品会员/试用",
+      "source": "Hacker News",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "rohanmanchanda",
+      "deadline": null,
+      "posted_at": "2026-11-05 19:56 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "path": "item/show-hn-vivonco-b073d93200.html"
     },
     {
       "id": "v2ex-1255655",

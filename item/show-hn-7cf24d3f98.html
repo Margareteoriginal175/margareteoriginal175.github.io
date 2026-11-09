@@ -446,6 +446,28 @@ body.egg-burst .fx-aurora { filter: saturate(1.8) hue-rotate(40deg); }
 .api-cmds li { margin: 8px 0; }
 .api-cmds code { color: var(--mint); font-family: var(--mono); }
 
+
+.pinned-sec{margin:18px 0 6px}
+.pin-card{position:relative;padding:22px;border-radius:22px;background:var(--panel2);backdrop-filter:blur(16px);isolation:isolate;overflow:hidden}
+.pin-card::before{content:"";position:absolute;inset:0;padding:1.5px;border-radius:inherit;background:conic-gradient(from var(--pin-a,0deg),#5ce1ff,#a78bfa,#5ef0c0,#ffd08a,#5ce1ff);
+ -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:pinspin 6s linear infinite;z-index:-1}
+.pin-card::after{content:"";position:absolute;inset:-40%;background:radial-gradient(circle at 30% 20%,rgba(92,225,255,.16),transparent 45%),radial-gradient(circle at 80% 90%,rgba(167,139,250,.16),transparent 45%);z-index:-2;animation:pinglow 5s ease-in-out infinite alternate}
+@property --pin-a{syntax:"<angle>";inherits:false;initial-value:0deg}
+@keyframes pinspin{to{--pin-a:360deg}}
+@keyframes pinglow{from{opacity:.55;transform:scale(1)}to{opacity:1;transform:scale(1.06)}}
+.pin-card{box-shadow:0 0 34px rgba(92,225,255,.18),0 0 70px rgba(167,139,250,.12)}
+.pin-head{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.pin-badge{font-weight:700;font-size:.8rem;padding:5px 11px;border-radius:999px;color:#03050c;background:linear-gradient(90deg,#5ce1ff,#a78bfa);box-shadow:0 0 18px rgba(92,225,255,.55);animation:pinpulse 2.4s ease-in-out infinite}
+@keyframes pinpulse{50%{box-shadow:0 0 30px rgba(167,139,250,.8)}}
+.pin-title{margin:12px 0 8px;font-size:1.35rem;line-height:1.4}
+.pin-title a{background:linear-gradient(90deg,#eef3ff,#5ce1ff,#a78bfa);-webkit-background-clip:text;background-clip:text;color:transparent}
+.pin-sum{color:var(--text);opacity:.92;line-height:1.75;margin:0 0 10px}
+.pin-feats{margin:0 0 12px;padding-left:1.2rem;color:var(--muted);line-height:1.8}
+.pin-feats li::marker{color:var(--cyan)}
+.pin-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.pin-btn{border-color:rgba(92,225,255,.6)!important;box-shadow:0 0 22px rgba(92,225,255,.3)}
+@media (prefers-reduced-motion:reduce){.pin-card::before,.pin-card::after,.pin-badge{animation:none}}
+
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Show HN：儿童架，您孩子自己的小互联网","description":"Show HN：Kids Shelf，你孩子们自己的小互联网 大家好，我制作了这个服务器，用于为我们（年幼的）孩子建立一个本地网络页面来托管视频并管理视频观看时间，而无需让他们在主 YouTube 上放松，以及所有随机的脑力消耗和参与度提升优化（这里没有自动播放下一个视频）。<p>- 麻省理工学院许","datePublished":"2026-11-05 23:35 Asia/Shanghai","dateModified":"2026-11-09","mainEntityOfPage":"https://aiym168.github.io/item/show-hn-7cf24d3f98.html","author":{"@type":"Organization","name":"AI大模型免费资源导航"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://aiym168.github.io/"},{"@type":"ListItem","position":2,"name":"AI 开发工具与编程助手","item":"https://aiym168.github.io/c/ai-kaifa-gongju.html"},{"@type":"ListItem","position":3,"name":"Show HN：儿童架，您孩子自己的小互联网","item":"https://aiym168.github.io/item/show-hn-7cf24d3f98.html"}]}</script>
@@ -478,7 +500,7 @@ body.egg-burst .fx-aurora { filter: saturate(1.8) hue-rotate(40deg); }
     <p style="margin-top:14px"><a class="btn" href="https://kidsshelf.org/" target="_blank" rel="noopener noreferrer">打开原帖 / 官网</a>
     <a class="btn" href="../c/ai-kaifa-gongju.html">同分类更多</a></p>
   </section>
-  <section class="panel-box"><h2>相关推荐</h2><a href="gemini-4-argon-3d-b4342dbc95.html">Gemini 4 Argon 结合了三个开源数据集来构建人体解剖学的交互式 3D 可视化。</a><br/><a href="2027-1-2-700-6d1bae6102.html">中大将于2027年1月起为黄大仙区2,700名长者提供免费人工智能视网膜认知障碍症筛查。</a><br/><a href="netflix-1800-9fce0d4901.html">据报道，Netflix 为海贼王支付了每集 1800 万美元的费用，其中最大的打斗场景之一看起来像是一场免费的人工智能大战</a><br/><a href="gpu-https-t-co-lwhixsy342-twitch-htt-3d5a8d88eb.html">今天免费 GPU！是的，全球赠品。踢：https://t.co/LWHIXsy342 Twitch：https://t.co/z4tUk9sXiH - X</a><br/><a href="hermes-https-t-co-fjnvktitie-hermes-be03c0922c.html">让 Hermes 在您登录的应用程序中进行真正的工作。免费：https://t.co/FjNvKTiTie → 新 Hermes AI 电脑更新 → H</a><br/><a href="pw-allen-e61ae762ee.html">人工智能工具比 PW 和 Allen 等商业辅导课程更能帮助学生应对考试，因为它们</a><br/></section>
+  <section class="panel-box"><h2>相关推荐</h2><a href="ai-kaifa-gongju-7e0904ca55.html">免费人工智能研讨会提醒！我的教育主管科林·马修斯将在接下来的几周内举办一系列免费研讨会</a><br/><a href="wandb-transformers-6dafd75f1b.html">您现在可以通过无缝 @wandb 集成可视化 Transformers 训练性能。比较超参数，出</a><br/><a href="pollenrobotics-a9152f0fec.html">非常高兴地宣布我们正在收购@pollenrobotics，将开源机器人推向世界！ 🤖</a><br/><a href="gemini-4-argon-3d-b4342dbc95.html">Gemini 4 Argon 结合了三个开源数据集来构建人体解剖学的交互式 3D 可视化。</a><br/><a href="2027-1-2-700-6d1bae6102.html">中大将于2027年1月起为黄大仙区2,700名长者提供免费人工智能视网膜认知障碍症筛查。</a><br/><a href="netflix-1800-9fce0d4901.html">据报道，Netflix 为海贼王支付了每集 1800 万美元的费用，其中最大的打斗场景之一看起来像是一场免费的人工智能大战</a><br/></section>
   <footer>AI大模型免费资源导航</footer>
 </div>
 <script>(function(){
