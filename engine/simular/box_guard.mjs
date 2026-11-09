@@ -38,11 +38,21 @@ try {
   if (reasons.length) {
     const r = await call('Ensure', { box_id: BOX_ID })
     out.actions.push(`Ensure(wake) op=${r.operation?.id ? 'started' : 'already-running'}`)
-    for (let i = 0; i < 24; i++) {
+    let tries = 1
+    for (let i = 0; i < 60; i++) {
       box = await call('Get', { box_id: BOX_ID })
       if (box.state === 'BOX_STATE_RUNNING') break
+      if (box.state === 'BOX_STATE_FAILED' && tries < 6) {
+        // e.g. "node at capacity, try again shortly" — retry the wake with backoff
+        out.actions.push(`retry Ensure (${box.failure_reason || 'failed'})`)
+        await sleep(10000 * tries)
+        await call('Ensure', { box_id: BOX_ID })
+        tries++
+        continue
+      }
       await sleep(5000)
     }
+    out.failure_reason_after = box.state === 'BOX_STATE_RUNNING' ? '' : (box.failure_reason || '')
   }
   out.state_after = box.state
   out.state_after_zh = ZH[box.state] || box.state
