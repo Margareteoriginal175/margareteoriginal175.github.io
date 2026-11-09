@@ -290,6 +290,7 @@ body.page-enter .wrap{animation:pageIn .55s ease both}
 
 .hero.hero-brain {
   display: grid; grid-template-columns: 1fr; gap: 18px; align-items: center;
+  overflow: visible;
 }
 @media (min-width: 900px) {
   .hero.hero-brain { grid-template-columns: 1.15fr 0.95fr; }
@@ -297,22 +298,46 @@ body.page-enter .wrap{animation:pageIn .55s ease both}
 .hero-copy { position: relative; z-index: 2; }
 #brain-hero {
   position: relative; z-index: 2;
-  width: 100%; min-height: 280px; height: clamp(260px, 42vw, 420px);
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  min-height: 260px;
+  max-height: min(480px, 70vh);
+  height: auto;
   border-radius: 22px;
   border: 1px solid rgba(92,225,255,.18);
   background:
-    radial-gradient(ellipse at 50% 45%, rgba(92,225,255,.10), transparent 55%),
-    radial-gradient(ellipse at 50% 60%, rgba(167,139,250,.12), transparent 50%),
+    radial-gradient(ellipse at 50% 50%, rgba(92,225,255,.10), transparent 55%),
+    radial-gradient(ellipse at 50% 50%, rgba(167,139,250,.12), transparent 50%),
     rgba(0,0,0,.25);
   box-shadow: inset 0 0 60px rgba(92,225,255,.06), 0 0 40px rgba(167,139,250,.08);
-  overflow: hidden;
+  overflow: visible;
+  display: block;
+  align-self: center;
+  justify-self: center;
+  transform: none;
 }
-#brain-hero canvas { width: 100% !important; height: 100% !important; }
+#brain-hero canvas {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+  margin: 0 !important;
+  transform: none !important;
+}
 .brain-caption {
   position: absolute; left: 12px; bottom: 10px; z-index: 3;
   font-family: var(--mono); font-size: .68rem; color: rgba(139,151,184,.9);
   letter-spacing: .06em; text-transform: uppercase;
   pointer-events: none;
+}
+@media (min-width: 900px) {
+  .hero.hero-brain { align-items: center; }
+  #brain-hero { max-height: 440px; }
+}
+@media (max-width: 899px) {
+  .hero.hero-brain { grid-template-columns: 1fr; }
+  #brain-hero { width: min(100%, 420px); margin-inline: auto; max-height: 420px; }
 }
 
 /* interactivity */
@@ -419,7 +444,7 @@ body.egg-burst .fx-aurora { filter: saturate(1.8) hue-rotate(40deg); }
     <p style="margin-top:14px"><a class="btn" href="https://detailkeeper.com/" target="_blank" rel="noopener noreferrer">打开原帖 / 官网</a>
     <a class="btn" href="../c/keji-app-xianmian.html">同分类更多</a></p>
   </section>
-  <section class="panel-box"><h2>相关推荐</h2><a href="imagesweep-app-1e2030a480.html">ImageSweep：相册垃圾清理 App 本体限免</a><br/><a href="198-0-ca90a761a2.html">电影精灵：老牌视频剪辑本体 ¥198→0</a><br/><a href="wifi-28-0-42b17938ff.html">双人小工具：电量/WiFi/信号组件¥ 28→ 0</a><br/><a href="linkjoy-598015b017.html">Linkjoy：跨平台书签/离线高亮终身内购限免</a><br/><a href="stillwell-raw-9bf8fcf426.html">Stillwell 叠光相机：RAW 相机终身限免</a><br/><a href="age-of-wonders-4-steam-d7cfc2626b.html">《Age of Wonders 4》 Steam 完整版限时免费玩</a><br/></section>
+  <section class="panel-box"><h2>相关推荐</h2><a href="ai-ai-llm-890078f687.html">🤖 AI渗透测试培训计划|预订免费演示 AI 和 LLM 应用程序正在带来新的安全挑战</a><br/><a href="imagesweep-app-1e2030a480.html">ImageSweep：相册垃圾清理 App 本体限免</a><br/><a href="198-0-ca90a761a2.html">电影精灵：老牌视频剪辑本体 ¥198→0</a><br/><a href="wifi-28-0-42b17938ff.html">双人小工具：电量/WiFi/信号组件¥ 28→ 0</a><br/><a href="linkjoy-598015b017.html">Linkjoy：跨平台书签/离线高亮终身内购限免</a><br/><a href="stillwell-raw-9bf8fcf426.html">Stillwell 叠光相机：RAW 相机终身限免</a><br/></section>
   <footer>AI大模型免费资源导航</footer>
 </div>
 <script>(function(){
