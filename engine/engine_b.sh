@@ -23,7 +23,7 @@ find "$LOGDIR" -name 'engine_b-*.log' -mtime +7 -delete 2>/dev/null || true
 [ -f "$LOG" ] && [ "$(stat -c %s "$LOG")" -gt 5000000 ] && mv -f "$LOG" "$LOG.1"
 exec 9>"$E/.lock"
 if ! flock -n 9; then echo "[engine-b] another run holds the lock — exit"; exit 0; fi
-exec > >(sed -u -E 's/(ghp_|github_pat_|gho_|ghs_)[A-Za-z0-9_]+/\1***/g' | tee -a "$LOG") 2>&1
+main() {
 export TZ=Asia/Shanghai
 echo "===== [engine-b] start $(date '+%F %T %Z') force=${FORCE:-0} ====="
 
@@ -102,3 +102,8 @@ push_retry "$MSG" "ENGINE=B ENGINE_MODE=$MODE FETCH=0 bash engine/pipeline.sh"
 rc=$?
 echo "===== [engine-b] end $(date '+%F %T %Z') rc=$rc ====="
 exit $rc
+}
+
+# pipe through the masker + log inside the same process group so nothing is lost when systemd ends the unit
+main "$@" 2>&1 | sed -u -E 's/(ghp_|github_pat_|gho_|ghs_)[A-Za-z0-9_]+/\1***/g' | tee -a "$LOG"
+exit "${PIPESTATUS[0]}"
