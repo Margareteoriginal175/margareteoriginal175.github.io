@@ -22,7 +22,7 @@
         return;
       }
       var base=el.getAttribute('data-vendor')||'vendor/';
-      import(base+'brain-hero.js').then(function(mod){
+      import(new URL(base+'brain-hero.js', document.baseURI).href).then(function(mod){
         if(mod&&mod.mountBrainHero){
           var destroy=mod.mountBrainHero(el);
           if(!destroy){
@@ -40,8 +40,8 @@
         document.head.appendChild(f);
       });
     };
-    if('requestIdleCallback' in window) requestIdleCallback(start, {timeout:1800});
-    else setTimeout(start, 400);
+    if('requestIdleCallback' in window) requestIdleCallback(start, {timeout:700});
+    else setTimeout(start, 200);
   }
   ready(boot);
 })();

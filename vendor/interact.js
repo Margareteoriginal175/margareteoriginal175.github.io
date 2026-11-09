@@ -35,7 +35,7 @@
     document.documentElement.classList.add('has-cursor');
     var cur = document.createElement('div'); cur.id='cursor-dot'; document.body.appendChild(cur);
     var trail = [];
-    for (var i=0;i<8;i++){ var t=document.createElement('div'); t.className='cursor-trail'; document.body.appendChild(t); trail.push(t); }
+    for (var i=0;i<5;i++){ var t=document.createElement('div'); t.className='cursor-trail'; document.body.appendChild(t); trail.push(t); }
     var mx=0,my=0, pts=trail.map(function(){return {x:0,y:0};});
     window.addEventListener('pointermove', function(e){ mx=e.clientX; my=e.clientY; cur.style.transform='translate('+mx+'px,'+my+'px)'; }, {passive:true});
     (function loop(){
@@ -118,7 +118,7 @@
     var io=new IntersectionObserver(function(entries){
       entries.forEach(function(en){ if(en.isIntersecting){ scramble(en.target); io.unobserve(en.target);} });
     }, {threshold:0.4});
-    document.querySelectorAll('h1.hero-title, .hero h1, .section h2').forEach(function(h){ io.observe(h); });
+    document.querySelectorAll('h1.hero-title, .hero h1, .section h2').forEach(function(h){ if (!h.closest('[data-kinetic]') && !h.hasAttribute('data-kinetic') && !h.querySelector('*')) io.observe(h); });
   }
 
   /* Cmd/Ctrl+K command palette */

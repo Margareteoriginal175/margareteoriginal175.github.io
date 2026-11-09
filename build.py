@@ -198,38 +198,19 @@ def pinned_block(pins: list[dict], prefix: str = "") -> str:
         feats = "".join(f"<li>{esc(f)}</li>" for f in it.get("features") or [])
         start = it.get("start_url") or it.get("url")
         cards.append(f"""<article class="pin-card">
+  <div class="pin-main">
   <div class="pin-head"><span class="pin-badge">📌 {esc(it.get("badge") or "置顶")}</span><span class="badge">{esc(it.get("category") or "")}</span></div>
   <h2 class="pin-title"><a href="{esc(start)}" target="_blank" rel="noopener">{esc(it.get("title"))}</a></h2>
   <p class="pin-sum">{esc(it.get("summary") or "")}</p>
-  {f'<ul class="pin-feats">{feats}</ul>' if feats else ''}
   {f'<div class="how"><strong>怎么开始：</strong>{esc(it.get("how"))}</div>' if it.get("how") else ''}
-  <div class="pin-actions"><a class="btn pin-btn" href="{esc(start)}" target="_blank" rel="noopener">立即免费领取 →</a><a class="btn" href="{prefix}{esc(it.get("_path") or "")}">查看详情</a></div>
+  <div class="pin-actions"><a class="btn primary pin-btn" href="{esc(start)}" target="_blank" rel="noopener">立即免费领取 →</a><a class="btn" href="{prefix}{esc(it.get("_path") or "")}">查看详情</a></div>
+  </div>
+  {f'<ul class="pin-feats">{feats}</ul>' if feats else ''}
 </article>""")
-    return f'<section class="section pinned-sec" aria-label="置顶推荐">{"".join(cards)}</section>'
+    return f'<section class="pinned-sec" aria-label="置顶推荐">{"".join(cards)}</section>'
 
 
-PIN_CSS = """
-.pinned-sec{margin:18px 0 6px}
-.pin-card{position:relative;padding:22px;border-radius:22px;background:var(--panel2);backdrop-filter:blur(16px);isolation:isolate;overflow:hidden}
-.pin-card::before{content:"";position:absolute;inset:0;padding:1.5px;border-radius:inherit;background:conic-gradient(from var(--pin-a,0deg),#5ce1ff,#a78bfa,#5ef0c0,#ffd08a,#5ce1ff);
- -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:pinspin 6s linear infinite;z-index:-1}
-.pin-card::after{content:"";position:absolute;inset:-40%;background:radial-gradient(circle at 30% 20%,rgba(92,225,255,.16),transparent 45%),radial-gradient(circle at 80% 90%,rgba(167,139,250,.16),transparent 45%);z-index:-2;animation:pinglow 5s ease-in-out infinite alternate}
-@property --pin-a{syntax:"<angle>";inherits:false;initial-value:0deg}
-@keyframes pinspin{to{--pin-a:360deg}}
-@keyframes pinglow{from{opacity:.55;transform:scale(1)}to{opacity:1;transform:scale(1.06)}}
-.pin-card{box-shadow:0 0 34px rgba(92,225,255,.18),0 0 70px rgba(167,139,250,.12)}
-.pin-head{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-.pin-badge{font-weight:700;font-size:.8rem;padding:5px 11px;border-radius:999px;color:#03050c;background:linear-gradient(90deg,#5ce1ff,#a78bfa);box-shadow:0 0 18px rgba(92,225,255,.55);animation:pinpulse 2.4s ease-in-out infinite}
-@keyframes pinpulse{50%{box-shadow:0 0 30px rgba(167,139,250,.8)}}
-.pin-title{margin:12px 0 8px;font-size:1.35rem;line-height:1.4}
-.pin-title a{background:linear-gradient(90deg,#eef3ff,#5ce1ff,#a78bfa);-webkit-background-clip:text;background-clip:text;color:transparent}
-.pin-sum{color:var(--text);opacity:.92;line-height:1.75;margin:0 0 10px}
-.pin-feats{margin:0 0 12px;padding-left:1.2rem;color:var(--muted);line-height:1.8}
-.pin-feats li::marker{color:var(--cyan)}
-.pin-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
-.pin-btn{border-color:rgba(92,225,255,.6)!important;box-shadow:0 0 22px rgba(92,225,255,.3)}
-@media (prefers-reduced-motion:reduce){.pin-card::before,.pin-card::after,.pin-badge{animation:none}}
-"""
+PIN_CSS = ""  # pinned styles now live in fx.css
 
 
 def collect_deal_items():
@@ -347,6 +328,8 @@ def head_block(title, description, canonical, og_title=None, pubdate=None, extra
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
 <meta name="color-scheme" content="dark" />
+<meta name="theme-color" content="#02040a" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235ce1ff'/%3E%3Cstop offset='1' stop-color='%23a78bfa'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%2302040a'/%3E%3Crect x='5' y='5' width='22' height='22' rx='6' fill='none' stroke='url(%23g)' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%235ef0c0'/%3E%3C/svg%3E" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="renderer" content="webkit" />
 <meta name="force-rendering" content="webkit" />
@@ -377,10 +360,39 @@ def head_block(title, description, canonical, og_title=None, pubdate=None, extra
 
 
 
-def brain_block(vendor_prefix: str = "vendor/") -> str:
+NAV_SHORT = {
+    "damoxing-mianfei-api": "免费API", "ai-huiyuan-shiyong": "会员试用", "ai-kaifa-gongju": "开发工具",
+    "mianfei-gpu-yunfuwu": "免费GPU", "keji-app-xianmian": "App限免", "github-hot": "GitHub热门", "hot-topics": "热议",
+}
+
+ICONS = {
+    "damoxing-mianfei-api": '<path d="M12 2a4 4 0 0 1 4 4v1a3 3 0 0 1 3 3v1a3 3 0 0 1-1 5.2V17a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4v-.8A3 3 0 0 1 5 11v-1a3 3 0 0 1 3-3V6a4 4 0 0 1 4-4z"/><path d="M12 6v14M9 10h6M9 14h6"/>',
+    "ai-huiyuan-shiyong": '<path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/>',
+    "ai-kaifa-gongju": '<path d="M8 8l-5 4 5 4M16 8l5 4-5 4M14 4l-4 16"/>',
+    "mianfei-gpu-yunfuwu": '<rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/>',
+    "keji-app-xianmian": '<rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4M9 9l2 2 4-4"/>',
+    "github-hot": '<path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/>',
+    "hot-topics": '<path d="M12 22c4.4 0 7-2.9 7-7 0-4-3-6-4-10-2 2-2.5 4-2.5 4S10 6 9 3C7 6 5 9 5 15c0 4.1 2.6 7 7 7z"/><path d="M12 22c-1.7 0-3-1.3-3-3.2 0-2 1.5-3 3-5 1.5 2 3 3 3 5 0 1.9-1.3 3.2-3 3.2z"/>',
+}
+
+
+def icon_svg(mid: str) -> str:
+    return f'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{ICONS.get(mid, ICONS["ai-kaifa-gongju"])}</svg>'
+
+
+def brain_block(vendor_prefix: str = "vendor/", tags=None, nodes: int = 4200) -> str:
+    tags = tags or [("免费API", ""), ("GPU 算力", ""), ("Agent", ""), ("开源", "")]
+    tag_html = "".join(
+        f'<span class="hud-tag {c}">{esc(t)}{f"<b>{esc(n)}</b>" if n != "" else ""}</span>'
+        for c, (t, n) in zip("abcd", tags)
+    )
     return f"""
-<div id="brain-hero" data-vendor="{esc(vendor_prefix)}" aria-hidden="true">
-  <span class="brain-caption">Neural Graph · WebGL</span>
+<div class="brain-stage" aria-hidden="true">
+  <span class="ring r3"></span><span class="ring r1"></span><span class="ring r2"></span>
+  <span class="hud-corner tl"></span><span class="hud-corner tr"></span><span class="hud-corner bl"></span><span class="hud-corner br"></span>
+  {tag_html}
+  <div id="brain-hero" data-vendor="{esc(vendor_prefix)}" data-nodes="{nodes}"></div>
+  <span class="brain-caption">Neural Graph · WebGL · Live</span>
 </div>
 """
 
@@ -392,16 +404,39 @@ def brain_loader_script(vendor_prefix: str = "vendor/") -> str:
 
 def topnav(prefix="./"):
     links = "".join(
-        f'<a href="{prefix}{esc(href)}">{esc(title)}</a>'
-        for _, title, _, href, _, _ in MODULES
+        f'<a href="{prefix}{esc(href)}" title="{esc(title)}">{esc(NAV_SHORT.get(mid, title))}</a>'
+        for mid, title, _, href, _, _ in MODULES
     )
-    links += f'<a href="{prefix}m/api.html">CLI / API</a>'
-    links += f'<a href="{prefix}m/status.html">运行状态</a>'
+    links += f'<a href="{prefix}m/status.html" title="运行状态">状态</a>'
+    links += f'<a class="cta" href="{prefix}m/api.html" title="CLI / API">CLI / API</a>'
     return f"""
 <header class="topnav">
-  <a class="brand-mini" href="{prefix}"><span class="mark"></span>{esc(SITE_NAME)}</a>
+  <a class="brand-mini" href="{prefix}"><span class="mark"></span><span class="txt">{esc(SITE_NAME)}</span></a>
   <nav class="navlinks" aria-label="模块导航">{links}</nav>
 </header>"""
+
+
+def site_footer(prefix="./", extra="") -> str:
+    return f"""<footer>
+  <div><span class="foot-brand">{esc(SITE_NAME)}</span>{(" · " + esc(extra)) if extra else ""}<br/>双引擎自动更新 · GitHub Actions + Simular 云服务器 · 每小时刷新</div>
+  <div><a href="{prefix}m/api.html">CLI / API</a> · <a href="{prefix}m/status.html">运行状态</a> · <a href="{prefix}feed.xml">RSS</a> · <a href="{prefix}sitemap.xml">网站地图</a> · <kbd>Ctrl</kbd>+<kbd>K</kbd> 搜索</div>
+</footer>"""
+
+
+def mod_hero(eyebrow: str, title: str, lead: str, stats: str, crumbs: str, vendor_prefix: str, tags=None) -> str:
+    return f"""<header class="hero-xl compact hero-brain">
+  <div class="hero-xl-inner">
+    <div class="hero-copy">
+      <div class="crumbs">{crumbs}</div>
+      <div class="eyebrow"><i class="live-dot"></i> {esc(eyebrow)} <span class="sep">/</span> <span data-clock>--:--:--</span></div>
+      <h1 class="hero-title"><span class="kl">{esc(title)}</span></h1>
+      <p class="lead">{esc(lead)}</p>
+      <div class="stats">{stats}<div class="pill live">下次更新 <b data-next>--:--</b></div></div>
+    </div>
+    {brain_block(vendor_prefix, tags, 2800)}
+  </div>
+</header>
+{brain_loader_script(vendor_prefix)}"""
 
 
 def orig_html(main: str = "", original: str = "") -> str:
@@ -585,13 +620,14 @@ def write_item_pages(all_items, date):
     <p>{esc(it.get("summary") or title_zh)}</p>
     {orig_html(it.get("summary") or "", it.get("original_summary") or "")}
     <div class="how"><strong>免费领取方法：</strong>{esc(how)}</div>
-    <p style="margin-top:14px"><a class="btn" href="{esc(it.get("url") or "#")}" target="_blank" rel="noopener noreferrer">打开原帖 / 官网</a>
+    <p style="margin-top:14px"><a class="btn primary" href="{esc(it.get("url") or "#")}" target="_blank" rel="noopener noreferrer">打开原帖 / 官网 →</a>
     <a class="btn" href="../c/{esc(cat_slug)}.html">同分类更多</a></p>
   </section>
   <section class="panel-box"><h2>相关推荐</h2>{rel_html or "暂无"}</section>
-  <footer>{esc(SITE_NAME)}</footer>
+  {site_footer("../")}
 </div>
-<script>{FX_JS}</script>
+<script>{FX_JS}
+{INTERACT_JS}</script>
 </body></html>"""
         (ITEMS / f"{slug}.html").write_text(page, encoding="utf-8")
         paths.append(f"item/{slug}.html")
@@ -623,23 +659,13 @@ def write_category_pages(all_items, date, ym):
 <div class="fx-scan" aria-hidden="true"></div>
 <div class="fx-spot" aria-hidden="true"></div>
 <canvas id="fx-particles" aria-hidden="true"></canvas>
+{topnav("../")}
+{mod_hero("MODULE", cat, intro, f'<div class="pill">条目 <b data-count="{len(cat_items)}">{len(cat_items)}</b></div><div class="pill">更新 <b>{esc(date)}</b></div>', f'<a href="../">首页</a> › {esc(cat)}', "../vendor/", [(cat.split(" ")[0], len(cat_items)), ("免费", ""), ("实时", ""), ("中文", "")])}
 <div class="wrap">
-  {topnav("../")}
-  <div class="crumbs"><a href="../">首页</a> › {esc(cat)}</div>
-  <header class="hero hero-brain">
-    <div class="hero-copy">
-    <div class="eyebrow"><i class="live-dot"></i> MODULE</div>
-    <h1 class="hero-title">{esc(cat)}</h1>
-    <p class="lead">{esc(intro)}</p>
-    <div class="stats"><div class="pill">条目 <b data-count="{len(cat_items)}">{len(cat_items)}</b></div><div class="pill">更新 <b>{esc(date)}</b></div></div>
-    </div>
-    {brain_block("../vendor/")}
-  </header>
-  {brain_loader_script("../vendor/")}
   <div class="toolbar"><input id="q" type="search" placeholder="在本模块内搜索…" autocomplete="off" /></div>
   <div class="grid">{cards}</div>
   <div id="empty" class="empty hidden">没有匹配条目</div>
-  <footer>{esc(SITE_NAME)} · {esc(cat)}</footer>
+  {site_footer("../", cat)}
 </div>
 <script>{SITE_JS}</script>
 </body></html>"""
@@ -661,23 +687,13 @@ def write_module_special(repos, topics, date, ym):
 <div class="fx-scan" aria-hidden="true"></div>
 <div class="fx-spot" aria-hidden="true"></div>
 <canvas id="fx-particles" aria-hidden="true"></canvas>
+{topnav("../")}
+{mod_hero("GITHUB", "GitHub 新热门", "近 7–14 天创建的 AI / 大模型 / Agent 开源项目，按星标整理，完整中文说明。", f'<div class="pill">项目 <b data-count="{len(repos)}">{len(repos)}</b></div><div class="pill">更新 <b>{esc(date)}</b></div>', '<a href="../">首页</a> › GitHub 新热门', "../vendor/", [("开源项目", len(repos)), ("Agent", ""), ("LLM", ""), ("Stars", "")])}
 <div class="wrap">
-  {topnav("../")}
-  <div class="crumbs"><a href="../">首页</a> › GitHub 新热门</div>
-  <header class="hero hero-brain">
-    <div class="hero-copy">
-    <div class="eyebrow"><i class="live-dot"></i> GITHUB</div>
-    <h1 class="hero-title">GitHub 新热门</h1>
-    <p class="lead">近 7–14 天创建的 AI / 大模型 / Agent 开源项目，按星标整理，完整中文说明。</p>
-    <div class="stats"><div class="pill">项目 <b data-count="{len(repos)}">{len(repos)}</b></div><div class="pill">更新 <b>{esc(date)}</b></div></div>
-    </div>
-    {brain_block("../vendor/")}
-  </header>
-  {brain_loader_script("../vendor/")}
   <div class="toolbar"><input id="q" type="search" placeholder="搜索仓库 / 简介…" autocomplete="off" /></div>
   <div class="grid">{cards}</div>
   <div id="empty" class="empty hidden">没有匹配条目</div>
-  <footer>{esc(SITE_NAME)}</footer>
+  {site_footer("../")}
 </div>
 <script>{SITE_JS}</script>
 </body></html>"""
@@ -693,23 +709,13 @@ def write_module_special(repos, topics, date, ym):
 <div class="fx-scan" aria-hidden="true"></div>
 <div class="fx-spot" aria-hidden="true"></div>
 <canvas id="fx-particles" aria-hidden="true"></canvas>
+{topnav("../")}
+{mod_hero("PULSE", "最近热议", "Hacker News / V2EX / X 等渠道的 AI 与科技热议，标题与摘要已译为中文。", f'<div class="pill">话题 <b data-count="{len(topics)}">{len(topics)}</b></div><div class="pill">更新 <b>{esc(date)}</b></div>', '<a href="../">首页</a> › 最近热议', "../vendor/", [("热议", len(topics)), ("HN", ""), ("V2EX", ""), ("X", "")])}
 <div class="wrap">
-  {topnav("../")}
-  <div class="crumbs"><a href="../">首页</a> › 最近热议</div>
-  <header class="hero hero-brain">
-    <div class="hero-copy">
-    <div class="eyebrow"><i class="live-dot"></i> PULSE</div>
-    <h1 class="hero-title">最近热议</h1>
-    <p class="lead">Hacker News / V2EX / X 等渠道的 AI 与科技热议，标题与摘要已译为中文。</p>
-    <div class="stats"><div class="pill">话题 <b data-count="{len(topics)}">{len(topics)}</b></div><div class="pill">更新 <b>{esc(date)}</b></div></div>
-    </div>
-    {brain_block("../vendor/")}
-  </header>
-  {brain_loader_script("../vendor/")}
   <div class="toolbar"><input id="q" type="search" placeholder="搜索热议…" autocomplete="off" /></div>
   <div class="grid">{cards}</div>
   <div id="empty" class="empty hidden">没有匹配条目</div>
-  <footer>{esc(SITE_NAME)}</footer>
+  {site_footer("../")}
 </div>
 <script>{SITE_JS}</script>
 </body></html>"""
@@ -747,9 +753,10 @@ def write_archive_page(day, items, all_dates):
   <p class="lead">{esc(ym)} · {len(items)} 条</p></header>
   {''.join(sections) or '<div class="empty">暂无</div>'}
   <div class="panel-box"><h2>更多日期</h2>{arch}</div>
-  <footer>{esc(SITE_NAME)}</footer>
+  {site_footer("../")}
 </div>
-<script>{FX_JS}</script>
+<script>{FX_JS}
+{INTERACT_JS}</script>
 </body></html>"""
     (ARCHIVES / f"{day}.html").write_text(page, encoding="utf-8")
 
@@ -1004,10 +1011,11 @@ def write_api_docs_page(date, ym):
     </div>
   </section>
 
-  <footer>{esc(SITE_NAME)} · {esc(CANONICAL)} · {esc(date)}</footer>
+  {site_footer("../", date)}
 </div>
 <script>
 {FX_JS}
+{INTERACT_JS}
 document.querySelectorAll('.copy-btn').forEach(btn=>{{
   btn.addEventListener('click', async ()=>{{
     const t = btn.getAttribute('data-copy') || '';
@@ -1027,7 +1035,8 @@ def write_404():
 <body><div class="fx-aurora" aria-hidden="true"></div><div class="fx-grid" aria-hidden="true"></div><div class="fx-noise" aria-hidden="true"></div><div class="fx-scan" aria-hidden="true"></div><div class="fx-spot" aria-hidden="true"></div><canvas id="fx-particles" aria-hidden="true"></canvas><div class="wrap">{topnav("./")}<header class="hero"><h1>404</h1>
 <p class="lead">页面不存在，返回首页继续浏览大模型免费资源。</p>
 <p><a class="btn" href="./">返回首页</a></p></header></div>
-<script>{FX_JS}</script>
+<script>{FX_JS}
+{INTERACT_JS}</script>
 </body></html>""",
         encoding="utf-8",
     )
@@ -1061,25 +1070,37 @@ def build():
     write_api_and_feed(items, repos, topics, date, updated, pins)
     api_doc = write_api_docs_page(date, ym)
 
-    # landing tiles
+    # landing tiles (bento)
     tiles = []
-    for mid, title, desc, href, kind, cat in MODULES:
+    counts = {}
+    for n, (mid, title, desc, href, kind, cat) in enumerate(MODULES, 1):
         if kind == "cat":
             subset = [it for it in items if it.get("category") == cat]
         elif kind == "github":
             subset = repos
         else:
             subset = topics
-        top3 = subset[:3]
-        lis = "".join(f"<li>{esc((it.get('title') or it.get('name') or '')[:60])}</li>" for it in top3) or "<li>暂无条目</li>"
+        counts[mid] = len(subset)
+        topn = subset[: (8 if n == 1 else 3)]
+        lis = "".join(f"<li>{esc((it.get('title') or it.get('name') or '')[:60])}</li>" for it in topn) or "<li>暂无条目</li>"
         tiles.append(
-            f"""<a class="module-tile" href="{esc(href)}">
+            f"""<a class="module-tile t-{n}" href="{esc(href)}">
+  <div class="tile-top"><span class="tile-ico">{icon_svg(mid)}</span><span class="tile-idx">{n:02d} / 07</span></div>
+  <div class="tile-count"><b data-count="{len(subset)}">{len(subset)}</b><small>条</small></div>
   <h2>{esc(title)} <em>{len(subset)}</em></h2>
   <p class="desc">{esc(desc)}</p>
   <ol>{lis}</ol>
-  <div class="go">进入模块 →</div>
+  <div class="go">进入模块 <span>→</span></div>
 </a>"""
         )
+
+    # ticker of latest items
+    tick_src = (pins + items)[:18] + [dict(t, _path="m/hot-topics.html") for t in topics[:8]]
+    tick_html = "".join(
+        f'<a href="{esc(it.get("_path") or "")}"><i>{esc(NAV_SHORT.get(CAT_SLUG.get(it.get("category") or "", ""), "热议") if it.get("category") else "热议")}</i>{esc((it.get("title") or "")[:48])}</a>'
+        for it in tick_src if it.get("title")
+    )
+    ticker = f'<div class="ticker" aria-label="最新条目"><div class="ticker-track">{tick_html}<span aria-hidden="true" style="display:contents">{tick_html}</span></div></div>' if tick_html else ""
 
     arch_links = "".join(
         f'<a class="arch {"current" if d==date else ""}" href="archives/{esc(d)}.html">{esc(d)}</a>' for d in dates[:30]
@@ -1098,59 +1119,79 @@ def build():
             "query-input": "required name=search_term_string",
         },
     }
+    m = re.match(r"(.*?)(免费资源导航)$", SITE_NAME)
+    h1_lines = (f'<span class="kl">{esc(m.group(1))}</span><span class="kl">{esc(m.group(2))}</span>' if m and m.group(1)
+                else f'<span class="kl">{esc(SITE_NAME)}</span>')
+    upd_short = (updated or "").replace(" Asia/Shanghai", "")
     page_title = f"{SITE_NAME} · {ym} · 大模型免费API / 免费GPT / Claude免费"
     page = f"""{head_block(page_title, META_DESC, CANONICAL, SITE_NAME + " · " + ym, extra_ld=[website_ld])}
-<body>
-<div class="fx-aurora" aria-hidden="true"></div>
-<div class="fx-grid" aria-hidden="true"></div>
+<body class="home">
 <div class="fx-noise" aria-hidden="true"></div>
 <div class="fx-scan" aria-hidden="true"></div>
 <div class="fx-spot" aria-hidden="true"></div>
-<canvas id="fx-particles" aria-hidden="true"></canvas>
-<div class="wrap">
-  {topnav("./")}
+{topnav("./")}
+<header class="hero-xl hero-brain">
+  <div class="hero-xl-inner">
+    <div class="hero-copy" data-parallax="-0.06">
+      <div class="eyebrow"><i class="live-dot"></i> LIVE FREE AI RESOURCES <span class="sep">/</span> <span class="eb-x">北京时间</span> <span data-clock>--:--:--</span></div>
+      <h1 class="hero-title">{h1_lines}</h1>
+      <p class="lead">帮你一站看清大模型免费API、免费GPT、Claude免费额度、DeepSeek免费额度、AI工具免费试用、免费GPU，以及值得关注的 GitHub 热门项目与最新AI新闻。每个模块独立成页，信息每日自动更新；参与前请以官网规则为准。</p>
+      <div class="hero-cta"><a class="btn primary" href="#modules">浏览全部模块 →</a><a class="btn" href="m/api.html">CLI / API 接口</a><a class="btn" href="m/status.html"><i class="live-dot"></i> 运行状态</a></div>
+      <div class="stats">
+        <div class="pill">更新日期 <b>{esc(date)}</b></div>
+        <div class="pill">免费资源 <b data-count="{len(items)}">{len(items)}</b></div>
+        <div class="pill">GitHub热门 <b data-count="{len(repos)}">{len(repos)}</b></div>
+        <div class="pill">热议 <b data-count="{len(topics)}">{len(topics)}</b></div>
+        <div class="pill live" title="最近更新 {esc(upd_short)}">下次自动更新 <b data-next>--:--</b></div>
+      </div>
+    </div>
+    {brain_block("vendor/", [("免费API", counts.get("damoxing-mianfei-api", "")), ("免费GPU", counts.get("mianfei-gpu-yunfuwu", "")), ("GitHub", len(repos)), ("热议", len(topics))])}
+  </div>
+  <div class="scroll-hint">SCROLL</div>
+</header>
+{brain_loader_script("vendor/")}
+<div class="wrap pin-wrap">
   {pinned_block(pins, "")}
-  <header class="hero hero-brain">
-    <div class="hero-copy">
-    <div class="eyebrow"><i class="live-dot"></i> LIVE FREE AI RESOURCES</div>
-    <h1 class="hero-title">{esc(SITE_NAME)}</h1>
-    <p class="lead">帮你一站看清大模型免费API、免费GPT、Claude免费额度、DeepSeek免费额度、AI工具免费试用、免费GPU，以及值得关注的 GitHub 热门项目与最新AI新闻。每个模块独立成页，信息每日自动更新；参与前请以官网规则为准。</p>
-    <div class="stats">
-      <div class="pill">更新日期 <b>{esc(date)}</b></div>
-      <div class="pill">免费资源 <b data-count="{len(items)}">{len(items)}</b></div>
-      <div class="pill">GitHub热门 <b data-count="{len(repos)}">{len(repos)}</b></div>
-      <div class="pill">热议 <b data-count="{len(topics)}">{len(topics)}</b></div>
-      <div class="pill">更新 <b>{esc(updated)}</b></div>
-      <div class="pill">生成 <b>{esc(now_label)}</b></div>
-    </div>
-    </div>
-    {brain_block("vendor/")}
-  </header>
-  {brain_loader_script("vendor/")}
-
-  <section class="section">
+</div>
+{ticker}
+<div class="wrap">
+  <section class="section" id="modules">
+    <div class="sec-head"><span class="sec-idx">01 / MODULES</span>
     <h2>选择模块</h2>
-    <p class="sec-desc">点击进入对应专题页，浏览完整列表与中文说明。</p>
+    <p class="sec-desc">七大专题独立成页：点击进入，浏览完整列表与中文说明。悬停卡片，大脑对应区域会被点亮。</p></div>
     <div class="module-grid">{''.join(tiles)}</div>
   </section>
 
   <section class="section" id="cli-api">
+    <div class="sec-head"><span class="sec-idx">02 / DEVELOPER</span>
     <h2>CLI / API</h2>
-    <p class="sec-desc">用一行命令拉取本站数据（零依赖、免密钥）。</p>
-    <div class="term-block">
-      <div class="term-bar"><span></span><span></span><span></span><em>quickstart</em></div>
-      <pre><code>npx github:aiym168/aiym168.github.io list
-curl -fsSL https://aiym168.github.io/cli.sh | bash -s -- list</code></pre>
+    <p class="sec-desc">用一行命令拉取本站数据，零依赖、免密钥，静态 JSON 可直接跨域读取。</p></div>
+    <div class="cli-split">
+      <ul class="cli-feats">
+        <li><code>api/latest.json</code> 全部免费资源（置顶条目排在最前）</li>
+        <li><code>api/github-hot.json</code> GitHub 新热门项目</li>
+        <li><code>api/hot.json</code> 最近热议 · <code>feed.xml</code> RSS 订阅</li>
+        <li>每小时自动刷新，GitHub 与服务器双引擎互为备份</li>
+        <li><a class="btn" href="m/api.html" style="margin-top:8px">查看完整文档 →</a></li>
+      </ul>
+      <div class="term-block">
+        <div class="term-bar"><span></span><span></span><span></span><em>quickstart — bash</em></div>
+        <pre><code><span class="c"># 列出全部免费资源</span>
+<span class="p">$</span> npx github:aiym168/aiym168.github.io list
+<span class="c"># 或者不装 Node，直接用 curl</span>
+<span class="p">$</span> curl -fsSL https://aiym168.github.io/cli.sh | bash -s -- list
+<span class="p">$</span> curl -fsSL https://aiym168.github.io/api/latest.json<span class="caret"></span></code></pre>
+      </div>
     </div>
-    <p><a class="btn" href="m/api.html">查看完整文档 →</a></p>
   </section>
 
   <div class="panel-box" id="archives"><h2>每日存档</h2>{arch_links or "暂无"}</div>
   <div class="panel-box"><h2>免责声明</h2>
     <p class="sec-desc" style="margin:0">信息来自公开网页与社区，自动整理，可能过期或不准确。参与前请自行核实官网规则，谨防诈骗。</p>
   </div>
-  <footer>{esc(SITE_NAME)} · {esc(CANONICAL)}</footer>
+  {site_footer("./", "生成于 " + now_label)}
 </div>
+<script>{SITE_JS}</script>
 </body></html>"""
     (SITE / "index.html").write_text(page, encoding="utf-8")
 
