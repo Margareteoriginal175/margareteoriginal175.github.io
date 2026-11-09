@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-09T19:38:58+08:00",
-  "generated_at_label": "2026-11-09 19:38 Asia/Shanghai",
+  "generated_at": "2026-11-09T19:39:46+08:00",
+  "generated_at_label": "2026-11-09 19:39 Asia/Shanghai",
   "site": "https://aiym168.github.io/",
   "engines": {
     "A": {
@@ -30,7 +30,7 @@
       "runs_total": 2,
       "schedule": "每小时第 7 分钟 + 每 2 小时第 37 分钟（备用）",
       "next_run_label": "2026-11-09 20:07 Asia/Shanghai",
-      "age_min": 6
+      "age_min": 7
     },
     "B": {
       "engine": "B",
@@ -60,7 +60,7 @@
       "schedule": "服务器每小时第 25 分钟检查；GitHub 超过 90 分钟没更新就接管",
       "next_run_label": "2026-11-09 20:25 Asia/Shanghai",
       "last_seen_at": "2026-11-09T19:27:06+08:00",
-      "age_min": 11
+      "age_min": 12
     },
     "watchdog": {
       "schedule": "每 30 分钟（第 23 / 53 分钟）",
@@ -247,12 +247,17 @@
   "heartbeat_label": "2026-11-09 18:42:39 Asia/Shanghai",
   "server": {
     "box_id": "已隐藏",
-    "checked_at_label": "2026-11-09 19:38 Asia/Shanghai",
-    "state_before": "BOX_STATE_RUNNING",
+    "checked_at_label": "2026-11-09 19:39 Asia/Shanghai",
+    "state_before": "BOX_STATE_HIBERNATED",
     "state_after": "BOX_STATE_RUNNING",
     "state_after_zh": "运行中",
-    "wake_reasons": [],
-    "actions": [],
+    "wake_reasons": [
+      "手动强制唤醒",
+      "服务器状态为「休眠」"
+    ],
+    "actions": [
+      "Ensure(wake) op=started"
+    ],
     "wake_schedule": {
       "cron": "0 * * * *",
       "tz": "Asia/Shanghai",
@@ -262,6 +267,6 @@
     },
     "last_saved_label": "2026-11-09 19:28 Asia/Shanghai",
     "ok": true,
-    "engine_b_age_min": null
+    "engine_b_age_min": 12
   }
 }
