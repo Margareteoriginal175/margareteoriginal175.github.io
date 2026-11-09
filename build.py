@@ -23,9 +23,9 @@ TZ = ZoneInfo("Asia/Shanghai")
 
 DEFAULT_CFG = {
     "site_name": "AI大模型免费资源导航",
-    "canonical": "https://ai1688.netlify.app/",
+    "canonical": "https://aiym168.github.io/",
     "baidu_site_verification": "",
-    "baidu_push_site": "https://ai1688.netlify.app",
+    "baidu_push_site": "https://aiym168.github.io",
 }
 
 CATEGORIES = [
@@ -94,9 +94,11 @@ def load_cfg() -> dict:
     if env_v:
         cfg["baidu_site_verification"] = env_v
     cfg["canonical"] = (cfg.get("canonical") or DEFAULT_CFG["canonical"]).rstrip("/") + "/"
-    if "aidamoxing-mianfei" in cfg["canonical"] or "aiyangmao" in cfg["canonical"]:
-        cfg["canonical"] = "https://ai1688.netlify.app/"
-        cfg["baidu_push_site"] = "https://ai1688.netlify.app"
+    # migrate any legacy Netlify / project-Pages hosts to the org root site
+    legacy = ("netlify.app", "aidamoxing-mianfei", "aiyangmao", "9499758-wq.github.io", "/x-yangmao")
+    if any(h in cfg["canonical"] for h in legacy):
+        cfg["canonical"] = "https://aiym168.github.io/"
+        cfg["baidu_push_site"] = "https://aiym168.github.io"
     return cfg
 
 

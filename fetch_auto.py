@@ -25,7 +25,7 @@ ROOT = Path(__file__).resolve().parent
 DATA_AUTO = ROOT / "data" / "auto"
 TZ = ZoneInfo("Asia/Shanghai")
 UTC = timezone.utc
-UA = "x-yangmao-bot/1.0 (+https://github.com/9499758-wq/x-yangmao)"
+UA = "aiym168-bot/1.0 (+https://github.com/aiym168/aiym168.github.io)"
 CTX = ssl.create_default_context()
 
 CATEGORIES = [

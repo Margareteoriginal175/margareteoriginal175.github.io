@@ -4,6 +4,6 @@ User-agent: Baiduspider
 Allow: /
 User-agent: Baiduspider-render
 Allow: /
-Sitemap: https://ai1688.netlify.app/sitemap_index.xml
-Sitemap: https://ai1688.netlify.app/sitemap.xml
-Sitemap: https://ai1688.netlify.app/sitemap.txt
+Sitemap: https://aiym168.github.io/sitemap_index.xml
+Sitemap: https://aiym168.github.io/sitemap.xml
+Sitemap: https://aiym168.github.io/sitemap.txt
