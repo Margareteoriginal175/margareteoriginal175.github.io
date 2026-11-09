@@ -149,7 +149,18 @@ def build_status(now: datetime) -> dict:
             "kept": xs.get("kept"),
         },
         "heartbeat_label": hb.get("updated_at_label"),
+        "server": _server(j(DATA / "box_state.json")),
     }
+
+
+def _server(b: dict) -> dict:
+    if not b:
+        return {}
+    keep = ("box_id", "checked_at_label", "state_before", "state_after", "state_after_zh", "wake_reasons", "actions",
+            "wake_schedule", "last_saved_label", "ok", "error", "engine_b_age_min")
+    out = {k: b.get(k) for k in keep if k in b}
+    out["box_id"] = "已隐藏"
+    return out
 
 
 STATE_ZH = {"healthy": "正常", "degraded": "波动", "skipped": "暂停中(自动重试)", "retrying": "重试中"}
@@ -160,6 +171,25 @@ NAME_ZH = {
 }
 MODE_ZH = {"scheduled": "定时", "takeover": "接管", "forced": "手动强制", "dispatch": "手动触发", "workflow_dispatch": "手动/看门狗触发", "push": "代码更新", "standby": "待命"}
 RES_ZH = {"ok": "成功", "rolled_back": "已自动回滚到上一版", "failed": "失败"}
+
+
+def server_card(sv: dict) -> str:
+    esc = B.esc
+    if not sv:
+        return ""
+    ws = sv.get("wake_schedule") or {}
+    ok = sv.get("state_after") == "BOX_STATE_RUNNING"
+    dot = "#5ef0c0" if ok else "#ff7a90"
+    acts = "；".join(sv.get("wake_reasons") or []) or "无需唤醒"
+    return f"""<section class="section"><h2>服务器守护</h2>
+    <div class="panel-box"><div class="badge"><i class="live-dot" style="background:{dot}"></i> Simular 云服务器</div>
+    <table class="api-table">
+      <tr><td>当前状态</td><td><b>{esc(sv.get("state_after_zh") or sv.get("error") or "-")}</b></td></tr>
+      <tr><td>最近检查</td><td>{esc(sv.get("checked_at_label") or "-")}（GitHub 看门狗每 30 分钟检查）</td></tr>
+      <tr><td>最近处理</td><td>{esc(acts)}</td></tr>
+      <tr><td>定时唤醒</td><td>每小时整点唤醒，保持在线 {esc((ws.get("awake_for_s") or 0) // 60)} 分钟；下次 {esc(ws.get("next_label") or "-")}</td></tr>
+      <tr><td>规则</td><td>服务器故障、休眠，或引擎 B 超过 2 小时没有心跳，GitHub 会自动唤醒它并重设定时唤醒。</td></tr>
+    </table></div></section>"""
 
 
 def render(st: dict) -> str:
@@ -240,6 +270,8 @@ def render(st: dict) -> str:
         </table></div>
     </div>
   </section>
+
+  {server_card(st.get("server") or {})}
 
   <section class="section"><h2>条目数量</h2><div class="stats">{count_pills}</div></section>
 

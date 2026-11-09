@@ -16,7 +16,7 @@ fi
 export no_proxy="${no_proxy:-localhost,127.0.0.1,::1}" SSL_CERT_FILE="${SSL_CERT_FILE:-/etc/ssl/certs/ca-certificates.crt}" REQUESTS_CA_BUNDLE="${REQUESTS_CA_BUNDLE:-/etc/ssl/certs/ca-certificates.crt}"
 LOGDIR="$E/logs"; mkdir -p "$LOGDIR"
 STALE_MIN="${STALE_MIN:-90}"
-SEEN_EVERY_MIN="${SEEN_EVERY_MIN:-180}"
+SEEN_EVERY_MIN="${SEEN_EVERY_MIN:-55}"
 REPO="aiym168/aiym168.github.io"
 LOG="$LOGDIR/engine_b-$(TZ=Asia/Shanghai date +%F).log"
 find "$LOGDIR" -name 'engine_b-*.log' -mtime +7 -delete 2>/dev/null || true

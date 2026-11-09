@@ -219,6 +219,9 @@ def main(argv: list[str]) -> int:
     who = "GitHub 看门狗"
     if "--who" in argv:
         who = argv[argv.index("--who") + 1]
+    if cmd == "incident":
+        incident(argv[2], argv[3] if len(argv) > 3 else "")
+        return 0
     res = heal(who) if cmd == "heal" else check()
     print(json.dumps(res, ensure_ascii=False, indent=1))
     summ = os.environ.get("GITHUB_STEP_SUMMARY")
