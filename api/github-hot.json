@@ -1,5 +1,5 @@
 {
-  "updated_at_label": "2026-11-09 18:06 Asia/Shanghai",
+  "updated_at_label": "2026-11-09 18:07 Asia/Shanghai",
   "count": 30,
   "items": [
     {
@@ -38,7 +38,7 @@
       "summary": "Python中的3D建模，专为LLM构建。",
       "url": "https://github.com/Sandflow-ai/sand3d",
       "source": "GitHub",
-      "stars": 1520,
+      "stars": 1521,
       "language": "HTML",
       "heat": ""
     },
@@ -48,7 +48,7 @@
       "summary": "适用于Windows、Linux和WSL的GPU任务管理器：每进程VRAM、GPU活动和LLM模型/KV缓存洞察（ Windows AMD和NVIDIA ）。",
       "url": "https://github.com/shanselman/gputaskman",
       "source": "GitHub",
-      "stars": 1276,
+      "stars": 1278,
       "language": "Python",
       "heat": ""
     },
@@ -58,7 +58,7 @@
       "summary": "让人工智能代理与您一起使用您的手机。",
       "url": "https://github.com/DIYgod/pinky",
       "source": "GitHub",
-      "stars": 1217,
+      "stars": 1221,
       "language": "Go",
       "heat": ""
     },
@@ -198,7 +198,7 @@
       "summary": "NVIDIA Auto Ontology的语义层和个人知识库，作为Claude、ChatGPT和其他MCP客户端的MCP服务器。无需LLM API密钥。",
       "url": "https://github.com/gogoymh/auto-ontology-mcp",
       "source": "GitHub",
-      "stars": 238,
+      "stars": 239,
       "language": "Python",
       "heat": ""
     },

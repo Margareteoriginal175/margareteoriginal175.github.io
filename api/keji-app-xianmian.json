@@ -3,7 +3,7 @@
   "title": "科技软件 / App 限免",
   "description": "限免与开源替代精选",
   "href": "c/keji-app-xianmian.html",
-  "count": 11,
+  "count": 10,
   "items": [
     {
       "id": "xrss-5913101517",
@@ -183,23 +183,6 @@
         "comments": 0
       },
       "path": "item/show-hn-gitbet-linux-sourcetree-git-17f1a15782.html"
-    },
-    {
-      "id": "hn-50383785",
-      "title": "Show HN：在 Mac 上通过说出一次名称来教语音模型 (en) 命名",
-      "summary": "Show HN：在 Mac 上通过说一次来教语音模型 (en) 一个名字。我想看看语音模型如果听到它，而不仅仅是读到它，是否可以更好地拼写一个名字。<p>大多数 STT 工具将自定义单词作为文本处理（关键术语列表、用 llm 修复后的文字记录等）。<p>因此，我训练了一个适配器来尝试它，特别是 Qwen3-ASR 1.7b 上的 LoRA（请参阅基准测试）。此 LoRA 仅在听到每个自定义单词的录音后才会转录单词。<p>为了使该模型在日常生活中更易于使用，我们还构建了 Detail Keeper。这是一个 Mac 应用程序，您可以通过指定难以正确转录的单词，然后在录音中正确拾取它们来使用此适配器。<p>我们发现这在两种特定情况下很有帮助： \n1. STT从未听说过的词：发明的",
-      "url": "https://detailkeeper.com/",
-      "category": "科技软件/App 限免",
-      "source": "Hacker News",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "author": "Angus1192",
-      "deadline": null,
-      "posted_at": "2026-11-06 04:06 Asia/Shanghai",
-      "engagement": {
-        "points": 3,
-        "comments": 1
-      },
-      "path": "item/show-hn-mac-en-a8c0afd787.html"
     }
   ]
 }

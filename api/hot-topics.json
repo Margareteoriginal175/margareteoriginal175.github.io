@@ -11,8 +11,8 @@
       "summary": "高盛(Goldman Sachs)正在从其银行家和交易员手中撤出Claude Code",
       "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
       "source": "Hacker News",
-      "heat": "点数 777 · 评论 412",
-      "points": 777
+      "heat": "点数 780 · 评论 412",
+      "points": 780
     },
     {
       "id": "hnhot-50410107",
@@ -20,8 +20,8 @@
       "summary": "再见， Claude ，你好Pi",
       "url": "https://caleb.software/posts/claude-to-pi.html",
       "source": "Hacker News",
-      "heat": "点数 767 · 评论 470",
-      "points": 767
+      "heat": "点数 768 · 评论 470",
+      "points": 768
     },
     {
       "id": "hnhot-50418016",
@@ -29,8 +29,8 @@
       "summary": "英伟达首席执行官Jensen Huang致员工关于婚外情的信",
       "url": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
       "source": "Hacker News",
-      "heat": "点数 674 · 评论 721",
-      "points": 674
+      "heat": "点数 678 · 评论 725",
+      "points": 678
     },
     {
       "id": "hnhot-50418176",
@@ -38,8 +38,8 @@
       "summary": "KetchUp –使用Rust和WebGPU构建的开源SketchUp替代方案",
       "url": "https://ketchup3d.github.io/app/",
       "source": "Hacker News",
-      "heat": "点数 492 · 评论 137",
-      "points": 492
+      "heat": "点数 493 · 评论 138",
+      "points": 493
     },
     {
       "id": "hnhot-50411961",
@@ -56,8 +56,8 @@
       "summary": "Outlook.com正在拒绝来自没有DMARC的域的电子邮件",
       "url": "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc",
       "source": "Hacker News",
-      "heat": "点数 406 · 评论 287",
-      "points": 406
+      "heat": "点数 407 · 评论 288",
+      "points": 407
     },
     {
       "id": "hnhot-50418975",
@@ -65,8 +65,8 @@
       "summary": "我不相信AI泡沫的存在",
       "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html#im-not-convinced-the-ai-bubble-exists",
       "source": "Hacker News",
-      "heat": "点数 284 · 评论 472",
-      "points": 284
+      "heat": "点数 286 · 评论 477",
+      "points": 286
     },
     {
       "id": "hnhot-50416363",
@@ -74,8 +74,8 @@
       "summary": "我如何对抗AI Brain Fry",
       "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
       "source": "Hacker News",
-      "heat": "点数 249 · 评论 171",
-      "points": 249
+      "heat": "点数 250 · 评论 172",
+      "points": 250
     },
     {
       "id": "v2hot-1255439",
@@ -92,8 +92,8 @@
       "summary": "对GPUI的批判",
       "url": "https://blog.zortax.de/posts/a-critique-of-gpui",
       "source": "Hacker News",
-      "heat": "点数 99 · 评论 60",
-      "points": 99
+      "heat": "点数 101 · 评论 60",
+      "points": 101
     },
     {
       "id": "hnhot-50422168",
@@ -164,8 +164,8 @@
       "summary": "沐曦 c600\r\n平头哥 真武 m890\r\n海光 bw1100\r\n\r\n方案三选一，要两台 8 卡，看价格、交付速度综合考量\r\n据我了解现在应该是这三个方案是最新的了吧？如果有更高性能等级的也可以～\r\n\r\n手里有资源，或者可以牵线的大佬，请 PM ～～",
       "url": "https://www.v2ex.com/t/1255626",
       "source": "V2EX",
-      "heat": "回复 2",
-      "points": 2
+      "heat": "回复 3",
+      "points": 3
     },
     {
       "id": "v2hot-1255597",
@@ -184,6 +184,15 @@
       "source": "V2EX",
       "heat": "回复 2",
       "points": 2
+    },
+    {
+      "id": "v2hot-1255630",
+      "title": "[香港招聘] AI Agent 開發工程師 | 港币 25K-35K/月",
+      "summary": "# AI Agent 開發工程師\r\n\r\n港币 25K-35K/月\r\n\r\n學士  |  3-5 年  |  需有香港工作許可\r\n\r\n5 天/週, 固定坐班\r\n\r\n工作地点：旺角\r\n\r\n\r\n# 職位描述\r\n\r\n## 崗位簡介\r\n\r\n我們正在搭建智能化招聘 AI 體系，聚焦招聘全場景數智化升級。本崗位核心負責招聘場景專屬 AI Agent 的設計、開發、調優與落地迭代，圍繞簡歷解析、人崗匹配、智能對話、面試輔助、招聘數據分析等招聘核心場景，打造高可用、高智能化的 AI Agent 工具與自動化流程，助力招聘效率與精準度全面提升，是公司智能化招聘體系的核心技術崗位。\r\n\r\n## 主要職責\r\n\r\n負責招",
+      "url": "https://www.v2ex.com/t/1255630",
+      "source": "V2EX",
+      "heat": "回复 1",
+      "points": 1
     },
     {
       "id": "v2hot-1255614",
@@ -226,15 +235,6 @@
       "title": "做了个 TikTok / YouTube 评论查看和 CSV 导出工具，想听听大家怎么处理评论数据",
       "summary": "最近做了一个评论查看和导出工具：[Comment Viewer]( https://commentviewer.net/)。\r\n\r\n## 它能做什么\r\n\r\n- 粘贴 TikTok 、Instagram 或 YouTube 的公开视频链接\r\n- 查看公开评论、回复和楼中楼\r\n- 将评论导出为 CSV / Excel\r\n- 不需要注册或登录\r\n\r\n## 为什么做这个\r\n\r\n我平时做内容调研时，经常需要整理视频评论。逐条翻评论区比较费时间，复制到表格也很麻烦，所以做了这个工具，把查看、搜索和导出放到一个页面里。\r\n\r\n现在三个平台共用一个输入框，贴入视频链接就能开始读取公开评论。\r\n\r\n## 想听听",
       "url": "https://www.v2ex.com/t/1255632",
-      "source": "V2EX",
-      "heat": "回复 0",
-      "points": 0
-    },
-    {
-      "id": "v2hot-1255630",
-      "title": "[香港招聘] AI Agent 開發工程師 | 港币 25K-35K/月",
-      "summary": "# AI Agent 開發工程師\r\n\r\n港币 25K-35K/月\r\n\r\n學士  |  3-5 年  |  需有香港工作許可\r\n\r\n5 天/週, 固定坐班\r\n\r\n工作地点：旺角\r\n\r\n\r\n# 職位描述\r\n\r\n## 崗位簡介\r\n\r\n我們正在搭建智能化招聘 AI 體系，聚焦招聘全場景數智化升級。本崗位核心負責招聘場景專屬 AI Agent 的設計、開發、調優與落地迭代，圍繞簡歷解析、人崗匹配、智能對話、面試輔助、招聘數據分析等招聘核心場景，打造高可用、高智能化的 AI Agent 工具與自動化流程，助力招聘效率與精準度全面提升，是公司智能化招聘體系的核心技術崗位。\r\n\r\n## 主要職責\r\n\r\n負責招",
-      "url": "https://www.v2ex.com/t/1255630",
       "source": "V2EX",
       "heat": "回复 0",
       "points": 0
@@ -348,19 +348,19 @@
       "points": 0
     },
     {
-      "id": "xhot-xrss-3345069056",
-      "title": "我求求你，这个周末下载一个开源人工智能模型。它是一个文件，大小 5 到 20GB，可在您的笔记本电脑上运行",
-      "summary": "我求求你，这个周末下载一个开源人工智能模型。它是一个文件，大小为 5 到 20GB，并且可以在您已有的笔记本电脑上运行。一旦存储在您的硬盘上，您就不需要帐户、订阅或互联网连接。你的付费人工智能可能会在夜间发生变化 - X\n我求求你，这个周末下载一个开源人工智能模型。它是一个文件，大小为 5 到 20GB，并且可以在您已有的笔记本电脑上运行。一旦存储在您的硬盘上，您就不需要帐户、订阅或互联网连接。您的付费人工智能可能会在夜间发生变化 X",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1lUURtT05QSUlmRTVSemMzMHdKMDd4QTlNZVBKMlBXcTFUOHZma3RONzZxQ2pRT2NHSklINGU1YzJCRW84OFo0ZE9GVDg5Wk1NaGtSWnhEM01JQ0VMUVE1MQ?oc=5",
+      "id": "xhot-xrss-9291250728",
+      "title": "人工智能工具比 PW 和 Allen 等商业辅导课程更能帮助学生应对考试，因为它们",
+      "summary": "人工智能工具比 PW 和 Allen 等商业辅导课程更能帮助学生应对考试，因为它们为学生提供 PYQ，并在学生得到错误答案时提供即时反馈。而且是免费的！ https://t.co/uuETICw0ne - X\n人工智能工具比 PW 和 Allen 等商业辅导课程更能帮助学生应对考试，因为它们为学生提供 PYQ，并在学生得到错误答案时提供即时反馈。而且是免费的！ https://t.co/uuETICw0ne X",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5vcTZqZTl3WFdpa1JocXhZVGM0WXhPakY5ZGQ3UUJEVHg2cnRKQm1TeW1oRWxXb0JrbFV2RU9Ec1IxNkxOampETDlhbmF0d0d1Ti1wVjZ2M1BUU3Bu?oc=5",
       "source": "X",
       "heat": "赞 0 · 收藏 0",
       "points": 0
     },
     {
-      "id": "xhot-xrss-7831709116",
-      "title": "我们让您可以更轻松地在 Pro、Max 和 Ultra 上的 Claude Code 云会话中运行您的存储库。克劳德算出w",
-      "summary": "我们让您可以更轻松地在 Pro、Max 和 Ultra 上的 Claude Code 云会话中运行您的存储库。 Claude 找出它需要哪些依赖项、网络访问权限和 API 密钥，然后保存环境以供下次使用。 API 密钥被安全保存，因此 Cla - X\n我们让您可以更轻松地在 Pro、Max 和 Ultra 上的 Claude Code 云会话中运行您的存储库。 Claude 找出它需要哪些依赖项、网络访问权限和 API 密钥，然后保存环境以供下次使用。 API 密钥被安全保存，因此 Cla X",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5CWTRoNVBiTzN4aG1fUDVLRHpXQ0dqT0hmbWRuNF9Oc3N2M04tU3EzWERNeUk4SXp6d2kwV20yMktOeG1KMkdBX1FJWmlFQzk4Y2NDMkctOHczcUNFN1RCZA?oc=5",
+      "id": "xhot-xrss-9709887123",
+      "title": "Anthropic 给了我 30,000 美元的 Claude 学分来研究我自己的肿瘤，我自 3 月份以来就写下了我所构建的东西。我正在寻找s",
+      "summary": "Anthropic 给了我 30,000 美元的 Claude 学分来研究我自己的肿瘤，我自 3 月份以来就写下了我所构建的东西。我正在寻找可以制造个性化疫苗的人，以及可以提供这种疫苗的医院 https://t.co/bkJ1AI4m9g - X\nAnthropic 给了我 30,000 美元的 Claude 学分来研究我自己的肿瘤，我自 3 月份以来就写下了我所构建的东西。我正在寻找能够制造个性化疫苗的人以及能够提供这种疫苗的医院 https://t.co/bkJ1AI4m9g    X",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE54ei1Fbng2UDk5R0NwNFcyVXRqZF8yZWw4X09rTnA5b3RoZFg4Y3I2Z3lrVDNqYjNnRW55VnZWSVdGdzR3WUU3MFdqYVFWelpvcG9WY2xZaHVoTXRBZW5TRw?oc=5",
       "source": "X",
       "heat": "赞 0 · 收藏 0",
       "points": 0
