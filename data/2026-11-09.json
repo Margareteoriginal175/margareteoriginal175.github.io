@@ -1,9 +1,559 @@
 {
   "date": "2026-11-09",
   "updated_at": "2026-11-09T16:04+08:00",
-  "updated_at_label": "2026-11-09 18:44 Asia/Shanghai",
+  "updated_at_label": "2026-11-09 19:29 Asia/Shanghai",
   "source": "x-fetch+simular",
   "items": [
+    {
+      "id": "x-1400566583890644992",
+      "source": "X",
+      "author": "huggingface",
+      "url": "https://x.com/huggingface/status/1400566583890644992",
+      "title": "GPT-Neo 是 GPT3 的 #OpenSource 堂兄，几乎可以在 #NLP 中执行任何操作，从情感分析到编写 SQL 语句",
+      "summary": "GPT-Neo 是 GPT3 的 #OpenSource 堂兄，几乎可以在 #NLP 中执行任何操作，从情感分析到编写 SQL 查询：只需用您自己的话告诉它要做什么。 🤯\n\n它是如何运作的？ 🧐\n想尝试一下吗？ 🎮\n👉 https://t.co/CnVrQQ1QCs https://t.co/LCF4foEGoF",
+      "posted_at": "Thu Jun 03 21:34:29 +0000 2021",
+      "engagement": {
+        "likes": 481,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 142
+      },
+      "category": "其他科技",
+      "original_title": "GPT-Neo, the #OpenSource  cousin of GPT3, can do practically anything in #NLP  from sentiment analysis to writing SQL qu",
+      "original_summary": "GPT-Neo, the #OpenSource  cousin of GPT3, can do practically anything in #NLP  from sentiment analysis to writing SQL queries: just tell it what to do, in your own words. 🤯\n\nHow does it work? 🧐\nWant to try it out? 🎮\n👉 https://t.co/CnVrQQ1QCs https://t.co/LCF4foEGoF",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1764389608119230835",
+      "source": "X",
+      "author": "huggingface",
+      "url": "https://x.com/huggingface/status/1764389608119230835",
+      "title": "开源社区很棒🤗",
+      "summary": "开源社区很棒🤗",
+      "posted_at": "Sun Mar 03 20:37:18 +0000 2024",
+      "engagement": {
+        "likes": 466,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 43
+      },
+      "category": "其他科技",
+      "original_title": "The Open Source community is amazing 🤗",
+      "original_summary": "The Open Source community is amazing 🤗",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1668644019058909187",
+      "source": "X",
+      "author": "huggingface",
+      "url": "https://x.com/huggingface/status/1668644019058909187",
+      "title": "📣 召集所有游戏开发者和人工智能爱好者！🎮",
+      "summary": "📣 召集所有游戏开发者和人工智能爱好者！🎮\n\n已经有 400 人报名参加首届 Open Source AI Game Jam，您将在周末使用 AI 工具制作游戏🔥\n\n在这里注册 👉 https://t.co/iDyTq9aXmA\n\n什么人工智能工具？今天我们重点关注音频工具🔊\n⬇️ https://t.co/YaLDOJLh5r",
+      "posted_at": "Tue Jun 13 15:38:30 +0000 2023",
+      "engagement": {
+        "likes": 494,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 114
+      },
+      "category": "其他科技",
+      "original_title": "📣 Calling all game dev and AI enthusiasts!🎮",
+      "original_summary": "📣 Calling all game dev and AI enthusiasts!🎮\n\nAlready 400 people signed up for the first Open Source AI Game Jam, where you'll use AI tools to make a game in a weekend🔥\n\nSign up here 👉 https://t.co/iDyTq9aXmA\n\nWhat AI tools? Let's focus today on Audio tools 🔊\n⬇️ https://t.co/YaLDOJLh5r",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1346398458303934464",
+      "source": "X",
+      "author": "huggingface",
+      "url": "https://x.com/huggingface/status/1346398458303934464",
+      "title": "发布提醒：🤗datasets 库 v1.2 现已推出！",
+      "summary": "发布提醒：🤗datasets 库 v1.2 现已推出！\n\n与：\n- 一行Python即可下载611个数据集\n- 涵盖 467 种语言，其中 99 种语言至少有 10 个数据集\n- 高效的预处理使您摆脱内存限制\n\n尝试一下：\nhttps://t.co/A7rmjGSELy https://t.co/c8TETfWfHr",
+      "posted_at": "Tue Jan 05 10:09:41 +0000 2021",
+      "engagement": {
+        "likes": 576,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 148
+      },
+      "category": "其他科技",
+      "original_title": "Release alert: the 🤗datasets library v1.2 is available now!",
+      "original_summary": "Release alert: the 🤗datasets library v1.2 is available now!\n\nWith:\n- 611 datasets you can download in one line of python\n- 467 languages covered, 99 with at least 10 datasets\n- efficient pre-processing to free you from memory constraints\n\nTry it out at:\nhttps://t.co/A7rmjGSELy https://t.co/c8TETfWfHr",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1958163027238223985",
+      "source": "X",
+      "author": "huggingface",
+      "url": "https://x.com/huggingface/status/1958163027238223985",
+      "title": "太阳出来了，模特出来了。 😎",
+      "summary": "太阳出来了，模特出来了。 😎\n@IBM 和 @NASA 放弃了 Surya，这是一个开源太阳物理模型，经过 NASA 太阳动力学观测站 14 年的观测训练，它是 🔥🔥🔥。 https://t.co/nHSizcMAGf",
+      "posted_at": "Wed Aug 20 13:43:41 +0000 2025",
+      "engagement": {
+        "likes": 571,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 112
+      },
+      "category": "其他科技",
+      "original_title": "Sun's out, models out. 😎",
+      "original_summary": "Sun's out, models out. 😎\n@IBM &amp; @NASA dropped Surya, an open-source heliophysics model trained on 14 years of observations from NASA’s Solar Dynamics Observatory, and it's 🔥🔥🔥. https://t.co/nHSizcMAGf",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1300871453634703361",
+      "source": "X",
+      "author": "huggingface",
+      "url": "https://x.com/huggingface/status/1300871453634703361",
+      "title": "想要不带 GPU 的快速变形金刚模型吗？！ 🧐",
+      "summary": "想要不带 GPU 的快速变形金刚模型吗？！ 🧐\n从 Transformer v3.1.0 开始，借助 ONNX 运行时量化，您的模型现在可以在商用 CPU 上以光速运行！🚀。请查看我们关于 ONNX 运行时主题的第二篇博客文章！ 🔥\nhttps://t.co/OzPZ8y6XuW",
+      "posted_at": "Tue Sep 01 19:01:38 +0000 2020",
+      "engagement": {
+        "likes": 608,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 164
+      },
+      "category": "云服务/GPU/开发者资源",
+      "original_title": "Want speedy transformers models w/o a GPU?! 🧐",
+      "original_summary": "Want speedy transformers models w/o a GPU?! 🧐\nStarting with transformers v3.1.0 your models can now run at the speed of light on commodity CPUs thanks to ONNX Runtime quantization!🚀. Check out our 2nd blog post with ONNX Runtime on the subject! 🔥\nhttps://t.co/OzPZ8y6XuW",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1260585145402380291",
+      "source": "X",
+      "author": "huggingface",
+      "url": "https://x.com/huggingface/status/1260585145402380291",
+      "title": "您现在可以通过无缝 @wandb 集成可视化 Transformers 训练性能。比较超参数，出",
+      "summary": "您现在可以通过无缝 @wandb 集成可视化 Transformers 训练性能。比较模型中的超参数、输出指标和系统统计信息（例如 GPU 利用率）！\n\n分步指南：https://t.co/ko5wBR3PST\n\nColab：https://t.co/2nE9uA43L3 https://t.co/zGPx3WXtx3",
+      "posted_at": "Wed May 13 14:58:13 +0000 2020",
+      "engagement": {
+        "likes": 620,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 174
+      },
+      "category": "AI 开发工具与编程助手",
+      "original_title": "You can now visualize Transformers training performance with a seamless @wandb integration. Compare hyperparameters, out",
+      "original_summary": "You can now visualize Transformers training performance with a seamless @wandb integration. Compare hyperparameters, output metrics, and system stats like GPU utilization across your models!\n\nStep-by-step guide: https://t.co/ko5wBR3PST\n\nColab: https://t.co/2nE9uA43L3 https://t.co/zGPx3WXtx3",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1351560093658198022",
+      "source": "X",
+      "author": "huggingface",
+      "url": "https://x.com/huggingface/status/1351560093658198022",
+      "title": "在单个 GPU 上微调*30 亿*参数模型？",
+      "summary": "在单个 GPU 上微调*30 亿*参数模型？\n\n由于 DeepSpeed/Fairscale 集成，现在可以在 Transformer 中实现！\n\n感谢@StasBekman 的无缝集成，感谢@microsoft 和@facebookai 团队的支持！\nhttps://t.co/zwXAOUk5dI",
+      "posted_at": "Tue Jan 19 16:00:11 +0000 2021",
+      "engagement": {
+        "likes": 642,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 172
+      },
+      "category": "云服务/GPU/开发者资源",
+      "original_title": "Fine-tuning a *3-billion* parameter model on a single GPU?",
+      "original_summary": "Fine-tuning a *3-billion* parameter model on a single GPU?\n\nNow possible in transformers, thanks to the DeepSpeed/Fairscale integrations!\n\nThank you @StasBekman for the seamless integration, and thanks to @microsoft and @facebookai teams for their support!\nhttps://t.co/zwXAOUk5dI",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1628097950541807629",
+      "source": "X",
+      "author": "huggingface",
+      "url": "https://x.com/huggingface/status/1628097950541807629",
+      "title": "今天，我们很高兴宣布与 @awscloud 建立新的合作伙伴关系！ 🔥",
+      "summary": "今天，我们很高兴宣布与 @awscloud 建立新的合作伙伴关系！ 🔥\n\n我们将共同加速开源机器学习的可用性🤝\n\n阅读帖子👉 https://t.co/fb77d1J2qX",
+      "posted_at": "Tue Feb 21 18:22:54 +0000 2023",
+      "engagement": {
+        "likes": 689,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 150
+      },
+      "category": "云服务/GPU/开发者资源",
+      "original_title": "Today we are excited to announce a new partnership with @awscloud! 🔥",
+      "original_summary": "Today we are excited to announce a new partnership with @awscloud! 🔥\n\nTogether, we will accelerate the availability of open-source machine learning 🤝\n\nRead the post 👉 https://t.co/fb77d1J2qX",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1592390692927852547",
+      "source": "X",
+      "author": "huggingface",
+      "url": "https://x.com/huggingface/status/1592390692927852547",
+      "title": "Hugging Faceから日本へのお知らせです！",
+      "summary": "Hugging Faceから日本へのお知らせです！\n\nHugging Faceコースの日本語翻訳を始めました。東北大学のStudent Ambassadorsの皆さんのお陰で第一章の翻訳が終了しました。\n今後もコツコツと翻訳していきます。\n是非コースを読んでHugging Face Tranformersについて学んで、使ってみてください！",
+      "posted_at": "Tue Nov 15 05:35:01 +0000 2022",
+      "engagement": {
+        "likes": 784,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 217
+      },
+      "category": "其他科技",
+      "original_title": "Hugging Faceから日本へのお知らせです！",
+      "original_summary": "Hugging Faceから日本へのお知らせです！\n\nHugging Faceコースの日本語翻訳を始めました。東北大学のStudent Ambassadorsの皆さんのお陰で第一章の翻訳が終了しました。\n今後もコツコツと翻訳していきます。\n是非コースを読んでHugging Face Tranformersについて学んで、使ってみてください！",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1911785683376648232",
+      "source": "X",
+      "author": "huggingface",
+      "url": "https://x.com/huggingface/status/1911785683376648232",
+      "title": "非常高兴地宣布我们正在收购@pollenrobotics，将开源机器人推向世界！ 🤖",
+      "summary": "非常高兴地宣布我们正在收购@pollenrobotics，将开源机器人推向世界！ 🤖\n\n自从 @RemiCadene 从 Tesla 加入我们以来，借助 @LeRobotHF 和 Hugging Face Hub，我们已经成为使用最广泛的开放式机器人软件平台。现在，我们是 https://t.co/9PVLP2Nq1H",
+      "posted_at": "Mon Apr 14 14:16:40 +0000 2025",
+      "engagement": {
+        "likes": 899,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 171
+      },
+      "category": "AI 开发工具与编程助手",
+      "original_title": "Super happy to announce that we are acquiring @pollenrobotics to bring open-source robots to the world! 🤖",
+      "original_summary": "Super happy to announce that we are acquiring @pollenrobotics to bring open-source robots to the world! 🤖\n\nSince @RemiCadene joined us from Tesla, we’ve become the most widely used software platform for open robotics thanks to @LeRobotHF and the Hugging Face Hub. Now, we’re https://t.co/9PVLP2Nq1H",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1658054038879870977",
+      "source": "X",
+      "author": "huggingface",
+      "url": "https://x.com/huggingface/status/1658054038879870977",
+      "title": "变形金刚中的第一个 RNN！ 🤯",
+      "summary": "变形金刚中的第一个 RNN！ 🤯\n宣布将 RWKV 模型集成到 @BlinkDL_AI 和 RWKV 社区的变压器中！\nRWKV 是一种无注意力模型，结合了 RNN 和 Transformer 的优点。\n在此博文中了解有关该模型的更多信息：https://t.co/0FQmsaRVZw https://t.co/8WbvGoIyIa",
+      "posted_at": "Mon May 15 10:17:42 +0000 2023",
+      "engagement": {
+        "likes": 1099,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 251
+      },
+      "category": "其他科技",
+      "original_title": "The first RNN in transformers! 🤯",
+      "original_summary": "The first RNN in transformers! 🤯\nAnnouncing the integration of RWKV models in transformers with @BlinkDL_AI and RWKV community!\nRWKV is an attention free model that combines the best from RNNs and transformers.\nLearn more about the model in this blogpost: https://t.co/0FQmsaRVZw https://t.co/8WbvGoIyIa",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1524783489593360385",
+      "source": "X",
+      "author": "huggingface",
+      "url": "https://x.com/huggingface/status/1524783489593360385",
+      "title": "上周@MetaAI公开发布了巨大的LM，参数高达☄️30B。开源的伟大胜利🎉",
+      "summary": "上周@MetaAI公开发布了巨大的LM，参数高达☄️30B。开源的伟大胜利🎉\n\n这些检查点现在位于🤗变形金刚中！\n但这么大的检查点怎么用呢？\n\n介绍加速和 \n⚡️大模型推理⚡️ \n\n在 Colab 中加载并使用 30B 模型 (!)⬇️ https://t.co/bITZ0z1P2z",
+      "posted_at": "Thu May 12 16:08:07 +0000 2022",
+      "engagement": {
+        "likes": 1129,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 230
+      },
+      "category": "云服务/GPU/开发者资源",
+      "original_title": "Last week @MetaAI publicly released huge LMs, with up to ☄️30B parameters. Great win for Open-Source🎉",
+      "original_summary": "Last week @MetaAI publicly released huge LMs, with up to ☄️30B parameters. Great win for Open-Source🎉\n\nThese checkpoints are now in 🤗transformers!\nBut how to use such big checkpoints?\n\nIntroducing Accelerate and \n⚡️BIG MODEL INFERENCE⚡️ \n\nLoad &amp; USE the 30B model in colab (!)⬇️ https://t.co/bITZ0z1P2z",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1377273424641466370",
+      "source": "X",
+      "author": "huggingface",
+      "url": "https://x.com/huggingface/status/1377273424641466370",
+      "title": "上周，EleutherAI 发布了 GPT Neo 的两个检查点，GPT Neo 是 OpenAI 的 GPT-3 的“开源”复制品",
+      "summary": "上周，EleutherAI 发布了 GPT Neo 的两个检查点，GPT Neo 是 OpenAI 的 GPT-3 的“开源”复制品\n\n这些尺寸为 1.3B 和 2.7B 的检查点现已在🤗变形金刚中提供！\n\n生成能力真的很强大🤯，现在就在 Hub 上尝试一下：https://t.co/LbLXuCNYip https://t.co/eHq45J5tdu",
+      "posted_at": "Wed Mar 31 14:55:47 +0000 2021",
+      "engagement": {
+        "likes": 1160,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 296
+      },
+      "category": "其他科技",
+      "original_title": "Last week, EleutherAI released two checkpoints for GPT Neo, an *Open Source* replication of OpenAI's GPT-3",
+      "original_summary": "Last week, EleutherAI released two checkpoints for GPT Neo, an *Open Source* replication of OpenAI's GPT-3\n\nThese checkpoints, of sizes 1.3B and 2.7B are now available in🤗Transformers!\n\nThe generation capabilities are truly🤯, try it now on the Hub: https://t.co/LbLXuCNYip https://t.co/eHq45J5tdu",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1696090134309974362",
+      "source": "X",
+      "author": "huggingface",
+      "url": "https://x.com/huggingface/status/1696090134309974362",
+      "title": "Code Llama：现在拥抱聊天💻🦙",
+      "summary": "Code Llama：现在拥抱聊天💻🦙\n\n免费试用 34B Instruct 模型，推理速度超快！\n\n👉 https://t.co/TQ0ZaVZcdi https://t.co/Vovq91thG2",
+      "posted_at": "Mon Aug 28 09:19:34 +0000 2023",
+      "engagement": {
+        "likes": 1230,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 262
+      },
+      "category": "其他科技",
+      "original_title": "Code Llama: Now on Hugging Chat 💻🦙",
+      "original_summary": "Code Llama: Now on Hugging Chat 💻🦙\n\nTry out the 34B Instruct model for free with super fast inference!\n\n👉 https://t.co/TQ0ZaVZcdi https://t.co/Vovq91thG2",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1370031155261607936",
+      "source": "X",
+      "author": "huggingface",
+      "url": "https://x.com/huggingface/status/1370031155261607936",
+      "title": "价值 4000 万美元的 B 轮融资！ 🙏感谢开源贡献者、拉取请求者、问题开启者、笔记本创建者、模型架构师，",
+      "summary": "价值 4000 万美元的 B 轮融资！ 🙏感谢 🌎 各地的开源贡献者、拉取请求者、问题开启者、笔记本创建者、模型架构师、推特支持者和社区成员！ \n\n没有你们，我们就无法做我们所做的事情，也无法取得现在的成就——在一个由大型科技主导的领域！ https://t.co/M7WASeFrAy",
+      "posted_at": "Thu Mar 11 15:17:36 +0000 2021",
+      "engagement": {
+        "likes": 1268,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 134
+      },
+      "category": "其他科技",
+      "original_title": "$40M series B! 🙏Thank you open source contributors, pull requesters, issue openers, notebook creators, model architects,",
+      "original_summary": "$40M series B! 🙏Thank you open source contributors, pull requesters, issue openers, notebook creators, model architects, twitting supporters &amp; community members all over the 🌎! \n\nWe couldn't do what we do &amp; be where we are - in a field dominated by big tech - without you! https://t.co/M7WASeFrAy",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1404467270332583936",
+      "source": "X",
+      "author": "huggingface",
+      "url": "https://x.com/huggingface/status/1404467270332583936",
+      "title": "抱脸课程第一部分终于出炉了！",
+      "summary": "抱脸课程第一部分终于出炉了！\n\n快来了解🤗生态系统如何运作🥳：变压器、分词器、数据集、加速器、模型中心！ \n\n分享给你想学习NLP的朋友，它是免费的！\n\n欢迎加入我们 https://t.co/6YNx6vY3VT https://t.co/S8E0y3npkE",
+      "posted_at": "Mon Jun 14 15:54:25 +0000 2021",
+      "engagement": {
+        "likes": 1459,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 469
+      },
+      "category": "大模型 API 免费额度",
+      "original_title": "The first part of the Hugging Face Course is finally out!",
+      "original_summary": "The first part of the Hugging Face Course is finally out!\n\nCome learn how the 🤗 Ecosystem works 🥳: Transformers, Tokenizers, Datasets, Accelerate, the Model Hub! \n\nShare with your friends who want to learn NLP, it's free!\n\nCome join us at https://t.co/6YNx6vY3VT https://t.co/S8E0y3npkE",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1293240692924452864",
+      "source": "X",
+      "author": "huggingface",
+      "url": "https://x.com/huggingface/status/1293240692924452864",
+      "title": "没有标记数据？没问题。",
+      "summary": "没有标记数据？没问题。\n\n🤗 Transformers 主分支现在包含一个用于零样本文本分类的内置管道，将包含在下一版本中。\n\n在笔记本中尝试一下：https://t.co/31Z6LR1NjK https://t.co/IugPUj3sa1",
+      "posted_at": "Tue Aug 11 17:39:43 +0000 2020",
+      "engagement": {
+        "likes": 1524,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 405
+      },
+      "category": "云服务/GPU/开发者资源",
+      "original_title": "No labeled data? No problem.",
+      "original_summary": "No labeled data? No problem.\n\nThe 🤗 Transformers master branch now includes a built-in pipeline for zero-shot text classification, to be included in the next release.\n\nTry it out in the notebook here: https://t.co/31Z6LR1NjK https://t.co/IugPUj3sa1",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1681758402995798016",
+      "source": "X",
+      "author": "huggingface",
+      "url": "https://x.com/huggingface/status/1681758402995798016",
+      "title": "Llama 2：现在拥抱聊天🤗🦙",
+      "summary": "Llama 2：现在拥抱聊天🤗🦙\n\n免费试用 70B 聊天模型，具有超快的推理、网络搜索功能，并由开源工具提供支持！\n\n👉 https://t.co/TQ0ZaVZcdi https://t.co/AnD2eknCMt",
+      "posted_at": "Wed Jul 19 20:10:23 +0000 2023",
+      "engagement": {
+        "likes": 1679,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 422
+      },
+      "category": "其他科技",
+      "original_title": "Llama 2: Now on Hugging Chat 🤗🦙",
+      "original_summary": "Llama 2: Now on Hugging Chat 🤗🦙\n\nTry out the 70B Chat model for free with super fast inference, web search, and powered by open-source tools!\n\n👉 https://t.co/TQ0ZaVZcdi https://t.co/AnD2eknCMt",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-2118702813802791306",
+      "source": "X",
+      "author": "github",
+      "url": "https://x.com/github/status/2118702813802791306",
+      "title": "最好的学习方式是什么？允许自己玩，但要限制时间。",
+      "summary": "最好的学习方式是什么？允许自己玩，但要限制时间。 \n\n在我们最新一集的 GitHub 播客中，@martinwoodward 讨论了人工智能如何改变开源、开发人员技能以及构建事物的乐趣。无论您在哪里收听播客或 https://t.co/GnNSXuiOhX 都可以找到它",
+      "posted_at": "Fri Nov 06 13:51:29 +0000 2026",
+      "engagement": {
+        "likes": 83,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 12
+      },
+      "category": "其他科技",
+      "original_title": "What's the best way to learn? Give yourself permission to play, but time-box it.",
+      "original_summary": "What's the best way to learn? Give yourself permission to play, but time-box it. \n\nIn our latest episode of the GitHub Podcast, @martinwoodward discusses how AI is changing open source, developer skills, and the joy of building things. Find it wherever you listen to podcasts or https://t.co/GnNSXuiOhX",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-2102569821997346912",
+      "source": "X",
+      "author": "Alibaba_Qwen",
+      "url": "https://x.com/Alibaba_Qwen/status/2102569821997346912",
+      "title": "感谢@arena的认可！ 🏆 Qwen-Image-2.1 现在是图像编辑和文本到 I 方面排名第一的开源模型",
+      "summary": "感谢@arena的认可！ 🏆 Qwen-Image-2.1 现在是图像编辑和文本到图像领域排名第一的开源模型。立即尝试并向我们展示您的创造！ 🎨",
+      "posted_at": "Wed Sep 23 01:24:44 +0000 2026",
+      "engagement": {
+        "likes": 551,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 27
+      },
+      "category": "其他科技",
+      "original_title": "Thanks @arena for the recognition! 🏆 Qwen-Image-2.1 is now the #1 open-source model in both the Image Edit and Text-to-I",
+      "original_summary": "Thanks @arena for the recognition! 🏆 Qwen-Image-2.1 is now the #1 open-source model in both the Image Edit and Text-to-Image Arenas. Try it now and show us what you create! 🎨",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-2108401307577090259",
+      "source": "X",
+      "author": "Alibaba_Qwen",
+      "url": "https://x.com/Alibaba_Qwen/status/2108401307577090259",
+      "title": "在 @gmi_cloud 上免费使用 Qwen3.8-Max、Qwen3.8-Flash 和 Wan3.0 一周。探索您可以与我们一起构建什么",
+      "summary": "在 @gmi_cloud 上免费使用 Qwen3.8-Max、Qwen3.8-Flash 和 Wan3.0 一周。探索您现在可以与我们一起构建什么。 🙌",
+      "posted_at": "Fri Oct 09 03:36:58 +0000 2026",
+      "engagement": {
+        "likes": 1184,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 66
+      },
+      "category": "云服务/GPU/开发者资源",
+      "original_title": "A week of free access to Qwen3.8-Max, Qwen3.8-Flash, and Wan3.0 on @gmi_cloudis live. Explore what you can build with us",
+      "original_summary": "A week of free access to Qwen3.8-Max, Qwen3.8-Flash, and Wan3.0 on @gmi_cloudis live. Explore what you can build with us now. 🙌",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-2109633085658808515",
+      "source": "X",
+      "author": "Alibaba_Qwen",
+      "url": "https://x.com/Alibaba_Qwen/status/2109633085658808515",
+      "title": "推出 QwenGyre，将弹性强化学习引入超长视野 (XLong) 智能体训练中。 ✨",
+      "summary": "推出 QwenGyre，将弹性强化学习引入超长视野 (XLong) 智能体训练中。 ✨\n\n它推出时有两个核心设计：🥳\n- 弹性调度程序：随着需求的变化，在部署和训练之间重新分配 GPU——实时执行永远不会中断。比 https://t.co/wMDoJOuP2j 加速高达 1.85 倍",
+      "posted_at": "Mon Oct 12 13:11:37 +0000 2026",
+      "engagement": {
+        "likes": 3262,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 305
+      },
+      "category": "云服务/GPU/开发者资源",
+      "original_title": "Introducing QwenGyre, bringing elastic RL to extreme-long-horizon (XLong) agent training. ✨",
+      "original_summary": "Introducing QwenGyre, bringing elastic RL to extreme-long-horizon (XLong) agent training. ✨\n\nIt launches with two core designs: 🥳\n- Elastic Scheduler: reallocates GPUs between rollout &amp; training as demand shifts—live executions never interrupted. Up to 1.85× speedup over https://t.co/wMDoJOuP2j",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-2110214931559899630",
+      "source": "X",
+      "author": "Alibaba_Qwen",
+      "url": "https://x.com/Alibaba_Qwen/status/2110214931559899630",
+      "title": "祝贺 @lightseekorg 取得了令人印象深刻的 TokenSpeed 成绩！ 🚀 很高兴看到 Qwen3.8-Flash-Next 达到 685 输出",
+      "summary": "祝贺 @lightseekorg 取得了令人印象深刻的 TokenSpeed 成绩！ 🚀 很高兴看到 Qwen3.8-Flash-Next 在 Nvida GPU 上达到每用户 685 个输出令牌/秒。很高兴看到社区释放 Qwen 的更多推理潜力！",
+      "posted_at": "Wed Oct 14 03:43:40 +0000 2026",
+      "engagement": {
+        "likes": 1158,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 60
+      },
+      "category": "大模型 API 免费额度",
+      "original_title": "Congrats to @lightseekorg on the impressive TokenSpeed results! 🚀 Great to see Qwen3.8-Flash-Next reaching 685 output to",
+      "original_summary": "Congrats to @lightseekorg on the impressive TokenSpeed results! 🚀 Great to see Qwen3.8-Flash-Next reaching 685 output tokens/s per user on Nvida GPUs. Excited to see the community unlock more of Qwen’s inference potential!",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-2112924036791734645",
+      "source": "X",
+      "author": "GoogleDeepMind",
+      "url": "https://x.com/GoogleDeepMind/status/2112924036791734645",
+      "title": "RT @TZahavy：在过去的一年里，@GoogleDeepMind 的 Discovery 团队在一个由学生研究员 @dsantosm 领导的项目中",
+      "summary": "RT @TZahavy：在过去的一年里，@GoogleDeepMind 的发现团队在一个由学生研究员 @dsantosmarco 领导的项目中，做出了新的……",
+      "posted_at": "Wed Oct 21 15:08:41 +0000 2026",
+      "engagement": {
+        "likes": 0,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 75
+      },
+      "category": "其他科技",
+      "original_title": "RT @TZahavy: Over the past year, the Discovery team at @GoogleDeepMind, in a project led by student researcher @dsantosm",
+      "original_summary": "RT @TZahavy: Over the past year, the Discovery team at @GoogleDeepMind, in a project led by student researcher @dsantosmarco, has made new…",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
     {
       "id": "xrss-4855024706",
       "source": "X",
@@ -1987,432 +2537,6 @@
       "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
       "translated_by": "free-translate",
       "deadline": null
-    },
-    {
-      "id": "xrss-3997317130",
-      "source": "X",
-      "author": "news",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9zNV9lZllMRzBjTkFpSUZ3YUpON0cxUnp5NjdYRXlLUmRMMF84MnRqMjhNZ2pHOXhhZ3poXzVhTmIwRUlpWHo0QldvNWFmVDZ6MnNTSFpkS2JoV0FTekV4RUdCTQ?oc=5",
-      "title": "谷歌新论文发现，与人工智能队友一起练习的学生写出的商业计划比学生写得更好",
-      "summary": "谷歌的新论文发现，与使用反驳的人工智能队友一起练习的学生比使用普通人工智能工具的学生写出了更好的商业计划。批判性思维和协作等技能对于创业很重要，但很难教授和掌握 - X\n谷歌的新论文发现，与使用反驳的人工智能队友一起练习的学生比使用普通人工智能工具的学生写出了更好的商业计划。批判性思维和协作等技能对于创业很重要，但很难教授和掌握 X",
-      "posted_at": "Sat, 07 Nov 2026 21:00:45 GMT",
-      "engagement": {
-        "likes": 0,
-        "bookmarks": 0,
-        "impressions": 0
-      },
-      "category": "其他科技",
-      "original_title": "New Google paper finds that students who practiced with AI teammates that push back wrote better business plans than stu",
-      "original_summary": "New Google paper finds that students who practiced with AI teammates that push back wrote better business plans than students using normal AI tools. Skills like critical thinking and collaboration matter for starting a business, but they are hard to teach and har - X\nNew Google paper finds that students who practiced with AI teammates that push back wrote better business plans than students using normal AI tools. Skills like critical thinking and collaboration matter for starting a business, but they are hard to teach and har &nbsp;&nbsp; X",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "translated_by": "free-translate",
-      "deadline": null
-    },
-    {
-      "id": "xrss-5455981785",
-      "source": "X",
-      "author": "news",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5idzJOZks5azZpR1dzeTJzaUZmVTN0LUZDalpmaDc2S0ZvTm93Y3RfX2JvU0M1NWU0Z0pyc21lc3VzUlE1ZTljVVNQSUZoSlI1QXpCY2pJSE1jZXBHNmNlVUxDc0o?oc=5",
-      "title": "本周医学 1. Lilly/Verve 的一次性 ANGPTL3 碱基编辑器可降低 prim 中的 LDL 胆固醇和甘油三酯",
-      "summary": "本周医学 1. Lilly/Verve 的一次性 ANGPTL3 碱基编辑器可降低灵长类动物的 LDL 胆固醇和甘油三酯（临床试验已经开始！）。 2. 谷歌的人工智能智能手表无需血压袖带即可检测高血压。 3. 中国生物技术，- X\n本周医学 1. Lilly/Verve 的一次性 ANGPTL3 碱基编辑器可降低灵长类动物的 LDL 胆固醇和甘油三酯（临床试验已经开始！）。 2. 谷歌的人工智能智能手表无需血压袖带即可检测高血压。 3. 中国生物技术，    X",
-      "posted_at": "Sun, 08 Nov 2026 14:58:00 GMT",
-      "engagement": {
-        "likes": 0,
-        "bookmarks": 0,
-        "impressions": 0
-      },
-      "category": "AI 产品会员/试用",
-      "original_title": "This week in medicine 1. Lilly/Verve's one-and-done ANGPTL3 base editor lowers LDL cholesterol and triglycerides in prim",
-      "original_summary": "This week in medicine 1. Lilly/Verve's one-and-done ANGPTL3 base editor lowers LDL cholesterol and triglycerides in primates (the clinical trial has started!). 2. Google's AI smartwatch detects hypertension -- without a blood pressure cuff. 3. Chinese biotech, - X\nThis week in medicine 1. Lilly/Verve's one-and-done ANGPTL3 base editor lowers LDL cholesterol and triglycerides in primates (the clinical trial has started!). 2. Google's AI smartwatch detects hypertension -- without a blood pressure cuff. 3. Chinese biotech, &nbsp;&nbsp; X",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "translated_by": "free-translate",
-      "deadline": null
-    },
-    {
-      "id": "xrss-1342022940",
-      "source": "X",
-      "author": "news",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9wbHNUeUJPQm5kMWFxeVBQRnFEN1JHOHRMLXZIcGxVTFNtbW1KZVJkeER3ZU80VnlwQ0l3anNZclVCaHAyb0dxQUV6WjJBd0l3Y2pyeUxqdmtCZnIxQkE?oc=5",
-      "title": "llama.cpp 为那些 AI 模型不适合 VRAM 的 Localmaxxers 合并了一些重要内容。 👀🔥（Strata也有这个）升级",
-      "summary": "llama.cpp 为那些 AI 模型不适合 VRAM 的 Localmaxxers 合并了一些重要内容。 👀🔥（Strata 也有这个）升级是纯软件，不需要昂贵或难以找到的新 GPU。 PR #30966 于 11 月 7 日合并。以下是他们添加的内容。 Wh-X\nllama.cpp 为那些 AI 模型不适合 VRAM 的 Localmaxxers 合并了一些重要内容。 👀🔥（Strata 也有这个）升级是纯软件，不需要昂贵或难以找到的新 GPU。 PR #30966 于 11 月 7 日合并。以下是他们添加的内容。当 X",
-      "posted_at": "Sun, 08 Nov 2026 00:05:00 GMT",
-      "engagement": {
-        "likes": 0,
-        "bookmarks": 0,
-        "impressions": 0
-      },
-      "category": "云服务/GPU/开发者资源",
-      "original_title": "llama.cpp merged something big for Localmaxxers whose AI models don't fit in VRAM. 👀🔥 (Strata has this too) The upgrade",
-      "original_summary": "llama.cpp merged something big for Localmaxxers whose AI models don't fit in VRAM. 👀🔥 (Strata has this too) The upgrade is pure software and no expensive or hard-to-find new GPU needed. PR #30966 merged November 7. Here's what they've added. Whe - X\nllama.cpp merged something big for Localmaxxers whose AI models don't fit in VRAM. 👀🔥 (Strata has this too) The upgrade is pure software and no expensive or hard-to-find new GPU needed. PR #30966 merged November 7. Here's what they've added. Whe &nbsp;&nbsp; X",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "translated_by": "free-translate",
-      "deadline": null
-    },
-    {
-      "id": "xrss-7831709116",
-      "source": "X",
-      "author": "news",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5CWTRoNVBiTzN4aG1fUDVLRHpXQ0dqT0hmbWRuNF9Oc3N2M04tU3EzWERNeUk4SXp6d2kwV20yMktOeG1KMkdBX1FJWmlFQzk4Y2NDMkctOHczcUNFN1RCZA?oc=5",
-      "title": "我们让您可以更轻松地在 Pro、Max 和 Ultra 上的 Claude Code 云会话中运行您的存储库。克劳德算出w",
-      "summary": "我们让您可以更轻松地在 Pro、Max 和 Ultra 上的 Claude Code 云会话中运行您的存储库。 Claude 找出它需要哪些依赖项、网络访问权限和 API 密钥，然后保存环境以供下次使用。 API 密钥被安全保存，因此 Cla - X\n我们让您可以更轻松地在 Pro、Max 和 Ultra 上的 Claude Code 云会话中运行您的存储库。 Claude 找出它需要哪些依赖项、网络访问权限和 API 密钥，然后保存环境以供下次使用。 API 密钥被安全保存，因此 Cla X",
-      "posted_at": "Fri, 06 Nov 2026 19:58:33 GMT",
-      "engagement": {
-        "likes": 0,
-        "bookmarks": 0,
-        "impressions": 0
-      },
-      "category": "大模型 API 免费额度",
-      "original_title": "We've made it easier to get your repo running in Claude Code cloud sessions on Pro, Max, and Ultra. Claude figures out w",
-      "original_summary": "We've made it easier to get your repo running in Claude Code cloud sessions on Pro, Max, and Ultra. Claude figures out what dependencies, network access, and API keys it needs, then saves the environment for next time. API keys are saved securely, so Cla - X\nWe've made it easier to get your repo running in Claude Code cloud sessions on Pro, Max, and Ultra. Claude figures out what dependencies, network access, and API keys it needs, then saves the environment for next time. API keys are saved securely, so Cla &nbsp;&nbsp; X",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "translated_by": "free-translate",
-      "deadline": null
-    },
-    {
-      "id": "xrss-3345069056",
-      "source": "X",
-      "author": "news",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1lUURtT05QSUlmRTVSemMzMHdKMDd4QTlNZVBKMlBXcTFUOHZma3RONzZxQ2pRT2NHSklINGU1YzJCRW84OFo0ZE9GVDg5Wk1NaGtSWnhEM01JQ0VMUVE1MQ?oc=5",
-      "title": "我求求你，这个周末下载一个开源人工智能模型。它是一个文件，大小 5 到 20GB，可在您的笔记本电脑上运行",
-      "summary": "我求求你，这个周末下载一个开源人工智能模型。它是一个文件，大小为 5 到 20GB，并且可以在您已有的笔记本电脑上运行。一旦存储在您的硬盘上，您就不需要帐户、订阅或互联网连接。你的付费人工智能可能会在夜间发生变化 - X\n我求求你，这个周末下载一个开源人工智能模型。它是一个文件，大小为 5 到 20GB，并且可以在您已有的笔记本电脑上运行。一旦存储在您的硬盘上，您就不需要帐户、订阅或互联网连接。您的付费人工智能可能会在夜间发生变化 X",
-      "posted_at": "Sat, 07 Nov 2026 11:01:00 GMT",
-      "engagement": {
-        "likes": 0,
-        "bookmarks": 0,
-        "impressions": 0
-      },
-      "category": "其他科技",
-      "original_title": "I am begging you, download an open source AI model this weekend. It's one file, 5 to 20GB, and it runs on the laptop you",
-      "original_summary": "I am begging you, download an open source AI model this weekend. It's one file, 5 to 20GB, and it runs on the laptop you already own. You won't need an account, a subscription or an internet connection once it's on your drive. Your paid AI can change overnig - X\nI am begging you, download an open source AI model this weekend. It's one file, 5 to 20GB, and it runs on the laptop you already own. You won't need an account, a subscription or an internet connection once it's on your drive. Your paid AI can change overnig &nbsp;&nbsp; X",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "translated_by": "free-translate",
-      "deadline": null
-    },
-    {
-      "id": "nvidia-nim-kimi",
-      "category": "大模型 API 免费额度",
-      "title": "NVIDIA NIM：Kimi / DeepSeek / GLM 免信用卡试用",
-      "summary": "登录 build.nvidia.com 即可试用 Kimi K3.1 Pro（2.8T、百万上下文）、DeepSeek V4.1 Flash、GLM 5.3 Flash；免费层约 40 次/分限速，不按 Token 扣费。部分模型网页可预览、API 开放情况以官网为准。",
-      "how": "打开 build.nvidia.com → 登录 → 选择对应模型试用",
-      "deadline": null,
-      "author": "chichu187",
-      "url": "https://x.com/chichu187/status/2119008302432690299",
-      "posted_at": "2026-11-07 18:05 Asia/Shanghai",
-      "engagement": {
-        "likes": 4,
-        "bookmarks": 0,
-        "impressions": 119
-      }
-    },
-    {
-      "id": "cloudflare-neurons",
-      "category": "大模型 API 免费额度",
-      "title": "Cloudflare Workers AI：每天 1 万 Neurons",
-      "summary": "Cloudflare 免费计划每天赠送约 1 万 Neurons（UTC 0 点 / 北京时间早 8 点重置），超额不扣费只报错。可跑 Llama、Qwen、Gemma、Mistral 等开源模型，也支持生图与语音转文字。有人换算约等于每天 490 次 Llama 3.1 8B、或 83 次 70B、或约 57 张图。注意：额度账号共享；Kimi/GLM 5/DeepSeek V4 等前沿模型不在免费档，要绑付费方式。",
-      "how": "注册 Cloudflare 免费账号 → 建 API token → 直接调 Workers AI 接口（不用自建服务器）",
-      "deadline": null,
-      "author": "AWG48488",
-      "url": "https://x.com/AWG48488/status/2119415638494204051",
-      "posted_at": "2026-11-08 21:03 Asia/Shanghai",
-      "engagement": {
-        "likes": 1,
-        "bookmarks": 0,
-        "impressions": 86
-      }
-    },
-    {
-      "id": "gemini-flash-api",
-      "category": "大模型 API 免费额度",
-      "title": "Gemini 3.5 Flash：每天约 500 次免费 API",
-      "summary": "Google AI Studio 生成 API Key 即可用，免绑信用卡。适合跑自动化脚本、本地 CLI、翻译和小项目测试。注意：免费层数据可能用于模型训练，勿上传敏感代码。",
-      "how": "打开 Google AI Studio → 生成 API Key → 调用 Gemini 3.5 Flash",
-      "deadline": null,
-      "author": "Stargridcompass",
-      "url": "https://x.com/Stargridcompass/status/2119384439457477086",
-      "posted_at": "2026-11-08 19:00 Asia/Shanghai",
-      "engagement": {
-        "likes": 30,
-        "bookmarks": 7,
-        "impressions": 4165
-      }
-    },
-    {
-      "id": "aliyun-bailian",
-      "category": "大模型 API 免费额度",
-      "title": "阿里云百炼：新用户每模型约 100 万 Tokens",
-      "summary": "新用户开通百炼可调 70+ 主流大模型，每模型约 100 万 Tokens，总计 7000 万+ Tokens，约 90 天有效；需实名认证，国内直连。",
-      "how": "注册阿里云 → 实名 → 开通百炼控制台领取",
-      "deadline": "新用户限领，有效期约 90 天",
-      "author": "0x_chaoran",
-      "url": "https://x.com/0x_chaoran/status/2119379991226105957",
-      "posted_at": "2026-11-08 18:42 Asia/Shanghai",
-      "engagement": {
-        "likes": 0,
-        "bookmarks": 0,
-        "impressions": 15
-      }
-    },
-    {
-      "id": "amd-free-models",
-      "category": "大模型 API 免费额度",
-      "title": "AMD 国区：15 个大模型免费调用",
-      "summary": "DeepSeek-V4.1-Flash 、GLM-5.3、 Qwen3.8 等约 15 个模型可免费调，支持约 1M 上下文免绑卡，每天 0 点重置额度。登录官网领 rc- Key 后可接入 Cherry Studio。",
-      "how": "登录 AMD 官网 → 领取 API Key → 填入客户端",
-      "deadline": null,
-      "author": "0x_chaoran",
-      "url": "https://x.com/0x_chaoran/status/2119319917963206980",
-      "posted_at": "2026-11-08 14:43 Asia/Shanghai",
-      "engagement": {
-        "likes": 0,
-        "bookmarks": 0,
-        "impressions": 11
-      },
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "lg-exaone",
-      "category": "大模型 API 免费额度",
-      "title": "LG K-EXAONE 2.5：API 彻底免费开放",
-      "summary": "LG 在英伟达首尔 AI 日宣布 K-EXAONE 2.5 API 对开发者/企业/研究机构免费。宣传约 7500 亿参数、约 51.2 万上下文、兼容 OpenAI 接口；目前主要支持韩语和英语。帖中对比 AutomationBench/BrowseComp 等分数接近或超过 DeepSeek-V4.1-Flash。",
-      "how": "按官方渠道申请 K-EXAONE API Key 后调用",
-      "deadline": null,
-      "author": "Super_Nius",
-      "url": "https://x.com/Super_Nius/status/2119635733048852485",
-      "posted_at": "2026-11-09 11:38 Asia/Shanghai",
-      "engagement": {
-        "likes": 6,
-        "bookmarks": 6,
-        "impressions": 1619
-      }
-    },
-    {
-      "id": "perch-ai-pt",
-      "category": "大模型 API 免费额度",
-      "title": "Perch AI：每月约 $20 / 2 万 PT，免绑卡",
-      "summary": "Starter 免费账号每月自动领约 20,000 PT（约合 $20），可用 DeepSeek 等模型；网页/桌面/命令行三端可用。Qwen 3.8 Max 限免至 11 月 21 日凌晨 1 点（吃月度额度，非无限）。",
-      "how": "注册 Perch AI 免费 Starter → 每月自动到账",
-      "deadline": "Qwen 3.8 Max 限免至 2026-11-21 01:00 Asia/Shanghai",
-      "author": "jhl880617",
-      "url": "https://x.com/jhl880617/status/2119618098743451875",
-      "posted_at": "2026-11-09 10:28 Asia/Shanghai",
-      "engagement": {
-        "likes": 0,
-        "bookmarks": 0,
-        "impressions": 19
-      }
-    },
-    {
-      "id": "iteracompute-qwen",
-      "category": "大模型 API 免费额度",
-      "title": "IteraCompute ： Qwen3.8-27B 每月约 3000万代币 免费",
-      "summary": "每月约 3000 万 Token 免费额度，Qwen3.8-27B 输入/缓存/输出标价为 0，约 128K 上下文，OpenAI 兼容接口；邮箱验证拿 Key，不用绑卡。额度每月 1 号重置，超额回 429 不自动扣费。帖称推广约到 11 月 24 日，高峰共享算力可能排队。同作者还提到 AMD 开发者计划约 100 美元 MI300X 额度（激活后约 30 天过期）等。",
-      "how": "邮箱验证注册 IteraCompute → 领取 Key → 用 OpenAI 兼容接口调用",
-      "deadline": "推广窗口帖称约至 2026-11-24；以官网为准",
-      "author": "Jonnyhlkw",
-      "url": "https://x.com/Jonnyhlkw/status/2119269427845988819",
-      "posted_at": "2026-11-08 11:23 Asia/Shanghai",
-      "engagement": {
-        "likes": 2,
-        "bookmarks": 0,
-        "impressions": 88
-      },
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "amd-gpu-credit",
-      "category": "云服务/GPU/开发者资源",
-      "title": "AMD 开发者计划：约 100 美元 MI300X GPU 额度",
-      "summary": "AMD 开发者计划可免费领取约 100 美元 MI300X 额度，个人开发者可领；激活后约 30 天过期，适合跑平时舍不得开的大模型推理或练手，勿领了放着过期。",
-      "how": "按 AMD 开发者计划官网申请并激活额度",
-      "deadline": "激活后约 30 天有效",
-      "author": "Jonnyhlkw",
-      "url": "https://x.com/Jonnyhlkw/status/2119269427845988819",
-      "posted_at": "2026-11-08 11:23 Asia/Shanghai",
-      "engagement": {
-        "likes": 2,
-        "bookmarks": 0,
-        "impressions": 88
-      }
-    },
-    {
-      "id": "domestic-token-pack",
-      "category": "大模型 API 免费额度",
-      "title": "国内平台额度速领：硅基流动 / 百炼 / 千帆 / 方舟",
-      "summary": "帖主实测汇总：硅基流动注册送约 14 元券；阿里云百炼每模型约 100 万 tokens；百度千帆 DeepSeek 每模型约 100 万；火山方舟每模型约 50 万，实名后还可每日再领。",
-      "how": "分别注册各平台并按新用户/实名流程领取",
-      "deadline": null,
-      "author": "jiangxuhe",
-      "url": "https://x.com/jiangxuhe/status/2119159437164425567",
-      "posted_at": "2026-11-08 04:05 Asia/Shanghai",
-      "engagement": {
-        "likes": 0,
-        "bookmarks": 0,
-        "impressions": 39
-      }
-    },
-    {
-      "id": "token-wool-site",
-      "category": "大模型 API 免费额度",
-      "title": "Token 羊毛聚合站：多平台免费额度一页看",
-      "summary": "卡兹克「Token 羊毛」聚合站：把官网/公众号/X 上的免费 Token 福利收进一页，按每日、每周、每月、新人礼包和限免分组，首页显示今天还能领多少；领过的会变成可升级卡片。另有帖提到豆包每天 200、秒悟 2000 积分、Cloudflare 每天 1 万 Neurons、Qoder 每天 100 Credits、MiniMax 400 积分等卡牌，并标注核实日期与是否要实名。",
-      "how": "打开聚合站按分组领取；以站点当日核实信息与厂商官网为准",
-      "deadline": null,
-      "author": "TianciZhutc",
-      "url": "https://x.com/TianciZhutc/status/2119664524512858243",
-      "posted_at": "2026-11-09 13:32 Asia/Shanghai",
-      "engagement": {
-        "likes": 0,
-        "bookmarks": 0,
-        "impressions": 25
-      }
-    },
-    {
-      "id": "ling-32-flash",
-      "category": "大模型 API 免费额度",
-      "title": "Ant Ling-3.2-flash：两周免费试用",
-      "summary": "Ling-3.2-flash（560B/25B MoE，支持文本+图像+视频）自 11 月 5 日上线起免费约两周，OpenAI/Anthropic 兼容接口。有帖称注册需 +86 手机号。",
-      "how": "按官方注册并领取试用（注意地区/手机号要求）",
-      "deadline": "约 2026-11-19 截止（帖称 Nov 5–19）",
-      "author": "liro90106788",
-      "url": "https://x.com/liro90106788/status/2119092556835565580",
-      "posted_at": "2026-11-07 23:40 Asia/Shanghai",
-      "engagement": {
-        "likes": 0,
-        "bookmarks": 0,
-        "impressions": 12
-      }
-    },
-    {
-      "id": "fal-flux3-max",
-      "category": "AI 产品会员/试用",
-      "title": "fal FLUX 3 Max：免费周末只剩最后一天",
-      "summary": "fal FLUX 3 Max 免费周末：新视频模型免费开放生成——免登录每天 3 条，登录 4 条，绑卡验证 5 条；单条最长约 15 秒、720p、带声音。同帖还提到 Google AI Pro 学生免费一年（SheerID，约 12/31 截止、注意到期续费）、Zed Pro 学生一年、OpenAI Codex 学生 $100 积分、Mistral Vibe 学生价、七牛 Conatus 每日免费 Token（至约 11/30）以及 Kaggle 等常驻算力。",
-      "how": "打开 fal 活动页生成；学生福利另走 SheerID/学校邮箱认证",
-      "deadline": "FLUX 3 Max 约至 2026-11-10 04:00 Asia/Shanghai；其余以各活动页为准",
-      "author": "NianEn_Ai",
-      "url": "https://x.com/NianEn_Ai/status/2119609656192516379",
-      "posted_at": "2026-11-09 09:54 Asia/Shanghai",
-      "engagement": {
-        "likes": 3,
-        "bookmarks": 0,
-        "impressions": 57
-      }
-    },
-    {
-      "id": "stepaudio-extend",
-      "category": "AI 产品会员/试用",
-      "title": "阶跃 StepAudio / 语音模型限免延期到 11/17",
-      "summary": "阶跃/StepFun 语音相关限免：有帖称官方定价页改口径，适用限免模型延到 11 月 17 日 11:59，12 点起按新价；含实时语音、配音、音频生成、音乐、语音识别，免费套餐需个人实名。另有帖提到 StepAudio 3 有 4 个 preview 模型免费（TTS/ASR 已收费），需登录建 API key。",
-      "how": "登录阶跃/StepFun → 创建 API key → 使用限免模型（以官网定价页为准）",
-      "deadline": "2026-11-17 11:59 Asia/Shanghai",
-      "author": "tutuqi88",
-      "url": "https://x.com/tutuqi88/status/2119665105483059423",
-      "posted_at": "2026-11-09 13:35 Asia/Shanghai",
-      "engagement": {
-        "likes": 0,
-        "bookmarks": 0,
-        "impressions": 9
-      },
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "hunyuan-hy4",
-      "category": "AI 产品会员/试用",
-      "title": "腾讯混元 Hy4：WorkBuddy/CodeBuddy 限免",
-      "summary": "在 WorkBuddy、CodeBuddy 中选 Hy4 可领每日免费额度；帖称网友反馈几句可能限流，晚上更顺。另提 TokenHub 五折至年底（输入约 3 元/百万 token）。",
-      "how": "打开 WorkBuddy/CodeBuddy → 选择 Hy4 使用每日额度",
-      "deadline": "2026-11-15 23:59 Asia/Shanghai",
-      "author": "FirstInFeed",
-      "url": "https://x.com/FirstInFeed/status/2119258807843139989",
-      "posted_at": "2026-11-08 10:40 Asia/Shanghai",
-      "engagement": {
-        "likes": 0,
-        "bookmarks": 0,
-        "impressions": 2
-      },
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "zhipu-zcode",
-      "category": "AI 产品会员/试用",
-      "title": "智谱 ZCode：每天晚间领 3 亿 GLM-5.3-Flash",
-      "summary": "智谱 ZCode：每天 19:00 领约 3 亿 GLM-5.3-Flash，但 23:00 至次日 9:00 才能消耗，且限客户端。同帖还提到长亭 MonkeyCode 每天 10 点约 500 亿 token 共享池（高峰可能烧穿）、智谱 AutoClaw 一轮约 5000 万 token（帖称 11/8 截止）、TRAE 每天签到约 150 积分、Qoder 每天 10 点领约 100 Credits。规则变化快，以官方页为准。",
-      "how": "打开智谱 ZCode 客户端 → 19:00 后领取 → 按规定时段使用；其余工具按各自官方入口",
-      "deadline": null,
-      "author": "BonoDJblack",
-      "url": "https://x.com/BonoDJblack/status/2119337260500107572",
-      "posted_at": "2026-11-08 15:52 Asia/Shanghai",
-      "engagement": {
-        "likes": 1,
-        "bookmarks": 0,
-        "impressions": 419
-      },
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "qoder-qoduck",
-      "category": "AI 开发工具与编程助手",
-      "title": "Qoder 匿名模型 Qoduck ：个人号每日 0学分",
-      "summary": "Qoder 自 11/7 上线匿名模型 Qoduck：个人号每天有免费额度，额度内消耗倍率可到 0.0×，思考强度拉满也不扣 Credits；免费号也能用，付费号额度更多。帖称目前主要在 Qoder 客户端，IDE 插件和 CLI 可能未开；社区猜测是否 Qwen 新版，官方未盖章。可用 Codex 真实任务做盲测对比。",
-      "how": "打开 Qoder 客户端 → 模型选择器切到 Qoduck → 直接写代码/搭项目",
-      "deadline": "限时活动，结束时间未定",
-      "author": "GeekCatX",
-      "url": "https://x.com/GeekCatX/status/2119680316772405739",
-      "posted_at": "2026-11-09 14:35 Asia/Shanghai",
-      "engagement": {
-        "likes": 1,
-        "bookmarks": 0,
-        "impressions": 339
-      },
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "coderabbit",
-      "category": "AI 开发工具与编程助手",
-      "title": "CodeRabbit：开源项目免费 + 私有代码试用",
-      "summary": "CodeRabbit：开源仓库免费使用 AI 代码审查；私有代码提供免费试用。适合 PR 审查、变更说明与安全扫描。",
-      "how": "打开 coderabbit.ai → 连接 GitHub/GitLab 仓库 → OSS 免费启用",
-      "deadline": null,
-      "author": "CryptoSenyo",
-      "url": "https://x.com/CryptoSenyo/status/2119668944420409465",
-      "posted_at": "2026-11-09 13:50 Asia/Shanghai",
-      "engagement": {
-        "likes": 0,
-        "bookmarks": 0,
-        "impressions": 8
-      }
-    },
-    {
-      "id": "devin-desktop",
-      "category": "AI 开发工具与编程助手",
-      "title": "Devin Desktop（原 Windsurf）：免费计划可用",
-      "summary": "Devin Desktop（原 Windsurf）免费计划：含轻量 Agent 配额、有限模型额度、无限内联编辑与 Tab 补全，日常写代码够用；重活与高级模型仍需加钱。",
-      "how": "注册 Devin Desktop 免费计划后直接使用",
-      "deadline": null,
-      "author": "jhl880617",
-      "url": "https://x.com/jhl880617/status/2119557938222109112",
-      "posted_at": "2026-11-09 06:29 Asia/Shanghai",
-      "engagement": {
-        "likes": 0,
-        "bookmarks": 0,
-        "impressions": 42
-      }
-    },
-    {
-      "id": "github-student-copilot",
-      "category": "AI 开发工具与编程助手",
-      "title": "GitHub 学生包：Copilot 等开发者权益",
-      "summary": "学生认证后可领 Copilot 免费额度，以及域名一年、云服务额度等。需学校邮箱或学生证，审核有时要几天。",
-      "how": "GitHub Education → 学生认证 → 领取 Student Developer Pack",
-      "deadline": null,
-      "author": "7eddsi",
-      "url": "https://x.com/7eddsi/status/2118890883076517914",
-      "posted_at": "2026-11-07 10:18 Asia/Shanghai",
-      "engagement": {
-        "likes": 1,
-        "bookmarks": 0,
-        "impressions": 92
-      }
     }
   ]
 }

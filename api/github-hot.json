@@ -1,5 +1,5 @@
 {
-  "updated_at_label": "2026-11-09 19:27 Asia/Shanghai",
+  "updated_at_label": "2026-11-09 19:29 Asia/Shanghai",
   "count": 30,
   "items": [
     {
@@ -28,7 +28,7 @@
       "summary": "自主Pentest军团— AI指挥官+工作者群体+分层事实意图。第三名腾讯智能攻击防御在线冠军（ 634支队伍· 8小时无人值守· 10亿代币击败4.5B ）。Nüwa测试：赋予人工智能创造/语言/历史，让文明成长。",
       "url": "https://github.com/N1nEmAn/sapper-v2",
       "source": "GitHub",
-      "stars": 1742,
+      "stars": 1744,
       "language": "Python",
       "heat": ""
     },
@@ -38,7 +38,7 @@
       "summary": "Python中的3D建模，专为LLM构建。",
       "url": "https://github.com/Sandflow-ai/sand3d",
       "source": "GitHub",
-      "stars": 1538,
+      "stars": 1539,
       "language": "HTML",
       "heat": ""
     },
@@ -48,7 +48,7 @@
       "summary": "适用于Windows、Linux和WSL的GPU任务管理器：每进程VRAM、GPU活动和LLM模型/KV缓存洞察（ Windows AMD和NVIDIA ）。",
       "url": "https://github.com/shanselman/gputaskman",
       "source": "GitHub",
-      "stars": 1300,
+      "stars": 1301,
       "language": "Python",
       "heat": ""
     },
@@ -58,7 +58,7 @@
       "summary": "让人工智能代理与您一起使用您的手机。",
       "url": "https://github.com/DIYgod/pinky",
       "source": "GitHub",
-      "stars": 1240,
+      "stars": 1244,
       "language": "Go",
       "heat": ""
     },
@@ -258,7 +258,7 @@
       "summary": "非人类员工｜九位 AI 同事的 3D 工牌领取处，中英文、透明 PNG 下载。微信公众号：风花AI实验室。",
       "url": "https://github.com/fanhuayishiy/ai-crew-pass",
       "source": "GitHub",
-      "stars": 117,
+      "stars": 119,
       "language": "TypeScript",
       "heat": ""
     },

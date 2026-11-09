@@ -1,10 +1,10 @@
 {
-  "updated_at_label": "2026-11-09 18:43 Asia/Shanghai",
+  "updated_at_label": "2026-11-09 19:28 Asia/Shanghai",
   "primary_route": "syndication",
   "routes": {
     "syndication": {
-      "accounts_ok": 5,
-      "tweets": 179
+      "accounts_ok": 11,
+      "tweets": 462
     },
     "google-news-rss": {
       "items": 100
@@ -13,8 +13,8 @@
       "items": 0
     }
   },
-  "accounts_ok": 5,
-  "raw": 279,
+  "accounts_ok": 11,
+  "raw": 562,
   "kept": 25,
   "added": 25,
   "alt_probes": {
