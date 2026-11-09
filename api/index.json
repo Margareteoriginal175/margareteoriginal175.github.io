@@ -1,0 +1,57 @@
+{
+  "canonical": "https://aiym168.github.io/",
+  "endpoints": [
+    {
+      "path": "api/index.json",
+      "desc": "本接口目录"
+    },
+    {
+      "path": "api/meta.json",
+      "desc": "站点元信息与计数"
+    },
+    {
+      "path": "api/latest.json",
+      "desc": "全部免费资源条目"
+    },
+    {
+      "path": "api/github-hot.json",
+      "desc": "GitHub 新热门"
+    },
+    {
+      "path": "api/hot.json",
+      "desc": "最近热议"
+    },
+    {
+      "path": "feed.xml",
+      "desc": "RSS 订阅"
+    },
+    {
+      "path": "api/damoxing-mianfei-api.json",
+      "desc": "大模型 API 免费额度"
+    },
+    {
+      "path": "api/ai-huiyuan-shiyong.json",
+      "desc": "AI 产品会员/试用"
+    },
+    {
+      "path": "api/ai-kaifa-gongju.json",
+      "desc": "AI 开发工具与编程助手"
+    },
+    {
+      "path": "api/mianfei-gpu-yunfuwu.json",
+      "desc": "免费GPU / 云服务"
+    },
+    {
+      "path": "api/keji-app-xianmian.json",
+      "desc": "科技软件 / App 限免"
+    },
+    {
+      "path": "api/github-hot.json",
+      "desc": "GitHub 新热门"
+    },
+    {
+      "path": "api/hot-topics.json",
+      "desc": "最近热议"
+    }
+  ]
+}

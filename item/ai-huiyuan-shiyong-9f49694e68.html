@@ -413,6 +413,41 @@ body.egg-burst .fx-aurora { filter: saturate(1.8) hue-rotate(40deg); }
   html.has-cursor, html.has-cursor * { cursor: auto !important; }
 }
 
+
+/* CLI / API terminal blocks */
+.term-block {
+  margin: 14px 0 18px; border-radius: 16px; overflow: hidden;
+  border: 1px solid rgba(92,225,255,.22);
+  background: linear-gradient(180deg, rgba(8,14,28,.95), rgba(4,8,18,.98));
+  box-shadow: 0 0 40px rgba(92,225,255,.08);
+}
+.term-bar {
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px 14px; border-bottom: 1px solid rgba(120,200,255,.12);
+  font-family: var(--mono); font-size: .75rem; color: var(--muted);
+}
+.term-bar span {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: #ff5f56; box-shadow: 16px 0 #ffbd2e, 32px 0 #27c93f;
+  margin-right: 36px;
+}
+.term-bar em { font-style: normal; color: var(--cyan); flex: 1; }
+.term-bar .copy-btn, .copy-btn {
+  border: 1px solid var(--line2); background: rgba(92,225,255,.08);
+  color: var(--text); border-radius: 8px; padding: 4px 10px; cursor: pointer;
+  font-family: var(--mono); font-size: .72rem;
+}
+.term-block pre {
+  margin: 0; padding: 16px 18px 18px; overflow: auto;
+  font-family: var(--mono); font-size: .86rem; line-height: 1.55; color: #d7ffe8;
+}
+.api-table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.api-table th, .api-table td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+.api-table code { color: var(--cyan); font-family: var(--mono); font-size: .82rem; }
+.api-cmds { margin: 0; padding-left: 1.1rem; color: var(--muted); }
+.api-cmds li { margin: 8px 0; }
+.api-cmds code { color: var(--mint); font-family: var(--mono); }
+
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"在一项随机试验中，使用人工智能的软件开发人员完成任务的时间延长了 19%。然而他们相信人工智能已经创造了","description":"在一项随机试验中，使用人工智能的软件开发人员完成任务的时间延长了 19%。然而他们相信人工智能已经让他们的速度提高了 20%。在“行动中的证据”活动中，我主张政府应该测试有效的方法，并通过从研究结果中学习来节省资金 - X\n在一项随机试验中，使用人工智能的软件开发人员完成任务的时间延长了 19%。然","datePublished":"Fri, 06 Nov 2026 04:00:19 GMT","dateModified":"2026-11-09","mainEntityOfPage":"https://aiym168.github.io/item/ai-huiyuan-shiyong-9f49694e68.html","author":{"@type":"Organization","name":"AI大模型免费资源导航"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://aiym168.github.io/"},{"@type":"ListItem","position":2,"name":"AI 产品会员/试用","item":"https://aiym168.github.io/c/ai-huiyuan-shiyong.html"},{"@type":"ListItem","position":3,"name":"在一项随机试验中，使用人工智能的软件开发人员完成任务的时间延长了 19%。然而他们相信人工智能已经创造了","item":"https://aiym168.github.io/item/ai-huiyuan-shiyong-9f49694e68.html"}]}</script>
@@ -429,7 +464,7 @@ body.egg-burst .fx-aurora { filter: saturate(1.8) hue-rotate(40deg); }
   
 <header class="topnav">
   <a class="brand-mini" href="../"><span class="mark"></span>AI大模型免费资源导航</a>
-  <nav class="navlinks" aria-label="模块导航"><a href="../c/damoxing-mianfei-api.html">大模型 API 免费额度</a><a href="../c/ai-huiyuan-shiyong.html">AI 产品会员/试用</a><a href="../c/ai-kaifa-gongju.html">AI 开发工具与编程助手</a><a href="../c/mianfei-gpu-yunfuwu.html">免费GPU / 云服务</a><a href="../c/keji-app-xianmian.html">科技软件 / App 限免</a><a href="../m/github-hot.html">GitHub 新热门</a><a href="../m/hot-topics.html">最近热议</a></nav>
+  <nav class="navlinks" aria-label="模块导航"><a href="../c/damoxing-mianfei-api.html">大模型 API 免费额度</a><a href="../c/ai-huiyuan-shiyong.html">AI 产品会员/试用</a><a href="../c/ai-kaifa-gongju.html">AI 开发工具与编程助手</a><a href="../c/mianfei-gpu-yunfuwu.html">免费GPU / 云服务</a><a href="../c/keji-app-xianmian.html">科技软件 / App 限免</a><a href="../m/github-hot.html">GitHub 新热门</a><a href="../m/hot-topics.html">最近热议</a><a href="../m/api.html">CLI / API</a></nav>
 </header>
   <div class="crumbs"><a href="../">首页</a> › <a href="../c/ai-huiyuan-shiyong.html">AI 产品会员/试用</a> › 在一项随机试验中，使用人工智能的软件开发人员完成任务的时间延长了 19%。然而他们相信人工智能已经创造了</div>
   <header class="hero">

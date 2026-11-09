@@ -1,0 +1,9 @@
+{
+  "name": "ai168",
+  "version": "1.0.0",
+  "private": true,
+  "bin": {
+    "ai168": "./bin.js"
+  },
+  "engines": { "node": ">=18" }
+}

@@ -54,6 +54,7 @@ BLOCK = re.compile(r"(crypto|nft|forex|赌博|博彩|色情|成人)", re.I)
 
 STATUS_PATH = AUTO / "x_fetch_status.json"
 FEED_PATH = AUTO / "x_feed.json"
+LAST_HTTP_STATUS: int | None = None
 
 
 def now_label() -> str:
@@ -65,6 +66,7 @@ def today() -> str:
 
 
 def http_get(url: str, timeout: int = 18) -> tuple[int | None, bytes | None]:
+    global LAST_HTTP_STATUS
     req = urllib.request.Request(
         url,
         headers={
@@ -75,9 +77,11 @@ def http_get(url: str, timeout: int = 18) -> tuple[int | None, bytes | None]:
     )
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
+            LAST_HTTP_STATUS = r.status
             return r.status, r.read()
     except Exception as e:
         code = getattr(e, "code", None)
+        LAST_HTTP_STATUS = code
         print(f"[x] GET fail {code or type(e).__name__}: {url[:90]}")
         return code, None
 
@@ -352,8 +356,9 @@ def main() -> int:
     }
     raw: list[dict] = []
     syn_ok = 0
-    # Cap accounts per run to stay polite in Actions (~25)
-    for i, screen in enumerate(ACCOUNTS[:36]):
+    syn_fail_429 = 0
+    # Cap accounts; abort early if Actions IP is rate-limited (common 429)
+    for i, screen in enumerate(ACCOUNTS[:28]):
         try:
             got = parse_syndication(screen)
         except Exception as e:
@@ -361,11 +366,18 @@ def main() -> int:
             got = []
         if got:
             syn_ok += 1
+            syn_fail_429 = 0
             raw.extend(got)
             print(f"[x] syndication @{screen}: {len(got)}")
-        time.sleep(0.35)
-        if i and i % 10 == 0:
-            time.sleep(1.0)
+        else:
+            if LAST_HTTP_STATUS == 429:
+                syn_fail_429 += 1
+            if syn_fail_429 >= 2 and syn_ok == 0:
+                print("[x] syndication rate-limited (429) — aborting account loop, falling back to RSS")
+                break
+        time.sleep(0.8 if syn_ok == 0 else 0.45)
+        if i and i % 8 == 0:
+            time.sleep(1.5)
 
     status["routes"]["syndication"] = {"accounts_ok": syn_ok, "tweets": len(raw)}
     if syn_ok:

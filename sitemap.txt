@@ -1,5 +1,8 @@
 https://aiym168.github.io/
 https://aiym168.github.io/404.html
+https://aiym168.github.io/m/api.html
+https://aiym168.github.io/feed.xml
+https://aiym168.github.io/api/index.json
 https://aiym168.github.io/c/damoxing-mianfei-api.html
 https://aiym168.github.io/c/ai-huiyuan-shiyong.html
 https://aiym168.github.io/c/ai-kaifa-gongju.html

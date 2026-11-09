@@ -410,6 +410,41 @@ body.egg-burst .fx-aurora { filter: saturate(1.8) hue-rotate(40deg); }
   html.has-cursor, html.has-cursor * { cursor: auto !important; }
 }
 
+
+/* CLI / API terminal blocks */
+.term-block {
+  margin: 14px 0 18px; border-radius: 16px; overflow: hidden;
+  border: 1px solid rgba(92,225,255,.22);
+  background: linear-gradient(180deg, rgba(8,14,28,.95), rgba(4,8,18,.98));
+  box-shadow: 0 0 40px rgba(92,225,255,.08);
+}
+.term-bar {
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px 14px; border-bottom: 1px solid rgba(120,200,255,.12);
+  font-family: var(--mono); font-size: .75rem; color: var(--muted);
+}
+.term-bar span {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: #ff5f56; box-shadow: 16px 0 #ffbd2e, 32px 0 #27c93f;
+  margin-right: 36px;
+}
+.term-bar em { font-style: normal; color: var(--cyan); flex: 1; }
+.term-bar .copy-btn, .copy-btn {
+  border: 1px solid var(--line2); background: rgba(92,225,255,.08);
+  color: var(--text); border-radius: 8px; padding: 4px 10px; cursor: pointer;
+  font-family: var(--mono); font-size: .72rem;
+}
+.term-block pre {
+  margin: 0; padding: 16px 18px 18px; overflow: auto;
+  font-family: var(--mono); font-size: .86rem; line-height: 1.55; color: #d7ffe8;
+}
+.api-table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.api-table th, .api-table td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+.api-table code { color: var(--cyan); font-family: var(--mono); font-size: .82rem; }
+.api-cmds { margin: 0; padding-left: 1.1rem; color: var(--muted); }
+.api-cmds li { margin: 8px 0; }
+.api-cmds code { color: var(--mint); font-family: var(--mono); }
+
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"AI大模型免费资源导航","url":"https://aiym168.github.io/","description":"AI大模型免费资源导航汇总大模型免费API、免费GPT、Claude免费、DeepSeek免费额度、AI工具免费、免费GPU与GitHub热门项目，每日更新。","inLanguage":"zh-CN","potentialAction":{"@type":"SearchAction","target":"https://aiym168.github.io/?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
 </head>
@@ -425,7 +460,7 @@ body.egg-burst .fx-aurora { filter: saturate(1.8) hue-rotate(40deg); }
   
 <header class="topnav">
   <a class="brand-mini" href="./"><span class="mark"></span>AI大模型免费资源导航</a>
-  <nav class="navlinks" aria-label="模块导航"><a href="./c/damoxing-mianfei-api.html">大模型 API 免费额度</a><a href="./c/ai-huiyuan-shiyong.html">AI 产品会员/试用</a><a href="./c/ai-kaifa-gongju.html">AI 开发工具与编程助手</a><a href="./c/mianfei-gpu-yunfuwu.html">免费GPU / 云服务</a><a href="./c/keji-app-xianmian.html">科技软件 / App 限免</a><a href="./m/github-hot.html">GitHub 新热门</a><a href="./m/hot-topics.html">最近热议</a></nav>
+  <nav class="navlinks" aria-label="模块导航"><a href="./c/damoxing-mianfei-api.html">大模型 API 免费额度</a><a href="./c/ai-huiyuan-shiyong.html">AI 产品会员/试用</a><a href="./c/ai-kaifa-gongju.html">AI 开发工具与编程助手</a><a href="./c/mianfei-gpu-yunfuwu.html">免费GPU / 云服务</a><a href="./c/keji-app-xianmian.html">科技软件 / App 限免</a><a href="./m/github-hot.html">GitHub 新热门</a><a href="./m/hot-topics.html">最近热议</a><a href="./m/api.html">CLI / API</a></nav>
 </header>
   <header class="hero hero-brain">
     <div class="hero-copy">
@@ -438,7 +473,7 @@ body.egg-burst .fx-aurora { filter: saturate(1.8) hue-rotate(40deg); }
       <div class="pill">GitHub热门 <b data-count="30">30</b></div>
       <div class="pill">热议 <b data-count="40">40</b></div>
       <div class="pill">更新 <b>2026-11-09 18:02 Asia/Shanghai</b></div>
-      <div class="pill">生成 <b>2026-11-09 18:02 Asia/Shanghai</b></div>
+      <div class="pill">生成 <b>2026-11-09 18:06 Asia/Shanghai</b></div>
     </div>
     </div>
     
@@ -488,6 +523,17 @@ body.egg-burst .fx-aurora { filter: saturate(1.8) hue-rotate(40deg); }
   <ol><li>高盛(Goldman Sachs)正在从其银行家和交易员手中撤出Claude Code</li><li>再见， Claude ，你好Pi</li><li>英伟达首席执行官Jensen Huang致员工关于婚外情的信</li></ol>
   <div class="go">进入模块 →</div>
 </a></div>
+  </section>
+
+  <section class="section" id="cli-api">
+    <h2>CLI / API</h2>
+    <p class="sec-desc">用一行命令拉取本站数据（零依赖、免密钥）。</p>
+    <div class="term-block">
+      <div class="term-bar"><span></span><span></span><span></span><em>quickstart</em></div>
+      <pre><code>npx github:aiym168/aiym168.github.io list
+curl -fsSL https://aiym168.github.io/cli.sh | bash -s -- list</code></pre>
+    </div>
+    <p><a class="btn" href="m/api.html">查看完整文档 →</a></p>
   </section>
 
   <div class="panel-box" id="archives"><h2>每日存档</h2><a class="arch current" href="archives/2026-11-09.html">2026-11-09</a></div>

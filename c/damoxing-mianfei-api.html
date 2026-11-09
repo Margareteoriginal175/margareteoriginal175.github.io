@@ -410,6 +410,41 @@ body.egg-burst .fx-aurora { filter: saturate(1.8) hue-rotate(40deg); }
   html.has-cursor, html.has-cursor * { cursor: auto !important; }
 }
 
+
+/* CLI / API terminal blocks */
+.term-block {
+  margin: 14px 0 18px; border-radius: 16px; overflow: hidden;
+  border: 1px solid rgba(92,225,255,.22);
+  background: linear-gradient(180deg, rgba(8,14,28,.95), rgba(4,8,18,.98));
+  box-shadow: 0 0 40px rgba(92,225,255,.08);
+}
+.term-bar {
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px 14px; border-bottom: 1px solid rgba(120,200,255,.12);
+  font-family: var(--mono); font-size: .75rem; color: var(--muted);
+}
+.term-bar span {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: #ff5f56; box-shadow: 16px 0 #ffbd2e, 32px 0 #27c93f;
+  margin-right: 36px;
+}
+.term-bar em { font-style: normal; color: var(--cyan); flex: 1; }
+.term-bar .copy-btn, .copy-btn {
+  border: 1px solid var(--line2); background: rgba(92,225,255,.08);
+  color: var(--text); border-radius: 8px; padding: 4px 10px; cursor: pointer;
+  font-family: var(--mono); font-size: .72rem;
+}
+.term-block pre {
+  margin: 0; padding: 16px 18px 18px; overflow: auto;
+  font-family: var(--mono); font-size: .86rem; line-height: 1.55; color: #d7ffe8;
+}
+.api-table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.api-table th, .api-table td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+.api-table code { color: var(--cyan); font-family: var(--mono); font-size: .82rem; }
+.api-cmds { margin: 0; padding-left: 1.1rem; color: var(--muted); }
+.api-cmds li { margin: 8px 0; }
+.api-cmds code { color: var(--mint); font-family: var(--mono); }
+
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"大模型 API 免费额度 | AI大模型免费资源导航 · 2026年11月最新","url":"https://aiym168.github.io/c/damoxing-mianfei-api.html","description":"汇总大模型免费API、免费GPT、Claude免费、DeepSeek免费额度等公开试用与免费Token信息，方便对照领取入口与规则。"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://aiym168.github.io/item/20-000-api-ai-blood-on-the-clocktowe-038a49ce99.html","name":"我花了 20,000 美元的 API 积分让不同的 AI 模型在《Blood on the Clocktower》（黑手党或"},{"@type":"ListItem","position":2,"url":"https://aiym168.github.io/item/grokbot-obsidian-grokbot-3-629e6c26a5.html","name":"我真的厌倦了 GrokBot 的快速使用...将 Obsidian 连接到 GrokBot - 我 3 个月来最好的决定"},{"@type":"ListItem","position":3,"url":"https://aiym168.github.io/item/damoxing-mianfei-api-1a5585d17d.html","name":"一项真实世界的随机试验，由人工智能生成的患者非专业人士的医学结果总结（与控制标准相比，机智）"},{"@type":"ListItem","position":4,"url":"https://aiym168.github.io/item/grok-bot-claude-https-t-co-fjnvktiti-1e9c43d6cc.html","name":"建立您自己的 Grok Bot + Claude 团队。免费演练：https://t.co/FjNvKTiTie → Grok Bot Agent OS Just Changed AI Ag"},{"@type":"ListItem","position":5,"url":"https://aiym168.github.io/item/google-ai-https-t-co-deznozmedg-ai-1-a47e07f929.html","name":"让您的网站在 Google 的 AI 概述中被引用。免费：https://t.co/dEzNOZmEdg → 克劳德被 AI 引用的 16 项技巧 →"},{"@type":"ListItem","position":6,"url":"https://aiym168.github.io/item/deepseek-claude-code-14-5e7bd0b1bd.html","name":"中国的 DeepSeek 放弃了免费的 Claude Code 竞争对手，并且在本周 14 个最大的人工智能更新中处于领先地位。我把完整的圆形"},{"@type":"ListItem","position":7,"url":"https://aiym168.github.io/item/deepseek-claude-code-14-5effdb68ea.html","name":"中国的 DeepSeek 放弃了免费的 Claude Code 竞争对手，并且在本周 14 个最大的人工智能更新中处于领先地位。我把完整的圆形"},{"@type":"ListItem","position":8,"url":"https://aiym168.github.io/item/deepseek-ai-openai-2a15429f30.html","name":"️ DeepSeek 的免费、可下载的 AI 模型在黑客攻击方面几乎与 OpenAI 受到限制的模型一样出色"},{"@type":"ListItem","position":9,"url":"https://aiym168.github.io/item/pro-max-ultra-claude-code-w-f4064fd7db.html","name":"我们让您可以更轻松地在 Pro、Max 和 Ultra 上的 Claude Code 云会话中运行您的存储库。克劳德算出w"},{"@type":"ListItem","position":10,"url":"https://aiym168.github.io/item/nvidia-nim-kimi-deepseek-glm-3b5f44eee3.html","name":"NVIDIA NIM：Kimi / DeepSeek / GLM 免信用卡试用"},{"@type":"ListItem","position":11,"url":"https://aiym168.github.io/item/cloudflare-workers-ai-1-neurons-7f9eb88172.html","name":"Cloudflare Workers AI：每天 1 万 Neurons"},{"@type":"ListItem","position":12,"url":"https://aiym168.github.io/item/gemini-3-5-flash-500-api-f9751b349a.html","name":"Gemini 3.5 Flash：每天约 500 次免费 API"},{"@type":"ListItem","position":13,"url":"https://aiym168.github.io/item/100-tokens-b783987689.html","name":"阿里云百炼：新用户每模型约 100 万 Tokens"},{"@type":"ListItem","position":14,"url":"https://aiym168.github.io/item/amd-15-286432b5d2.html","name":"AMD 国区：15 个大模型免费调用"},{"@type":"ListItem","position":15,"url":"https://aiym168.github.io/item/lg-k-exaone-2-5-api-1c1c00d89a.html","name":"LG K-EXAONE 2.5：API 彻底免费开放"},{"@type":"ListItem","position":16,"url":"https://aiym168.github.io/item/perch-ai-20-2-pt-933e1a9529.html","name":"Perch AI：每月约 $20 / 2 万 PT，免绑卡"},{"@type":"ListItem","position":17,"url":"https://aiym168.github.io/item/iteracompute-qwen3-8-27b-3000-14f4680ebb.html","name":"IteraCompute ： Qwen3.8-27B 每月约 3000万代币 免费"},{"@type":"ListItem","position":18,"url":"https://aiym168.github.io/item/damoxing-mianfei-api-8f76ba739f.html","name":"国内平台额度速领：硅基流动 / 百炼 / 千帆 / 方舟"},{"@type":"ListItem","position":19,"url":"https://aiym168.github.io/item/token-f3cbf51a61.html","name":"Token 羊毛聚合站：多平台免费额度一页看"},{"@type":"ListItem","position":20,"url":"https://aiym168.github.io/item/ant-ling-3-2-flash-da47586221.html","name":"Ant Ling-3.2-flash：两周免费试用"},{"@type":"ListItem","position":21,"url":"https://aiym168.github.io/item/show-hn-velork-307fbb10a0.html","name":"Show HN：Velork – 设计与代码并存"},{"@type":"ListItem","position":22,"url":"https://aiym168.github.io/item/damoxing-mianfei-api-70b5352893.html","name":"每周转售售价中位数的免费开放 API"},{"@type":"ListItem","position":23,"url":"https://aiym168.github.io/item/hn-makoda-codex-claude-api-22cd5d82c1.html","name":"显示 HN：Makoda：将您的 Codex 或 Claude 订阅重用为 API"},{"@type":"ListItem","position":24,"url":"https://aiym168.github.io/item/show-hn-infinity-ai-git-1f16d7515a.html","name":"Show HN: Infinity – 用于 AI 聊天的 Git 风格分支"},{"@type":"ListItem","position":25,"url":"https://aiym168.github.io/item/hn-botel-a56a6b0659.html","name":"显示HN ： Botel –始终可以联系到您只在他们工作期间付费的代理商"},{"@type":"ListItem","position":26,"url":"https://aiym168.github.io/item/show-hn-ski-dab13472a8.html","name":"Show HN：Ski 语音优先多语言中性编码线束"},{"@type":"ListItem","position":27,"url":"https://aiym168.github.io/item/hn-kino-ai-yc-s23-ai-2b5f926b26.html","name":"推出 HN：Kino AI (YC S23) – AI 媒体管理器和视频编辑器"},{"@type":"ListItem","position":28,"url":"https://aiym168.github.io/item/hn-opus-5-5-df19d1541d.html","name":"告诉 HN：大量有关 Opus 5.5 被削弱的报道"},{"@type":"ListItem","position":29,"url":"https://aiym168.github.io/item/show-hn-g-ameboy-url-49b9c74877.html","name":"Show HN：浏览器中的免费 G​​ameboy 风格音乐跟踪器，具有可共享 URL"},{"@type":"ListItem","position":30,"url":"https://aiym168.github.io/item/hn-claude-code-codex-08c6391fce.html","name":"显示HN ：重新计算–电子表格，其中单元格可以是Claude Code或Codex终端"},{"@type":"ListItem","position":31,"url":"https://aiym168.github.io/item/show-hn-mac-e0afa7d737.html","name":"Show HN：为您的代理提供一台它可以控制的 Mac"},{"@type":"ListItem","position":32,"url":"https://aiym168.github.io/item/show-hn-claude-1-070-3-59fdee3f5d.html","name":"Show HN ：我向Claude支付了1,070 $ ，以阅读3万个房源的最差评价"},{"@type":"ListItem","position":33,"url":"https://aiym168.github.io/item/hn-android-9-bitwarden-396c217a9a.html","name":"显示 HN：Android 9 上的跨设备密钥身份验证，与 Bitwarden 同步"},{"@type":"ListItem","position":34,"url":"https://aiym168.github.io/item/hn-sec-api-4270e345da.html","name":"显示 HN：SEC 基础知识 – 免费金融 API"},{"@type":"ListItem","position":35,"url":"https://aiym168.github.io/item/hn-hn-0ca4e24576.html","name":"告诉 HN：HN 错了"},{"@type":"ListItem","position":36,"url":"https://aiym168.github.io/item/gpt-skills-87183b5b2c.html","name":"实践出真知 GPT 模型的审美能力完全可以通过好的 Skills 和设计流程来解锁！"},{"@type":"ListItem","position":37,"url":"https://aiym168.github.io/item/arsh624-llm4jobs-v2-100f265b5e.html","name":"Arsh624/llm4jobs-v2"},{"@type":"ListItem","position":38,"url":"https://aiym168.github.io/item/owaid0723666-llm-131fd7bade.html","name":"Owaid0723666/免费-llm-雷达"},{"@type":"ListItem","position":39,"url":"https://aiym168.github.io/item/enapt-swarmllm-1b82ff3203.html","name":"enapt/SwarmLLM"},{"@type":"ListItem","position":40,"url":"https://aiym168.github.io/item/awesome-free-ai-apis-3912a17b5a.html","name":"道拉加尼/awesome-free-ai-apis"},{"@type":"ListItem","position":41,"url":"https://aiym168.github.io/item/c00lpeace-free-llm-tracker-f080428dd2.html","name":"c00lpeace/free-llm-tracker"},{"@type":"ListItem","position":42,"url":"https://aiym168.github.io/item/bioogo-api-730945df10.html","name":"Bioogo/免费 api 雷达"},{"@type":"ListItem","position":43,"url":"https://aiym168.github.io/item/st-gr-sail-proxy-1a50b05ad6.html","name":"st-gr/sail-proxy"}]}</script>
@@ -426,7 +461,7 @@ body.egg-burst .fx-aurora { filter: saturate(1.8) hue-rotate(40deg); }
   
 <header class="topnav">
   <a class="brand-mini" href="../"><span class="mark"></span>AI大模型免费资源导航</a>
-  <nav class="navlinks" aria-label="模块导航"><a href="../c/damoxing-mianfei-api.html">大模型 API 免费额度</a><a href="../c/ai-huiyuan-shiyong.html">AI 产品会员/试用</a><a href="../c/ai-kaifa-gongju.html">AI 开发工具与编程助手</a><a href="../c/mianfei-gpu-yunfuwu.html">免费GPU / 云服务</a><a href="../c/keji-app-xianmian.html">科技软件 / App 限免</a><a href="../m/github-hot.html">GitHub 新热门</a><a href="../m/hot-topics.html">最近热议</a></nav>
+  <nav class="navlinks" aria-label="模块导航"><a href="../c/damoxing-mianfei-api.html">大模型 API 免费额度</a><a href="../c/ai-huiyuan-shiyong.html">AI 产品会员/试用</a><a href="../c/ai-kaifa-gongju.html">AI 开发工具与编程助手</a><a href="../c/mianfei-gpu-yunfuwu.html">免费GPU / 云服务</a><a href="../c/keji-app-xianmian.html">科技软件 / App 限免</a><a href="../m/github-hot.html">GitHub 新热门</a><a href="../m/hot-topics.html">最近热议</a><a href="../m/api.html">CLI / API</a></nav>
 </header>
   <div class="crumbs"><a href="../">首页</a> › 大模型 API 免费额度</div>
   <header class="hero hero-brain">

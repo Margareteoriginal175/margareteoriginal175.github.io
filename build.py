@@ -325,6 +325,7 @@ def topnav(prefix="./"):
         f'<a href="{prefix}{esc(href)}">{esc(title)}</a>'
         for _, title, _, href, _, _ in MODULES
     )
+    links += f'<a href="{prefix}m/api.html">CLI / API</a>'
     return f"""
 <header class="topnav">
   <a class="brand-mini" href="{prefix}"><span class="mark"></span>{esc(SITE_NAME)}</a>
@@ -682,6 +683,269 @@ def write_archive_page(day, items, all_dates):
     (ARCHIVES / f"{day}.html").write_text(page, encoding="utf-8")
 
 
+def _api_item(it: dict) -> dict:
+    return {
+        "id": it.get("id") or item_slug(it),
+        "title": it.get("title") or "",
+        "summary": it.get("summary") or "",
+        "url": it.get("url") or "",
+        "category": it.get("category") or "",
+        "source": it.get("source") or "",
+        "how": it.get("how") or "",
+        "author": it.get("author") or "",
+        "deadline": it.get("deadline"),
+        "posted_at": it.get("posted_at") or "",
+        "engagement": it.get("engagement") or {},
+        "path": it.get("_path") or (f"item/{item_slug(it)}.html" if it.get("title") else ""),
+    }
+
+
+def _api_repo(it: dict) -> dict:
+    return {
+        "id": it.get("id") or "",
+        "title": it.get("title") or it.get("name") or "",
+        "summary": it.get("summary") or it.get("description") or "",
+        "url": it.get("url") or "",
+        "source": it.get("source") or "GitHub",
+        "stars": it.get("stars") or (it.get("engagement") or {}).get("stars"),
+        "language": it.get("language") or "",
+        "heat": it.get("heat") or "",
+    }
+
+
+def _api_topic(it: dict) -> dict:
+    return {
+        "id": it.get("id") or "",
+        "title": it.get("title") or "",
+        "summary": it.get("summary") or "",
+        "url": it.get("url") or "",
+        "source": it.get("source") or "",
+        "heat": it.get("heat") or "",
+        "points": it.get("points") or 0,
+    }
+
+
+def write_api_and_feed(items, repos, topics, date, updated):
+    """Static JSON API + RSS for CLI / curl consumers."""
+    api = SITE / "api"
+    api.mkdir(parents=True, exist_ok=True)
+    now_label = datetime.now(TZ).strftime("%Y-%m-%d %H:%M Asia/Shanghai")
+    version = "1.0.0"
+
+    deals = [_api_item(it) for it in items]
+    repo_items = [_api_repo(it) for it in repos]
+    hot_items = [_api_topic(it) for it in topics]
+
+    modules_payload = {}
+    for mid, title, desc, href, kind, cat in MODULES:
+        if kind == "cat":
+            subset = [_api_item(it) for it in items if it.get("category") == cat]
+        elif kind == "github":
+            subset = repo_items
+        else:
+            subset = hot_items
+        modules_payload[mid] = {
+            "id": mid,
+            "title": title,
+            "description": desc,
+            "href": href,
+            "count": len(subset),
+            "items": subset,
+        }
+        (api / f"{mid}.json").write_text(
+            json.dumps(modules_payload[mid], ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+
+    latest = {
+        "updated_at_label": updated or now_label,
+        "generated_at_label": now_label,
+        "date": date,
+        "count": len(deals),
+        "items": deals,
+    }
+    (api / "latest.json").write_text(json.dumps(latest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (api / "github-hot.json").write_text(
+        json.dumps({"updated_at_label": now_label, "count": len(repo_items), "items": repo_items}, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    (api / "hot.json").write_text(
+        json.dumps({"updated_at_label": now_label, "count": len(hot_items), "items": hot_items}, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    meta = {
+        "name": SITE_NAME,
+        "canonical": CANONICAL,
+        "version": version,
+        "updated_at_label": updated or now_label,
+        "generated_at_label": now_label,
+        "date": date,
+        "counts": {
+            "deals": len(deals),
+            "github_hot": len(repo_items),
+            "hot": len(hot_items),
+            "modules": {mid: modules_payload[mid]["count"] for mid, *_rest in MODULES},
+        },
+        "cli": {
+            "npx": "npx github:aiym168/aiym168.github.io",
+            "curl": f"curl -fsSL {CANONICAL}cli.sh | bash -s -- list",
+        },
+    }
+    (api / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    endpoints = {
+        "canonical": CANONICAL,
+        "endpoints": [
+            {"path": "api/index.json", "desc": "本接口目录"},
+            {"path": "api/meta.json", "desc": "站点元信息与计数"},
+            {"path": "api/latest.json", "desc": "全部免费资源条目"},
+            {"path": "api/github-hot.json", "desc": "GitHub 新热门"},
+            {"path": "api/hot.json", "desc": "最近热议"},
+            {"path": "feed.xml", "desc": "RSS 订阅"},
+        ]
+        + [{"path": f"api/{mid}.json", "desc": title} for mid, title, *_ in MODULES],
+    }
+    (api / "index.json").write_text(json.dumps(endpoints, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    # RSS
+    def xml_esc(s: str) -> str:
+        return (
+            (s or "")
+            .replace("&", "&amp;")
+            .replace("<", "&lt;")
+            .replace(">", "&gt;")
+            .replace('"', "&quot;")
+        )
+
+    items_xml = []
+    for it in (deals + hot_items)[:60]:
+        link = it.get("url") or (CANONICAL + (it.get("path") or ""))
+        items_xml.append(
+            "  <item>\n"
+            f"    <title>{xml_esc(it.get('title') or '')}</title>\n"
+            f"    <link>{xml_esc(link)}</link>\n"
+            f"    <guid isPermaLink=\"false\">{xml_esc(str(it.get('id') or link))}</guid>\n"
+            f"    <description>{xml_esc(it.get('summary') or '')}</description>\n"
+            f"    <category>{xml_esc(it.get('category') or it.get('source') or '')}</category>\n"
+            "  </item>"
+        )
+    feed = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<rss version="2.0">\n<channel>\n'
+        f"<title>{xml_esc(SITE_NAME)}</title>\n"
+        f"<link>{xml_esc(CANONICAL)}</link>\n"
+        f"<description>{xml_esc(META_DESC)}</description>\n"
+        f"<language>zh-CN</language>\n"
+        f"<lastBuildDate>{xml_esc(now_label)}</lastBuildDate>\n"
+        + "\n".join(items_xml)
+        + "\n</channel>\n</rss>\n"
+    )
+    (SITE / "feed.xml").write_text(feed, encoding="utf-8")
+    print(f"[api] wrote api/*.json feed.xml deals={len(deals)} repos={len(repo_items)} hot={len(hot_items)}")
+
+
+def write_api_docs_page(date, ym):
+    """Stylish CLI / API docs page."""
+    MODS.mkdir(parents=True, exist_ok=True)
+    canonical = f"{CANONICAL}m/api.html"
+    intro = (
+        f"{SITE_NAME} 提供零依赖静态 JSON API 与命令行入口，方便开发者用 curl / npx 快速拉取大模型免费资源、"
+        f"GitHub 热门与社区热议。数据由 GitHub Actions 自动更新，无需密钥。"
+    )
+    code_npx = "npx github:aiym168/aiym168.github.io list\nnpx github:aiym168/aiym168.github.io search 免费GPU\nnpx github:aiym168/aiym168.github.io hot --limit 10"
+    code_curl = f"curl -fsSL {CANONICAL}cli.sh | bash -s -- list\ncurl -fsSL {CANONICAL}api/latest.json | head\ncurl -fsSL {CANONICAL}api/meta.json"
+    code_api = f"{CANONICAL}api/index.json\n{CANONICAL}api/latest.json\n{CANONICAL}api/github-hot.json\n{CANONICAL}api/hot.json\n{CANONICAL}api/meta.json\n{CANONICAL}feed.xml"
+    endpoints_rows = "".join(
+        f"<tr><td><code>api/{esc(mid)}.json</code></td><td>{esc(title)}</td></tr>"
+        for mid, title, *_ in MODULES
+    )
+    page = f"""{head_block(f"CLI / API · {SITE_NAME}", intro, canonical)}
+<body>
+<div class="fx-aurora" aria-hidden="true"></div>
+<div class="fx-grid" aria-hidden="true"></div>
+<div class="fx-noise" aria-hidden="true"></div>
+<div class="fx-scan" aria-hidden="true"></div>
+<div class="fx-spot" aria-hidden="true"></div>
+<canvas id="fx-particles" aria-hidden="true"></canvas>
+<div class="wrap">
+  {topnav("../")}
+  <header class="hero">
+    <div class="eyebrow"><i class="live-dot"></i> DEVELOPER ACCESS</div>
+    <h1 class="hero-title">CLI / API</h1>
+    <p class="lead">{esc(intro)}</p>
+  </header>
+
+  <section class="section">
+    <h2>一分钟上手</h2>
+    <p class="sec-desc">无需注册、无需 Token。推荐用 npx（需本机 Node）或 curl 管道脚本。</p>
+    <div class="term-block">
+      <div class="term-bar"><span></span><span></span><span></span><em>npx</em>
+        <button type="button" class="copy-btn" data-copy="{esc(code_npx)}">复制</button></div>
+      <pre><code>{esc(code_npx)}</code></pre>
+    </div>
+    <div class="term-block">
+      <div class="term-bar"><span></span><span></span><span></span><em>curl | bash</em>
+        <button type="button" class="copy-btn" data-copy="{esc(code_curl)}">复制</button></div>
+      <pre><code>{esc(code_curl)}</code></pre>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>静态 JSON API</h2>
+    <p class="sec-desc">GitHub Pages 默认允许跨域读取。每次站点构建都会重新生成。</p>
+    <div class="term-block">
+      <div class="term-bar"><span></span><span></span><span></span><em>endpoints</em>
+        <button type="button" class="copy-btn" data-copy="{esc(code_api)}">复制</button></div>
+      <pre><code>{esc(code_api)}</code></pre>
+    </div>
+    <div class="panel-box">
+      <table class="api-table">
+        <thead><tr><th>路径</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td><code>api/index.json</code></td><td>接口目录</td></tr>
+          <tr><td><code>api/meta.json</code></td><td>更新时间、计数、版本</td></tr>
+          <tr><td><code>api/latest.json</code></td><td>全部免费资源</td></tr>
+          <tr><td><code>api/github-hot.json</code></td><td>GitHub 新热门</td></tr>
+          <tr><td><code>api/hot.json</code></td><td>最近热议</td></tr>
+          <tr><td><code>feed.xml</code></td><td>RSS 2.0</td></tr>
+          {endpoints_rows}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>CLI 命令</h2>
+    <div class="panel-box">
+      <ul class="api-cmds">
+        <li><code>list [module]</code> — 列出模块或全部资源</li>
+        <li><code>search &lt;kw&gt;</code> — 按关键词搜索</li>
+        <li><code>hot</code> — 最近热议</li>
+        <li><code>github</code> — GitHub 新热门</li>
+        <li><code>open &lt;id&gt;</code> — 打开条目链接</li>
+        <li><code>json</code> — 输出原始 JSON</li>
+        <li><code>--limit N</code> — 限制条数</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>{esc(SITE_NAME)} · {esc(CANONICAL)} · {esc(date)}</footer>
+</div>
+<script>
+{FX_JS}
+document.querySelectorAll('.copy-btn').forEach(btn=>{{
+  btn.addEventListener('click', async ()=>{{
+    const t = btn.getAttribute('data-copy') || '';
+    try {{ await navigator.clipboard.writeText(t); btn.textContent='已复制'; setTimeout(()=>btn.textContent='复制',1200); }}
+    catch(e) {{ btn.textContent='失败'; }}
+  }});
+}});
+</script>
+</body></html>"""
+    (MODS / "api.html").write_text(page, encoding="utf-8")
+    return "m/api.html"
+
+
 def write_404():
     (SITE / "404.html").write_text(
         f"""{head_block(f"页面未找到 | {SITE_NAME}", META_DESC, CANONICAL + "404.html")}
@@ -716,6 +980,8 @@ def build():
     for d in dates:
         write_archive_page(d, items_for_date(d), dates)
     write_404()
+    write_api_and_feed(items, repos, topics, date, updated)
+    api_doc = write_api_docs_page(date, ym)
 
     # landing tiles
     tiles = []
@@ -789,6 +1055,17 @@ def build():
     <div class="module-grid">{''.join(tiles)}</div>
   </section>
 
+  <section class="section" id="cli-api">
+    <h2>CLI / API</h2>
+    <p class="sec-desc">用一行命令拉取本站数据（零依赖、免密钥）。</p>
+    <div class="term-block">
+      <div class="term-bar"><span></span><span></span><span></span><em>quickstart</em></div>
+      <pre><code>npx github:aiym168/aiym168.github.io list
+curl -fsSL https://aiym168.github.io/cli.sh | bash -s -- list</code></pre>
+    </div>
+    <p><a class="btn" href="m/api.html">查看完整文档 →</a></p>
+  </section>
+
   <div class="panel-box" id="archives"><h2>每日存档</h2>{arch_links or "暂无"}</div>
   <div class="panel-box"><h2>免责声明</h2>
     <p class="sec-desc" style="margin:0">信息来自公开网页与社区，自动整理，可能过期或不准确。参与前请自行核实官网规则，谨防诈骗。</p>
@@ -798,7 +1075,7 @@ def build():
 </body></html>"""
     (SITE / "index.html").write_text(page, encoding="utf-8")
 
-    url_entries = [("", date, "hourly", "1.0"), ("404.html", date, "yearly", "0.1")]
+    url_entries = [("", date, "hourly", "1.0"), ("404.html", date, "yearly", "0.1"), ("m/api.html", date, "weekly", "0.8"), ("feed.xml", date, "hourly", "0.6"), ("api/index.json", date, "hourly", "0.5")]
     for pth in cat_paths + mod_paths:
         url_entries.append((pth, date, "daily", "0.9"))
     for pth in item_paths:
