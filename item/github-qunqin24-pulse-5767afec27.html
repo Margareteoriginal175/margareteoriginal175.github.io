@@ -446,6 +446,28 @@ body.egg-burst .fx-aurora { filter: saturate(1.8) hue-rotate(40deg); }
 .api-cmds li { margin: 8px 0; }
 .api-cmds code { color: var(--mint); font-family: var(--mono); }
 
+
+.pinned-sec{margin:18px 0 6px}
+.pin-card{position:relative;padding:22px;border-radius:22px;background:var(--panel2);backdrop-filter:blur(16px);isolation:isolate;overflow:hidden}
+.pin-card::before{content:"";position:absolute;inset:0;padding:1.5px;border-radius:inherit;background:conic-gradient(from var(--pin-a,0deg),#5ce1ff,#a78bfa,#5ef0c0,#ffd08a,#5ce1ff);
+ -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:pinspin 6s linear infinite;z-index:-1}
+.pin-card::after{content:"";position:absolute;inset:-40%;background:radial-gradient(circle at 30% 20%,rgba(92,225,255,.16),transparent 45%),radial-gradient(circle at 80% 90%,rgba(167,139,250,.16),transparent 45%);z-index:-2;animation:pinglow 5s ease-in-out infinite alternate}
+@property --pin-a{syntax:"<angle>";inherits:false;initial-value:0deg}
+@keyframes pinspin{to{--pin-a:360deg}}
+@keyframes pinglow{from{opacity:.55;transform:scale(1)}to{opacity:1;transform:scale(1.06)}}
+.pin-card{box-shadow:0 0 34px rgba(92,225,255,.18),0 0 70px rgba(167,139,250,.12)}
+.pin-head{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.pin-badge{font-weight:700;font-size:.8rem;padding:5px 11px;border-radius:999px;color:#03050c;background:linear-gradient(90deg,#5ce1ff,#a78bfa);box-shadow:0 0 18px rgba(92,225,255,.55);animation:pinpulse 2.4s ease-in-out infinite}
+@keyframes pinpulse{50%{box-shadow:0 0 30px rgba(167,139,250,.8)}}
+.pin-title{margin:12px 0 8px;font-size:1.35rem;line-height:1.4}
+.pin-title a{background:linear-gradient(90deg,#eef3ff,#5ce1ff,#a78bfa);-webkit-background-clip:text;background-clip:text;color:transparent}
+.pin-sum{color:var(--text);opacity:.92;line-height:1.75;margin:0 0 10px}
+.pin-feats{margin:0 0 12px;padding-left:1.2rem;color:var(--muted);line-height:1.8}
+.pin-feats li::marker{color:var(--cyan)}
+.pin-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.pin-btn{border-color:rgba(92,225,255,.6)!important;box-shadow:0 0 22px rgba(92,225,255,.3)}
+@media (prefers-reduced-motion:reduce){.pin-card::before,.pin-card::after,.pin-badge{animation:none}}
+
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"GitHub 开源：qunqin24/Pulse","description":"了解您还剩下多少Claude Code、Codex、Cursor、Copilot和70多种其他AI编码工具--屏幕边缘有一个免费的开源macOS监视器。","datePublished":"2026-11-09 11:26 Asia/Shanghai","dateModified":"2026-11-09","mainEntityOfPage":"https://aiym168.github.io/item/github-qunqin24-pulse-5767afec27.html","author":{"@type":"Organization","name":"AI大模型免费资源导航"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://aiym168.github.io/"},{"@type":"ListItem","position":2,"name":"大模型 API 免费额度","item":"https://aiym168.github.io/c/damoxing-mianfei-api.html"},{"@type":"ListItem","position":3,"name":"GitHub 开源：qunqin24/Pulse","item":"https://aiym168.github.io/item/github-qunqin24-pulse-5767afec27.html"}]}</script>

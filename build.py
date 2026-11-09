@@ -176,6 +176,62 @@ def out_of_scope(item: dict) -> bool:
     return any(b in text for b in SCOPE_BLOCK)
 
 
+def load_pinned() -> list[dict]:
+    """Pinned items from data/pinned.json — always rendered first, never touched by fetchers."""
+    d = load_json(DATA / "pinned.json") if (DATA / "pinned.json").exists() else None
+    out = []
+    for it in (d or {}).get("items") or []:
+        if it.get("title") and it.get("url"):
+            it = dict(it, pinned=True)
+            it.setdefault("category", "其他科技")
+            it["_slug"] = item_slug(it)
+            it["_path"] = f"item/{it['_slug']}.html"
+            out.append(it)
+    return out
+
+
+def pinned_block(pins: list[dict], prefix: str = "") -> str:
+    if not pins:
+        return ""
+    cards = []
+    for it in pins:
+        feats = "".join(f"<li>{esc(f)}</li>" for f in it.get("features") or [])
+        start = it.get("start_url") or it.get("url")
+        cards.append(f"""<article class="pin-card">
+  <div class="pin-head"><span class="pin-badge">📌 {esc(it.get("badge") or "置顶")}</span><span class="badge">{esc(it.get("category") or "")}</span></div>
+  <h2 class="pin-title"><a href="{esc(start)}" target="_blank" rel="noopener">{esc(it.get("title"))}</a></h2>
+  <p class="pin-sum">{esc(it.get("summary") or "")}</p>
+  {f'<ul class="pin-feats">{feats}</ul>' if feats else ''}
+  {f'<div class="how"><strong>怎么开始：</strong>{esc(it.get("how"))}</div>' if it.get("how") else ''}
+  <div class="pin-actions"><a class="btn pin-btn" href="{esc(start)}" target="_blank" rel="noopener">立即免费领取 →</a><a class="btn" href="{prefix}{esc(it.get("_path") or "")}">查看详情</a></div>
+</article>""")
+    return f'<section class="section pinned-sec" aria-label="置顶推荐">{"".join(cards)}</section>'
+
+
+PIN_CSS = """
+.pinned-sec{margin:18px 0 6px}
+.pin-card{position:relative;padding:22px;border-radius:22px;background:var(--panel2);backdrop-filter:blur(16px);isolation:isolate;overflow:hidden}
+.pin-card::before{content:"";position:absolute;inset:0;padding:1.5px;border-radius:inherit;background:conic-gradient(from var(--pin-a,0deg),#5ce1ff,#a78bfa,#5ef0c0,#ffd08a,#5ce1ff);
+ -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:pinspin 6s linear infinite;z-index:-1}
+.pin-card::after{content:"";position:absolute;inset:-40%;background:radial-gradient(circle at 30% 20%,rgba(92,225,255,.16),transparent 45%),radial-gradient(circle at 80% 90%,rgba(167,139,250,.16),transparent 45%);z-index:-2;animation:pinglow 5s ease-in-out infinite alternate}
+@property --pin-a{syntax:"<angle>";inherits:false;initial-value:0deg}
+@keyframes pinspin{to{--pin-a:360deg}}
+@keyframes pinglow{from{opacity:.55;transform:scale(1)}to{opacity:1;transform:scale(1.06)}}
+.pin-card{box-shadow:0 0 34px rgba(92,225,255,.18),0 0 70px rgba(167,139,250,.12)}
+.pin-head{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.pin-badge{font-weight:700;font-size:.8rem;padding:5px 11px;border-radius:999px;color:#03050c;background:linear-gradient(90deg,#5ce1ff,#a78bfa);box-shadow:0 0 18px rgba(92,225,255,.55);animation:pinpulse 2.4s ease-in-out infinite}
+@keyframes pinpulse{50%{box-shadow:0 0 30px rgba(167,139,250,.8)}}
+.pin-title{margin:12px 0 8px;font-size:1.35rem;line-height:1.4}
+.pin-title a{background:linear-gradient(90deg,#eef3ff,#5ce1ff,#a78bfa);-webkit-background-clip:text;background-clip:text;color:transparent}
+.pin-sum{color:var(--text);opacity:.92;line-height:1.75;margin:0 0 10px}
+.pin-feats{margin:0 0 12px;padding-left:1.2rem;color:var(--muted);line-height:1.8}
+.pin-feats li::marker{color:var(--cyan)}
+.pin-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.pin-btn{border-color:rgba(92,225,255,.6)!important;box-shadow:0 0 22px rgba(92,225,255,.3)}
+@media (prefers-reduced-motion:reduce){.pin-card::before,.pin-card::after,.pin-badge{animation:none}}
+"""
+
+
 def collect_deal_items():
     now = datetime.now(TZ)
     items = []
@@ -313,6 +369,7 @@ def head_block(title, description, canonical, og_title=None, pubdate=None, extra
 {pub_meta}
 <style>
 {CSS}
+{PIN_CSS}
 </style>
 {ld_html}
 </head>
@@ -739,7 +796,7 @@ def _api_topic(it: dict) -> dict:
     }
 
 
-def write_api_and_feed(items, repos, topics, date, updated):
+def write_api_and_feed(items, repos, topics, date, updated, pins=None):
     """Static JSON API + RSS for CLI / curl consumers."""
     api = SITE / "api"
     api.mkdir(parents=True, exist_ok=True)
@@ -771,12 +828,16 @@ def write_api_and_feed(items, repos, topics, date, updated):
             encoding="utf-8",
         )
 
+    pinned_api = [dict(_api_item(p), pinned=True, features=p.get("features") or [], start_url=p.get("start_url") or p.get("url")) for p in (pins or [])]
+    for d_ in deals:
+        d_["pinned"] = False
     latest = {
         "updated_at_label": updated or now_label,
         "generated_at_label": now_label,
         "date": date,
-        "count": len(deals),
-        "items": deals,
+        "count": len(pinned_api) + len(deals),
+        "pinned_count": len(pinned_api),
+        "items": pinned_api + deals,
     }
     (api / "latest.json").write_text(json.dumps(latest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (api / "github-hot.json").write_text(
@@ -983,18 +1044,21 @@ def build():
     )
 
     items, date, updated = collect_deal_items()
+    pins = load_pinned()
+    pin_urls = {norm_url(p.get("url")) for p in pins}
+    items = [it for it in items if norm_url(it.get("url")) not in pin_urls]
     repos, repos_updated = load_section("github_hot.json")
     topics, topics_updated = load_section("hot_topics.json")
     dates = list_archive_dates()
     ym = ym_label(date)
 
-    item_paths = write_item_pages(items, date)
+    item_paths = write_item_pages(pins + items, date)
     cat_paths = write_category_pages(items, date, ym)
     mod_paths = write_module_special(repos, topics, date, ym)
     for d in dates:
         write_archive_page(d, items_for_date(d), dates)
     write_404()
-    write_api_and_feed(items, repos, topics, date, updated)
+    write_api_and_feed(items, repos, topics, date, updated, pins)
     api_doc = write_api_docs_page(date, ym)
 
     # landing tiles
@@ -1045,6 +1109,7 @@ def build():
 <canvas id="fx-particles" aria-hidden="true"></canvas>
 <div class="wrap">
   {topnav("./")}
+  {pinned_block(pins, "")}
   <header class="hero hero-brain">
     <div class="hero-copy">
     <div class="eyebrow"><i class="live-dot"></i> LIVE FREE AI RESOURCES</div>

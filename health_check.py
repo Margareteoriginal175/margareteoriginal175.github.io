@@ -45,7 +45,7 @@ def main() -> int:
     index = (ROOT / "index.html").read_text(encoding="utf-8", errors="replace")
     if len(index) < MIN_HTML:
         fail(f"index.html too short ({len(index)})")
-    for needle in ("AI大模型免费资源导航", "brain-hero", "选择模块", "CLI / API"):
+    for needle in ("AI大模型免费资源导航", "brain-hero", "选择模块", "CLI / API") + (("pin-card",) if (ROOT / "data" / "pinned.json").exists() else ()):
         if needle not in index:
             fail(f"index.html missing marker: {needle}")
 

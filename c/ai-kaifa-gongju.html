@@ -445,6 +445,28 @@ body.egg-burst .fx-aurora { filter: saturate(1.8) hue-rotate(40deg); }
 .api-cmds li { margin: 8px 0; }
 .api-cmds code { color: var(--mint); font-family: var(--mono); }
 
+
+.pinned-sec{margin:18px 0 6px}
+.pin-card{position:relative;padding:22px;border-radius:22px;background:var(--panel2);backdrop-filter:blur(16px);isolation:isolate;overflow:hidden}
+.pin-card::before{content:"";position:absolute;inset:0;padding:1.5px;border-radius:inherit;background:conic-gradient(from var(--pin-a,0deg),#5ce1ff,#a78bfa,#5ef0c0,#ffd08a,#5ce1ff);
+ -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:pinspin 6s linear infinite;z-index:-1}
+.pin-card::after{content:"";position:absolute;inset:-40%;background:radial-gradient(circle at 30% 20%,rgba(92,225,255,.16),transparent 45%),radial-gradient(circle at 80% 90%,rgba(167,139,250,.16),transparent 45%);z-index:-2;animation:pinglow 5s ease-in-out infinite alternate}
+@property --pin-a{syntax:"<angle>";inherits:false;initial-value:0deg}
+@keyframes pinspin{to{--pin-a:360deg}}
+@keyframes pinglow{from{opacity:.55;transform:scale(1)}to{opacity:1;transform:scale(1.06)}}
+.pin-card{box-shadow:0 0 34px rgba(92,225,255,.18),0 0 70px rgba(167,139,250,.12)}
+.pin-head{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.pin-badge{font-weight:700;font-size:.8rem;padding:5px 11px;border-radius:999px;color:#03050c;background:linear-gradient(90deg,#5ce1ff,#a78bfa);box-shadow:0 0 18px rgba(92,225,255,.55);animation:pinpulse 2.4s ease-in-out infinite}
+@keyframes pinpulse{50%{box-shadow:0 0 30px rgba(167,139,250,.8)}}
+.pin-title{margin:12px 0 8px;font-size:1.35rem;line-height:1.4}
+.pin-title a{background:linear-gradient(90deg,#eef3ff,#5ce1ff,#a78bfa);-webkit-background-clip:text;background-clip:text;color:transparent}
+.pin-sum{color:var(--text);opacity:.92;line-height:1.75;margin:0 0 10px}
+.pin-feats{margin:0 0 12px;padding-left:1.2rem;color:var(--muted);line-height:1.8}
+.pin-feats li::marker{color:var(--cyan)}
+.pin-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.pin-btn{border-color:rgba(92,225,255,.6)!important;box-shadow:0 0 22px rgba(92,225,255,.3)}
+@media (prefers-reduced-motion:reduce){.pin-card::before,.pin-card::after,.pin-badge{animation:none}}
+
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"AI 开发工具与编程助手 | AI大模型免费资源导航 · 2026年11月最新","url":"https://aiym168.github.io/c/ai-kaifa-gongju.html","description":"面向开发者的 AI 编程助手、Agent 与代码工具导航，适合关注 AI开源项目推荐与效率提升。"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://aiym168.github.io/item/wandb-transformers-6dafd75f1b.html","name":"您现在可以通过无缝 @wandb 集成可视化 Transformers 训练性能。比较超参数，出"},{"@type":"ListItem","position":2,"url":"https://aiym168.github.io/item/pollenrobotics-a9152f0fec.html","name":"非常高兴地宣布我们正在收购@pollenrobotics，将开源机器人推向世界！ 🤖"},{"@type":"ListItem","position":3,"url":"https://aiym168.github.io/item/gemini-4-argon-3d-b4342dbc95.html","name":"Gemini 4 Argon 结合了三个开源数据集来构建人体解剖学的交互式 3D 可视化。"},{"@type":"ListItem","position":4,"url":"https://aiym168.github.io/item/2027-1-2-700-6d1bae6102.html","name":"中大将于2027年1月起为黄大仙区2,700名长者提供免费人工智能视网膜认知障碍症筛查。"},{"@type":"ListItem","position":5,"url":"https://aiym168.github.io/item/netflix-1800-9fce0d4901.html","name":"据报道，Netflix 为海贼王支付了每集 1800 万美元的费用，其中最大的打斗场景之一看起来像是一场免费的人工智能大战"},{"@type":"ListItem","position":6,"url":"https://aiym168.github.io/item/gpu-https-t-co-lwhixsy342-twitch-htt-3d5a8d88eb.html","name":"今天免费 GPU！是的，全球赠品。踢：https://t.co/LWHIXsy342 Twitch：https://t.co/z4tUk9sXiH - X"},{"@type":"ListItem","position":7,"url":"https://aiym168.github.io/item/hermes-https-t-co-fjnvktitie-hermes-be03c0922c.html","name":"让 Hermes 在您登录的应用程序中进行真正的工作。免费：https://t.co/FjNvKTiTie → 新 Hermes AI 电脑更新 → H"},{"@type":"ListItem","position":8,"url":"https://aiym168.github.io/item/pw-allen-e61ae762ee.html","name":"人工智能工具比 PW 和 Allen 等商业辅导课程更能帮助学生应对考试，因为它们"},{"@type":"ListItem","position":9,"url":"https://aiym168.github.io/item/gpu-https-t-co-zlpouh00uc-x-28f2889d62.html","name":"今日免费 GPU，是的，全球范围内都有！ https://t.co/ZlpOUH00UC-X"},{"@type":"ListItem","position":10,"url":"https://aiym168.github.io/item/2026-11-7-7-20-divi-s-la-31aaa57f2a.html","name":"日期：2026 年 11 月 7 日 排灯节暂停：轻度。学习。思考。部分会议的快速时间戳指南：7:20 Divi’s La"},{"@type":"ListItem","position":11,"url":"https://aiym168.github.io/item/show-hn-timescroll-mac-rewind-e39299beef.html","name":"Show HN：TimeScroll – Mac 上 Rewind 的开源本地替代品"},{"@type":"ListItem","position":12,"url":"https://aiym168.github.io/item/show-hn-fireside-folio-remarkable-3cb7fb09f2.html","name":"Show HN：Fireside Folio – reMarkable 的免费书籍、漫画和新闻版本"},{"@type":"ListItem","position":13,"url":"https://aiym168.github.io/item/hn-pok-mon-roi-9eb8ec7172.html","name":"显示 HN：分级或跳过 – 测量 Pokémon 卡的居中和分级 ROI"},{"@type":"ListItem","position":14,"url":"https://aiym168.github.io/item/show-hn-1946734f5f.html","name":"Show HN：告诉天空——根据实时天气数据信息灯笼随风飘移"},{"@type":"ListItem","position":15,"url":"https://aiym168.github.io/item/show-hn-jurex-in-house-7ffe02d223.html","name":"Show HN：Jurex in House – 利用人工智能处理您业务的法律方面"},{"@type":"ListItem","position":16,"url":"https://aiym168.github.io/item/hn-ios-cloudshare-s3-322b33d5c5.html","name":"显示 HN：适用于 iOS 的 CloudShare 应用程序，共享到您自己的 S3 存储桶的简单方法"},{"@type":"ListItem","position":17,"url":"https://aiym168.github.io/item/show-hn-a066c2dd36.html","name":"Show HN：我构建了一个免费的问答托管应用程序，没有帐户或订阅"},{"@type":"ListItem","position":18,"url":"https://aiym168.github.io/item/github-machhonghai-haizflow-8ef44bcdd5.html","name":"GitHub 开源：MachHongHai/HaizFlow"}]}</script>
