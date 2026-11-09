@@ -1,7 +1,7 @@
 {
   "date": "2026-11-09",
-  "updated_at": "2026-11-09T17:29+08:00",
-  "updated_at_label": "2026-11-09 17:29 Asia/Shanghai",
+  "updated_at": "2026-11-09T17:44+08:00",
+  "updated_at_label": "2026-11-09 17:44 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
     {
@@ -62,63 +62,6 @@
       "translated_by": "free-translate"
     },
     {
-      "id": "hn-50404884",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Show HN ： Solous ，一个日记应用程序，就像社交媒体一样，可以表达你内心的情感",
-      "summary": "Show HN：Solos，一款类似于社交媒体的日记应用程序，可记录您内心的情感 Solous 是一款私人日记应用程序。 \n这个应用程序的灵感来自《头脑特工队》或《由美的细胞》等电影，在这些电影中，我们内心都有情感。当我们写作时，这是我们的情感之一。我们想在这些争论的想法和情感之间与自己对话。我们是孤独的，但我们内心也有人。这就是“solo-us”这个名字的由来。在Solos中，您可以随时回复自己的消息。它支持普通的东西，如标签和搜索。我尝试使用 e2ee 作为选项，使其尽可能安全。<p>我是该应用程序的唯一构建者。我主要是在空闲时间与克劳德一起为自己构建了这个应用程序。是的，我的感觉是 100%，但我熟悉 aws 和 python，我是一个不错的程序员。这是真的",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "solous",
-      "url": "https://solous.net/",
-      "posted_at": "2026-11-07 22:34 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 3
-      },
-      "original_title": "Show HN: Solous, a journaling app like a social media for emotions inside of you",
-      "original_summary": "Show HN: Solous, a journaling app like a social media for emotions inside of you Solous is a private journaling app. \nThis app is inspired by movies like inside out or Yumi&#x27;s Cells where we all have emotions inside us. When we write it is one of our emotions writing it. We want to talk to ourselves between these debating ideas and emotions. We are solo but also there are persons inside us. That&#x27;s where the name is from solo-us. In Solous, you can reply to your own message anytime. It supports normal stuff like tag and search. I try to make it as secure as possible with e2ee as an option.<p>I am the sole builder of the app. I built this app mostly for myself in my free time with Claude. Yes I vibed 100% but I am familiar with aws and python, I am a decent programmer. It is true th",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "hn-50404825",
-      "source": "Hacker News",
-      "category": "其他科技",
-      "title": "Show HN：图像到图像 AI：免费在线 AI 图像编辑器 – Tancky AI",
-      "summary": "Show HN：图像到图像 AI：免费在线 AI 图像编辑器 – Tancky AI",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "tancky",
-      "url": "https://tancky.io/",
-      "posted_at": "2026-11-07 22:26 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "Show HN: Image to Image AI: Free AI Image Editor Online – Tancky AI",
-      "original_summary": "Show HN: Image to Image AI: Free AI Image Editor Online – Tancky AI",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "hn-50404341",
-      "source": "Hacker News",
-      "category": "其他科技",
-      "title": "人工智能正在将保护主义者转变为自由贸易者",
-      "summary": "人工智能正在将保护主义者转变为自由贸易者",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "andsoitis",
-      "url": "https://www.economist.com/finance-and-economics/2026/11/05/ai-is-turning-protectionists-into-free-traders",
-      "posted_at": "2026-11-07 21:20 Asia/Shanghai",
-      "engagement": {
-        "points": 4,
-        "comments": 0
-      },
-      "original_title": "AI is turning protectionists into free traders",
-      "original_summary": "AI is turning protectionists into free traders",
-      "translated_by": "free-translate"
-    },
-    {
       "id": "hn-50402561",
       "source": "Hacker News",
       "category": "大模型 API 免费额度",
@@ -135,25 +78,6 @@
       },
       "original_title": "Free open API of weekly resale sold-price medians",
       "original_summary": "Free open API of weekly resale sold-price medians",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "hn-50397325",
-      "source": "Hacker News",
-      "category": "其他科技",
-      "title": "Show HN：代理从来源推断乐高机制，然后将它们动画化",
-      "summary": "Show HN：代理从来源推断乐高机制，然后为它们制作动画 您好:)<p>大约一个月前，我发布了 LDraw Nova，这是一个代理工具集，用于通过生成 LDraw 源代码文件来组装乐高 CAD 模型。<p>有关更多详细信息，请参阅 Show HN 帖子：<p><a href=\"https://news.ycombinator.com/item?id=49937916\">https://news.ycombinator.com/item?id=49937916</a><p>从评论中，我得到的印象是，人们不仅对人工智能生成的乐高模型很感兴趣，而且对人工智能动画的乐高模型也很感兴趣。<p>我查看了过去实验的结果，发现使用代理是可行的法学硕士：<p>- 分析乐高模型的 LDraw 源代码\n- 逆向工程！通过阅读 par 的描述和顺序来呈现机制",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "antelocnova",
-      "url": "https://github.com/anteloc/ldraw-mecha/tree/v0.5.0",
-      "posted_at": "2026-11-07 03:41 Asia/Shanghai",
-      "engagement": {
-        "points": 31,
-        "comments": 2
-      },
-      "original_title": "Show HN: Agents infer Lego mechanisms from sources, then animate them",
-      "original_summary": "Show HN: Agents infer Lego mechanisms from sources, then animate them Hi there :)<p>Around a month ago, I released LDraw Nova, an agentic toolset for assembling LEGO CAD models by generating LDraw source code files.<p>For more details, here&#x27;s the Show HN post:<p><a href=\"https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49937916\">https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=49937916</a><p>From the comments, I got the impression that there was quite an interest in seeing not only AI-generated LEGO models, but also AI-animated LEGO ones.<p>I took a look at results from past experiments, and found it feasible to use agentic LLMs for:<p>- analyzing the LDraw source code for LEGO models\n- reverse-engineer! the mechanisms present by reading the descriptions and sequence for the par",
       "translated_by": "free-translate"
     },
     {
@@ -195,44 +119,6 @@
       "translated_by": "free-translate"
     },
     {
-      "id": "hn-50388519",
-      "source": "Hacker News",
-      "category": "AI 开发工具与编程助手",
-      "title": "Show HN：Stitch.ai – 带有 AI 助手 Stitchy 的全新一体化工作区",
-      "summary": "Show HN：Stitch.ai – 带有 AI 助手 Stitchy 的全新一体化工作区 我们的团队很高兴本周推出 Stitch.ai。我们一直在努力为知识工作者、自由职业者和创始人提供一个不需要在应用程序和选项卡之间切换的工作空间；一切都在一个应用程序中。<p>Stitch.ai 应用程序包括邮件、日历、联系人、任务、笔记、工作表、幻灯片、文件、看板和表单。我们仍然不敢相信我们能够构建如此多的工具！<p>我们使用自动生成的结和标签来标记您的工作，帮助您一键显示相关项目。缝合也是一个很棒的功能，可以让您“缝合”。您的物品放在一起。您可以将任务拼接到事件、将电子邮件拼接到笔记、将幻灯片拼接到联系人。缝合在一起的东西会保持在一起",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "joquinn",
-      "url": "https://app.stitch.ai/auth/signup",
-      "posted_at": "2026-11-06 13:19 Asia/Shanghai",
-      "engagement": {
-        "points": 2,
-        "comments": 0
-      },
-      "original_title": "Show HN: Stitch.ai – New all-in-one workspace with Stitchy the AI assistant",
-      "original_summary": "Show HN: Stitch.ai – New all-in-one workspace with Stitchy the AI assistant Our team is excited to launch Stitch.ai this week. We&#x27;ve been working hard to bring knowledge workers, freelancers and founders a workspace that doesn&#x27;t require hopping between apps and tabs; everything is in one app.<p>The Stitch.ai app includes mail, calendar, contacts, tasks, notes, sheets, slides, files, boards and forms. We sort of still can&#x27;t believe we managed to build so many tools!<p>We use auto-generated Knots and Tags to label your work, helping you surface related items with one click. Stitching is also a great feature that allows you to &#x27;Stitch&#x27;. your items together. You can Stitch tasks to events, emails to notes, and slides to contacts. What gets Stitched together stays toget",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "hn-50368804",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "推出 HN：Kino AI (YC S23) – AI 媒体管理器和视频编辑器",
-      "summary": "推出 HN：Kino AI (YC S23) – AI 媒体管理器和视频编辑器 Hi HN！我是来自 Kino (<a href=\"https://kino.ai\">https://kino.ai</a>) 的卢克。 Kino 可让您与经纪人和队友一起制作精彩的视频。素材和​​资源的存储、丰富的视频编辑器以及供队友查看的链接都捆绑在一起。您的同事和 Codex / Claude Code 可以在同一时间线上工作，并将审阅笔记和片段集中在一个地方。请访问 <a href=\"https://kino.ai/walkthrough-video\">https://kino.ai/walkthrough-video</a> 查看基本概述，并在 <a href=\"https://kino.ai/launch-video\">https://kino.ai/launch-video</a> 查看我们的发布视频（完全使用 Kino 制作！）<p>Opus 5.5 可以编辑视频并制作出色的主题",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "lukeigel",
-      "url": "https://news.ycombinator.com/item?id=50368804",
-      "posted_at": "2026-11-05 01:31 Asia/Shanghai",
-      "engagement": {
-        "points": 111,
-        "comments": 36
-      },
-      "original_title": "Launch HN: Kino AI (YC S23) – AI media manager and video editor",
-      "original_summary": "Launch HN: Kino AI (YC S23) – AI media manager and video editor Hi HN! I&#x27;m Luke from Kino (<a href=\"https:&#x2F;&#x2F;kino.ai\">https:&#x2F;&#x2F;kino.ai</a>). Kino lets you make great videos with your agents and your teammates. Storage of footage and assets, a rich video editor, and review links for teammates are all bundled into one. Your colleagues and Codex &#x2F; Claude Code can work on the same timeline with review notes and footage all in one place. See a basic overview at <a href=\"https:&#x2F;&#x2F;kino.ai&#x2F;walkthrough-video\">https:&#x2F;&#x2F;kino.ai&#x2F;walkthrough-video</a> and our launch video (made entirely with Kino!) at <a href=\"https:&#x2F;&#x2F;kino.ai&#x2F;launch-video\">https:&#x2F;&#x2F;kino.ai&#x2F;launch-video</a><p>Opus 5.5 can edit videos and make great moti",
-      "translated_by": "free-translate"
-    },
-    {
       "id": "hn-50393793",
       "source": "Hacker News",
       "category": "大模型 API 免费额度",
@@ -268,6 +154,25 @@
       },
       "original_title": "Show HN: Ski Voice-First Multilingual Neutral Coding Harness",
       "original_summary": "Show HN: Ski Voice-First Multilingual Neutral Coding Harness Glad to showcase SKI (<a href=\"https:&#x2F;&#x2F;justski.it\" rel=\"nofollow\">https:&#x2F;&#x2F;justski.it</a>) , a voice-first coding harness.<p>It supports multiple agents from different providers, just like conductor used to. You can run claude code, codex, antigravity etc. You can also add multiple subscriptions of Claude code or others, which will automatically switch when the limits are hit so that you can continue working on projects seamlessly<p>Voice first - You can talk to it, and it will talk back and keep you updated on tasks and status. You could also ask it to speak only when needed and it will adapt. (It doesn&#x27;t read out the code line by line, unless you specifically ask it to). It is multilingual and supports 8",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "hn-50368804",
+      "source": "Hacker News",
+      "category": "大模型 API 免费额度",
+      "title": "推出 HN：Kino AI (YC S23) – AI 媒体管理器和视频编辑器",
+      "summary": "推出 HN：Kino AI (YC S23) – AI 媒体管理器和视频编辑器 Hi HN！我是来自 Kino (<a href=\"https://kino.ai\">https://kino.ai</a>) 的卢克。 Kino 可让您与经纪人和队友一起制作精彩的视频。素材和​​资源的存储、丰富的视频编辑器以及供队友查看的链接都捆绑在一起。您的同事和 Codex / Claude Code 可以在同一时间线上工作，并将审阅笔记和片段集中在一个地方。请访问 <a href=\"https://kino.ai/walkthrough-video\">https://kino.ai/walkthrough-video</a> 查看基本概述，并在 <a href=\"https://kino.ai/launch-video\">https://kino.ai/launch-video</a> 查看我们的发布视频（完全使用 Kino 制作！）<p>Opus 5.5 可以编辑视频并制作出色的主题",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "lukeigel",
+      "url": "https://news.ycombinator.com/item?id=50368804",
+      "posted_at": "2026-11-05 01:31 Asia/Shanghai",
+      "engagement": {
+        "points": 111,
+        "comments": 36
+      },
+      "original_title": "Launch HN: Kino AI (YC S23) – AI media manager and video editor",
+      "original_summary": "Launch HN: Kino AI (YC S23) – AI media manager and video editor Hi HN! I&#x27;m Luke from Kino (<a href=\"https:&#x2F;&#x2F;kino.ai\">https:&#x2F;&#x2F;kino.ai</a>). Kino lets you make great videos with your agents and your teammates. Storage of footage and assets, a rich video editor, and review links for teammates are all bundled into one. Your colleagues and Codex &#x2F; Claude Code can work on the same timeline with review notes and footage all in one place. See a basic overview at <a href=\"https:&#x2F;&#x2F;kino.ai&#x2F;walkthrough-video\">https:&#x2F;&#x2F;kino.ai&#x2F;walkthrough-video</a> and our launch video (made entirely with Kino!) at <a href=\"https:&#x2F;&#x2F;kino.ai&#x2F;launch-video\">https:&#x2F;&#x2F;kino.ai&#x2F;launch-video</a><p>Opus 5.5 can edit videos and make great moti",
       "translated_by": "free-translate"
     },
     {
@@ -613,6 +518,42 @@
       "translated_by": "free-translate"
     },
     {
+      "id": "v2ex-1255627",
+      "source": "V2EX",
+      "category": "其他科技",
+      "title": "做了个生成说唱歌曲的 Web 工具 RapSongGen，聊下开发过程和目前还存在的问题",
+      "summary": "做了个生成说唱歌曲的 Web 工具 RapSongGen，聊下开发过程和目前还存在的问题\n最近上线了一个专门做说唱音乐生成的 Web 小工具 RapSongGen（目前是英文界面）。趁着基础流程跑通，来分享下我实际做了什么、现在出歌的效果到底怎么样，以及还有哪些没解决好的地方。\r\n\r\n为什么做这个\r\n\r\n现在通用的 AI 音乐生成工具其实不少，但如果你只想做一首说唱，直接用通用工具往往得自己研究怎么在提示词里塞各种风格标签和描述。\r\n\r\n当时做这个项目的想法很简单：把说唱生成里最常调的曲风、人声偏好和 BPM 拆成直观的页面选项，省去每次拼凑复杂提示词的麻烦，让手里有一段词或者一个主题的人，能直接选好偏好出歌。\r\n\r\n怎么用（一个具体的使用场景）\r\n\r\n拿我自己平时测试最常用的场景来说：比如备忘录里攒了一段原创歌词，或者脑子里只有一个写歌的主题，想听听加上伴奏唱出来是什么感觉。\r\n\r\n进生成页面后，可以直接填主题生成，也可以切换到自定义模式贴入自己的原创歌词（如果想控制主歌、副歌等段落结构，可以在原创歌词文本里自行标注表达）。\r\n\r\n选一下曲风（目前支持 Trap、Boom Bap、Drill 等常见说唱分支），再设置人声偏好和大致的 BPM，也可以选择纯伴奏模式。\r\n\r\n提交生成后等待后端处理（出歌需要一点时间，做不到几秒钟秒出）。每次生成会给出两个版本供完整试听（在选择人声模式时，两个版本均包含人声和伴奏）。通常可以对比听听两个版本在演绎细节上的不同，挑自己听着更顺耳的一版。\r\n\r\n真实样例与实际效果\r\n\r\n我在网站首页直接放了三首真实生成的说唱样例，不需要注册登录就能点开听完整版。\r\n\r\n拿首页里的《One More Mile》这首样例来说，当时选的是 Trap 风格，输入的主题是“雨夜公交旅途中的希望”：\r\n\r\n目前比较满意的地方：整首歌的氛围和“雨夜旅途”的主题贴",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "kaixing20",
+      "url": "https://www.v2ex.com/t/1255627",
+      "posted_at": "2026-11-09 17:29 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "做了个生成说唱歌曲的 Web 工具 RapSongGen，聊下开发过程和目前还存在的问题",
+      "original_summary": "做了个生成说唱歌曲的 Web 工具 RapSongGen，聊下开发过程和目前还存在的问题\n最近上线了一个专门做说唱音乐生成的 Web 小工具 RapSongGen（目前是英文界面）。趁着基础流程跑通，来分享下我实际做了什么、现在出歌的效果到底怎么样，以及还有哪些没解决好的地方。\r\n\r\n为什么做这个\r\n\r\n现在通用的 AI 音乐生成工具其实不少，但如果你只想做一首说唱，直接用通用工具往往得自己研究怎么在提示词里塞各种风格标签和描述。\r\n\r\n当时做这个项目的想法很简单：把说唱生成里最常调的曲风、人声偏好和 BPM 拆成直观的页面选项，省去每次拼凑复杂提示词的麻烦，让手里有一段词或者一个主题的人，能直接选好偏好出歌。\r\n\r\n怎么用（一个具体的使用场景）\r\n\r\n拿我自己平时测试最常用的场景来说：比如备忘录里攒了一段原创歌词，或者脑子里只有一个写歌的主题，想听听加上伴奏唱出来是什么感觉。\r\n\r\n进生成页面后，可以直接填主题生成，也可以切换到自定义模式贴入自己的原创歌词（如果想控制主歌、副歌等段落结构，可以在原创歌词文本里自行标注表达）。\r\n\r\n选一下曲风（目前支持 Trap、Boom Bap、Drill 等常见说唱分支），再设置人声偏好和大致的 BPM，也可以选择纯伴奏模式。\r\n\r\n提交生成后等待后端处理（出歌需要一点时间，做不到几秒钟秒出）。每次生成会给出两个版本供完整试听（在选择人声模式时，两个版本均包含人声和伴奏）。通常可以对比听听两个版本在演绎细节上的不同，挑自己听着更顺耳的一版。\r\n\r\n真实样例与实际效果\r\n\r\n我在网站首页直接放了三首真实生成的说唱样例，不需要注册登录就能点开听完整版。\r\n\r\n拿首页里的《One More Mile》这首样例来说，当时选的是 Trap 风格，输入的主题是“雨夜公交旅途中的希望”：\r\n\r\n目前比较满意的地方：整首歌的氛围和“雨夜旅途”的主题贴",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1255625",
+      "source": "V2EX",
+      "category": "其他科技",
+      "title": "2026 年 11 月 Dynadot 域名优惠第一波， COM 优惠限时不限量",
+      "summary": "2026 年 11 月 Dynadot 域名优惠第一波， COM 优惠限时不限量\n2026 年 11 月 Dynadot 域名优惠信息速递，请各位查收！\r\n\r\n# 黑五即将来临，更多优惠预计将在 10 天后释出，并准时在黑五为所有用户提供年度域名优惠，敬请期待！\r\n> 关于各注册商优惠差异的说明：\r\n> 每一家注册商的市场策略各具特色，因此很难进行简单的横向对比。\r\n> 我们的优惠政策初衷是简单与透明：不限制单一用户的优惠注册与转入的数量，也不做域名费用拆分。\r\n> 您可以根据具自身需求灵活评估，选出对您最划算的方案。感谢您的理解与支持。\r\n\r\n\r\n# .COM 域名优惠\r\n\r\n**63 注册[.COM]( https://www.dynadot.com/zh/domain/com?utm_source=medium&utm_medium=forum&utm_campaign=monthlypromo&drefid=5608) 域名**\r\n优惠码：899COM\r\n优惠截止时间：2026 年 12 月 1 日 7:59\r\n* 每个账户使用此优惠码的**次数不限，所以尽可放心注册多个域名**。 数量有限，售完为止。\r\n说明事项：\r\n一旦注册，域名将在您的 “管理域名” 摘要中正常显示，但在 WHOIS 上，该域名的归属在第一年会显示为另一个白标注册商（即合作注册商）。\r\n注册的域名在 60 天的注册锁定期间不能续费，超过 60 天后，可以像处理其他域名一样进行续费和转移。\r\n因为合作注册商不支持此功能，因此通过此优惠方式注册的域名不符合 Afternic 快速转移或 Sedo MLS 的资格。注册后域名只能在前述市场直接上架，不可以通过 Dynadot 控制面板上架，只有在域名续费（转移到 Dynadot ）后，才能进行快速上架。\r\n每季度此价格可注册的名额有限，一旦名额用完，",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Dynadotmkt",
+      "url": "https://www.v2ex.com/t/1255625",
+      "posted_at": "2026-11-09 17:27 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "2026 年 11 月 Dynadot 域名优惠第一波， COM 优惠限时不限量",
+      "original_summary": "2026 年 11 月 Dynadot 域名优惠第一波， COM 优惠限时不限量\n2026 年 11 月 Dynadot 域名优惠信息速递，请各位查收！\r\n\r\n# 黑五即将来临，更多优惠预计将在 10 天后释出，并准时在黑五为所有用户提供年度域名优惠，敬请期待！\r\n> 关于各注册商优惠差异的说明：\r\n> 每一家注册商的市场策略各具特色，因此很难进行简单的横向对比。\r\n> 我们的优惠政策初衷是简单与透明：不限制单一用户的优惠注册与转入的数量，也不做域名费用拆分。\r\n> 您可以根据具自身需求灵活评估，选出对您最划算的方案。感谢您的理解与支持。\r\n\r\n\r\n# .COM 域名优惠\r\n\r\n**63 注册[.COM]( https://www.dynadot.com/zh/domain/com?utm_source=medium&utm_medium=forum&utm_campaign=monthlypromo&drefid=5608) 域名**\r\n优惠码：899COM\r\n优惠截止时间：2026 年 12 月 1 日 7:59\r\n* 每个账户使用此优惠码的**次数不限，所以尽可放心注册多个域名**。 数量有限，售完为止。\r\n说明事项：\r\n一旦注册，域名将在您的 “管理域名” 摘要中正常显示，但在 WHOIS 上，该域名的归属在第一年会显示为另一个白标注册商（即合作注册商）。\r\n注册的域名在 60 天的注册锁定期间不能续费，超过 60 天后，可以像处理其他域名一样进行续费和转移。\r\n因为合作注册商不支持此功能，因此通过此优惠方式注册的域名不符合 Afternic 快速转移或 Sedo MLS 的资格。注册后域名只能在前述市场直接上架，不可以通过 Dynadot 控制面板上架，只有在域名续费（转移到 Dynadot ）后，才能进行快速上架。\r\n每季度此价格可注册的名额有限，一旦名额用完，",
+      "translated_by": "free-translate"
+    },
+    {
       "id": "v2ex-1255595",
       "source": "V2EX",
       "category": "大模型 API 免费额度",
@@ -628,6 +569,60 @@
       },
       "original_title": "实践出真知 GPT 模型的审美能力完全可以通过好的 Skills 和设计流程来解锁！",
       "original_summary": "实践出真知 GPT 模型的审美能力完全可以通过好的 Skills 和设计流程来解锁！\n为了解决 GPT 的审美不稳定的问题，我开发了一款类似 Claude Design 的项目，我起初并没有抱太大希望，觉得可以保证风格统一就好了。在使用 Codex Cli 的 `gpt-6.1-sol` 开发了 [摄影网站]( https://drop-af770064-b43.amery2010.workers.dev/)，结果却惊艳到了我。网站排版更大胆，交互更细腻，如果不说是什么模型做的，可能还会被认为是用 Opus 做的网站。此外，我还让其设计了[个人主页]( https://drop-f285c473-61a.amery2010.workers.dev/)，同样风格不在拘泥于传统页面的排版风格。\r\n\r\n如果说 ChatGPT 新系列模型本来就审美在线的话，那我用网上找到的免费的 `agnes-3.0-flash` 模型尝试做了一个[摄影主题的网站]( https://drop-195ab7ba-8f6.amery2010.workers.dev/)，结果同样让人觉得不俗！\r\n\r\n![screenshot]( https://github.com/Amery2010/open-builder/raw/main/public/images/screenshot.png)\r\n\r\n项目开源: [https://github.com/Amery2010/open-builder]( https://github.com/Amery2010/open-builder)，个人使用无限制。\r\n\r\n如果您觉得我说得有些夸大其词，您可以自己下载客户端进行试一试，在没有第三方 API 的情况下，您也可以使用 Codex 、Claude Code 等本地 CLI 进行驱动。\r\n\r\n另外，项目也提供了实验",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-enapt-swarmllm",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "enapt/SwarmLLM",
+      "summary": "enapt/SwarmLLM 免费的开源应用程序，可在您自己的计算机上运行人工智能聊天模型，并允许计算机通过互联网组队运行对于一台机器来说太大的模型。没有账户，就没有加密货币。 OpenAI 和 Anthropic 兼容的 API。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "enapt",
+      "url": "https://github.com/enapt/SwarmLLM",
+      "posted_at": "2026-11-09 17:42 Asia/Shanghai",
+      "engagement": {
+        "stars": 83
+      },
+      "original_title": "enapt/SwarmLLM",
+      "original_summary": "enapt/SwarmLLM Free, open-source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI- and Anthropic-compatible API.",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-dhaulagani-awesome-free-ai-apis",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "道拉加尼/awesome-free-ai-apis",
+      "summary": "dhaulagani/awesome-free-ai-apis ⚡ 经过验证的免费 AI API、LLM 推理端点（DeepSeek R1、Llama 3.3、Gemini）、嵌入和音频模型的实时监控目录（每日更新）。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "dhaulagani",
+      "url": "https://github.com/dhaulagani/awesome-free-ai-apis",
+      "posted_at": "2026-11-09 17:42 Asia/Shanghai",
+      "engagement": {
+        "stars": 2
+      },
+      "original_title": "dhaulagani/awesome-free-ai-apis",
+      "original_summary": "dhaulagani/awesome-free-ai-apis ⚡ Live-monitored directory of verified free AI APIs, LLM inference endpoints (DeepSeek R1, Llama 3.3, Gemini), embeddings, and audio models (Updated Daily).",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-arsh624-llm4jobs-v2",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "Arsh624/llm4jobs-v2",
+      "summary": "Arsh624/llm4jobs-v2 求职雷达：从 49 个公司求职板 API 中提取应届生角色，按资历和地点进行筛选，并通过电子邮件发送每日摘要。在 GitHub Actions 上免费运行",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "Arsh624",
+      "url": "https://github.com/Arsh624/llm4jobs-v2",
+      "posted_at": "2026-11-09 17:31 Asia/Shanghai",
+      "engagement": {
+        "stars": 0
+      },
+      "original_title": "Arsh624/llm4jobs-v2",
+      "original_summary": "Arsh624/llm4jobs-v2 Job radar: pulls new-grad roles from 49 company job-board APIs, filters by seniority and location, and emails a daily digest. Runs free on GitHub Actions",
       "translated_by": "free-translate"
     },
     {
@@ -649,24 +644,6 @@
       "translated_by": "free-translate"
     },
     {
-      "id": "ghdeal-arsh624-llm4jobs-v2",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "Arsh624/llm4jobs-v2",
-      "summary": "Arsh624/llm4jobs-v2 求职雷达：从 49 个公司求职板 API 中提取应届生角色，按资历和地点进行筛选，并通过电子邮件发送每日摘要。在 GitHub Actions 上免费运行",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "Arsh624",
-      "url": "https://github.com/Arsh624/llm4jobs-v2",
-      "posted_at": "2026-11-09 17:01 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "original_title": "Arsh624/llm4jobs-v2",
-      "original_summary": "Arsh624/llm4jobs-v2 Job radar: pulls new-grad roles from 49 company job-board APIs, filters by seniority and location, and emails a daily digest. Runs free on GitHub Actions",
-      "translated_by": "free-translate"
-    },
-    {
       "id": "ghdeal-bioogo-free-api-radar",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
@@ -682,24 +659,6 @@
       },
       "original_title": "bioogo/free-api-radar",
       "original_summary": "bioogo/free-api-radar free LLM API radar for dsh",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "ghdeal-enapt-swarmllm",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "enapt/SwarmLLM",
-      "summary": "enapt/SwarmLLM 免费的开源应用程序，可在您自己的计算机上运行人工智能聊天模型，并允许计算机通过互联网组队运行对于一台机器来说太大的模型。没有账户，就没有加密货币。 OpenAI 和 Anthropic 兼容的 API。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "enapt",
-      "url": "https://github.com/enapt/SwarmLLM",
-      "posted_at": "2026-11-09 16:36 Asia/Shanghai",
-      "engagement": {
-        "stars": 83
-      },
-      "original_title": "enapt/SwarmLLM",
-      "original_summary": "enapt/SwarmLLM Free, open-source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI- and Anthropic-compatible API.",
       "translated_by": "free-translate"
     },
     {
@@ -754,6 +713,42 @@
       },
       "original_title": "Super-X9/llm-freewatch",
       "original_summary": "Super-X9/llm-freewatch Know which free LLM APIs still work today — live free-model radar, change diffs, fallback chains, and an MCP server for coding agents. Zero-dependency Python.",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-mvalentsev-awesome-free-ai-coding",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "mvalentsev/很棒的免费人工智能编码",
+      "summary": "mvalentsev/awesome-free-ai-coding 📡 合法免费的 LLM API 和编码代理 — 自我更新，每周两次探针验证。免费套餐、无卡试用、免费模型。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "mvalentsev",
+      "url": "https://github.com/mvalentsev/awesome-free-ai-coding",
+      "posted_at": "2026-11-09 15:33 Asia/Shanghai",
+      "engagement": {
+        "stars": 131
+      },
+      "original_title": "mvalentsev/awesome-free-ai-coding",
+      "original_summary": "mvalentsev/awesome-free-ai-coding 📡 Legal free LLM APIs & coding agents — self-updating, probe-verified twice a week. Free tiers, no-card trials, free models.",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-mnfst-awesome-free-llm-apis",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "mnfst/awesome-free-llm-apis",
+      "summary": "mnfst/awesome-free-llm-apis 永久免费 LLM API 列表（API 密钥）",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "mnfst",
+      "url": "https://github.com/mnfst/awesome-free-llm-apis",
+      "posted_at": "2026-11-09 17:41 Asia/Shanghai",
+      "engagement": {
+        "stars": 12707
+      },
+      "original_title": "mnfst/awesome-free-llm-apis",
+      "original_summary": "mnfst/awesome-free-llm-apis List of Permanent Free LLM API  (API Keys)",
       "translated_by": "free-translate"
     }
   ],
