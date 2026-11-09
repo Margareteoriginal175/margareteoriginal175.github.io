@@ -456,6 +456,28 @@ body.egg-burst .fx-aurora { filter: saturate(1.8) hue-rotate(40deg); }
 .api-cmds li { margin: 8px 0; }
 .api-cmds code { color: var(--mint); font-family: var(--mono); }
 
+
+.pinned-sec{margin:18px 0 6px}
+.pin-card{position:relative;padding:22px;border-radius:22px;background:var(--panel2);backdrop-filter:blur(16px);isolation:isolate;overflow:hidden}
+.pin-card::before{content:"";position:absolute;inset:0;padding:1.5px;border-radius:inherit;background:conic-gradient(from var(--pin-a,0deg),#5ce1ff,#a78bfa,#5ef0c0,#ffd08a,#5ce1ff);
+ -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:pinspin 6s linear infinite;z-index:-1}
+.pin-card::after{content:"";position:absolute;inset:-40%;background:radial-gradient(circle at 30% 20%,rgba(92,225,255,.16),transparent 45%),radial-gradient(circle at 80% 90%,rgba(167,139,250,.16),transparent 45%);z-index:-2;animation:pinglow 5s ease-in-out infinite alternate}
+@property --pin-a{syntax:"<angle>";inherits:false;initial-value:0deg}
+@keyframes pinspin{to{--pin-a:360deg}}
+@keyframes pinglow{from{opacity:.55;transform:scale(1)}to{opacity:1;transform:scale(1.06)}}
+.pin-card{box-shadow:0 0 34px rgba(92,225,255,.18),0 0 70px rgba(167,139,250,.12)}
+.pin-head{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.pin-badge{font-weight:700;font-size:.8rem;padding:5px 11px;border-radius:999px;color:#03050c;background:linear-gradient(90deg,#5ce1ff,#a78bfa);box-shadow:0 0 18px rgba(92,225,255,.55);animation:pinpulse 2.4s ease-in-out infinite}
+@keyframes pinpulse{50%{box-shadow:0 0 30px rgba(167,139,250,.8)}}
+.pin-title{margin:12px 0 8px;font-size:1.35rem;line-height:1.4}
+.pin-title a{background:linear-gradient(90deg,#eef3ff,#5ce1ff,#a78bfa);-webkit-background-clip:text;background-clip:text;color:transparent}
+.pin-sum{color:var(--text);opacity:.92;line-height:1.75;margin:0 0 10px}
+.pin-feats{margin:0 0 12px;padding-left:1.2rem;color:var(--muted);line-height:1.8}
+.pin-feats li::marker{color:var(--cyan)}
+.pin-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.pin-btn{border-color:rgba(92,225,255,.6)!important;box-shadow:0 0 22px rgba(92,225,255,.3)}
+@media (prefers-reduced-motion:reduce){.pin-card::before,.pin-card::after,.pin-badge{animation:none}}
+
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"在单个 GPU 上微调*30 亿*参数模型？","description":"在单个 GPU 上微调*30 亿*参数模型？\n\n由于 DeepSpeed/Fairscale 集成，现在可以在 Transformer 中实现！\n\n感谢@StasBekman 的无缝集成，感谢@microsoft 和@facebookai 团队的支持！\nhttps://t.co/zwXAOUk5dI","datePublished":"Tue Jan 19 16:00:11 +0000 2021","dateModified":"2026-11-09","mainEntityOfPage":"https://aiym168.github.io/item/gpu-30-86f6cdc42f.html","author":{"@type":"Organization","name":"AI大模型免费资源导航"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://aiym168.github.io/"},{"@type":"ListItem","position":2,"name":"云服务/GPU/开发者资源","item":"https://aiym168.github.io/c/mianfei-gpu-yunfuwu.html"},{"@type":"ListItem","position":3,"name":"在单个 GPU 上微调*30 亿*参数模型？","item":"https://aiym168.github.io/item/gpu-30-86f6cdc42f.html"}]}</script>
@@ -493,7 +515,7 @@ https://t.co/zwXAOUk5dI</p>
     <p style="margin-top:14px"><a class="btn" href="https://x.com/huggingface/status/1351560093658198022" target="_blank" rel="noopener noreferrer">打开原帖 / 官网</a>
     <a class="btn" href="../c/mianfei-gpu-yunfuwu.html">同分类更多</a></p>
   </section>
-  <section class="panel-box"><h2>相关推荐</h2><a href="mianfei-gpu-yunfuwu-5ddef7e70f.html">想要不带 GPU 的快速变形金刚模型吗？！ 🧐</a><br/><a href="awscloud-b8578060ee.html">今天，我们很高兴宣布与 @awscloud 建立新的合作伙伴关系！ 🔥</a><br/><a href="metaai-lm-30b-2c9a404178.html">上周@MetaAI公开发布了巨大的LM，参数高达☄️30B。开源的伟大胜利🎉</a><br/><a href="mianfei-gpu-yunfuwu-64d34586a0.html">没有标记数据？没问题。</a><br/><a href="gmi-cloud-qwen3-8-max-qwen3-8-flash-e55cf6b603.html">在 @gmi_cloud 上免费使用 Qwen3.8-Max、Qwen3.8-Flash 和 Wan3.0 一周。探索您可以与我们一起构建什么</a><br/><a href="qwengyre-xlong-5c7bfe2fe6.html">推出 QwenGyre，将弹性强化学习引入超长视野 (XLong) 智能体训练中。 ✨</a><br/></section>
+  <section class="panel-box"><h2>相关推荐</h2><a href="simular-box-ai-linux-7eb10e424b.html">Simular Box：免费领一台给 AI 用的云端电脑（Linux 云桌面 / 云服务器）</a><br/><a href="mianfei-gpu-yunfuwu-5ddef7e70f.html">想要不带 GPU 的快速变形金刚模型吗？！ 🧐</a><br/><a href="awscloud-b8578060ee.html">今天，我们很高兴宣布与 @awscloud 建立新的合作伙伴关系！ 🔥</a><br/><a href="metaai-lm-30b-2c9a404178.html">上周@MetaAI公开发布了巨大的LM，参数高达☄️30B。开源的伟大胜利🎉</a><br/><a href="mianfei-gpu-yunfuwu-64d34586a0.html">没有标记数据？没问题。</a><br/><a href="gmi-cloud-qwen3-8-max-qwen3-8-flash-e55cf6b603.html">在 @gmi_cloud 上免费使用 Qwen3.8-Max、Qwen3.8-Flash 和 Wan3.0 一周。探索您可以与我们一起构建什么</a><br/></section>
   <footer>AI大模型免费资源导航</footer>
 </div>
 <script>(function(){
