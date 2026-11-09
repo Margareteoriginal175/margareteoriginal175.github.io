@@ -3,7 +3,7 @@
   "title": "科技软件 / App 限免",
   "description": "限免与开源替代精选",
   "href": "c/keji-app-xianmian.html",
-  "count": 2,
+  "count": 5,
   "items": [
     {
       "id": "x-1829141054022377569",
@@ -42,6 +42,56 @@
         "impressions": 0
       },
       "path": "item/ai-ai-llm-890078f687.html"
+    },
+    {
+      "id": "hn-50412484",
+      "title": "Show HN：Gitbet – 适用于 Linux 的免费 sourcetree 风格 Git 客户端",
+      "summary": "Show HN：Gitbet – 适用于 Linux 的免费 Sourcetree 风格 Git 客户端 我在 macOS 和 Windows 上使用 Sourcetree 大约 7 年。当我切换到 Linux 时，我发现它不可用，并且没有一个替代方案具有我喜欢的布局和用户体验。<p>我故意保持它很小，我不打算添加很多功能。适用于 Linux、Mac 操作系统和 Windows。很高兴听到一些反馈并分享它是否对其他开发人员也有用。",
+      "url": "https://www.gitbet.dev/",
+      "category": "科技软件/App 限免",
+      "source": "Hacker News",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "byc0",
+      "deadline": null,
+      "posted_at": "2026-11-08 19:55 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "path": "item/show-hn-gitbet-linux-sourcetree-git-17f1a15782.html"
+    },
+    {
+      "id": "hn-50383785",
+      "title": "Show HN：在 Mac 上通过说出一次名称来教语音模型 (en) 命名",
+      "summary": "Show HN：在 Mac 上通过说一次来教语音模型 (en) 一个名字。我想看看语音模型如果听到它，而不仅仅是读到它，是否可以更好地拼写一个名字。<p>大多数 STT 工具将自定义单词作为文本处理（关键术语列表、用 llm 修复后的文字记录等）。<p>因此，我训练了一个适配器来尝试它，特别是 Qwen3-ASR 1.7b 上的 LoRA（请参阅基准测试）。此 LoRA 仅在听到每个自定义单词的录音后才会转录单词。<p>为了使该模型在日常生活中更易于使用，我们还构建了 Detail Keeper。这是一个 Mac 应用程序，您可以通过指定难以正确转录的单词，然后在录音中正确拾取它们来使用此适配器。<p>我们发现这在两种特定情况下很有帮助： \n1. STT从未听说过的词：发明的",
+      "url": "https://detailkeeper.com/",
+      "category": "科技软件/App 限免",
+      "source": "Hacker News",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "Angus1192",
+      "deadline": null,
+      "posted_at": "2026-11-06 04:06 Asia/Shanghai",
+      "engagement": {
+        "points": 3,
+        "comments": 1
+      },
+      "path": "item/show-hn-mac-en-a8c0afd787.html"
+    },
+    {
+      "id": "disc-agentlas-ai-agentlas-os",
+      "title": "GitHub 开源：agentlas-ai/Agentlas-OS",
+      "summary": "桌面人工智能代理为每项任务聘请专家，在您的真实应用中工作数周，并从您的手机接受订单。免费， Apache-2.0。",
+      "url": "https://github.com/agentlas-ai/Agentlas-OS",
+      "category": "科技软件/App 限免",
+      "source": "GitHub 自动发现",
+      "how": "打开来源链接查看项目说明与领取/使用方式；参与前请自行核实。",
+      "author": "agentlas-ai",
+      "deadline": null,
+      "posted_at": "2026-11-09 16:41 Asia/Shanghai",
+      "engagement": {
+        "stars": 1448
+      },
+      "path": "item/github-agentlas-ai-agentlas-os-0e157a0d5e.html"
     }
   ]
 }

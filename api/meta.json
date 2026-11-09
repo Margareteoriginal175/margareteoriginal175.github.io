@@ -3,18 +3,18 @@
   "canonical": "https://aiym168.github.io/",
   "version": "1.0.0",
   "updated_at_label": "2026-11-09 18:44 Asia/Shanghai",
-  "generated_at_label": "2026-11-09 19:19 Asia/Shanghai",
+  "generated_at_label": "2026-11-09 19:27 Asia/Shanghai",
   "date": "2026-11-09",
   "counts": {
-    "deals": 153,
+    "deals": 182,
     "github_hot": 30,
     "hot": 40,
     "modules": {
-      "damoxing-mianfei-api": 84,
+      "damoxing-mianfei-api": 106,
       "ai-huiyuan-shiyong": 9,
-      "ai-kaifa-gongju": 20,
-      "mianfei-gpu-yunfuwu": 13,
-      "keji-app-xianmian": 2,
+      "ai-kaifa-gongju": 18,
+      "mianfei-gpu-yunfuwu": 17,
+      "keji-app-xianmian": 5,
       "github-hot": 30,
       "hot-topics": 40
     }

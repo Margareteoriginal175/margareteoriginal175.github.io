@@ -1,5 +1,5 @@
 {
-  "updated_at_label": "2026-11-09 19:19 Asia/Shanghai",
+  "updated_at_label": "2026-11-09 19:27 Asia/Shanghai",
   "count": 30,
   "items": [
     {
@@ -8,7 +8,7 @@
       "summary": "适用于Android的设备上AI代理，可运行应用程序和网络，为您完成任务。",
       "url": "https://github.com/wangzan101/Mika",
       "source": "GitHub",
-      "stars": 7842,
+      "stars": 7846,
       "language": "Kotlin",
       "heat": ""
     },
@@ -18,7 +18,7 @@
       "summary": "🤖 开源， Grok Bot、OpenAI DOT和Claude Duet的本地首选替代品。通过一个Modelflare密钥，您可以在任何型号上使用自己的人工智能机器人： GPT、Claude、Gemini、Grok、DeepSeek、Kimi、GLM和70多个。通过应用程序、微信或飞树联系他们；他们会记住您，在后台工作，运行命令并使用您的计算机。按次付费。",
       "url": "https://github.com/modelflare-ai/AnyModelBot",
       "source": "GitHub",
-      "stars": 2741,
+      "stars": 2740,
       "language": "Python",
       "heat": ""
     },
@@ -28,7 +28,7 @@
       "summary": "自主Pentest军团— AI指挥官+工作者群体+分层事实意图。第三名腾讯智能攻击防御在线冠军（ 634支队伍· 8小时无人值守· 10亿代币击败4.5B ）。Nüwa测试：赋予人工智能创造/语言/历史，让文明成长。",
       "url": "https://github.com/N1nEmAn/sapper-v2",
       "source": "GitHub",
-      "stars": 1739,
+      "stars": 1742,
       "language": "Python",
       "heat": ""
     },
@@ -38,7 +38,7 @@
       "summary": "Python中的3D建模，专为LLM构建。",
       "url": "https://github.com/Sandflow-ai/sand3d",
       "source": "GitHub",
-      "stars": 1530,
+      "stars": 1538,
       "language": "HTML",
       "heat": ""
     },
@@ -48,7 +48,7 @@
       "summary": "适用于Windows、Linux和WSL的GPU任务管理器：每进程VRAM、GPU活动和LLM模型/KV缓存洞察（ Windows AMD和NVIDIA ）。",
       "url": "https://github.com/shanselman/gputaskman",
       "source": "GitHub",
-      "stars": 1287,
+      "stars": 1300,
       "language": "Python",
       "heat": ""
     },
@@ -58,7 +58,7 @@
       "summary": "让人工智能代理与您一起使用您的手机。",
       "url": "https://github.com/DIYgod/pinky",
       "source": "GitHub",
-      "stars": 1231,
+      "stars": 1240,
       "language": "Go",
       "heat": ""
     },
@@ -88,7 +88,7 @@
       "summary": "斯坦福 Stanford CS329Z Engineering AI Agents 中文教程：面向 Python 开发者的 AI 智能体课程，19 讲与 4 项实践，涵盖 LLM、RAG、工具调用、记忆、多智能体、评测与安全。完整 Markdown、在线与离线 HTML。Chinese course notes.",
       "url": "https://github.com/wanghao-SunSky/cs329z-chinese",
       "source": "GitHub",
-      "stars": 518,
+      "stars": 520,
       "language": "HTML",
       "heat": ""
     },
@@ -118,7 +118,7 @@
       "summary": "Muse4AI —让您的AI代理制作图片和视频。通过REST、MCP和OAuth为Muse提供本地Windows网桥。",
       "url": "https://github.com/andrew-babo/muse4ai",
       "source": "GitHub",
-      "stars": 428,
+      "stars": 431,
       "language": "TypeScript",
       "heat": ""
     },
@@ -208,7 +208,7 @@
       "summary": "AI Agent故障重播及根本原因分析平台",
       "url": "https://github.com/TngSHoO/agentcase-lab",
       "source": "GitHub",
-      "stars": 201,
+      "stars": 202,
       "language": "Python",
       "heat": ""
     },
@@ -258,7 +258,7 @@
       "summary": "非人类员工｜九位 AI 同事的 3D 工牌领取处，中英文、透明 PNG 下载。微信公众号：风花AI实验室。",
       "url": "https://github.com/fanhuayishiy/ai-crew-pass",
       "source": "GitHub",
-      "stars": 116,
+      "stars": 117,
       "language": "TypeScript",
       "heat": ""
     },
@@ -298,7 +298,7 @@
       "summary": "AI kullanım limitleri GNOME üst panelinde — Claude、Codex、Gemini、Copilot、API bakiyeleri · GNOME顶部栏中的AI使用限制",
       "url": "https://github.com/ensignalp/kota",
       "source": "GitHub",
-      "stars": 69,
+      "stars": 70,
       "language": "Rust",
       "heat": ""
     }

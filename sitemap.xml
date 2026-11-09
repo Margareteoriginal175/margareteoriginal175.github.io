@@ -130,6 +130,7 @@
   <url><loc>https://aiym168.github.io/item/coderabbit-2213c64bb9.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/devin-desktop-windsurf-6e7c4cf2cf.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/github-copilot-9bd5edfd6f.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/show-hn-timescroll-mac-rewind-e39299beef.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/show-hn-velork-307fbb10a0.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/show-hn-jurex-in-house-7ffe02d223.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/damoxing-mianfei-api-70b5352893.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -138,34 +139,62 @@
   <url><loc>https://aiym168.github.io/item/hn-botel-a56a6b0659.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/show-hn-ski-dab13472a8.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/hn-opus-5-5-df19d1541d.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/python-vibe-2025-108e10c6cf.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/show-hn-fireside-folio-remarkable-3cb7fb09f2.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://aiym168.github.io/item/hn-pok-mon-roi-9eb8ec7172.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://aiym168.github.io/item/show-hn-mac-e0afa7d737.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://aiym168.github.io/item/show-hn-7cf24d3f98.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://aiym168.github.io/item/show-hn-claude-1-070-3-59fdee3f5d.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://aiym168.github.io/item/show-hn-vivonco-b073d93200.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://aiym168.github.io/item/show-hn-win-stats-windows-12dd6bc44b.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://aiym168.github.io/item/hn-webgpu-phonon-tts-44mb-115-f76f73fc3b.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://aiym168.github.io/item/show-hn-ai-gude-ai-29ac53938e.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://aiym168.github.io/item/mianfei-gpu-yunfuwu-415a0c613f.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/show-hn-g-ameboy-url-49b9c74877.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/hn-claude-code-codex-08c6391fce.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://aiym168.github.io/item/hn-android-9-bitwarden-396c217a9a.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://aiym168.github.io/item/hn-ios-cloudshare-s3-322b33d5c5.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://aiym168.github.io/item/show-hn-a066c2dd36.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://aiym168.github.io/item/hn-hn-0ca4e24576.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/hn-pok-mon-roi-9eb8ec7172.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/show-hn-gitbet-linux-sourcetree-git-17f1a15782.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/show-hn-mac-e0afa7d737.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/show-hn-1946734f5f.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/show-hn-mac-en-a8c0afd787.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/hn-mega-api-universe-sqlite-76-000-a-9057baf949.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/show-hn-claude-1-070-3-59fdee3f5d.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/qita-keji-cb1ccfaf85.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/webdavy-webdav-chrome-7fb2e89cb5.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/tinypass-chrome-03b791cc29.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/damoxing-mianfei-api-9ad2be1161.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/chrome-tinypass-webdavy-webdav-6c4b0419da.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/web-rapsonggen-e17c77298c.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/2026-11-dynadot-com-f602598e0e.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/arsh624-llm4jobs-v2-100f265b5e.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/aicostbudget-ai-api-5ade582e59.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/hamza01055-d90d45d387.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/masteruaki-pycognition-42c248229e.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/owaid0723666-llm-131fd7bade.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/awesome-free-ai-apis-3912a17b5a.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/item/c00lpeace-free-llm-tracker-f080428dd2.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://aiym168.github.io/item/bioogo-api-730945df10.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/mvalentsev-4fe169034b.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/mnfst-awesome-free-llm-apis-05ce2220cc.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/llm-api-awesome-freellm-apis-548d4c67f8.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-ebony-vinyl-dsh-our-free-mode-f2155f2e54.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-ahmadhassan-bted-jantt-d5f2c258d8.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-12britz-awesome-free-models-acc41fe5ec.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-mahanaicoach-google-maps-scra-fd9d219a90.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-agentlas-ai-agentlas-os-0e157a0d5e.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-wangzhishou-onebox-baeb5897c6.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-dddmuc-dsh-free-search-839d2e916e.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-zesty0wl-mac-performance-moni-56a201c414.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-calmrocks-ai-engineer-noteboo-a0b834204c.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-saarthurr-atticus-mac-ce7cbe0fa7.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-qunqin24-pulse-5767afec27.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-dragonked2-alphacode-c85719e2bb.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-johell1ns-browser-search-b7b9f02b4e.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-insane0777-awwwards-mcp-ebe4555450.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-c4rohan-lampline-e8fa649bf3.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-estebanstifli-localtext2voice-8cdda0bd4f.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-pingmike2-freebuff2api-wokers-17758d5dcf.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-fishbottle7-opencode2dsh-2c3d7aa13d.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-imsai-sh-awesome-deepseek-har-39f376573f.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-n1m21n-infinite-7dca23613b.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-gabrielelozupone-kokon-3c75524d1a.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-duecki1-calibraw-a23a65810e.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-asebrahim-malibridge-357db33b2d.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-imshaikot-browsentic-473f912d71.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-kirito8-free-newapi-0621c07060.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-beckettharriman-openfill-7d4679073f.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-machhonghai-haizflow-8ef44bcdd5.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-silverdugongenhance-promptree-26fe9df527.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aiym168.github.io/item/github-chienbm98-foxprofile-467a9884ef.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aiym168.github.io/archives/2026-11-09.html</loc><lastmod>2026-11-09</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
 </urlset>

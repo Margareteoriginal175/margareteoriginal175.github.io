@@ -536,5 +536,11 @@
   "0a302044485ccedff699ab2124a13995261c6af2": "PhotoCraft和GIMP的生成填充、删除对象、生成展开和文本到图像3.通过ComfyUI在您自己的显卡上免费提供本地服务。",
   "9b4ba2e27d47ff48974158d05448e8e12a1a22bf": "免费的Windows桌面应用程序，用于AI视频翻译、字幕和配音，具有本地CPU/GPU模型、语音克隆、批处理和视频下载。",
   "edbc2b7ebfba27a5d1996009ff5a9be913c0aabc": "免费桌面应用程序，可在您自己的电脑上将文本提示转换为简短的视频剪辑。使用Wan 2.2将本地AI文本转换为视频：键入场景，选择宽屏、垂直或正方形，获取MP4。无积分、无订阅、无队列。Windows 10/11。",
-  "c8b2b442ce1e682aa8c0d9c114dab33bdbd9dbcd": "免费、开源的反检测浏览器配置文件管理器：每个配置文件的指纹、Cookie和代理、Camoufox和Chrome引擎、桌面应用程序、REST API和AI代理的MCP服务器。GoLogin/MoreLogin的自托管替代方案。"
+  "c8b2b442ce1e682aa8c0d9c114dab33bdbd9dbcd": "免费、开源的反检测浏览器配置文件管理器：每个配置文件的指纹、Cookie和代理、Camoufox和Chrome引擎、桌面应用程序、REST API和AI代理的MCP服务器。GoLogin/MoreLogin的自托管替代方案。",
+  "87ccc7f2793b460da3105c5621cffd80e7f1f17b": "Show HN：TimeScroll – Mac 上 Rewind 的开源本地替代品",
+  "fbbae6a8417d0fba007e5a4f64a678cb0b3831db": "Show HN：TimeScroll – Mac 上 Rewind 的开源本地替代品 Hi HN，我自 2025 年 9 月以来一直在构建 TimeScroll。这是一款在后台记录屏幕的 Mac 应用程序，因此您可以向后滚动一天或搜索您所看到的任何内容。它是本地的且开源的。网站上介绍了主要功能，因此我将尽力减少这篇文章中的重复内容。<p>我的构建动机是（1）倒带关闭以及缺乏精致和直接的替代方案； (2) 大多数像这样的应用程序（实际上包括倒带）都是超级 CPU 和存储密集型的，以至于对电池寿命产生明显影响。<p>我发现了“标准”捕获方式的一些问题，并在本文中重点修复了这些问题",
+  "0b72b75ef96a83f67b9281dc3a42263b52cfc438": "显示 HN：Mega API Universe – 可搜索 SQLite 数据库中的 76,000 个免费 API",
+  "b7ddb45c1dedfd571999d8a198e45fe8903ffe57": "aicostbudget/ai-api-定价数据",
+  "a14467cb6de612c0621adab33b2070e9abfdb482": "aicostbudget/ai-api-pricing-data LLM 和 AI API 定价数据为 JSON、CSV 和免费静态 API：OpenAI、Claude、Gemini、Grok、DeepSeek、Mistral、Qwen、Kimi 等的输入、输出、缓存和批量价格。每个价格都有来源链接和日期，有历史。 npm 包 + MCP 服务器。",
+  "c00974d854373d6d2927d516a2fb85942338851a": "ChatGPT Desktop 将您的 SSH 代理转发到远程计算机"
 }
