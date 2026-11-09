@@ -29,6 +29,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAGES_DEPLOY_TOKEN || secrets.GITHUB_TOKEN }}
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -38,7 +40,7 @@ jobs:
       - name: Fetch auto sources (self-healing)
         if: github.event_name != 'push'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAGES_DEPLOY_TOKEN || secrets.GITHUB_TOKEN }}
         run: |
           set +e
           python3 fetch_auto.py
@@ -60,10 +62,16 @@ jobs:
         run: python3 baidu_push.py
 
       - name: Commit and push (GitHub Pages)
+        env:
+          DEPLOY_TOKEN: ${{ secrets.PAGES_DEPLOY_TOKEN }}
         run: |
           git config user.name "laohe-bot"
           git config user.email "9499758-wq@users.noreply.github.com"
+          if [ -n "$DEPLOY_TOKEN" ]; then
+            git remote set-url origin "https://x-access-token:${DEPLOY_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          fi
           git add -A
+          git reset HEAD -- __pycache__ 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No changes"
           else
