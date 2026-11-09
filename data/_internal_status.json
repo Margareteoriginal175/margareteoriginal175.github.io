@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T20:06:14+08:00",
+  "generated_at": "2026-11-09T20:06:36+08:00",
   "generated_at_label": "2026-11-09 20:06 Asia/Shanghai",
   "site": "https://aiym168.github.io/",
   "engines": {
@@ -30,7 +30,7 @@
       "runs_total": 2,
       "schedule": "每小时第 7 分钟 + 每 2 小时第 37 分钟（备用）",
       "next_run_label": "2026-11-09 20:07 Asia/Shanghai",
-      "age_min": 33
+      "age_min": 34
     },
     "B": {
       "engine": "B",
