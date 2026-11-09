@@ -2,10 +2,10 @@ name: Auto update site
 
 on:
   schedule:
-    # Primary: every 6 hours
-    - cron: "15 */6 * * *"
-    # Backup offset schedule (so one missed run still refreshes ~4x/day)
-    - cron: "45 2,8,14,20 * * *"
+    # Primary: hourly (UTC minute 7)
+    - cron: "7 * * * *"
+    # Backup: every 2 hours offset (UTC minute 37)
+    - cron: "37 */2 * * *"
   workflow_dispatch:
   push:
     paths:
@@ -30,11 +30,12 @@ permissions:
 
 concurrency:
   group: update-site
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -61,15 +62,24 @@ jobs:
           done
           echo "[alive] snapshot ready"
 
-      - name: Fetch X freebies (keyless, fail-safe)
+      - name: Fetch X freebies (every 3h UTC, or manual)
         if: github.event_name != 'push'
         run: |
-          set +e
-          python3 fetch_x.py
-          code=$?
           set -e
-          if [ $code -ne 0 ]; then
-            echo "[heal] fetch_x exited $code — continuing with previous data"
+          HOUR_UTC=$(date -u +%H)
+          HOUR_UTC=$((10#$HOUR_UTC))
+          EVENT="${{ github.event_name }}"
+          if [ "$EVENT" = "workflow_dispatch" ] || [ $((HOUR_UTC % 3)) -eq 0 ]; then
+            echo "[x] fetch (event=$EVENT utc_hour=$HOUR_UTC cadence=3h)"
+            set +e
+            python3 fetch_x.py
+            code=$?
+            set -e
+            if [ $code -ne 0 ]; then
+              echo "[heal] fetch_x exited $code — continuing with previous data"
+            fi
+          else
+            echo "[x] skip — reuse previous X data (event=$EVENT utc_hour=$HOUR_UTC; next at UTC hour%3==0)"
           fi
           exit 0
 
@@ -125,7 +135,7 @@ jobs:
             fi
           fi
 
-      - name: Heartbeat keepalive
+      - name: Heartbeat keepalive (at most once/day)
         run: python3 heartbeat.py
 
       - name: Baidu URL push (optional)
@@ -147,15 +157,9 @@ jobs:
           rm -rf .last_good
           git add -A
           git reset HEAD -- __pycache__ .last_good 2>/dev/null || true
-          # Always ensure heartbeat is staged
-          git add data/heartbeat.json 2>/dev/null || true
+          # Drop pure-noise paths if somehow empty; keep real data changes
           if git diff --cached --quiet; then
-            # Force a keepalive touch if somehow unchanged
-            python3 heartbeat.py
-            git add data/heartbeat.json
-          fi
-          if git diff --cached --quiet; then
-            echo "No changes"
+            echo "No changes — skip commit (hourly heartbeat suppressed)"
           else
             git commit -m "auto update $(TZ=Asia/Shanghai date '+%F %H:%M')"
             git push
