@@ -1,7 +1,6 @@
 /**
  * Neural brain / particle-network hero.
- * Technique: dual-hemisphere ellipsoids + ridge noise → point cloud + kNN synapses
- * (inspired by common three.js particle-brain demos; no CDN — uses vendored three.module.min.js)
+ * Geometry is centered at origin; camera fits the bounding sphere on every resize.
  */
 import * as THREE from "./three.module.min.js";
 
@@ -34,30 +33,39 @@ function noise3(x, y, z) {
 }
 
 /** Approximate brain surface sample (left/right hemispheres + stem bias). */
-function sampleBrainPoint(i, total) {
+function sampleBrainPoint(i) {
   const side = i % 2 === 0 ? -1 : 1;
   const u = hash(i * 3.1);
   const v = hash(i * 7.7);
   const theta = u * Math.PI;
   const phi = v * Math.PI * 2;
-  // ellipsoid hemisphere
   let x = Math.sin(theta) * Math.cos(phi) * 0.78;
   let y = Math.cos(theta) * 0.62;
   let z = Math.sin(theta) * Math.sin(phi) * 0.95;
   x = Math.abs(x) * side + side * 0.22;
-  // cortical ridges
   const n = noise3(x * 3.2, y * 3.2, z * 3.2);
   const n2 = noise3(x * 7.1 + 2, y * 7.1, z * 7.1);
   const bump = 1 + n * 0.16 + n2 * 0.07;
   x *= bump; y *= bump; z *= bump;
-  // slight frontal / temporal shaping
   y += 0.08 * Math.sin(phi * 2) * Math.abs(x);
   z *= 1.05;
-  // brainstem / cerebellum sparse points
   if (hash(i * 13.3) > 0.92) {
     x *= 0.35; y -= 0.55; z *= 0.45; y -= hash(i) * 0.2;
   }
   return new THREE.Vector3(x, y, z);
+}
+
+function centerPoints(points) {
+  const box = new THREE.Box3();
+  for (const p of points) box.expandByPoint(p);
+  const center = new THREE.Vector3();
+  box.getCenter(center);
+  for (const p of points) p.sub(center);
+  const sphere = new THREE.Sphere();
+  box.makeEmpty();
+  for (const p of points) box.expandByPoint(p);
+  box.getBoundingSphere(sphere);
+  return sphere;
 }
 
 export function mountBrainHero(container, opts = {}) {
@@ -67,31 +75,46 @@ export function mountBrainHero(container, opts = {}) {
   const COUNT = opts.count || (mobile ? 900 : 2800);
   const LINKS = opts.links || (mobile ? 1 : 2);
 
-  // WebGL check → fallback handled by caller
   const canvas = document.createElement("canvas");
   const gl = canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
-  if (!gl || reduced) {
-    return null;
-  }
+  if (!gl || reduced) return null;
 
   const scene = new THREE.Scene();
-  const camera = new THREE.PerspectiveCamera(42, 1, 0.1, 100);
-  camera.position.set(0, 0.15, 3.2);
+  const FOV = 42;
+  const camera = new THREE.PerspectiveCamera(FOV, 1, 0.05, 100);
+  camera.position.set(0, 0, 3);
+  camera.lookAt(0, 0, 0);
 
-  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: "high-performance" });
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, mobile ? 1.5 : 2));
+  const renderer = new THREE.WebGLRenderer({
+    canvas, antialias: true, alpha: true, powerPreference: "high-performance",
+  });
   renderer.setClearColor(0x000000, 0);
-  container.appendChild(renderer.domElement);
-  Object.assign(renderer.domElement.style, { width: "100%", height: "100%", display: "block" });
+  // Canvas must fill container with no CSS transform/offset
+  Object.assign(canvas.style, {
+    position: "absolute",
+    inset: "0",
+    width: "100%",
+    height: "100%",
+    display: "block",
+    margin: "0",
+    padding: "0",
+    border: "0",
+    transform: "none",
+    left: "0",
+    top: "0",
+  });
+  container.appendChild(canvas);
+
+  const target = [];
+  for (let i = 0; i < COUNT; i++) target.push(sampleBrainPoint(i));
+  // Center geometry at origin and measure bounding sphere
+  const boundSphere = centerPoints(target);
+  const baseRadius = Math.max(boundSphere.radius, 0.8);
 
   const positions = new Float32Array(COUNT * 3);
   const phases = new Float32Array(COUNT);
-  const target = [];
   for (let i = 0; i < COUNT; i++) {
-    const p = sampleBrainPoint(i, COUNT);
-    target.push(p.clone());
-    // assemble from sphere
-    const r = 2.2 * (0.4 + hash(i * 9.1));
+    const r = baseRadius * 1.6 * (0.35 + hash(i * 9.1));
     const th = hash(i * 2.2) * Math.PI * 2;
     const ph = hash(i * 4.4) * Math.PI;
     positions[i * 3] = r * Math.sin(ph) * Math.cos(th);
@@ -112,9 +135,8 @@ export function mountBrainHero(container, opts = {}) {
     sizeAttenuation: true,
   });
   const points = new THREE.Points(geo, mat);
-  scene.add(points);
 
-  // synapses: connect each point to nearest LINKS neighbors (approx via grid buckets)
+  // synapses from centered targets
   const linePos = [];
   const cell = 0.22;
   const buckets = new Map();
@@ -157,9 +179,7 @@ export function mountBrainHero(container, opts = {}) {
     depthWrite: false,
   });
   const lines = new THREE.LineSegments(lineGeo, lineMat);
-  scene.add(lines);
 
-  // pulse sprites along a subset of edges
   const pulseCount = mobile ? 24 : 64;
   const pulseGeo = new THREE.BufferGeometry();
   const pulsePos = new Float32Array(pulseCount * 3);
@@ -173,46 +193,66 @@ export function mountBrainHero(container, opts = {}) {
     depthWrite: false,
   });
   const pulses = new THREE.Points(pulseGeo, pulseMat);
-  scene.add(pulses);
-  const edgeCount = linePos.length / 6;
+  const edgeCount = Math.max(1, linePos.length / 6);
   const pulseEdges = Array.from({ length: pulseCount }, (_, i) => Math.floor(hash(i * 11.1) * edgeCount));
 
+  // Rotate around origin only — never translate the group
   const group = new THREE.Group();
+  group.position.set(0, 0, 0);
   group.add(points); group.add(lines); group.add(pulses);
   scene.add(group);
 
   let mouseX = 0, mouseY = 0, t0 = performance.now(), assembled = 0;
   const onMove = (e) => {
     const r = container.getBoundingClientRect();
+    if (!r.width || !r.height) return;
     mouseX = ((e.clientX - r.left) / r.width) * 2 - 1;
     mouseY = ((e.clientY - r.top) / r.height) * 2 - 1;
   };
   window.addEventListener("pointermove", onMove, { passive: true });
 
-  function resize() {
-    const w = container.clientWidth || 600;
-    const h = container.clientHeight || 360;
-    camera.aspect = w / h;
+  function fitCamera(w, h) {
+    const aspect = Math.max(0.5, w / Math.max(1, h));
+    camera.aspect = aspect;
+    // Vertical FOV is fixed; for narrow (portrait) aspect, effective horizontal FOV is smaller —
+    // fit using the limiting axis so the full sphere stays inside with margin.
+    const vFov = THREE.MathUtils.degToRad(FOV);
+    const hFov = 2 * Math.atan(Math.tan(vFov / 2) * aspect);
+    const limiting = Math.min(vFov, hFov);
+    const margin = 1.25;
+    const dist = (baseRadius * margin) / Math.sin(limiting / 2);
+    camera.position.set(0, 0, dist);
+    camera.near = Math.max(0.05, dist / 100);
+    camera.far = dist * 20;
+    camera.lookAt(0, 0, 0);
     camera.updateProjectionMatrix();
+  }
+
+  function resize() {
+    const w = Math.max(1, container.clientWidth || 1);
+    const h = Math.max(1, container.clientHeight || 1);
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    renderer.setPixelRatio(dpr);
     renderer.setSize(w, h, false);
+    fitCamera(w, h);
   }
   resize();
-  const ro = new ResizeObserver(resize);
+  const ro = new ResizeObserver(() => resize());
   ro.observe(container);
 
-
-  // interactive API
   let shock = 0;
   const baseTargets = target.map((p) => p.clone());
   function triggerShockwave() {
     shock = 1;
     for (let i = 0; i < COUNT; i++) {
-      const p = target[i];
-      const dir = p.clone().normalize();
+      const dir = baseTargets[i].clone();
+      if (dir.lengthSq() < 1e-6) dir.set(0, 1, 0);
+      else dir.normalize();
+      // scatter from centered base, then lerp back to baseTargets
       target[i].copy(baseTargets[i]).addScaledVector(dir, 0.55 + hash(i * 1.7) * 0.35);
     }
   }
-  let highlightSide = 0; // -1 left, 1 right, 0 none
+  let highlightSide = 0;
   function highlightRegion(name) {
     const map = {
       api: -1, gpu: 1, tools: 1, trial: -1, app: 1, github: 0, hot: 0,
@@ -224,8 +264,6 @@ export function mountBrainHero(container, opts = {}) {
   container.addEventListener("click", () => triggerShockwave());
   window.__brainAPI = { triggerShockwave, highlightRegion, destroy: null };
 
-  // in frame loop, reassemble after shock + highlight pulse
-
   let raf = 0;
   function frame(now) {
     const t = (now - t0) / 1000;
@@ -234,7 +272,10 @@ export function mountBrainHero(container, opts = {}) {
     if (shock > 0) {
       shock = Math.max(0, shock - 0.016);
       for (let i = 0; i < COUNT; i++) {
-        target[i].lerp(baseTargets[i], 0.06);
+        target[i].lerp(baseTargets[i], 0.08);
+      }
+      if (shock === 0) {
+        for (let i = 0; i < COUNT; i++) target[i].copy(baseTargets[i]);
       }
     }
     const pos = geo.attributes.position.array;
@@ -244,25 +285,23 @@ export function mountBrainHero(container, opts = {}) {
         ty += Math.sin(t * 6 + phases[i]) * 0.03;
         tx *= 1.03;
       }
-      // start was random sphere — lerp toward target
       const sx = pos[i * 3], sy = pos[i * 3 + 1], sz = pos[i * 3 + 2];
-      // re-seed start implicitly by easing from current toward target each frame until assembled
       pos[i * 3] = sx + (tx - sx) * (0.08 + 0.12 * ease);
       pos[i * 3 + 1] = sy + (ty - sy) * (0.08 + 0.12 * ease);
       pos[i * 3 + 2] = sz + (tz - sz) * (0.08 + 0.12 * ease);
-      // idle shimmer
-      if (assembled >= 1) {
+      if (assembled >= 1 && shock === 0) {
         const wiggle = Math.sin(t * 2 + phases[i]) * 0.004;
-        pos[i * 3] += wiggle; pos[i * 3 + 1] += wiggle * 0.6;
+        pos[i * 3] += wiggle;
+        pos[i * 3 + 1] += wiggle * 0.6;
       }
     }
     geo.attributes.position.needsUpdate = true;
 
-    // pulses travel along edges
     const pp = pulseGeo.attributes.position.array;
     for (let i = 0; i < pulseCount; i++) {
       const e = pulseEdges[i];
       const a = e * 6;
+      if (a + 5 >= linePos.length) continue;
       const u = (t * 0.35 + hash(i * 3.3)) % 1;
       pp[i * 3] = linePos[a] + (linePos[a + 3] - linePos[a]) * u;
       pp[i * 3 + 1] = linePos[a + 1] + (linePos[a + 4] - linePos[a + 1]) * u;
@@ -270,6 +309,8 @@ export function mountBrainHero(container, opts = {}) {
     }
     pulseGeo.attributes.position.needsUpdate = true;
 
+    // Parallax rotation around origin only (no position drift)
+    group.position.set(0, 0, 0);
     group.rotation.y = t * 0.18 + mouseX * 0.45;
     group.rotation.x = mouseY * 0.25 + Math.sin(t * 0.4) * 0.05;
     group.rotation.z = mouseX * 0.08;
@@ -288,10 +329,9 @@ export function mountBrainHero(container, opts = {}) {
     geo.dispose(); lineGeo.dispose(); pulseGeo.dispose();
     mat.dispose(); lineMat.dispose(); pulseMat.dispose();
     renderer.dispose();
-    if (renderer.domElement.parentNode) renderer.domElement.parentNode.removeChild(renderer.domElement);
+    if (canvas.parentNode) canvas.parentNode.removeChild(canvas);
     if (window.__brainAPI) window.__brainAPI = null;
   };
   window.__brainAPI.destroy = destroy;
   return destroy;
 }
-

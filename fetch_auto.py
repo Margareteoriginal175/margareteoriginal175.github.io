@@ -834,6 +834,16 @@ def fetch_hot_topics(x_items: list[dict] | None = None) -> list[dict]:
 
 
 def load_latest_x_items() -> list[dict]:
+    """Prefer Action-fetched X feed, then day JSON from Simular/fetch_x merge."""
+    feed = DATA_AUTO / "x_feed.json"
+    if feed.exists():
+        try:
+            d = json.loads(feed.read_text(encoding="utf-8"))
+            items = d.get("items") or []
+            if items:
+                return items
+        except Exception as e:
+            print(f"[warn] x_feed: {e}")
     data_dir = ROOT / "data"
     files = sorted(data_dir.glob("????-??-??.json"), reverse=True)
     for f in files:

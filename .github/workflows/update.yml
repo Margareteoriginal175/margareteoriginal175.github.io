@@ -9,6 +9,7 @@ on:
       - "data/**"
       - "build.py"
       - "fetch_auto.py"
+      - "fetch_x.py"
       - "baidu_push.py"
       - "seo_config.json"
       - "fx.css"
@@ -36,6 +37,18 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      - name: Fetch X freebies (keyless, fail-safe)
+        if: github.event_name != 'push'
+        run: |
+          set +e
+          python3 fetch_x.py
+          code=$?
+          set -e
+          if [ $code -ne 0 ]; then
+            echo "[heal] fetch_x exited $code — continuing with previous data"
+          fi
+          exit 0
 
       - name: Fetch auto sources (self-healing)
         if: github.event_name != 'push'
