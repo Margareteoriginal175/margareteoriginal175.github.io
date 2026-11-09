@@ -1,0 +1,78 @@
+#!/usr/bin/env python3
+"""Validate generated site before publish. Exit 1 if broken."""
+from __future__ import annotations
+
+import json
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent
+MIN_HTML = 1500
+
+
+def fail(msg: str) -> None:
+    print(f"[health] FAIL: {msg}")
+    raise SystemExit(1)
+
+
+def ok(msg: str) -> None:
+    print(f"[health] OK: {msg}")
+
+
+def main() -> int:
+    required = [
+        ROOT / "index.html",
+        ROOT / "404.html",
+        ROOT / "feed.xml",
+        ROOT / "api" / "latest.json",
+        ROOT / "api" / "meta.json",
+        ROOT / "api" / "index.json",
+        ROOT / "api" / "github-hot.json",
+        ROOT / "api" / "hot.json",
+        ROOT / "m" / "github-hot.html",
+        ROOT / "m" / "hot-topics.html",
+        ROOT / "m" / "api.html",
+        ROOT / "cli.sh",
+        ROOT / "fx.css",
+        ROOT / "vendor" / "brain-hero.js",
+    ]
+    for p in required:
+        if not p.exists():
+            fail(f"missing {p.relative_to(ROOT)}")
+        if p.stat().st_size < (80 if p.suffix == ".sh" else 200):
+            fail(f"too small {p.relative_to(ROOT)} ({p.stat().st_size}b)")
+
+    index = (ROOT / "index.html").read_text(encoding="utf-8", errors="replace")
+    if len(index) < MIN_HTML:
+        fail(f"index.html too short ({len(index)})")
+    for needle in ("AI大模型免费资源导航", "brain-hero", "选择模块", "CLI / API"):
+        if needle not in index:
+            fail(f"index.html missing marker: {needle}")
+
+    meta = json.loads((ROOT / "api" / "meta.json").read_text(encoding="utf-8"))
+    counts = meta.get("counts") or {}
+    deals = int(counts.get("deals") or 0)
+    repos = int(counts.get("github_hot") or 0)
+    hot = int(counts.get("hot") or 0)
+    if deals <= 0:
+        fail("meta counts.deals <= 0")
+    if repos <= 0:
+        fail("meta counts.github_hot <= 0")
+    if hot <= 0:
+        fail("meta counts.hot <= 0")
+
+    latest = json.loads((ROOT / "api" / "latest.json").read_text(encoding="utf-8"))
+    items = latest.get("items") or []
+    if len(items) <= 0:
+        fail("api/latest.json items empty")
+
+    cats = list((ROOT / "c").glob("*.html")) if (ROOT / "c").exists() else []
+    if len(cats) < 3:
+        fail(f"category pages too few: {len(cats)}")
+
+    ok(f"index={len(index)}b deals={deals} repos={repos} hot={hot} cats={len(cats)}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

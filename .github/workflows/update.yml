@@ -2,7 +2,10 @@ name: Auto update site
 
 on:
   schedule:
+    # Primary: every 6 hours
     - cron: "15 */6 * * *"
+    # Backup offset schedule (so one missed run still refreshes ~4x/day)
+    - cron: "45 2,8,14,20 * * *"
   workflow_dispatch:
   push:
     paths:
@@ -11,10 +14,15 @@ on:
       - "fetch_auto.py"
       - "fetch_x.py"
       - "baidu_push.py"
+      - "health_check.py"
+      - "heartbeat.py"
       - "seo_config.json"
       - "fx.css"
       - "fx.js"
       - "vendor/**"
+      - "cli/**"
+      - "cli.sh"
+      - "package.json"
     branches: [main]
 
 permissions:
@@ -32,11 +40,26 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.PAGES_DEPLOY_TOKEN || secrets.GITHUB_TOKEN }}
+          fetch-depth: 2
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      - name: Snapshot last good publish tree
+        run: |
+          set -e
+          rm -rf .last_good
+          mkdir -p .last_good
+          # Preserve currently checked-out (last published) site artifacts
+          for p in index.html 404.html feed.xml cli.sh fx.css fx.js robots.txt sitemap.xml sitemap.txt sitemap_index.xml netlify.toml; do
+            [ -e "$p" ] && cp -a "$p" .last_good/ || true
+          done
+          for d in api m c item archives vendor data; do
+            [ -d "$d" ] && cp -a "$d" .last_good/ || true
+          done
+          echo "[alive] snapshot ready"
 
       - name: Fetch X freebies (keyless, fail-safe)
         if: github.event_name != 'push'
@@ -69,6 +92,42 @@ jobs:
           VERIFY_BAIDU: ${{ secrets.VERIFY_BAIDU }}
         run: python3 build.py
 
+      - name: Health check (revert if broken)
+        run: |
+          set +e
+          python3 health_check.py
+          code=$?
+          set -e
+          if [ $code -ne 0 ]; then
+            echo "[alive] health check failed — restoring last good build"
+            if [ -d .last_good ]; then
+              # Restore publishable artifacts; keep scripts/workflow intact
+              for p in index.html 404.html feed.xml cli.sh fx.css fx.js robots.txt sitemap.xml sitemap.txt sitemap_index.xml; do
+                [ -e ".last_good/$p" ] && cp -a ".last_good/$p" ./
+              done
+              for d in api m c item archives vendor; do
+                if [ -d ".last_good/$d" ]; then
+                  rm -rf "$d"
+                  cp -a ".last_good/$d" ./
+                fi
+              done
+              # Prefer previous day JSON under data/ if present in snapshot
+              if [ -d .last_good/data ]; then
+                mkdir -p data
+                cp -a .last_good/data/. data/ || true
+              fi
+              echo "[alive] restored from .last_good"
+              # Re-run check on restored tree (must pass, else abort publish)
+              python3 health_check.py
+            else
+              echo "[alive] no snapshot — refusing to publish broken build"
+              exit 1
+            fi
+          fi
+
+      - name: Heartbeat keepalive
+        run: python3 heartbeat.py
+
       - name: Baidu URL push (optional)
         env:
           BAIDU_PUSH_TOKEN: ${{ secrets.BAIDU_PUSH_TOKEN }}
@@ -78,13 +137,23 @@ jobs:
         env:
           DEPLOY_TOKEN: ${{ secrets.PAGES_DEPLOY_TOKEN }}
         run: |
+          set -e
           git config user.name "laohe-bot"
           git config user.email "9499758-wq@users.noreply.github.com"
           if [ -n "$DEPLOY_TOKEN" ]; then
             git remote set-url origin "https://x-access-token:${DEPLOY_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           fi
+          # never commit backup snapshot or pycache
+          rm -rf .last_good
           git add -A
-          git reset HEAD -- __pycache__ 2>/dev/null || true
+          git reset HEAD -- __pycache__ .last_good 2>/dev/null || true
+          # Always ensure heartbeat is staged
+          git add data/heartbeat.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            # Force a keepalive touch if somehow unchanged
+            python3 heartbeat.py
+            git add data/heartbeat.json
+          fi
           if git diff --cached --quiet; then
             echo "No changes"
           else
