@@ -3,7 +3,7 @@
   "title": "AI 产品会员/试用",
   "description": "AI工具免费试用与会员限免",
   "href": "c/ai-huiyuan-shiyong.html",
-  "count": 7,
+  "count": 9,
   "items": [
     {
       "id": "xrss-9050466373",
@@ -112,6 +112,39 @@
         "impressions": 419
       },
       "path": "item/zcode-3-glm-5-3-flash-0d8fd235a3.html"
+    },
+    {
+      "id": "hn-50378094",
+      "title": "Show HN：Vivonco – 将患者的癌症报告与靶向药物和试验相匹配",
+      "summary": "显示 HN：Vivonco – 将患者的癌症报告与靶向药物和试验相匹配 Hi HN。我制作了一个轻量级应用程序，您可以在其中添加患者的癌症报告（病理学、扫描、基因测试，甚至手机照片），并根据美国、欧洲、印度的护理指南获得战术计划。该计划针对其基因变化提供精确的靶向药物，并具有 FDA 资格、标准护理之外的选择、缺失的测试和匹配试验。我已确保（每条）线路跟踪到报告或主要来源，以及报告中未提及的任何内容都显示为缺失。<p>暂时免费。<p>它很新，以 gpt 5.6 luna 作为骨干，编写了一堆评估，因此非常欢迎反馈和错误报告。<p>PS：如果您想在精度上合作，请发送电子邮件 rohan@vivonco.com",
+      "url": "https://vivonco.com/",
+      "category": "AI 产品会员/试用",
+      "source": "Hacker News",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "rohanmanchanda",
+      "deadline": null,
+      "posted_at": "2026-11-05 19:56 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "path": "item/show-hn-vivonco-b073d93200.html"
+    },
+    {
+      "id": "v2ex-1255646",
+      "title": "TinyPass：本地密码生成器 Chrome 扩展，批量生成、纯本地运行",
+      "summary": "TinyPass：本地密码生成器 Chrome 扩展，批量生成、纯本地运行\n分享一个自己做的 Chrome 扩展，免费、无广告。\r\n\r\n## 功能\r\n\r\n- 一键批量生成高强度密码\r\n- 可读模式、自定义长度与字符集\r\n- 纯本地运行，密码不经过任何服务器\r\n- 历史记录管理 + 回收站防误删\r\n\r\n## 链接\r\n\r\n- Chrome 商店： https://chromewebstore.google.com/detail/tinypass/jjfmaihmmbclkonnkkipbplhklepopne\r\n- 产品主页： https://holatiger.com/tinypass\r\n\r\n欢迎试用，有问题和建议随时反馈。",
+      "url": "https://www.v2ex.com/t/1255646",
+      "category": "AI 产品会员/试用",
+      "source": "V2EX",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "angiie",
+      "deadline": null,
+      "posted_at": "2026-11-09 18:30 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "path": "item/tinypass-chrome-03b791cc29.html"
     },
     {
       "id": "v2ex-1255634",

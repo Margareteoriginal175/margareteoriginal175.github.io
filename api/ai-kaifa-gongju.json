@@ -3,7 +3,7 @@
   "title": "AI 开发工具与编程助手",
   "description": "编程助手、Agent、开发效率工具",
   "href": "c/ai-kaifa-gongju.html",
-  "count": 23,
+  "count": 21,
   "items": [
     {
       "id": "x-2112974723659247896",
@@ -224,60 +224,6 @@
       "path": "item/github-copilot-9bd5edfd6f.html"
     },
     {
-      "id": "omniroute",
-      "title": "OmniRoute：开源免费 AI 网关聚合多平台",
-      "summary": "开源本地网关 OmniRoute：把大量 AI 服务商与免费方案收到一个端点，Claude Code / Cursor / Codex / Copilot / Cline 等可改指到它；限流可自动切路，并带 token 压缩宣传。免费额度来自各家，需自己注册；本地跑、配置与 Key 在本机。注意合规，勿用于绕过付费条款。",
-      "url": "https://x.com/0xGky/status/2119600861261279410",
-      "category": "AI 开发工具与编程助手",
-      "source": "X",
-      "how": "按项目说明安装（如 npm install -g omniroute）并 setup 指向你的 IDE/CLI",
-      "author": "0xGky",
-      "deadline": null,
-      "posted_at": "2026-11-09 09:20 Asia/Shanghai",
-      "engagement": {
-        "likes": 4,
-        "bookmarks": 0,
-        "impressions": 436
-      },
-      "path": "item/omniroute-ai-370a07f8fd.html"
-    },
-    {
-      "id": "awesome-free-llm",
-      "title": "awesome-free-llm-apis ：免费大模型 API 清单",
-      "summary": "GitHub 高星清单 awesome-free-llm-apis （帖称约 1.26万星）整理多家免费 LLM API ： Gemini （双子座长上下文）、、 Groq OpenRouter、 Cloudflare Workers AI （每天约 1个万神经元）、 NVIDIA NIM、以及国内多家等。另有核对帖提醒 ：免注册免 Key 的很少， Claude 基本空白，适合试开源/小脚本，别指望完全替代付费旗舰订阅。",
-      "url": "https://x.com/yxl44/status/2119326478248915137",
-      "category": "AI 开发工具与编程助手",
-      "source": "X",
-      "how": "打开该 GitHub 清单 → 按提供商申请 Key 并注意各自限额/实名要求",
-      "author": "yxl44",
-      "deadline": null,
-      "posted_at": "2026-11-08 15:09 Asia/Shanghai",
-      "engagement": {
-        "likes": 30,
-        "bookmarks": 8,
-        "impressions": 6910
-      },
-      "path": "item/awesome-free-llm-apis-api-8194ed4f6a.html"
-    },
-    {
-      "id": "qoder-student",
-      "title": "大学生参加 Qoder 高校赛可领一个月会员",
-      "summary": "帖称参加 2026 Qoder 高校创造力大赛即可白嫖一个月会员（以官方活动规则为准）。",
-      "url": "https://x.com/lyuihh/status/2119409656972132777",
-      "category": "AI 开发工具与编程助手",
-      "source": "X",
-      "how": "按 Qoder 高校赛官方入口报名",
-      "author": "lyuihh",
-      "deadline": "以赛事报名截止为准",
-      "posted_at": "2026-11-08 20:40 Asia/Shanghai",
-      "engagement": {
-        "likes": 8,
-        "bookmarks": 2,
-        "impressions": 966
-      },
-      "path": "item/qoder-255eaed880.html"
-    },
-    {
       "id": "hn-50418158",
       "title": "Show HN：我的第一个项目，人工智能驱动的金融新闻分析器",
       "summary": "Show HN：我的第一个项目，一个人工智能驱动的金融新闻分析器。我今年 17 岁，几个月前我启动了 NotBot，看看是否可以将一个想法变成一个可行的项目。我的主要兴趣是经济学，而不是成为一名程序员，但我喜欢尝试代码。<p>几个月前，我想到创建一个程序来分析特定股票的最新新闻，并计算其极性的加权平均值，以创建一种情绪指标。<p>在研究过程中，我发现了一个有关创建简单 GitHub 存储库的 YouTube 视频，该视频以一种简化且不精确的方式实现了我的想法。乍一看，我意识到这是一个非常简单的程序：feedparser从Google News中检索新闻，beautifulsoup4提取内容，分析情绪",
@@ -346,23 +292,6 @@
       "path": "item/hn-pok-mon-roi-9eb8ec7172.html"
     },
     {
-      "id": "hn-50397561",
-      "title": "Show HN：告诉天空——根据实时天气数据信息灯笼随风飘移",
-      "summary": "Show HN：告诉天空 – 消息灯笼根据实时天气数据随风飘移 我创建了一个网络/移动应用程序，可让您在灯笼上写下故事/秘密/鼓励/等等。然后，您可以放开它，它就会使用 NOAA 公共风预报的实时风数据漂浮在世界地图上。然后，当它们漂浮在头顶上并添加到消息链中时，其他用户可以在定时窗口中捕获它们。然后他们释放它们以继续。<p>这只是我尝试的一件有趣的事情 - 有点像瓶子里的消息，但在天空中。我觉得这听起来是一个很酷的主意，在玩过之后，我真的很喜欢它，但很好奇其他人是否也认为它很酷或者只是看起来很蹩脚。哈哈<p>如果你愿意去看看，你可以在没有任何 si 的情况下观看灯笼",
-      "url": "https://tellthesky.com",
-      "category": "AI 开发工具与编程助手",
-      "source": "Hacker News",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "author": "andycodeman",
-      "deadline": null,
-      "posted_at": "2026-11-07 03:59 Asia/Shanghai",
-      "engagement": {
-        "points": 6,
-        "comments": 1
-      },
-      "path": "item/show-hn-1946734f5f.html"
-    },
-    {
       "id": "hn-50380433",
       "title": "Show HN：儿童架，您孩子自己的小互联网",
       "summary": "Show HN：Kids Shelf，你孩子们自己的小互联网 大家好，我制作了这个服务器，用于为我们（年幼的）孩子建立一个本地网络页面来托管视频并管理视频观看时间，而无需让他们在主 YouTube 上放松，以及所有随机的脑力消耗和参与度提升优化（这里没有自动播放下一个视频）。<p>- 麻省理工学院许可，任何地方都没有跟踪脚本，用它做任何你想做的事，我没有兴趣将其商业化<p>- 每天给他们“视频分钟津贴”，并且为我们强制执行（我们每个人有 10 分钟的时间，他们一起观看，然后会滚动，所以有些日子他们什么都不看，其他时候他们看一个小时）。<p>- 科学/教育视频可以设置为半价或免费<p>- 包括内置的 yt-dlp，管理屏幕会获取 YouTube URL 和",
@@ -378,6 +307,23 @@
         "comments": 2
       },
       "path": "item/show-hn-7cf24d3f98.html"
+    },
+    {
+      "id": "hn-50366425",
+      "title": "Show HN：AI Gude – 我的每日播客提要，通过 AI 复活",
+      "summary": "Show HN：AI Gude – 我的每日播客，通过 AI Hi HN 恢复。 AI Gude 将您关注的新闻转化为由 AI 编写和阅读的简短早间播客。它是开源的，您可以自己托管。 “Ei Gude”在黑森语中是早上好的意思。<p>一些背景：我大约一年半前开始这样做，但再也没有回去过，因为我成为了一名父亲，我的空闲时间消失了。人工智能改变了这一点。正是游戏规则的改变者最终启动了该项目。我现在每天都会听自己的剧集，所以这对我很有用。不过，我仍处于起步阶段。<p>我想要的是：想法和反馈，以及对良好 TTS 模型的建议。我今天使用 Gemini 的 TTS，想知道还有什么值得尝试的十分钟剧集，最好是德语和英语良好的，托管的或自助的",
+      "url": "https://github.com/alex0ptr/aigude",
+      "category": "AI 开发工具与编程助手",
+      "source": "Hacker News",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "alex0ptr",
+      "deadline": null,
+      "posted_at": "2026-11-04 22:57 Asia/Shanghai",
+      "engagement": {
+        "points": 7,
+        "comments": 0
+      },
+      "path": "item/show-hn-ai-gude-ai-29ac53938e.html"
     },
     {
       "id": "hn-50412316",
@@ -412,6 +358,23 @@
         "comments": 1
       },
       "path": "item/show-hn-a066c2dd36.html"
+    },
+    {
+      "id": "hn-50397561",
+      "title": "Show HN：告诉天空——根据实时天气数据信息灯笼随风飘移",
+      "summary": "Show HN：告诉天空 – 消息灯笼根据实时天气数据随风飘移 我创建了一个网络/移动应用程序，可让您在灯笼上写下故事/秘密/鼓励/等等。然后，您可以放开它，它就会使用 NOAA 公共风预报的实时风数据漂浮在世界地图上。然后，当它们漂浮在头顶上并添加到消息链中时，其他用户可以在定时窗口中捕获它们。然后他们释放它们以继续。<p>这只是我尝试的一件有趣的事情 - 有点像瓶子里的消息，但在天空中。我觉得这听起来是一个很酷的主意，在玩过之后，我真的很喜欢它，但很好奇其他人是否也认为它很酷或者只是看起来很蹩脚。哈哈<p>如果你愿意去看看，你可以在没有任何 si 的情况下观看灯笼",
+      "url": "https://tellthesky.com",
+      "category": "AI 开发工具与编程助手",
+      "source": "Hacker News",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "andycodeman",
+      "deadline": null,
+      "posted_at": "2026-11-07 03:59 Asia/Shanghai",
+      "engagement": {
+        "points": 6,
+        "comments": 1
+      },
+      "path": "item/show-hn-1946734f5f.html"
     }
   ]
 }

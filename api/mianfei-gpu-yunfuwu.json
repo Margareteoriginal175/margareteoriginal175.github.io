@@ -3,7 +3,7 @@
   "title": "免费GPU / 云服务",
   "description": "算力试用与开发者云资源",
   "href": "c/mianfei-gpu-yunfuwu.html",
-  "count": 18,
+  "count": 13,
   "items": [
     {
       "id": "x-1894553164235640933",
@@ -210,112 +210,21 @@
       "path": "item/llama-cpp-ai-vram-localmaxxers-strat-353e3226cc.html"
     },
     {
-      "id": "kaggle-gpu",
-      "title": "Kaggle：每周约 30 小时双 T4 免费 GPU",
-      "summary": "Kaggle 免费档常见每周约 30 小时 GPU T4 x2（约 2×16GB / 合计约 32GB 显存）+ 约 20 小时 TPU，单次最长约 12 小时；免绑卡但需手机验证。可配合 Ollama 跑约 30B 级模型，再经 cloudflared 隧道接到 Cursor 等作 Base URL。官方严禁多号刷额度与常驻挖矿；穿透链接勿外发，用完关掉 Notebook。",
-      "url": "https://x.com/mingzi206/status/2119468078165815781",
+      "id": "hn-50377718",
+      "title": "Show HN: Win Stats – Windows 任务栏中的开源系统监控",
+      "summary": "Show HN：Win Stats – Windows 任务栏中的开源系统监控我构建了一个名为 Win Stats 的小型 Windows 实用程序，它可以直接在任务栏中显示实时系统统计信息。<p>我曾经多次打开任务管理器，只是为了检查 RAM 使用情况、CPU/GPU 使用情况、温度和其他系统统计信息。我想要一个可以一目了然地显示所有这些内容的东西。<p>它类似于名为 Stats 的流行 macOS 应用程序<p>它支持 CPU、RAM、GPU、磁盘速度、网络使用情况、CPU/GPU 温度和可自定义布局。<p>它是完全免费和开源的，没有付费墙或货币化:)<p>GitHub：<a href=\"https://github.com/VC067/win-stats\" rel=\"nofollow\">https://github.com/VC067/win-stats</a>\n网站：<a href=\"https://&",
+      "url": "https://vc067.github.io/win-stats/",
       "category": "云服务/GPU/开发者资源",
-      "source": "X",
-      "how": "Google 登录 Kaggle → Settings 手机验证 → Notebook Accelerator 选 GPU T4 x2 并打开 Internet",
-      "author": "mingzi206",
+      "source": "Hacker News",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "author": "VC067",
       "deadline": null,
-      "posted_at": "2026-11-09 00:32 Asia/Shanghai",
+      "posted_at": "2026-11-05 19:00 Asia/Shanghai",
       "engagement": {
-        "likes": 171,
-        "bookmarks": 280,
-        "impressions": 14362
+        "points": 3,
+        "comments": 0
       },
-      "path": "item/kaggle-30-t4-gpu-7bccf211e4.html"
-    },
-    {
-      "id": "simular-box",
-      "title": "Box by Simular ：免费云端 Linux 桌面",
-      "summary": "BOX by Simular ：给 AI Agent 用的免费云端 桌面。多帖实测约 Linux 4/7-8G核 内存/40G 硬盘， Ubuntu 24.04 ， Google 登录免绑卡；每天送积分 闲置会休眠无公网入口 ，不适合当传统 VPS。可用 npx @ simular-ai/BOX connect 接入 Claude Code/Codex/Cursor 等。",
-      "url": "https://x.com/vampire2g/status/2119077912074949083",
-      "category": "云服务/GPU/开发者资源",
-      "source": "X",
-      "how": "打开 box.simular.ai 登录领取 → 用 MCP/CLI 接入 AI",
-      "author": "vampire2g",
-      "deadline": null,
-      "posted_at": "2026-11-07 22:41 Asia/Shanghai",
-      "engagement": {
-        "likes": 4,
-        "bookmarks": 0,
-        "impressions": 312
-      },
-      "path": "item/box-by-simular-linux-cf2eb8c124.html"
-    },
-    {
-      "id": "google-colab",
-      "title": "Google Colab 免费版：约 16GB T4 GPU",
-      "summary": "Google Colab 免费版可开 NVIDIA T4（约 15–16GB 显存），Google 账号登录浏览器即用，通常免绑卡。额度不公开、看运气；适合临时跑模型/推理。另有开源方案把 Colab T4 暴露为本地 OpenAI 兼容接口（注意账号与安全风险）。",
-      "url": "https://x.com/KOF97AI/status/2119638891808612551",
-      "category": "云服务/GPU/开发者资源",
-      "source": "X",
-      "how": "打开 Google Colab → 运行时改 GPU → 开始写 Notebook",
-      "author": "KOF97AI",
-      "deadline": null,
-      "posted_at": "2026-11-09 11:51 Asia/Shanghai",
-      "engagement": {
-        "likes": 4,
-        "bookmarks": 12,
-        "impressions": 827
-      },
-      "path": "item/google-colab-16gb-t4-gpu-c259d1dba6.html"
-    },
-    {
-      "id": "natbox-trial",
-      "title": "natbox ：免费试用 NAT VPS 一个月",
-      "summary": "免费试用档： 256MB RAM、 0.5 共享核、3GB SSD、 5 个转发端口、100GB 流量，含 root SSH 与 IPv6/80。一人一台 ，名额有限。",
-      "url": "https://x.com/natboxio/status/2119278249570099289",
-      "category": "云服务/GPU/开发者资源",
-      "source": "X",
-      "how": "打开 my.natbox.io 免费试用页领取",
-      "author": "natboxio",
-      "deadline": "名额发完即止",
-      "posted_at": "2026-11-08 11:58 Asia/Shanghai",
-      "engagement": {
-        "likes": 0,
-        "bookmarks": 0,
-        "impressions": 90
-      },
-      "path": "item/natbox-nat-vps-a648f62664.html"
-    },
-    {
-      "id": "vultr-300",
-      "title": "Vultr 新用户促销额度：优惠码 FLY300VULTR",
-      "summary": "帖称 Vultr 官方优惠页列出新用户最高约 $300 Promotional Credit，优惠码 FLY300VULTR。以官网活动页实时规则为准。",
-      "url": "https://x.com/Leo_zhang2018/status/2118934417666428946",
-      "category": "云服务/GPU/开发者资源",
-      "source": "X",
-      "how": "注册 Vultr → 结账填 FLY300VULTR（核对官网）",
-      "author": "Leo_zhang2018",
-      "deadline": "以 Vultr 活动页为准",
-      "posted_at": "2026-11-07 13:11 Asia/Shanghai",
-      "engagement": {
-        "likes": 4,
-        "bookmarks": 12,
-        "impressions": 2270
-      },
-      "path": "item/vultr-fly300vultr-b7153648bf.html"
-    },
-    {
-      "id": "cloadу-container",
-      "title": "Cloady：免费小容器（现多称仅免费一个月）",
-      "summary": "邮箱注册可领约 0.5 核 / 1G 内存 / 5G 硬盘容器，能跑 Docker。评论区有人称政策改为只免费一个月，也有封号反馈，建议小号先试。",
-      "url": "https://x.com/fanfankp/status/2119382702088417686",
-      "category": "云服务/GPU/开发者资源",
-      "source": "X",
-      "how": "邮箱注册 Cloady → 领取免费档",
-      "author": "fanfankp",
-      "deadline": "政策变动中，可能仅 1 个月",
-      "posted_at": "2026-11-08 18:53 Asia/Shanghai",
-      "engagement": {
-        "likes": 0,
-        "bookmarks": 1,
-        "impressions": 45
-      },
-      "path": "item/cloady-e951b57322.html"
+      "path": "item/show-hn-win-stats-windows-12dd6bc44b.html"
     },
     {
       "id": "hn-50423113",

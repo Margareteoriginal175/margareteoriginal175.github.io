@@ -1,9 +1,543 @@
 {
   "date": "2026-11-09",
   "updated_at": "2026-11-09T16:04+08:00",
-  "updated_at_label": "2026-11-09 18:12 Asia/Shanghai",
+  "updated_at_label": "2026-11-09 18:44 Asia/Shanghai",
   "source": "x-fetch+simular",
   "items": [
+    {
+      "id": "xrss-4855024706",
+      "source": "X",
+      "author": "news",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5remQwR3BVQzZxNFhVVkV4ai03RkxIS2JZQ3Q5MXphaENaNWFzQ1doaEQzMzFEUDRrQUtycUNwdXBUYllvVDlNd1NFU0VyVTR2V0c2SnE3dkJMMnlrV2c?oc=5",
+      "title": "新的艺术项目。使用 243 行纯、无依赖的 Python 来训练和推理 GPT。这是*完整的*算法",
+      "summary": "新的艺术项目。使用 243 行纯、无依赖的 Python 来训练和推理 GPT。这是所需的“完整”算法内容。其他一切都只是为了效率。我无法进一步简化这个问题。 https://t.co/HmiRrQugnP-X\n新的艺术项目。使用 243 行纯、无依赖的 Python 来训练和推理 GPT。这是所需的“完整”算法内容。其他一切都只是为了效率。我无法进一步简化这个问题。 https://t.co/HmiRrQugnP X",
+      "posted_at": "Wed, 11 Feb 2026 08:00:00 GMT",
+      "engagement": {
+        "likes": 0,
+        "bookmarks": 0,
+        "impressions": 0
+      },
+      "category": "其他科技",
+      "original_title": "New art project. Train and inference GPT in 243 lines of pure, dependency-free Python. This is the *full* algorithmic co",
+      "original_summary": "New art project. Train and inference GPT in 243 lines of pure, dependency-free Python. This is the *full* algorithmic content of what is needed. Everything else is just for efficiency. I cannot simplify this any further. https://t.co/HmiRrQugnP - X\nNew art project. Train and inference GPT in 243 lines of pure, dependency-free Python. This is the *full* algorithmic content of what is needed. Everything else is just for efficiency. I cannot simplify this any further. https://t.co/HmiRrQugnP &nbsp;&nbsp; X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "xrss-2411372604",
+      "source": "X",
+      "author": "news",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBlRGRRX3EzRUVPNG9uQTA2RHRlejZSQVJQbVFoNXUyN0RJcFU2VnNmaGczR1ZpOFlmSUxiSjNDXy05Z3VpSl9sczliQmhjeHFPQ0ZpcFJHWnFUbV8ySkgwQQ?oc=5",
+      "title": "如何在本地运行 Claude 代码（100% 免费且完全私有）- X",
+      "summary": "如何在本地运行 Claude 代码（100% 免费且完全私有）- X\n如何在本地运行 Claude 代码（100% 免费且完全私有） X",
+      "posted_at": "Thu, 22 Jan 2026 08:00:00 GMT",
+      "engagement": {
+        "likes": 0,
+        "bookmarks": 0,
+        "impressions": 0
+      },
+      "category": "大模型 API 免费额度",
+      "original_title": "How to Run Claude Code Locally (100% Free & Fully Private) - X",
+      "original_summary": "How to Run Claude Code Locally (100% Free & Fully Private) - X\nHow to Run Claude Code Locally (100% Free & Fully Private) &nbsp;&nbsp; X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "xrss-6296260139",
+      "source": "X",
+      "author": "news",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE05dHloWDM1ZkQ0eU1DVGVRd0tLVjV5czgzMlpVeTRNN1ZsOFY4UjNrTmpnVTI4ajBBUlB2cHZfRW15Nm85SXlHb2VsOEhsTUE2UHBPOHVsU184Y3c5bk0tR2pEa1U?oc=5",
+      "title": "AI Trader 100% 完全自主的交易代理。免费提供：- X",
+      "summary": "AI Trader 100% 完全自主的交易代理。免费提供：- X\nAI Trader 100% 完全自主的交易代理。免费提供：   X",
+      "posted_at": "Sat, 07 Nov 2026 17:01:03 GMT",
+      "engagement": {
+        "likes": 0,
+        "bookmarks": 0,
+        "impressions": 0
+      },
+      "category": "其他科技",
+      "original_title": "AI Trader 100% fully autonomous trading agent. Available for free: - X",
+      "original_summary": "AI Trader 100% fully autonomous trading agent. Available for free: - X\nAI Trader 100% fully autonomous trading agent. Available for free: &nbsp;&nbsp; X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "xrss-4967315221",
+      "source": "X",
+      "author": "news",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBIVXR2Rk1WNGVYbzdOV3FLcDZyNWJodnpXSDBleWhrVmhRTUxGMHdxc1l0STY0Z2FCUGExaGNpbmlFal8tcmxRSnBRSVZpcmFBaVEyc1VJQnctb2JGcFU0UElGWFp6akU?oc=5",
+      "title": "经过验证的美国临床医生今天可以通过 ChatGPT for Clinicians 获得免费的 GPT-6 Astra (Pro) 访问权限。注册：https://t.co/i",
+      "summary": "经过验证的美国临床医生今天可以通过 ChatGPT for Clinicians 获得免费的 GPT-6 Astra (Pro) 访问权限。注册：https://t.co/idNX1SK3Oh - X\n经过验证的美国临床医生今天可以通过 ChatGPT for Clinicians 获得免费的 GPT-6 Astra (Pro) 访问权限。注册：https://t.co/idNX1SK3Oh X",
+      "posted_at": "Thu, 10 Sep 2026 07:00:00 GMT",
+      "engagement": {
+        "likes": 0,
+        "bookmarks": 0,
+        "impressions": 0
+      },
+      "category": "大模型 API 免费额度",
+      "original_title": "Verified U.S. clinicians can get free GPT-6 Astra (Pro) access today via ChatGPT for Clinicians. Sign up: https://t.co/i",
+      "original_summary": "Verified U.S. clinicians can get free GPT-6 Astra (Pro) access today via ChatGPT for Clinicians. Sign up: https://t.co/idNX1SK3Oh - X\nVerified U.S. clinicians can get free GPT-6 Astra (Pro) access today via ChatGPT for Clinicians. Sign up: https://t.co/idNX1SK3Oh &nbsp;&nbsp; X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "xrss-5687303165",
+      "source": "X",
+      "author": "news",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8yT0E3a3JjeC0xeVNEcnQ5Uk5oZ0RqMXN2WVRYU1BaamFfU19FelM2UUV5QS1peW1xZ3RibV9pS1c4ZFJIV19NeUtEUUVRei1wNUxpZ0tWalhYOXdDS1FFVzh3?oc=5",
+      "title": "Claude 3.5 Sonnet 可在 https://t.co/uLbS2JMEK9 和 Claude iOS 应用程序上免费获取。 Claude Pro 和团队订阅",
+      "summary": "Claude 3.5 Sonnet 可在 https://t.co/uLbS2JMEK9 和 Claude iOS 应用程序上免费获取。 Claude Pro 和 Team 订阅者受益于明显更高的速率限制。 Sonnet 还可以通过 Anthropic API、Amazon Bedrock 和 Google Cloud 的 Ver - X 获得\nClaude 3.5 Sonnet 可在 https://t.co/uLbS2JMEK9 和 Claude iOS 应用程序上免费获取。 Claude Pro 和 Team 订阅者受益于明显更高的速率限制。 Sonnet 还可以通过 Anthropic API、Amazon Bedrock 和 Google Cloud 的 Ver X 获得",
+      "posted_at": "Thu, 20 Jun 2024 07:00:00 GMT",
+      "engagement": {
+        "likes": 0,
+        "bookmarks": 0,
+        "impressions": 0
+      },
+      "category": "大模型 API 免费额度",
+      "original_title": "Claude 3.5 Sonnet is available for free on https://t.co/uLbS2JMEK9 and the Claude iOS app. Claude Pro and Team subscribe",
+      "original_summary": "Claude 3.5 Sonnet is available for free on https://t.co/uLbS2JMEK9 and the Claude iOS app. Claude Pro and Team subscribers benefit from significantly higher rate limits. Sonnet is also available via the Anthropic API, Amazon Bedrock, and Google Cloud's Ver - X\nClaude 3.5 Sonnet is available for free on https://t.co/uLbS2JMEK9 and the Claude iOS app. Claude Pro and Team subscribers benefit from significantly higher rate limits. Sonnet is also available via the Anthropic API, Amazon Bedrock, and Google Cloud's Ver &nbsp;&nbsp; X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "xrss-7068779412",
+      "source": "X",
+      "author": "news",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE02NkU1OVN6em9veU51Vk1COGNfOVk1bEtyYklQZHh4b08zcFYtOHNGb01LY3d2NFRsZXV3NmtOVUNuWnpqZEladUZicjlZY2tHbEI0ZkVvTTVLN0dsSlE?oc=5",
+      "title": "从我的TL来看，人们对人工智能能力的理解差距越来越大。我认为第一个问题是关于新近度和",
+      "summary": "从我的TL来看，人们对人工智能能力的理解差距越来越大。我认为第一个问题是关于新近度和使用级别。我认为很多人去年在某个地方尝试过 ChatGPT 的免费版本，并让它过多地表达了他们对人工智能的看法。 T-X\n从我的TL来看，人们对人工智能能力的理解差距越来越大。我认为第一个问题是关于新近度和使用级别。我认为很多人去年在某个地方尝试过 ChatGPT 的免费版本，并让它过多地表达了他们对人工智能的看法。 T    X",
+      "posted_at": "Thu, 09 Apr 2026 07:00:00 GMT",
+      "engagement": {
+        "likes": 0,
+        "bookmarks": 0,
+        "impressions": 0
+      },
+      "category": "其他科技",
+      "original_title": "Judging by my tl there is a growing gap in understanding of AI capability. The first issue I think is around recency and",
+      "original_summary": "Judging by my tl there is a growing gap in understanding of AI capability. The first issue I think is around recency and tier of use. I think a lot of people tried the free tier of ChatGPT somewhere last year and allowed it to inform their views on AI a little too much. T - X\nJudging by my tl there is a growing gap in understanding of AI capability. The first issue I think is around recency and tier of use. I think a lot of people tried the free tier of ChatGPT somewhere last year and allowed it to inform their views on AI a little too much. T &nbsp;&nbsp; X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "xrss-1824612702",
+      "source": "X",
+      "author": "news",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5pZHlMS240elAwNXQ1QUU1dC1xY1hFR2dVT0oxdGcybFFlaTczd2t6RkQ1dHZtdFFuSWJVd0Y1LVVyTzBEekV3VFlKazF3akc3M1V5eEZ3YzdIQjV6?oc=5",
+      "title": "免费币安区块链周门票！在曼谷见面 https://t.co/mTw8ldBplF！ 🇹🇭 #BinanceBlockchainWeek 2026 即将到来",
+      "summary": "免费币安区块链周门票！在曼谷见面 https://t.co/mTw8ldBplF！ 🇹🇭 #BinanceBlockchainWeek 2026 即将到来，https://t.co/mTw8ldBplF 邀请您来曼谷参加我们！无论您是 AI Builder、Web3 爱好者还是技术人员 - X\n免费币安区块链周门票！在曼谷见面 https://t.co/mTw8ldBplF！ 🇹🇭 #BinanceBlockchainWeek 2026 即将到来，https://t.co/mTw8ldBplF 邀请您来曼谷参加我们！无论您是 AI Builder、Web3 爱好者还是技术人员 X",
+      "posted_at": "Mon, 09 Nov 2026 10:00:15 GMT",
+      "engagement": {
+        "likes": 0,
+        "bookmarks": 0,
+        "impressions": 0
+      },
+      "category": "其他科技",
+      "original_title": "Free Binance Blockchain Week Tickets! Meet https://t.co/mTw8ldBplF in Bangkok! 🇹🇭 #BinanceBlockchainWeek 2026 is around",
+      "original_summary": "Free Binance Blockchain Week Tickets! Meet https://t.co/mTw8ldBplF in Bangkok! 🇹🇭 #BinanceBlockchainWeek 2026 is around the corner, and https://t.co/mTw8ldBplF is inviting you to join us in Bangkok! Whether you're an AI Builder, Web3 enthusiast, or tech - X\nFree Binance Blockchain Week Tickets! Meet https://t.co/mTw8ldBplF in Bangkok! 🇹🇭 #BinanceBlockchainWeek 2026 is around the corner, and https://t.co/mTw8ldBplF is inviting you to join us in Bangkok! Whether you're an AI Builder, Web3 enthusiast, or tech &nbsp;&nbsp; X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "xrss-7216076495",
+      "source": "X",
+      "author": "news",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4wbXVqb1BCMHZnV2dwSWhMdmZVLWE0cnJEX01hV0hHbWJYOUl4aUdBdnRwNXB5MmhBemVZaGRHUnpYV3Z0d19ya2hRNDJMVWJTd2t4QVF0ZDJyU2hEdkx6RkNEb2UzQmY2VFE?oc=5",
+      "title": "一项真实世界的随机试验，由人工智能生成的患者非专业人士的医学结果总结（与控制标准相比，机智）",
+      "summary": "一项真实世界随机试验，由 AI 生成患者外行在手术预约前的医疗结果摘要（与对照标准相比，无对照标准），该试验因提高就诊质量 (FAPI) 并缩短咨询时间而受到患者的喜爱 htt - X\n一项真实世界的随机试验，由 AI 生成患者非专业人士在手术预约前的医学检查结果摘要（与对照标准相比，无对照标准），该试验因提高就诊质量 (FAPI) 并缩短了咨询时间而受到患者的欢迎 htt X",
+      "posted_at": "Sat, 17 Oct 2026 17:02:54 GMT",
+      "engagement": {
+        "likes": 0,
+        "bookmarks": 0,
+        "impressions": 0
+      },
+      "category": "大模型 API 免费额度",
+      "original_title": "A real world randomized trial of an AI-generated patient layperson summary of medical findings (vs control standard, wit",
+      "original_summary": "A real world randomized trial of an AI-generated patient layperson summary of medical findings (vs control standard, without) before a surgical appointment was liked by patients for improving quality of the visit (FAPI) and shortened the time for consultations htt - X\nA real world randomized trial of an AI-generated patient layperson summary of medical findings (vs control standard, without) before a surgical appointment was liked by patients for improving quality of the visit (FAPI) and shortened the time for consultations htt &nbsp;&nbsp; X",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1720106729617371524",
+      "source": "X",
+      "author": "deepseek_ai",
+      "url": "https://x.com/deepseek_ai/status/1720106729617371524",
+      "title": "Deepseek Coder 在多种编程语言的开源代码模型中实现了最先进的性能",
+      "summary": "Deepseek Coder 在多种编程语言和各种基准（包括 HumanEval、MultiPL-E、MBPP、DS-1000 等）的开源代码模型中实现了最先进的性能。 https://t.co/XGYg5WpqyX",
+      "posted_at": "Thu Nov 02 15:52:57 +0000 2023",
+      "engagement": {
+        "likes": 59,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 3
+      },
+      "category": "大模型 API 免费额度",
+      "original_title": "Deepseek Coder achieves state-of-the-art performance among open-source code models on multiple programming languages and",
+      "original_summary": "Deepseek Coder achieves state-of-the-art performance among open-source code models on multiple programming languages and various benchmarks including HumanEval, MultiPL-E, MBPP, DS-1000, etc. https://t.co/XGYg5WpqyX",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1867545555679031536",
+      "source": "X",
+      "author": "deepseek_ai",
+      "url": "https://x.com/deepseek_ai/status/1867545555679031536",
+      "title": "💡 仍然完全开源！快来探索我们的模型并查看代码——技术报告即将发布！",
+      "summary": "💡 仍然完全开源！快来探索我们的模型并查看代码——技术报告即将发布！\n\n💾 抱脸：https://t.co/5CnlWKCq5t\n💻 Github 页面：https://t.co/2skukDeIjW\n\n🧵 2/n https://t.co/bV920xD4GG",
+      "posted_at": "Fri Dec 13 12:22:12 +0000 2024",
+      "engagement": {
+        "likes": 89,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 9
+      },
+      "category": "其他科技",
+      "original_title": "💡 Still Fully Open-Source! Come explore our model and check out the code—technical report coming soon!",
+      "original_summary": "💡 Still Fully Open-Source! Come explore our model and check out the code—technical report coming soon!\n\n💾 Hugging Face: https://t.co/5CnlWKCq5t\n💻 Github Page: https://t.co/2skukDeIjW\n\n🧵 2/n https://t.co/bV920xD4GG",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1829141054022377569",
+      "source": "X",
+      "author": "deepseek_ai",
+      "url": "https://x.com/deepseek_ai/status/1829141054022377569",
+      "title": "具体来说，在做出top-K路由决策之前，Loss-Free Balancing会首先对路由应用专家明智的偏见。",
+      "summary": "具体来说，在做出top-K路由决策之前，Loss-Free Balancing会首先对每个专家的路由分数应用专家明智的偏差。通过根据最近的负载动态更新每个专家的偏差，无损平衡可以始终保持平衡 https://t.co/3GFKP36VOq",
+      "posted_at": "Thu Aug 29 12:56:25 +0000 2024",
+      "engagement": {
+        "likes": 82,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 12
+      },
+      "category": "科技软件/App 限免",
+      "original_title": "To be specific, before the top-K routing decision, Loss-Free Balancing will first apply an expert-wise bias to the routi",
+      "original_summary": "To be specific, before the top-K routing decision, Loss-Free Balancing will first apply an expert-wise bias to the routing scores of each expert. By dynamically updating the bias of each expert according to its recent load, Loss-Free Balancing can consistently maintain a balanced https://t.co/3GFKP36VOq",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1753107453817073734",
+      "source": "X",
+      "author": "deepseek_ai",
+      "url": "https://x.com/deepseek_ai/status/1753107453817073734",
+      "title": "🚀 DeepSeek 现在带有 API！ OpenAI 的替代品。提供免费代币。",
+      "summary": "🚀 DeepSeek 现在带有 API！ OpenAI 的替代品。提供免费代币。\n\nhttps://t.co/u5YoOzNQRH",
+      "posted_at": "Thu Feb 01 17:26:02 +0000 2024",
+      "engagement": {
+        "likes": 92,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 17
+      },
+      "category": "大模型 API 免费额度",
+      "original_title": "🚀  DeepSeek now with APIs! Drop in replacement for OpenAI. Free tokens available.",
+      "original_summary": "🚀  DeepSeek now with APIs! Drop in replacement for OpenAI. Free tokens available.\n\nhttps://t.co/u5YoOzNQRH",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1783515833240899983",
+      "source": "X",
+      "author": "deepseek_ai",
+      "url": "https://x.com/deepseek_ai/status/1783515833240899983",
+      "title": "🎉 从今天开始，DeepSeek API 以极具吸引力的低价提供即用即付选项！",
+      "summary": "🎉 从今天开始，DeepSeek API 以极具吸引力的低价提供即用即付选项！\n✨ 注册即可获得 500 万个免费代币。想要更多吗？购买 100 万个代币仅需 0.14 至 0.28 美元！\n👉 立即开始您的无缝 DeepSeek API 之旅：https://t.co/pJFZcdMfQv\n#DeepSeek #DeepSeekAPI https://t.co/gmXS8zdvGE",
+      "posted_at": "Thu Apr 25 15:18:05 +0000 2024",
+      "engagement": {
+        "likes": 103,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 15
+      },
+      "category": "大模型 API 免费额度",
+      "original_title": "🎉 Starting today, the DeepSeek APIs offer pay-as-you-go options at attractive low prices!",
+      "original_summary": "🎉 Starting today, the DeepSeek APIs offer pay-as-you-go options at attractive low prices!\n✨ Sign up for 5M free tokens. Want more? Purchase 1M tokens for only $0.14 to $0.28!\n👉 Kick off your seamless DeepSeek API journey now: https://t.co/pJFZcdMfQv\n#DeepSeek #DeepSeekAPI https://t.co/gmXS8zdvGE",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1802680395353465256",
+      "source": "X",
+      "author": "deepseek_ai",
+      "url": "https://x.com/deepseek_ai/status/1802680395353465256",
+      "title": "> 与 DeepSeek-Coder-V2 (230B) 聊天：https://t.co/Df4W0e0eKe",
+      "summary": "> 与 DeepSeek-Coder-V2 (230B) 聊天：https://t.co/Df4W0e0eKe\n\n> 以与 DeepSeek-V2 相同的无与伦比的价格访问 Coder-V2 API：https://t.co/pJFZcdMfQv\n\n> 下载两种尺寸的模型以供免费商业/研究使用：https://t.co/m703gzSMXY\n\n> 技术",
+      "posted_at": "Mon Jun 17 12:31:13 +0000 2024",
+      "engagement": {
+        "likes": 166,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 28
+      },
+      "category": "大模型 API 免费额度",
+      "original_title": "&gt; Chat with DeepSeek-Coder-V2 (230B) : https://t.co/Df4W0e0eKe",
+      "original_summary": "&gt; Chat with DeepSeek-Coder-V2 (230B) : https://t.co/Df4W0e0eKe\n\n&gt; Access Coder-V2 APIs at the same unbeatable prices as DeepSeek-V2: https://t.co/pJFZcdMfQv\n\n&gt; Download two-sized models for free commercial/research use: https://t.co/m703gzSMXY\n\n&gt; Technical",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1720489096592945167",
+      "source": "X",
+      "author": "deepseek_ai",
+      "url": "https://x.com/deepseek_ai/status/1720489096592945167",
+      "title": "🚀 DeepSeek Coder 33B 现已上线！开源且完全免费！  #DeepSeekCoder",
+      "summary": "🚀 DeepSeek Coder 33B 现已上线！开源且完全免费！  #DeepSeekCoder\n\n💥 在这里尝试：https://t.co/Df4W0e0eKe\n🤗 也在 Huggingface 上：https://t.co/m703gzSMXY\n💬 有疑问吗？加入我们的 Discord 家族吧！ https://t.co/72jwg6s272\n🤖 Github 页面：https://t.co/B6oPT9lftb https://t.co/bgDWVKgB4N",
+      "posted_at": "Fri Nov 03 17:12:20 +0000 2023",
+      "engagement": {
+        "likes": 188,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 45
+      },
+      "category": "大模型 API 免费额度",
+      "original_title": "🚀 DeepSeek Coder 33B is NOW LIVE! Open-source &amp; absolutely FREE!  #DeepSeekCoder",
+      "original_summary": "🚀 DeepSeek Coder 33B is NOW LIVE! Open-source &amp; absolutely FREE!  #DeepSeekCoder\n\n💥 Try out here: https://t.co/Df4W0e0eKe\n🤗 Also on Huggingface: https://t.co/m703gzSMXY\n💬 Got questions? Join our Discord fam! https://t.co/72jwg6s272\n🤖 Github page: https://t.co/B6oPT9lftb https://t.co/bgDWVKgB4N",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1750729884497064399",
+      "source": "X",
+      "author": "deepseek_ai",
+      "url": "https://x.com/deepseek_ai/status/1750729884497064399",
+      "title": "🚀 刚刚发布：关于 #DeepSeekCoder 的技术报告 - 与 #GPT4 的编码能力竞争的开源模型。论文链接：",
+      "summary": "🚀 刚刚发布：关于 #DeepSeekCoder 的技术报告 - 与 #GPT4 的编码能力竞争的开源模型。论文链接：https://t.co/Y2xQ1alePH\n\n⭐ 亮点：\n- Repo级数据构建\n- 依存分析的拓扑排序\n- 填充式预训练策略\n- https://t.co/K9gYoqeyqf",
+      "posted_at": "Fri Jan 26 03:58:26 +0000 2024",
+      "engagement": {
+        "likes": 171,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 36
+      },
+      "category": "大模型 API 免费额度",
+      "original_title": "🚀 Just Out: Tech Report On #DeepSeekCoder - An Open-Source Model Competing with #GPT4's Coding Capabilities. Paper Link:",
+      "original_summary": "🚀 Just Out: Tech Report On #DeepSeekCoder - An Open-Source Model Competing with #GPT4's Coding Capabilities. Paper Link: https://t.co/Y2xQ1alePH\n\n⭐ Highlights:\n- Repo-level Data Construction\n- Topological Sort for Dependency Parsing\n- Fill-In-Middle Pre-training Strategy\n- https://t.co/K9gYoqeyqf",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1832026591238443279",
+      "source": "X",
+      "author": "deepseek_ai",
+      "url": "https://x.com/deepseek_ai/status/1832026591238443279",
+      "title": "DeepSeek-V2.5 现已在 HuggingFace 上开源！",
+      "summary": "DeepSeek-V2.5 现已在 HuggingFace 上开源！\n查看：https://t.co/Ki4DbfWlYl",
+      "posted_at": "Fri Sep 06 12:02:31 +0000 2024",
+      "engagement": {
+        "likes": 169,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 20
+      },
+      "category": "大模型 API 免费额度",
+      "original_title": "DeepSeek-V2.5 is now open-source on HuggingFace!",
+      "original_summary": "DeepSeek-V2.5 is now open-source on HuggingFace!\nCheck it out: https://t.co/Ki4DbfWlYl",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1787478994478321872",
+      "source": "X",
+      "author": "deepseek_ai",
+      "url": "https://x.com/deepseek_ai/status/1787478994478321872",
+      "title": "> 与 DeepSeek-V2 聊天：https://t.co/v1TFy7LHNy",
+      "summary": "> 与 DeepSeek-V2 聊天：https://t.co/v1TFy7LHNy\n> 以无与伦比的价格访问即用即付 DeepSeek-V2 API：https://t.co/pJFZcdMfQv\n> DeepSeek-V2 完全开源，免费用于商业用途：https://t.co/m703gzSMXY https://t.co/jtagAfW1Mj",
+      "posted_at": "Mon May 06 13:46:16 +0000 2024",
+      "engagement": {
+        "likes": 220,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 39
+      },
+      "category": "大模型 API 免费额度",
+      "original_title": "&gt; Chat with DeepSeek-V2: https://t.co/v1TFy7LHNy",
+      "original_summary": "&gt; Chat with DeepSeek-V2: https://t.co/v1TFy7LHNy\n&gt; Access pay-as-you-go DeepSeek-V2 APIs with unbeatable price: https://t.co/pJFZcdMfQv\n&gt; DeepSeek-V2 is fully open-source and free for commercial use: https://t.co/m703gzSMXY https://t.co/jtagAfW1Mj",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1767458161618006526",
+      "source": "X",
+      "author": "deepseek_ai",
+      "url": "https://x.com/deepseek_ai/status/1767458161618006526",
+      "title": "[1/5] 🚀 发布 DeepSeek-VL、sota 1.3B 和 7B 视觉语言模型！",
+      "summary": "[1/5] 🚀 发布 DeepSeek-VL、sota 1.3B 和 7B 视觉语言模型！\n\n论文：https://t.co/teoVtuCciI\nGitHub：https://t.co/auWKaC19le\n\n📚 多样化的训练语料库\n👯 混合视觉编码器\n🧠 3阶段训练策略\n🆓 完全免费用于商业用途且完全开源 https://t.co/7bErKMT3bh",
+      "posted_at": "Tue Mar 12 07:50:38 +0000 2024",
+      "engagement": {
+        "likes": 319,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 63
+      },
+      "category": "大模型 API 免费额度",
+      "original_title": "[1/5] 🚀 Announcing DeepSeek-VL, sota 1.3B and 7B visual-language models!",
+      "original_summary": "[1/5] 🚀 Announcing DeepSeek-VL, sota 1.3B and 7B visual-language models!\n\nPaper: https://t.co/teoVtuCciI\nGitHub: https://t.co/auWKaC19le\n\n📚 Diverse training corpus\n👯 Hybrid Vision Encoder\n🧠 3-stage training strategy\n🆓 Totally free for commercial use and fully open-source https://t.co/7bErKMT3bh",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1866459747630858541",
+      "source": "X",
+      "author": "deepseek_ai",
+      "url": "https://x.com/deepseek_ai/status/1866459747630858541",
+      "title": "📊 DeepSeek-V2.5-1210 提高了数学、编码、写作和角色扮演等基准的标准，旨在为您的所有工作提供服务",
+      "summary": "📊 DeepSeek-V2.5-1210 提高了数学、编码、写作和角色扮演等基准的标准，旨在满足您的所有工作和生活需求。\n\n🔧 探索 Hugging Face 上的开源模型：https://t.co/PaHvAE92ly\n\n🧵(2/3) https://t.co/epy5DyBOk9",
+      "posted_at": "Tue Dec 10 12:27:35 +0000 2024",
+      "engagement": {
+        "likes": 351,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 45
+      },
+      "category": "大模型 API 免费额度",
+      "original_title": "📊 DeepSeek-V2.5-1210 raises the bar across benchmarks like math, coding, writing, and roleplay—built to serve all your w",
+      "original_summary": "📊 DeepSeek-V2.5-1210 raises the bar across benchmarks like math, coding, writing, and roleplay—built to serve all your work and life needs.\n\n🔧 Explore the open-source model on Hugging Face: https://t.co/PaHvAE92ly\n\n🧵(2/3) https://t.co/epy5DyBOk9",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1829140827127292246",
+      "source": "X",
+      "author": "deepseek_ai",
+      "url": "https://x.com/deepseek_ai/status/1829140827127292246",
+      "title": "🚀 刚刚发布：“混合专家的辅助无损负载均衡策略”🌐",
+      "summary": "🚀 刚刚发布：“混合专家的辅助无损负载均衡策略”🌐\n\n引入无损耗平衡——我们在 MoE 模型中的最新创新，消除了辅助损耗的需要。通过动态调整专家偏差，我们确保最佳负载平衡，无需 https://t.co/gQBPTLLpeg",
+      "posted_at": "Thu Aug 29 12:55:31 +0000 2024",
+      "engagement": {
+        "likes": 376,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 64
+      },
+      "category": "其他科技",
+      "original_title": "🚀 Just published: \"Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts\" 🌐",
+      "original_summary": "🚀 Just published: \"Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts\" 🌐\n\nIntroducing Loss-Free Balancing—our latest innovation in MoE models that ditches the need for auxiliary loss. By dynamically adjusting expert biases, we ensure optimal load balance without https://t.co/gQBPTLLpeg",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1729873918176252188",
+      "source": "X",
+      "author": "deepseek_ai",
+      "url": "https://x.com/deepseek_ai/status/1729873918176252188",
+      "title": "🚀推出 DeepSeek LLM！开源法学硕士的下一个前沿！ #DeepSeekLLM",
+      "summary": "🚀推出 DeepSeek LLM！开源法学硕士的下一个前沿！ #DeepSeekLLM\n\n🧠高达670亿个参数，在各种基准测试中都令人惊叹。\n🔍由 2 万亿双语代币精心打造。\n🌐开源！ DeepSeek LLM 7B/67B Base&Chat 发布。\n\n🔗在这里尝试一下：https://t.co/N1pPIMso9H",
+      "posted_at": "Wed Nov 29 14:44:16 +0000 2023",
+      "engagement": {
+        "likes": 383,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 77
+      },
+      "category": "大模型 API 免费额度",
+      "original_title": "🚀Launching DeepSeek LLM! Next Frontier of Open-Source LLMs! #DeepSeekLLM",
+      "original_summary": "🚀Launching DeepSeek LLM! Next Frontier of Open-Source LLMs! #DeepSeekLLM\n\n🧠Up to 67 billion parameters, astonishing in various benchmarks.\n🔍Crafted with 2 trillion bilingual tokens.\n🌐Open Source! DeepSeek LLM 7B/67B Base&amp;Chat released.\n\n🔗Try out here: https://t.co/N1pPIMso9H",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1720106723518918839",
+      "source": "X",
+      "author": "deepseek_ai",
+      "url": "https://x.com/deepseek_ai/status/1720106723518918839",
+      "title": "DeepSeek 编码器隆重登场！",
+      "summary": "DeepSeek 编码器隆重登场！ \n- SOTA大型编码模型，参数范围从1.3B到33B。\n- 构建游戏、测试代码、修复错误和分析数据......您梦想，我们实现。\n- 免费用于商业用途并且完全开源。\n立即尝试 https://t.co/NlfpubcP9N https://t.co/gjP5WI4qIJ",
+      "posted_at": "Thu Nov 02 15:52:55 +0000 2023",
+      "engagement": {
+        "likes": 460,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 98
+      },
+      "category": "大模型 API 免费额度",
+      "original_title": "Introducing DeepSeek Coder!",
+      "original_summary": "Introducing DeepSeek Coder! \n- SOTA large coding models with params ranging from 1.3B to 33B.\n- Building games, testing code, fixing bugs, and analyzing data... You dream it, we make it.\n- Free for commercial use and fully open-source.\nTry it out now at https://t.co/NlfpubcP9N https://t.co/gjP5WI4qIJ",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1804171764626526606",
+      "source": "X",
+      "author": "deepseek_ai",
+      "url": "https://x.com/deepseek_ai/status/1804171764626526606",
+      "title": "向克劳德 3.5 十四行诗的文物致敬！",
+      "summary": "向克劳德 3.5 十四行诗的文物致敬！\n\nDeepSeek-Coder-V2 可以直接在浏览器中执行同样酷的操作。\n\n访问 https://t.co/Df4W0e0eKe -> 选择“Coder V2” -> 输入提示 -> 单击“运行 HTML”，看看奇迹发生了！\n\n#DeepSeekCoder #克劳德 https://t.co/VCGpUDieBp",
+      "posted_at": "Fri Jun 21 15:17:23 +0000 2024",
+      "engagement": {
+        "likes": 713,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 126
+      },
+      "category": "大模型 API 免费额度",
+      "original_title": "Respect to Artifacts of Claude 3.5 Sonnet!",
+      "original_summary": "Respect to Artifacts of Claude 3.5 Sonnet!\n\nDeepSeek-Coder-V2 can do the same cool stuff directly in your browser.\n\nVisit https://t.co/Df4W0e0eKe -&gt; select \"Coder V2\" -&gt; input prompt -&gt; click “Run HTML” to see the magic happen!\n\n#DeepSeekCoder #Claude https://t.co/VCGpUDieBp",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
+    {
+      "id": "x-1972604780469239843",
+      "source": "X",
+      "author": "deepseek_ai",
+      "url": "https://x.com/deepseek_ai/status/1972604780469239843",
+      "title": "🛠 开源发布",
+      "summary": "🛠 开源发布\n\n🔗 型号：https://t.co/kORJG3nCWN\n🔗 技术报告：https://t.co/X8Wcqbhg5a\n🔗 TileLang 和 CUDA 中的关键 GPU 内核（使用 TileLang 进行快速研究原型设计！）\n\n4/n",
+      "posted_at": "Mon Sep 29 10:10:03 +0000 2025",
+      "engagement": {
+        "likes": 861,
+        "bookmarks": 0,
+        "impressions": 0,
+        "replies": 0,
+        "retweets": 102
+      },
+      "category": "大模型 API 免费额度",
+      "original_title": "🛠 Open Source Release",
+      "original_summary": "🛠 Open Source Release\n\n🔗 Model: https://t.co/kORJG3nCWN\n🔗 Tech report: https://t.co/X8Wcqbhg5a\n🔗 Key GPU kernels in TileLang &amp; CUDA (use TileLang for rapid research prototyping!)\n\n4/n",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "translated_by": "free-translate",
+      "deadline": null
+    },
     {
       "id": "x-1813921111694053644",
       "source": "X",
@@ -1879,321 +2413,6 @@
         "bookmarks": 0,
         "impressions": 92
       }
-    },
-    {
-      "id": "omniroute",
-      "category": "AI 开发工具与编程助手",
-      "title": "OmniRoute：开源免费 AI 网关聚合多平台",
-      "summary": "开源本地网关 OmniRoute：把大量 AI 服务商与免费方案收到一个端点，Claude Code / Cursor / Codex / Copilot / Cline 等可改指到它；限流可自动切路，并带 token 压缩宣传。免费额度来自各家，需自己注册；本地跑、配置与 Key 在本机。注意合规，勿用于绕过付费条款。",
-      "how": "按项目说明安装（如 npm install -g omniroute）并 setup 指向你的 IDE/CLI",
-      "deadline": null,
-      "author": "0xGky",
-      "url": "https://x.com/0xGky/status/2119600861261279410",
-      "posted_at": "2026-11-09 09:20 Asia/Shanghai",
-      "engagement": {
-        "likes": 4,
-        "bookmarks": 0,
-        "impressions": 436
-      },
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "awesome-free-llm",
-      "category": "AI 开发工具与编程助手",
-      "title": "awesome-free-llm-apis ：免费大模型 API 清单",
-      "summary": "GitHub 高星清单 awesome-free-llm-apis （帖称约 1.26万星）整理多家免费 LLM API ： Gemini （双子座长上下文）、、 Groq OpenRouter、 Cloudflare Workers AI （每天约 1个万神经元）、 NVIDIA NIM、以及国内多家等。另有核对帖提醒 ：免注册免 Key 的很少， Claude 基本空白，适合试开源/小脚本，别指望完全替代付费旗舰订阅。",
-      "how": "打开该 GitHub 清单 → 按提供商申请 Key 并注意各自限额/实名要求",
-      "deadline": null,
-      "author": "yxl44",
-      "url": "https://x.com/yxl44/status/2119326478248915137",
-      "posted_at": "2026-11-08 15:09 Asia/Shanghai",
-      "engagement": {
-        "likes": 30,
-        "bookmarks": 8,
-        "impressions": 6910
-      },
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "qoder-student",
-      "category": "AI 开发工具与编程助手",
-      "title": "大学生参加 Qoder 高校赛可领一个月会员",
-      "summary": "帖称参加 2026 Qoder 高校创造力大赛即可白嫖一个月会员（以官方活动规则为准）。",
-      "how": "按 Qoder 高校赛官方入口报名",
-      "deadline": "以赛事报名截止为准",
-      "author": "lyuihh",
-      "url": "https://x.com/lyuihh/status/2119409656972132777",
-      "posted_at": "2026-11-08 20:40 Asia/Shanghai",
-      "engagement": {
-        "likes": 8,
-        "bookmarks": 2,
-        "impressions": 966
-      }
-    },
-    {
-      "id": "kaggle-gpu",
-      "category": "云服务/GPU/开发者资源",
-      "title": "Kaggle：每周约 30 小时双 T4 免费 GPU",
-      "summary": "Kaggle 免费档常见每周约 30 小时 GPU T4 x2（约 2×16GB / 合计约 32GB 显存）+ 约 20 小时 TPU，单次最长约 12 小时；免绑卡但需手机验证。可配合 Ollama 跑约 30B 级模型，再经 cloudflared 隧道接到 Cursor 等作 Base URL。官方严禁多号刷额度与常驻挖矿；穿透链接勿外发，用完关掉 Notebook。",
-      "how": "Google 登录 Kaggle → Settings 手机验证 → Notebook Accelerator 选 GPU T4 x2 并打开 Internet",
-      "deadline": null,
-      "author": "mingzi206",
-      "url": "https://x.com/mingzi206/status/2119468078165815781",
-      "posted_at": "2026-11-09 00:32 Asia/Shanghai",
-      "engagement": {
-        "likes": 171,
-        "bookmarks": 280,
-        "impressions": 14362
-      },
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "simular-box",
-      "category": "云服务/GPU/开发者资源",
-      "title": "Box by Simular ：免费云端 Linux 桌面",
-      "summary": "BOX by Simular ：给 AI Agent 用的免费云端 桌面。多帖实测约 Linux 4/7-8G核 内存/40G 硬盘， Ubuntu 24.04 ， Google 登录免绑卡；每天送积分 闲置会休眠无公网入口 ，不适合当传统 VPS。可用 npx @ simular-ai/BOX connect 接入 Claude Code/Codex/Cursor 等。",
-      "how": "打开 box.simular.ai 登录领取 → 用 MCP/CLI 接入 AI",
-      "deadline": null,
-      "author": "vampire2g",
-      "url": "https://x.com/vampire2g/status/2119077912074949083",
-      "posted_at": "2026-11-07 22:41 Asia/Shanghai",
-      "engagement": {
-        "likes": 4,
-        "bookmarks": 0,
-        "impressions": 312
-      },
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "google-colab",
-      "category": "云服务/GPU/开发者资源",
-      "title": "Google Colab 免费版：约 16GB T4 GPU",
-      "summary": "Google Colab 免费版可开 NVIDIA T4（约 15–16GB 显存），Google 账号登录浏览器即用，通常免绑卡。额度不公开、看运气；适合临时跑模型/推理。另有开源方案把 Colab T4 暴露为本地 OpenAI 兼容接口（注意账号与安全风险）。",
-      "how": "打开 Google Colab → 运行时改 GPU → 开始写 Notebook",
-      "deadline": null,
-      "author": "KOF97AI",
-      "url": "https://x.com/KOF97AI/status/2119638891808612551",
-      "posted_at": "2026-11-09 11:51 Asia/Shanghai",
-      "engagement": {
-        "likes": 4,
-        "bookmarks": 12,
-        "impressions": 827
-      }
-    },
-    {
-      "id": "natbox-trial",
-      "category": "云服务/GPU/开发者资源",
-      "title": "natbox ：免费试用 NAT VPS 一个月",
-      "summary": "免费试用档： 256MB RAM、 0.5 共享核、3GB SSD、 5 个转发端口、100GB 流量，含 root SSH 与 IPv6/80。一人一台 ，名额有限。",
-      "how": "打开 my.natbox.io 免费试用页领取",
-      "deadline": "名额发完即止",
-      "author": "natboxio",
-      "url": "https://x.com/natboxio/status/2119278249570099289",
-      "posted_at": "2026-11-08 11:58 Asia/Shanghai",
-      "engagement": {
-        "likes": 0,
-        "bookmarks": 0,
-        "impressions": 90
-      },
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "vultr-300",
-      "category": "云服务/GPU/开发者资源",
-      "title": "Vultr 新用户促销额度：优惠码 FLY300VULTR",
-      "summary": "帖称 Vultr 官方优惠页列出新用户最高约 $300 Promotional Credit，优惠码 FLY300VULTR。以官网活动页实时规则为准。",
-      "how": "注册 Vultr → 结账填 FLY300VULTR（核对官网）",
-      "deadline": "以 Vultr 活动页为准",
-      "author": "Leo_zhang2018",
-      "url": "https://x.com/Leo_zhang2018/status/2118934417666428946",
-      "posted_at": "2026-11-07 13:11 Asia/Shanghai",
-      "engagement": {
-        "likes": 4,
-        "bookmarks": 12,
-        "impressions": 2270
-      },
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "cloadу-container",
-      "category": "云服务/GPU/开发者资源",
-      "title": "Cloady：免费小容器（现多称仅免费一个月）",
-      "summary": "邮箱注册可领约 0.5 核 / 1G 内存 / 5G 硬盘容器，能跑 Docker。评论区有人称政策改为只免费一个月，也有封号反馈，建议小号先试。",
-      "how": "邮箱注册 Cloady → 领取免费档",
-      "deadline": "政策变动中，可能仅 1 个月",
-      "author": "fanfankp",
-      "url": "https://x.com/fanfankp/status/2119382702088417686",
-      "posted_at": "2026-11-08 18:53 Asia/Shanghai",
-      "engagement": {
-        "likes": 0,
-        "bookmarks": 1,
-        "impressions": 45
-      }
-    },
-    {
-      "id": "imagesweep",
-      "category": "科技软件/App 限免",
-      "title": "ImageSweep：相册垃圾清理 App 本体限免",
-      "summary": "原价约 ¥28 → 0，按年月/地点快速划选废片，无广告、防误删。",
-      "how": "App Store 搜索 ImageSweep 或打开帖内链接领取",
-      "deadline": "限免随时结束",
-      "author": "linbai489068",
-      "url": "https://x.com/linbai489068/status/2119346247995994265",
-      "posted_at": "2026-11-08 16:28 Asia/Shanghai",
-      "engagement": {
-        "likes": 4,
-        "bookmarks": 3,
-        "impressions": 793
-      },
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "movie-sprite",
-      "category": "科技软件/App 限免",
-      "title": "电影精灵：老牌视频剪辑本体 ¥198→0",
-      "summary": "多轨道、画中画、绿幕抠像等功能的 iOS 视频剪辑 App，本体限免入库。",
-      "how": "App Store 打开帖内链接 0 元下载",
-      "deadline": "限免随时结束",
-      "author": "linbai489068",
-      "url": "https://x.com/linbai489068/status/2119271425475498138",
-      "posted_at": "2026-11-08 11:30 Asia/Shanghai",
-      "engagement": {
-        "likes": 7,
-        "bookmarks": 5,
-        "impressions": 2730
-      }
-    },
-    {
-      "id": "duo-widget",
-      "category": "科技软件/App 限免",
-      "title": "双人小工具：电量/WiFi/信号组件¥ 28→ 0",
-      "summary": "约 1.4MB 极简无广桌面/锁屏组件，20 种排版，一眼看状态。",
-      "how": "App Store 打开帖内链接领取",
-      "deadline": "限免随时结束",
-      "author": "linbai489068",
-      "url": "https://x.com/linbai489068/status/2119415280321560746",
-      "posted_at": "2026-11-08 21:02 Asia/Shanghai",
-      "engagement": {
-        "likes": 7,
-        "bookmarks": 12,
-        "impressions": 4438
-      },
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "linkjoy",
-      "category": "科技软件/App 限免",
-      "title": "Linkjoy：跨平台书签/离线高亮终身内购限免",
-      "summary": "原价约 ¥128 的终身内购限免，去广告阅读、划线批注、iCloud 多端同步。",
-      "how": "App Store 打开帖内链接 → 领取终身内购",
-      "deadline": "限免随时结束",
-      "author": "linbai489068",
-      "url": "https://x.com/linbai489068/status/2119468075993157818",
-      "posted_at": "2026-11-09 00:32 Asia/Shanghai",
-      "engagement": {
-        "likes": 3,
-        "bookmarks": 3,
-        "impressions": 947
-      }
-    },
-    {
-      "id": "stillwell-raw",
-      "category": "科技软件/App 限免",
-      "title": "Stillwell 叠光相机：RAW 相机终身限免",
-      "summary": "原价约 ¥88 终身内购限免；原生 Bayer RAW、星轨与多重曝光等。",
-      "how": "App Store 打开帖内链接领取终身版",
-      "deadline": "限免随时结束",
-      "author": "linbai489068",
-      "url": "https://x.com/linbai489068/status/2119467385514258665",
-      "posted_at": "2026-11-09 00:29 Asia/Shanghai",
-      "engagement": {
-        "likes": 6,
-        "bookmarks": 3,
-        "impressions": 1283
-      },
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "aow4-weekend",
-      "category": "科技软件/App 限免",
-      "title": "《Age of Wonders 4》 Steam 完整版限时免费玩",
-      "summary": "帖称 Steam 周末本体完整版全开试玩（非永久入库），到 11 月 10 日凌晨 2 点。",
-      "how": "Steam 打开游戏页 → 限时免费试玩",
-      "deadline": "2026-11-10 02:00 Asia/Shanghai",
-      "author": "404latitude",
-      "url": "https://x.com/404latitude/status/2119328818548892028",
-      "posted_at": "2026-11-08 15:19 Asia/Shanghai",
-      "engagement": {
-        "likes": 5,
-        "bookmarks": 0,
-        "impressions": 181
-      },
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "epic-babel",
-      "category": "科技软件/App 限免",
-      "title": "Epic 手机端免费领《巴别塔圣歌》",
-      "summary": "帖称 Epic 手机端可免费领《巴别塔圣歌》（约 98% 好评），截止约 11 月 12 日；可能锁国区，需切换 IP。",
-      "how": "Epic 手机端按活动领取（注意区服限制）",
-      "deadline": "约 2026-11-12",
-      "author": "cyberde05",
-      "url": "https://x.com/cyberde05/status/2119355966424834436",
-      "posted_at": "2026-11-08 17:06 Asia/Shanghai",
-      "engagement": {
-        "likes": 0,
-        "bookmarks": 0,
-        "impressions": 5
-      }
-    },
-    {
-      "id": "lumenic-discount",
-      "category": "科技软件/App 限免",
-      "title": "Lumenic 影音播放器：限时八折",
-      "summary": "本地/NAS 影音播放器，支持 SMB/WebDAV、HDR/杜比视界等；美区全平台约 US$7.99（原价 9.99），优惠至 11 月 15 日。",
-      "how": "各区 App Store 购买（价格以商店为准）",
-      "deadline": "2026-11-15",
-      "author": "iOSRXWY",
-      "url": "https://x.com/iOSRXWY/status/2119389087501005109",
-      "posted_at": "2026-11-08 19:18 Asia/Shanghai",
-      "engagement": {
-        "likes": 0,
-        "bookmarks": 0,
-        "impressions": 329
-      }
-    },
-    {
-      "id": "app-redeem-codes",
-      "category": "其他科技",
-      "title": "开发者官方兑换码站：领 App 内购 Pro",
-      "summary": "帖介绍专门汇总开发者提供的 Apple 官方兑换码的网站，可永久解锁部分付费内购，不同于普通限免降价站。",
-      "how": "打开帖内网站按 App 领取兑换码",
-      "deadline": "码发完即止",
-      "author": "BlackMelooo",
-      "url": "https://x.com/BlackMelooo/status/2119257219942457547",
-      "posted_at": "2026-11-08 10:34 Asia/Shanghai",
-      "engagement": {
-        "likes": 126,
-        "bookmarks": 172,
-        "impressions": 18078
-      }
-    },
-    {
-      "id": "cap-recorder",
-      "category": "其他科技",
-      "title": "Cap：开源可自托管录屏工具",
-      "summary": "开源录屏，主体协议 AGPLv3，适合想自己控数据的人；与 FreeLLMAPI 等同批核验清单出现。",
-      "how": "按开源项目说明安装/自托管",
-      "deadline": null,
-      "author": "imocone",
-      "url": "https://x.com/imocone/status/2118971100717592580",
-      "posted_at": "2026-11-07 15:37 Asia/Shanghai",
-      "engagement": {
-        "likes": 1,
-        "bookmarks": 0,
-        "impressions": 40
-      },
-      "translated_by": "free-translate"
     }
   ]
 }

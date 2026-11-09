@@ -1,7 +1,7 @@
 {
   "date": "2026-11-09",
-  "updated_at": "2026-11-09T18:12+08:00",
-  "updated_at_label": "2026-11-09 18:12 Asia/Shanghai",
+  "updated_at": "2026-11-09T18:44+08:00",
+  "updated_at_label": "2026-11-09 18:44 Asia/Shanghai",
   "source": "auto-fetch public APIs",
   "items": [
     {
@@ -176,25 +176,6 @@
       "translated_by": "free-translate"
     },
     {
-      "id": "hn-50417858",
-      "source": "Hacker News",
-      "category": "其他科技",
-      "title": "使用 Python 制作的文件共享平台 – 未使用 vibe 编码 – 自 2025 年起",
-      "summary": "用 Python 制作的文件共享平台 – 不是 vivi 编码 – 自 2025 年起 https://github.com/Merkoba/Harambe<p>2025 年左右我在这方面投入了大量精力。我没有使用人工智能。它完全是手工编码的。我认为我在功能上和美学上都做得很好。它支持不同类型的文件，并且有多种查找帖子的方式。唯一需要注意的是，每个帖子必须只有 1 个文件。例如，没有图片库。如果上传多个图像，则会创建一个 zip 文件，或者如果您想通过“神奇”系统将它们转换为 gif，它会为您提供帮助。您可以自由使用它，或者与我合作。我再次公开了这个回购协议。我自己托管它，并将其用作我的主要文件上传和共享网站。我做了一些海豚动作",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "madprops",
-      "url": "https://news.ycombinator.com/item?id=50417858",
-      "posted_at": "2026-11-09 06:04 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "File sharing platform made in Python – Not vibe coded – Since 2025",
-      "original_summary": "File sharing platform made in Python – Not vibe coded – Since 2025 https:&#x2F;&#x2F;github.com&#x2F;Merkoba&#x2F;Harambe<p>I worked heavily on this around 2025. I wasn&#x27;t using AI. It&#x27;s completely hand-coded. I think I did good job at it, functionally, and aesthetically. It supports different types of files, and there are various ways to find posts. The only caveat is that every post must have exactly 1 file. There are no image galleries for instance. If multiple images are uploaded a zip file is created, or it offers you if you want to turn them into a gif through the &quot;magic&quot; system. You are free to use this, or collaborate with me on it. I made this repo public again. I host it myself and I use it as my main file upload and sharing site. I made some Dolphin actions to",
-      "translated_by": "free-translate"
-    },
-    {
       "id": "hn-50417585",
       "source": "Hacker News",
       "category": "AI 开发工具与编程助手",
@@ -211,6 +192,177 @@
       },
       "original_title": "Show HN: Fireside Folio – free books, comics and news editions for reMarkable",
       "original_summary": "Show HN: Fireside Folio – free books, comics and news editions for reMarkable I own a reMarkable 2 and wanted more to read on it than my own PDFs, so I built a free web app. You connect your tablet once with the official one-time code, then:<p>- Send any of 79,000+ public-domain books (Standard Ebooks first, plus Project Gutenberg, Wikisource and OpenStax textbooks).<p>- Get comics (xkcd volumes with the hover text, Pepper&amp;Carrot, pre-1931 strips) and 33,000+ magazine issues from 1930 and earlier, re-rendered for e-ink.<p>- Get puzzle books (sudoku with unique solutions, mazes, nonograms) to solve with the pen.<p>- Subscribe to 160+ blogs and news sites; it builds one EPUB edition every morning or every six hours, and moves editions you&#x27;ve finished to the trash.<p>Each kind lands",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "hn-50412914",
+      "source": "Hacker News",
+      "category": "AI 开发工具与编程助手",
+      "title": "显示 HN：分级或跳过 – 测量 Pokémon 卡的居中和分级 ROI",
+      "summary": "显示 HN：分级或跳过 – 测量 Pokémon 卡的居中和分级 ROI Hi HN。神奇宝贝卡牌是我的爱好之一，一次又一次出现的问题是一张原始卡牌是否值得支付 PSA 40 美元或更多的费用来评级，或者你是否应该卖掉它。诚实的答案通常是“跳过”，但大多数预评分工具都会给您一个自信的评分，而不需要数学。<p>评分或跳过会拍摄正面和背面的照片，并执行三件事：<p>- 以 OpenCV 为中心的测量。它找到卡片，校正透视，测量每个边界并绘制所测量的内容。如果它不能信任读数，它会说“未测量”而不是猜测。在 20 个综合测试面上，平均误差约为 0.5 个中心点。这是合成的，不是真实的扫描。\n- 询问愿景莫",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "nateparkerdev",
+      "url": "https://github.com/0x4rch/gradeorskip",
+      "posted_at": "2026-11-08 21:03 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "original_title": "Show HN: Grade or Skip – measure a Pokémon card's centering and grading ROI",
+      "original_summary": "Show HN: Grade or Skip – measure a Pokémon card's centering and grading ROI Hi HN. Pokémon cards are one of my hobbies, and the question that comes up over and over is whether a raw card is worth paying PSA $40 or more to grade, or whether you should just sell it. The honest answer is usually &quot;skip&quot;, but most pre-grading tools give you one confident grade and no math.<p>Grade or Skip takes a photo of the front and back and does three things:<p>- Measures centering with OpenCV. It finds the card, corrects perspective, measures each border and draws what it measured. If it can&#x27;t trust a read, it says &quot;not measured&quot; instead of guessing. On 20 synthetic test sides the mean error is about 0.5 points of centering. That&#x27;s synthetic, not real scans.\n- Asks a vision mo",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "hn-50403588",
+      "source": "Hacker News",
+      "category": "大模型 API 免费额度",
+      "title": "Show HN：为您的代理提供一台它可以控制的 Mac",
+      "summary": "向您的代理展示一台可以控制的 Mac Hello hello！<p>我正在构建 Offstage Cloud，这是按秒计费的临时 macOS 沙箱。<p>您可以将其用于 CI（例如 GitHub Actions）、使用 Xcode 进行构建，或者让您的代理控制 GUI — 在应用程序和 iOS 模拟器中单击、键入并截取屏幕截图。<p>免费试用！<p>将其粘贴到您的代理中以开始使用：<p>阅读 <a href=\"https://api.offstage.cloud/SKILL.md\" rel=\"nofollow\">https://api.offstage.cloud/SKILL.md</a> 并按照它设置后台云，以便您可以在真正的 Mac 上运行构建、测试和命令。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "viraatdas",
+      "url": "https://offstage.cloud/",
+      "posted_at": "2026-11-07 19:27 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "original_title": "Show HN: Give your agent a Mac it can control",
+      "original_summary": "Show HN: Give your agent a Mac it can control Hello hello!<p>I&#x27;m building Offstage Cloud which are ephemeral macOS sandboxes billed by second.<p>You can use it for CI (eg GitHub Actions), build with Xcode, or let your agent control the GUI—click, type and take screenshots in apps and the iOS Simulator.<p>Try it for free!<p>Paste this into your agent to get started:<p>Read <a href=\"https:&#x2F;&#x2F;api.offstage.cloud&#x2F;SKILL.md\" rel=\"nofollow\">https:&#x2F;&#x2F;api.offstage.cloud&#x2F;SKILL.md</a> and follow it to set up offstage cloud, so you can run builds, tests and commands on a real Mac.",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "hn-50380433",
+      "source": "Hacker News",
+      "category": "AI 开发工具与编程助手",
+      "title": "Show HN：儿童架，您孩子自己的小互联网",
+      "summary": "Show HN：Kids Shelf，你孩子们自己的小互联网 大家好，我制作了这个服务器，用于为我们（年幼的）孩子建立一个本地网络页面来托管视频并管理视频观看时间，而无需让他们在主 YouTube 上放松，以及所有随机的脑力消耗和参与度提升优化（这里没有自动播放下一个视频）。<p>- 麻省理工学院许可，任何地方都没有跟踪脚本，用它做任何你想做的事，我没有兴趣将其商业化<p>- 每天给他们“视频分钟津贴”，并且为我们强制执行（我们每个人有 10 分钟的时间，他们一起观看，然后会滚动，所以有些日子他们什么都不看，其他时候他们看一个小时）。<p>- 科学/教育视频可以设置为半价或免费<p>- 包括内置的 yt-dlp，管理屏幕会获取 YouTube URL 和",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "ericd",
+      "url": "https://kidsshelf.org/",
+      "posted_at": "2026-11-05 23:35 Asia/Shanghai",
+      "engagement": {
+        "points": 8,
+        "comments": 2
+      },
+      "original_title": "Show HN: Kids Shelf, your kids' own little internet",
+      "original_summary": "Show HN: Kids Shelf, your kids' own little internet Hey all, I made this server for spinning up a local network page for our (young) kids to host videos and manage video watching time without turning them loose on main youtube, with all its random brainrot and engagement boosting optimizations (no autoplay next video here).<p>- MIT licensed, no tracking scripts anywhere, do whatever you want with it, I have no interest in commercializing this<p>- Gives them a daily &quot;video minutes allowance&quot;, and enforces it for us (ours get 10 minutes each, they watch it together, and it rolls over, so some days they watch nothing, others they watch for an hour).<p>- Science&#x2F;education videos can be set to half cost or free<p>- Includes yt-dlp baked in, the admin screen takes youtube URLs and",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "hn-50379300",
+      "source": "Hacker News",
+      "category": "大模型 API 免费额度",
+      "title": "Show HN ：我向Claude支付了1,070 $ ，以阅读3万个房源的最差评价",
+      "summary": "Show HN：我付给 Claude 1,070 美元，阅读了 3 万个住宿地点中最差的评论。嗨 HN，我是 Oriol，巴塞罗那的一名独立开发商。<p>在预订任何东西之前，我每次都会做同样的事情：找到一个评分很高的地方，打开评分最低的评论并一一阅读。空调坏了，墙壁很薄，床像木板一样硬，淋浴几乎不能用。很多时候，破坏交易的事情就在那里，由一位又一位的客人写下，总分高达 8.9 分。<p>OKstays 会为您阅读。它根据您的实际睡眠和住宿质量对 95 个目的地的 33,000 多个住宿地点进行评分，并根据您的旅行方式（浅睡、远程工作、家庭......）对这些住宿地点进行排名。<p>本月，我根据客人的反馈重新对 30,500 个住宿地点进行了评分。对于每一本书，克劳德都会阅读其最新的和",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "orifito",
+      "url": "https://okstays.com",
+      "posted_at": "2026-11-05 22:13 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "original_title": "Show HN: I paid Claude US$1,070 to read the worst reviews of 30k places to stay",
+      "original_summary": "Show HN: I paid Claude US$1,070 to read the worst reviews of 30k places to stay Hi HN, I&#x27;m Oriol, a solo developer in Barcelona.<p>Before booking anything, I used to do the same thing every time: find a place with a great rating, open the lowest-rated reviews and read them one by one. Broken AC, thin walls, a bed as hard as a board, a shower that barely works. Very often the deal-breaker was right there, written by guest after guest, under a lovely 8.9 global score.<p>OKstays does that reading for you. It scores 33,000+ places to stay in 95 destinations on how well you&#x27;ll actually sleep and stay there, and ranks them for how you travel (light sleeper, remote work, family...).<p>This month I re-scored 30,500 places from what guests wrote. For each one, Claude reads its newest and",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "hn-50378094",
+      "source": "Hacker News",
+      "category": "AI 产品会员/试用",
+      "title": "Show HN：Vivonco – 将患者的癌症报告与靶向药物和试验相匹配",
+      "summary": "显示 HN：Vivonco – 将患者的癌症报告与靶向药物和试验相匹配 Hi HN。我制作了一个轻量级应用程序，您可以在其中添加患者的癌症报告（病理学、扫描、基因测试，甚至手机照片），并根据美国、欧洲、印度的护理指南获得战术计划。该计划针对其基因变化提供精确的靶向药物，并具有 FDA 资格、标准护理之外的选择、缺失的测试和匹配试验。我已确保（每条）线路跟踪到报告或主要来源，以及报告中未提及的任何内容都显示为缺失。<p>暂时免费。<p>它很新，以 gpt 5.6 luna 作为骨干，编写了一堆评估，因此非常欢迎反馈和错误报告。<p>PS：如果您想在精度上合作，请发送电子邮件 rohan@vivonco.com",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "rohanmanchanda",
+      "url": "https://vivonco.com/",
+      "posted_at": "2026-11-05 19:56 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "original_title": "Show HN: Vivonco – match patient's cancer reports to targeted drugs and trials",
+      "original_summary": "Show HN: Vivonco – match patient's cancer reports to targeted drugs and trials Hi HN. I made a lightweight app where you can add patient&#x27;s cancer reports (pathology, scans, gene tests, even phone photos) and get a tactical plan based on care guidelines from US, Europe, India. The plan has precise, targeted drugs for their gene changes with FDA status, options beyond standard care, missing tests and matching trials. I&#x27;ve made sure (every) line traces to the reports or a primary source, and anything the reports don&#x27;t say shows as missing.<p>Have kept it free for now.<p>It&#x27;s pretty new, has gpt 5.6 luna as the backbone, has a bunch of evals written, so feedback and bug reports are very welcome.<p>PS: Pls email rohan@vivonco.com if you want to work together on precision onc",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "hn-50377718",
+      "source": "Hacker News",
+      "category": "云服务/GPU/开发者资源",
+      "title": "Show HN: Win Stats – Windows 任务栏中的开源系统监控",
+      "summary": "Show HN：Win Stats – Windows 任务栏中的开源系统监控我构建了一个名为 Win Stats 的小型 Windows 实用程序，它可以直接在任务栏中显示实时系统统计信息。<p>我曾经多次打开任务管理器，只是为了检查 RAM 使用情况、CPU/GPU 使用情况、温度和其他系统统计信息。我想要一个可以一目了然地显示所有这些内容的东西。<p>它类似于名为 Stats 的流行 macOS 应用程序<p>它支持 CPU、RAM、GPU、磁盘速度、网络使用情况、CPU/GPU 温度和可自定义布局。<p>它是完全免费和开源的，没有付费墙或货币化:)<p>GitHub：<a href=\"https://github.com/VC067/win-stats\" rel=\"nofollow\">https://github.com/VC067/win-stats</a>\n网站：<a href=\"https://&",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "VC067",
+      "url": "https://vc067.github.io/win-stats/",
+      "posted_at": "2026-11-05 19:00 Asia/Shanghai",
+      "engagement": {
+        "points": 3,
+        "comments": 0
+      },
+      "original_title": "Show HN: Win Stats – open-source system monitoring in the Windows taskbar",
+      "original_summary": "Show HN: Win Stats – open-source system monitoring in the Windows taskbar I&#x27;ve built a small Windows utility called Win Stats that shows live system stats directly in the taskbar.<p>I used to open Task Manager multiple times just to check RAM usage, CPU&#x2F;GPU usage, temperatures and other system stats. I wanted something that could show all of this at a glance.<p>It&#x27;s Similar to the popular macOS app called Stats<p>It supports CPU, RAM, GPU, disk speeds, network usage, CPU&#x2F;GPU temperatures and customizable layouts.<p>It&#x27;s completely free and open source, with no paywalls or monetization :)<p>GitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;VC067&#x2F;win-stats\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;VC067&#x2F;win-stats</a>\nWebsite: <a href=\"https:&#x2F;&",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "hn-50369215",
+      "source": "Hacker News",
+      "category": "大模型 API 免费额度",
+      "title": "显示 HN：WebGPU 上的 Phonon TTS，44MB，115 倍实时，带有实时字计时",
+      "summary": "显示 HN：WebGPU 上的 Phonon TTS，44MB，115 倍实时，具有实时单词计时 我尝试了 Gradium 的 Phonon 31M 文本到语音模型，并对其质量与大小比感到震惊。我需要每个单词的计时才能突出显示它们，因此我使用不同的设计为其编写了第二个运行时：整个生成循环保留在 Claude Opus 5.5 专门为此编写的 WebGPU 内核中的 GPU 上。<p>初始化时，它可以在大约 3 毫秒内开始流式传输音频，并且只需要下载 44 MB（<40 MB brotli'd）而不是官方的 67 MB，因为每个大矩阵都存储为 int8，即音频包括解码器。在相同的设备上，它的实时运行速度为 115 倍，M3 Max 为 31 倍，iPhone 17 Pro 为 26 倍，而 iPhone 17 Pro 为 13 倍。时序是从其中一个模型读取的",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "blixt",
+      "url": "https://github.com/blixt/phonon",
+      "posted_at": "2026-11-05 02:01 Asia/Shanghai",
+      "engagement": {
+        "points": 3,
+        "comments": 0
+      },
+      "original_title": "Show HN: Phonon TTS on WebGPU, 44MB, 115x real time, with live word timings",
+      "original_summary": "Show HN: Phonon TTS on WebGPU, 44MB, 115x real time, with live word timings I tried Gradium&#x27;s Phonon 31M text-to-speech model and was blown away by its quality to size ratio. I needed timings for every word to be able to highlight them, so I wrote a second runtime for it with a different design: the whole generation loop stays on the GPU in WebGPU kernels written specifically for this by Claude Opus 5.5.<p>When initialized, it can start streaming audio in about 3 ms, and it only needs to download 44 MB (&lt;40 MB brotli&#x27;d) instead of the official 67 MB, because every large matrix is stored as int8, the audio decoder included. On the same devices it runs at 115x real time vs. 31x on my M3 Max, and 26x against 13x on my iPhone 17 Pro. The timings are read from one of the model&#x27",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "hn-50366425",
+      "source": "Hacker News",
+      "category": "AI 开发工具与编程助手",
+      "title": "Show HN：AI Gude – 我的每日播客提要，通过 AI 复活",
+      "summary": "Show HN：AI Gude – 我的每日播客，通过 AI Hi HN 恢复。 AI Gude 将您关注的新闻转化为由 AI 编写和阅读的简短早间播客。它是开源的，您可以自己托管。 “Ei Gude”在黑森语中是早上好的意思。<p>一些背景：我大约一年半前开始这样做，但再也没有回去过，因为我成为了一名父亲，我的空闲时间消失了。人工智能改变了这一点。正是游戏规则的改变者最终启动了该项目。我现在每天都会听自己的剧集，所以这对我很有用。不过，我仍处于起步阶段。<p>我想要的是：想法和反馈，以及对良好 TTS 模型的建议。我今天使用 Gemini 的 TTS，想知道还有什么值得尝试的十分钟剧集，最好是德语和英语良好的，托管的或自助的",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "alex0ptr",
+      "url": "https://github.com/alex0ptr/aigude",
+      "posted_at": "2026-11-04 22:57 Asia/Shanghai",
+      "engagement": {
+        "points": 7,
+        "comments": 0
+      },
+      "original_title": "Show HN: AI Gude – my feeds as a daily podcast, revived with AI",
+      "original_summary": "Show HN: AI Gude – my feeds as a daily podcast, revived with AI Hi HN. AI Gude turns the news you follow into a short morning podcast, written and read by AI. It is open source and you host it yourself. “Ei Gude” is Hessian for good morning.<p>Some background: I started this about a year and a half ago and never got back to it, because I became a father and my free time was gone. AI is what changed that. It was the game changer that finally unleashed the project. I listen to my own episodes every day now, so it is useful to me. I’m still at the very beginning, though.<p>What I would love: ideas and feedback, and recommendations for good TTS models. I use Gemini’s TTS today and want to know what else is worth trying for ten-minute episodes, ideally good in German and English, hosted or self",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "hn-50423113",
+      "source": "Hacker News",
+      "category": "云服务/GPU/开发者资源",
+      "title": "显示 HN：软件职称家谱",
+      "summary": "显示 HN：软件职称家谱 我一直想看到的东西，现在通过人工智能成为可能：计算/软件职称的家谱。<p>希望人们看起来很有趣。它收集的一些历史细节对我来说非常有趣，例如“计算机”节点（1880-1940 年代）中有关 ENIAC 的内容。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "zwischenzug",
+      "url": "https://ianmiell.github.io/sw-job-title-family-tree/",
+      "posted_at": "2026-11-09 17:17 Asia/Shanghai",
+      "engagement": {
+        "points": 1,
+        "comments": 0
+      },
+      "original_title": "Show HN: Software Job Title Family Tree",
+      "original_summary": "Show HN: Software Job Title Family Tree Something I&#x27;ve always wanted to see, now made possible by AI: a family tree of computing &#x2F; software job titles.<p>Hopefully it&#x27;s fun for people to look at. Some of the historical detail it gathered was very interesting to me, eg the stuff about ENIAC in the &#x27;Computer&#x27; node (1880-1940s).",
       "translated_by": "free-translate"
     },
     {
@@ -249,139 +401,6 @@
       },
       "original_title": "Show HN: Recalc – Spreadsheet where cells can be Claude Code or Codex terminals",
       "original_summary": "Show HN: Recalc – Spreadsheet where cells can be Claude Code or Codex terminals I built this because it was useful for me when building evals&#x2F;benchmarks, and I decided to put it up for free for others. The goal was quite simple, make it easy to use a lead claude code &#x2F; codex session in a panel on the side, while allowing every cell to also be a terminal session running claude&#x2F;codex, and make it possible to continue a session in an actual terminal window if I needed to. They can all talk to each other using cells on the grid, named cells, or the MCP server that effectively glues the app together. I also found it useful for managing context within related but disparate sessions.<p>My real benchmark runs with recalc are internal to my startup, so to demonstrate some of the func",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "hn-50412914",
-      "source": "Hacker News",
-      "category": "AI 开发工具与编程助手",
-      "title": "显示 HN：分级或跳过 – 测量 Pokémon 卡的居中和分级 ROI",
-      "summary": "显示 HN：分级或跳过 – 测量 Pokémon 卡的居中和分级 ROI Hi HN。神奇宝贝卡牌是我的爱好之一，一次又一次出现的问题是一张原始卡牌是否值得支付 PSA 40 美元或更多的费用来评级，或者你是否应该卖掉它。诚实的答案通常是“跳过”，但大多数预评分工具都会给您一个自信的评分，而不需要数学。<p>评分或跳过会拍摄正面和背面的照片，并执行三件事：<p>- 以 OpenCV 为中心的测量。它找到卡片，校正透视，测量每个边界并绘制所测量的内容。如果它不能信任读数，它会说“未测量”而不是猜测。在 20 个综合测试面上，平均误差约为 0.5 个中心点。这是合成的，不是真实的扫描。\n- 询问愿景莫",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "nateparkerdev",
-      "url": "https://github.com/0x4rch/gradeorskip",
-      "posted_at": "2026-11-08 21:03 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "Show HN: Grade or Skip – measure a Pokémon card's centering and grading ROI",
-      "original_summary": "Show HN: Grade or Skip – measure a Pokémon card's centering and grading ROI Hi HN. Pokémon cards are one of my hobbies, and the question that comes up over and over is whether a raw card is worth paying PSA $40 or more to grade, or whether you should just sell it. The honest answer is usually &quot;skip&quot;, but most pre-grading tools give you one confident grade and no math.<p>Grade or Skip takes a photo of the front and back and does three things:<p>- Measures centering with OpenCV. It finds the card, corrects perspective, measures each border and draws what it measured. If it can&#x27;t trust a read, it says &quot;not measured&quot; instead of guessing. On 20 synthetic test sides the mean error is about 0.5 points of centering. That&#x27;s synthetic, not real scans.\n- Asks a vision mo",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "hn-50412484",
-      "source": "Hacker News",
-      "category": "科技软件/App 限免",
-      "title": "Show HN：Gitbet – 适用于 Linux 的免费 sourcetree 风格 Git 客户端",
-      "summary": "Show HN：Gitbet – 适用于 Linux 的免费 Sourcetree 风格 Git 客户端 我在 macOS 和 Windows 上使用 Sourcetree 大约 7 年。当我切换到 Linux 时，我发现它不可用，并且没有一个替代方案具有我喜欢的布局和用户体验。<p>我故意保持它很小，我不打算添加很多功能。适用于 Linux、Mac 操作系统和 Windows。很高兴听到一些反馈并分享它是否对其他开发人员也有用。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "byc0",
-      "url": "https://www.gitbet.dev/",
-      "posted_at": "2026-11-08 19:55 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "Show HN: Gitbet – A free sourcetree style Git client for Linux",
-      "original_summary": "Show HN: Gitbet – A free sourcetree style Git client for Linux I used Sourcetree for about 7 years on macOS and Windows. When I switched to Linux, I found it isn’t available, and none of the alternatives had the layout and UX I liked.<p>I kept it small on purpose, I don&#x27;t plan to add many features. Builds for Linux, mac os, and windows. Happy to hear some feedback and share if it&#x27;s useful to other developers too.",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "hn-50403588",
-      "source": "Hacker News",
-      "category": "大模型 API 免费额度",
-      "title": "Show HN：为您的代理提供一台它可以控制的 Mac",
-      "summary": "向您的代理展示一台可以控制的 Mac Hello hello！<p>我正在构建 Offstage Cloud，这是按秒计费的临时 macOS 沙箱。<p>您可以将其用于 CI（例如 GitHub Actions）、使用 Xcode 进行构建，或者让您的代理控制 GUI — 在应用程序和 iOS 模拟器中单击、键入并截取屏幕截图。<p>免费试用！<p>将其粘贴到您的代理中以开始使用：<p>阅读 <a href=\"https://api.offstage.cloud/SKILL.md\" rel=\"nofollow\">https://api.offstage.cloud/SKILL.md</a> 并按照它设置后台云，以便您可以在真正的 Mac 上运行构建、测试和命令。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "viraatdas",
-      "url": "https://offstage.cloud/",
-      "posted_at": "2026-11-07 19:27 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "Show HN: Give your agent a Mac it can control",
-      "original_summary": "Show HN: Give your agent a Mac it can control Hello hello!<p>I&#x27;m building Offstage Cloud which are ephemeral macOS sandboxes billed by second.<p>You can use it for CI (eg GitHub Actions), build with Xcode, or let your agent control the GUI—click, type and take screenshots in apps and the iOS Simulator.<p>Try it for free!<p>Paste this into your agent to get started:<p>Read <a href=\"https:&#x2F;&#x2F;api.offstage.cloud&#x2F;SKILL.md\" rel=\"nofollow\">https:&#x2F;&#x2F;api.offstage.cloud&#x2F;SKILL.md</a> and follow it to set up offstage cloud, so you can run builds, tests and commands on a real Mac.",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "hn-50397561",
-      "source": "Hacker News",
-      "category": "AI 开发工具与编程助手",
-      "title": "Show HN：告诉天空——根据实时天气数据信息灯笼随风飘移",
-      "summary": "Show HN：告诉天空 – 消息灯笼根据实时天气数据随风飘移 我创建了一个网络/移动应用程序，可让您在灯笼上写下故事/秘密/鼓励/等等。然后，您可以放开它，它就会使用 NOAA 公共风预报的实时风数据漂浮在世界地图上。然后，当它们漂浮在头顶上并添加到消息链中时，其他用户可以在定时窗口中捕获它们。然后他们释放它们以继续。<p>这只是我尝试的一件有趣的事情 - 有点像瓶子里的消息，但在天空中。我觉得这听起来是一个很酷的主意，在玩过之后，我真的很喜欢它，但很好奇其他人是否也认为它很酷或者只是看起来很蹩脚。哈哈<p>如果你愿意去看看，你可以在没有任何 si 的情况下观看灯笼",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "andycodeman",
-      "url": "https://tellthesky.com",
-      "posted_at": "2026-11-07 03:59 Asia/Shanghai",
-      "engagement": {
-        "points": 6,
-        "comments": 1
-      },
-      "original_title": "Show HN: Tell the Sky – message lanterns drift on winds from live weather data",
-      "original_summary": "Show HN: Tell the Sky – message lanterns drift on winds from live weather data I created a web&#x2F;mobile app that lets you write a story&#x2F;secret&#x2F;encouragement&#x2F;etc... on a lantern. You can then let it go and it will float over a world map using live wind data from NOAA&#x27;s public wind forecast. Other users can then catch them in a timed window as they float by overhead and add on to the message chain. Then they release them to continue on.<p>It&#x27;s just a fun thing I was trying - kind of like a message in a bottle but in the sky. I thought it sounded like a cool idea and after playing with it, I really like it but was curious if other people also thought it was cool or just seemed lame. lol<p>If you&#x27;d be willing to check it out you can view lanterns without any si",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "hn-50383785",
-      "source": "Hacker News",
-      "category": "科技软件/App 限免",
-      "title": "Show HN：在 Mac 上通过说出一次名称来教语音模型 (en) 命名",
-      "summary": "Show HN：在 Mac 上通过说一次来教语音模型 (en) 一个名字。我想看看语音模型如果听到它，而不仅仅是读到它，是否可以更好地拼写一个名字。<p>大多数 STT 工具将自定义单词作为文本处理（关键术语列表、用 llm 修复后的文字记录等）。<p>因此，我训练了一个适配器来尝试它，特别是 Qwen3-ASR 1.7b 上的 LoRA（请参阅基准测试）。此 LoRA 仅在听到每个自定义单词的录音后才会转录单词。<p>为了使该模型在日常生活中更易于使用，我们还构建了 Detail Keeper。这是一个 Mac 应用程序，您可以通过指定难以正确转录的单词，然后在录音中正确拾取它们来使用此适配器。<p>我们发现这在两种特定情况下很有帮助： \n1. STT从未听说过的词：发明的",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "Angus1192",
-      "url": "https://detailkeeper.com/",
-      "posted_at": "2026-11-06 04:06 Asia/Shanghai",
-      "engagement": {
-        "points": 3,
-        "comments": 1
-      },
-      "original_title": "Show HN: Teach a speech model (en) a name by saying it once, on your Mac",
-      "original_summary": "Show HN: Teach a speech model (en) a name by saying it once, on your Mac I wanted to see if a speech model could spell a name better if it heard it, not just read it.<p>Most STT tools handle custom words as text (keyterm list, fixing transcript after with llm, etc).<p>So I trained an adapter to try it, specifically a LoRA on Qwen3-ASR 1.7b (see benchmark). This LoRA transcribes words only after it hears a recording of each of your custom words.<p>To make this model easier to use in day-to-day life, we also built Detail Keeper. It&#x27;s a Mac app where you can put this adapter to use by specifying difficult-to-transcribe-correctly words and then having them picked up correctly in your recordings.<p>We&#x27;ve found this helpful in two specific cases: \n1. Words STT has never heard: invented",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "hn-50380433",
-      "source": "Hacker News",
-      "category": "AI 开发工具与编程助手",
-      "title": "Show HN：儿童架，您孩子自己的小互联网",
-      "summary": "Show HN：Kids Shelf，你孩子们自己的小互联网 大家好，我制作了这个服务器，用于为我们（年幼的）孩子建立一个本地网络页面来托管视频并管理视频观看时间，而无需让他们在主 YouTube 上放松，以及所有随机的脑力消耗和参与度提升优化（这里没有自动播放下一个视频）。<p>- 麻省理工学院许可，任何地方都没有跟踪脚本，用它做任何你想做的事，我没有兴趣将其商业化<p>- 每天给他们“视频分钟津贴”，并且为我们强制执行（我们每个人有 10 分钟的时间，他们一起观看，然后会滚动，所以有些日子他们什么都不看，其他时候他们看一个小时）。<p>- 科学/教育视频可以设置为半价或免费<p>- 包括内置的 yt-dlp，管理屏幕会获取 YouTube URL 和",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "ericd",
-      "url": "https://kidsshelf.org/",
-      "posted_at": "2026-11-05 23:35 Asia/Shanghai",
-      "engagement": {
-        "points": 8,
-        "comments": 2
-      },
-      "original_title": "Show HN: Kids Shelf, your kids' own little internet",
-      "original_summary": "Show HN: Kids Shelf, your kids' own little internet Hey all, I made this server for spinning up a local network page for our (young) kids to host videos and manage video watching time without turning them loose on main youtube, with all its random brainrot and engagement boosting optimizations (no autoplay next video here).<p>- MIT licensed, no tracking scripts anywhere, do whatever you want with it, I have no interest in commercializing this<p>- Gives them a daily &quot;video minutes allowance&quot;, and enforces it for us (ours get 10 minutes each, they watch it together, and it rolls over, so some days they watch nothing, others they watch for an hour).<p>- Science&#x2F;education videos can be set to half cost or free<p>- Includes yt-dlp baked in, the admin screen takes youtube URLs and",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "hn-50423113",
-      "source": "Hacker News",
-      "category": "云服务/GPU/开发者资源",
-      "title": "显示 HN：软件职称家谱",
-      "summary": "显示 HN：软件职称家谱 我一直想看到的东西，现在通过人工智能成为可能：计算/软件职称的家谱。<p>希望人们看起来很有趣。它收集的一些历史细节对我来说非常有趣，例如“计算机”节点（1880-1940 年代）中有关 ENIAC 的内容。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "zwischenzug",
-      "url": "https://ianmiell.github.io/sw-job-title-family-tree/",
-      "posted_at": "2026-11-09 17:17 Asia/Shanghai",
-      "engagement": {
-        "points": 1,
-        "comments": 0
-      },
-      "original_title": "Show HN: Software Job Title Family Tree",
-      "original_summary": "Show HN: Software Job Title Family Tree Something I&#x27;ve always wanted to see, now made possible by AI: a family tree of computing &#x2F; software job titles.<p>Hopefully it&#x27;s fun for people to look at. Some of the historical detail it gathered was very interesting to me, eg the stuff about ENIAC in the &#x27;Computer&#x27; node (1880-1940s).",
       "translated_by": "free-translate"
     },
     {
@@ -480,6 +499,61 @@
       "translated_by": "free-translate"
     },
     {
+      "id": "hn-50397561",
+      "source": "Hacker News",
+      "category": "AI 开发工具与编程助手",
+      "title": "Show HN：告诉天空——根据实时天气数据信息灯笼随风飘移",
+      "summary": "Show HN：告诉天空 – 消息灯笼根据实时天气数据随风飘移 我创建了一个网络/移动应用程序，可让您在灯笼上写下故事/秘密/鼓励/等等。然后，您可以放开它，它就会使用 NOAA 公共风预报的实时风数据漂浮在世界地图上。然后，当它们漂浮在头顶上并添加到消息链中时，其他用户可以在定时窗口中捕获它们。然后他们释放它们以继续。<p>这只是我尝试的一件有趣的事情 - 有点像瓶子里的消息，但在天空中。我觉得这听起来是一个很酷的主意，在玩过之后，我真的很喜欢它，但很好奇其他人是否也认为它很酷或者只是看起来很蹩脚。哈哈<p>如果你愿意去看看，你可以在没有任何 si 的情况下观看灯笼",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "andycodeman",
+      "url": "https://tellthesky.com",
+      "posted_at": "2026-11-07 03:59 Asia/Shanghai",
+      "engagement": {
+        "points": 6,
+        "comments": 1
+      },
+      "original_title": "Show HN: Tell the Sky – message lanterns drift on winds from live weather data",
+      "original_summary": "Show HN: Tell the Sky – message lanterns drift on winds from live weather data I created a web&#x2F;mobile app that lets you write a story&#x2F;secret&#x2F;encouragement&#x2F;etc... on a lantern. You can then let it go and it will float over a world map using live wind data from NOAA&#x27;s public wind forecast. Other users can then catch them in a timed window as they float by overhead and add on to the message chain. Then they release them to continue on.<p>It&#x27;s just a fun thing I was trying - kind of like a message in a bottle but in the sky. I thought it sounded like a cool idea and after playing with it, I really like it but was curious if other people also thought it was cool or just seemed lame. lol<p>If you&#x27;d be willing to check it out you can view lanterns without any si",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1255646",
+      "source": "V2EX",
+      "category": "AI 产品会员/试用",
+      "title": "TinyPass：本地密码生成器 Chrome 扩展，批量生成、纯本地运行",
+      "summary": "TinyPass：本地密码生成器 Chrome 扩展，批量生成、纯本地运行\n分享一个自己做的 Chrome 扩展，免费、无广告。\r\n\r\n## 功能\r\n\r\n- 一键批量生成高强度密码\r\n- 可读模式、自定义长度与字符集\r\n- 纯本地运行，密码不经过任何服务器\r\n- 历史记录管理 + 回收站防误删\r\n\r\n## 链接\r\n\r\n- Chrome 商店： https://chromewebstore.google.com/detail/tinypass/jjfmaihmmbclkonnkkipbplhklepopne\r\n- 产品主页： https://holatiger.com/tinypass\r\n\r\n欢迎试用，有问题和建议随时反馈。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "angiie",
+      "url": "https://www.v2ex.com/t/1255646",
+      "posted_at": "2026-11-09 18:30 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "TinyPass：本地密码生成器 Chrome 扩展，批量生成、纯本地运行",
+      "original_summary": "TinyPass：本地密码生成器 Chrome 扩展，批量生成、纯本地运行\n分享一个自己做的 Chrome 扩展，免费、无广告。\r\n\r\n## 功能\r\n\r\n- 一键批量生成高强度密码\r\n- 可读模式、自定义长度与字符集\r\n- 纯本地运行，密码不经过任何服务器\r\n- 历史记录管理 + 回收站防误删\r\n\r\n## 链接\r\n\r\n- Chrome 商店： https://chromewebstore.google.com/detail/tinypass/jjfmaihmmbclkonnkkipbplhklepopne\r\n- 产品主页： https://holatiger.com/tinypass\r\n\r\n欢迎试用，有问题和建议随时反馈。",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "v2ex-1255642",
+      "source": "V2EX",
+      "category": "大模型 API 免费额度",
+      "title": "[中转站免费领鸡蛋了]",
+      "summary": "[中转站免费领鸡蛋了]\n站点：upupkey.com\r\n\r\nGPT 、Claude 和国产模型都有，号池和线路由我们自己维护。 个人开发、日常调用、团队项目都可以使用，有大用量需求也欢迎联系管理员对接。\r\n\r\n这次给佬友准备了 $3 平台调用额度，不用先充值，可以先拿自己的实际任务试一试。\r\n\r\nClaude Max 满血 2 折，OpenAI 2 折起\r\n\r\nClaude Max 满血，低至 2 折。\r\nOpenAI 系列，2 折起。\r\n国产模型也有，具体型号和价格可在站内查看。\r\n不同模型、分组的价格有所区别，不是所有模型统一一个折扣，具体价格及实际扣费以站内显示为准。\r\n\r\n按美元计费，支持支付宝，不用买月卡\r\n\r\n用量能查、能导出，项目可以分开管理。每次调用的模型、Token 用量、分组倍率、实际扣费、响应时间和调用状态都有记录。支持按 API Key 、模型和分组筛选，也可以导出 CSV ，方便核对项目费用、整理团队用量。\r\n\r\n不同项目可以分别创建 Key ，设置各自的额度上限和有效期，开发测试和日常使用不用混在同一把 Key 里。\r\n\r\n线路维护、恢复和新模型上线会同步通知。\r\n\r\n佬友福利：合计 $2 平台调用额度\r\n\r\n先领额度，自己上手试，不用先充值：\r\n\r\n本帖留下 upupkey 站内用户名，送 $1 平台调用额度。\r\n\r\n赠送额度仅用于站内模型调用，不是现金。回帖只需留下站内用户名，不要公开密码或 API Key 。\r\n\r\n欢迎各位佬友体验，也欢迎反馈实际使用中遇到的问题。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "aaazwy",
+      "url": "https://www.v2ex.com/t/1255642",
+      "posted_at": "2026-11-09 18:24 Asia/Shanghai",
+      "engagement": {
+        "replies": 0
+      },
+      "original_title": "[中转站免费领鸡蛋了]",
+      "original_summary": "[中转站免费领鸡蛋了]\n站点：upupkey.com\r\n\r\nGPT 、Claude 和国产模型都有，号池和线路由我们自己维护。 个人开发、日常调用、团队项目都可以使用，有大用量需求也欢迎联系管理员对接。\r\n\r\n这次给佬友准备了 $3 平台调用额度，不用先充值，可以先拿自己的实际任务试一试。\r\n\r\nClaude Max 满血 2 折，OpenAI 2 折起\r\n\r\nClaude Max 满血，低至 2 折。\r\nOpenAI 系列，2 折起。\r\n国产模型也有，具体型号和价格可在站内查看。\r\n不同模型、分组的价格有所区别，不是所有模型统一一个折扣，具体价格及实际扣费以站内显示为准。\r\n\r\n按美元计费，支持支付宝，不用买月卡\r\n\r\n用量能查、能导出，项目可以分开管理。每次调用的模型、Token 用量、分组倍率、实际扣费、响应时间和调用状态都有记录。支持按 API Key 、模型和分组筛选，也可以导出 CSV ，方便核对项目费用、整理团队用量。\r\n\r\n不同项目可以分别创建 Key ，设置各自的额度上限和有效期，开发测试和日常使用不用混在同一把 Key 里。\r\n\r\n线路维护、恢复和新模型上线会同步通知。\r\n\r\n佬友福利：合计 $2 平台调用额度\r\n\r\n先领额度，自己上手试，不用先充值：\r\n\r\n本帖留下 upupkey 站内用户名，送 $1 平台调用额度。\r\n\r\n赠送额度仅用于站内模型调用，不是现金。回帖只需留下站内用户名，不要公开密码或 API Key 。\r\n\r\n欢迎各位佬友体验，也欢迎反馈实际使用中遇到的问题。",
+      "translated_by": "free-translate"
+    },
+    {
       "id": "v2ex-1255634",
       "source": "V2EX",
       "category": "AI 产品会员/试用",
@@ -534,24 +608,6 @@
       "translated_by": "free-translate"
     },
     {
-      "id": "v2ex-1255595",
-      "source": "V2EX",
-      "category": "大模型 API 免费额度",
-      "title": "实践出真知 GPT 模型的审美能力完全可以通过好的 Skills 和设计流程来解锁！",
-      "summary": "实践出真知 GPT 模型的审美能力完全可以通过好的 Skills 和设计流程来解锁！\n为了解决 GPT 的审美不稳定的问题，我开发了一款类似 Claude Design 的项目，我起初并没有抱太大希望，觉得可以保证风格统一就好了。在使用 Codex Cli 的 `gpt-6.1-sol` 开发了 [摄影网站]( https://drop-af770064-b43.amery2010.workers.dev/)，结果却惊艳到了我。网站排版更大胆，交互更细腻，如果不说是什么模型做的，可能还会被认为是用 Opus 做的网站。此外，我还让其设计了[个人主页]( https://drop-f285c473-61a.amery2010.workers.dev/)，同样风格不在拘泥于传统页面的排版风格。\r\n\r\n如果说 ChatGPT 新系列模型本来就审美在线的话，那我用网上找到的免费的 `agnes-3.0-flash` 模型尝试做了一个[摄影主题的网站]( https://drop-195ab7ba-8f6.amery2010.workers.dev/)，结果同样让人觉得不俗！\r\n\r\n![screenshot]( https://github.com/Amery2010/open-builder/raw/main/public/images/screenshot.png)\r\n\r\n项目开源: [https://github.com/Amery2010/open-builder]( https://github.com/Amery2010/open-builder)，个人使用无限制。\r\n\r\n如果您觉得我说得有些夸大其词，您可以自己下载客户端进行试一试，在没有第三方 API 的情况下，您也可以使用 Codex 、Claude Code 等本地 CLI 进行驱动。\r\n\r\n另外，项目也提供了实验",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "amery2010",
-      "url": "https://www.v2ex.com/t/1255595",
-      "posted_at": "2026-11-09 16:01 Asia/Shanghai",
-      "engagement": {
-        "replies": 2
-      },
-      "original_title": "实践出真知 GPT 模型的审美能力完全可以通过好的 Skills 和设计流程来解锁！",
-      "original_summary": "实践出真知 GPT 模型的审美能力完全可以通过好的 Skills 和设计流程来解锁！\n为了解决 GPT 的审美不稳定的问题，我开发了一款类似 Claude Design 的项目，我起初并没有抱太大希望，觉得可以保证风格统一就好了。在使用 Codex Cli 的 `gpt-6.1-sol` 开发了 [摄影网站]( https://drop-af770064-b43.amery2010.workers.dev/)，结果却惊艳到了我。网站排版更大胆，交互更细腻，如果不说是什么模型做的，可能还会被认为是用 Opus 做的网站。此外，我还让其设计了[个人主页]( https://drop-f285c473-61a.amery2010.workers.dev/)，同样风格不在拘泥于传统页面的排版风格。\r\n\r\n如果说 ChatGPT 新系列模型本来就审美在线的话，那我用网上找到的免费的 `agnes-3.0-flash` 模型尝试做了一个[摄影主题的网站]( https://drop-195ab7ba-8f6.amery2010.workers.dev/)，结果同样让人觉得不俗！\r\n\r\n![screenshot]( https://github.com/Amery2010/open-builder/raw/main/public/images/screenshot.png)\r\n\r\n项目开源: [https://github.com/Amery2010/open-builder]( https://github.com/Amery2010/open-builder)，个人使用无限制。\r\n\r\n如果您觉得我说得有些夸大其词，您可以自己下载客户端进行试一试，在没有第三方 API 的情况下，您也可以使用 Codex 、Claude Code 等本地 CLI 进行驱动。\r\n\r\n另外，项目也提供了实验",
-      "translated_by": "free-translate"
-    },
-    {
       "id": "ghdeal-arsh624-llm4jobs-v2",
       "source": "GitHub",
       "category": "大模型 API 免费额度",
@@ -561,12 +617,66 @@
       "deadline": null,
       "author": "Arsh624",
       "url": "https://github.com/Arsh624/llm4jobs-v2",
-      "posted_at": "2026-11-09 18:01 Asia/Shanghai",
+      "posted_at": "2026-11-09 18:31 Asia/Shanghai",
       "engagement": {
         "stars": 0
       },
       "original_title": "Arsh624/llm4jobs-v2",
       "original_summary": "Arsh624/llm4jobs-v2 Job radar: pulls new-grad roles from 49 company job-board APIs, filters by seniority and location, and emails a daily digest. Runs free on GitHub Actions",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-hamza01055-hotpulse",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "hamza01055/热脉冲",
+      "summary": "hamza01055/hotpulse 🔥 自托管人工智能新闻雷达。收集来源，通过免费的本地法学硕士 (Ollama) 对故事进行评分，将其分组为事件，按来源热度排名，并发布多语言每日简报、RSS、API 和 MCP。包括奖学金和工作截止日期跟踪器。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "hamza01055",
+      "url": "https://github.com/hamza01055/hotpulse",
+      "posted_at": "2026-11-09 18:24 Asia/Shanghai",
+      "engagement": {
+        "stars": 29
+      },
+      "original_title": "hamza01055/hotpulse",
+      "original_summary": "hamza01055/hotpulse 🔥 Self-hosted AI news radar. Collects sources, scores stories with a free local LLM (Ollama), groups them into events, ranks by source heat, and publishes multilingual daily briefings, RSS, API & MCP. Includes a scholarships & jobs deadline tracker.",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-masteruaki-pycognition",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "MasterUaKi/pycognition",
+      "summary": "MasterUaKi/pycognition 框架具有“技能结晶”（或“工具综合”）机制，其中系统 2（通过 API 访问的法学硕士）不仅解决复杂问题，而且自动生成、测试和编译确定性 Python 脚本 - 有效地将解决方案转换到系统 1，以便将来即时、免费执行",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "MasterUaKi",
+      "url": "https://github.com/MasterUaKi/pycognition",
+      "posted_at": "2026-11-09 18:21 Asia/Shanghai",
+      "engagement": {
+        "stars": 1
+      },
+      "original_title": "MasterUaKi/pycognition",
+      "original_summary": "MasterUaKi/pycognition Framework featuring a \"Skill Crystallization\" (or \"Tool Synthesis\") mechanism, in which System 2 (an LLM accessed via API) does not merely solve a complex problem, but automatically generates, tests, and compiles a deterministic Python script—effectively transitioning the solution into System 1 for instantaneous, cost-free execution in the future",
+      "translated_by": "free-translate"
+    },
+    {
+      "id": "ghdeal-enapt-swarmllm",
+      "source": "GitHub",
+      "category": "大模型 API 免费额度",
+      "title": "enapt/SwarmLLM",
+      "summary": "enapt/SwarmLLM 免费的开源应用程序，可在您自己的计算机上运行人工智能聊天模型，并允许计算机通过互联网组队运行对于一台机器来说太大的模型。没有账户，就没有加密货币。 OpenAI 和 Anthropic 兼容的 API。",
+      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
+      "deadline": null,
+      "author": "enapt",
+      "url": "https://github.com/enapt/SwarmLLM",
+      "posted_at": "2026-11-09 18:14 Asia/Shanghai",
+      "engagement": {
+        "stars": 83
+      },
+      "original_title": "enapt/SwarmLLM",
+      "original_summary": "enapt/SwarmLLM Free, open-source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI- and Anthropic-compatible API.",
       "translated_by": "free-translate"
     },
     {
@@ -585,24 +695,6 @@
       },
       "original_title": "Owaid0723666/free-llm-radar",
       "original_summary": "Owaid0723666/free-llm-radar Every free LLM API model, asked one short question a day: which ones answer and how fast. Tables update daily by GitHub Actions.",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "ghdeal-enapt-swarmllm",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "enapt/SwarmLLM",
-      "summary": "enapt/SwarmLLM 免费的开源应用程序，可在您自己的计算机上运行人工智能聊天模型，并允许计算机通过互联网组队运行对于一台机器来说太大的模型。没有账户，就没有加密货币。 OpenAI 和 Anthropic 兼容的 API。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "enapt",
-      "url": "https://github.com/enapt/SwarmLLM",
-      "posted_at": "2026-11-09 17:42 Asia/Shanghai",
-      "engagement": {
-        "stars": 83
-      },
-      "original_title": "enapt/SwarmLLM",
-      "original_summary": "enapt/SwarmLLM Free, open-source app that runs AI chat models on your own computer — and lets computers team up over the internet to run models too big for one machine. No account, no crypto. OpenAI- and Anthropic-compatible API.",
       "translated_by": "free-translate"
     },
     {
@@ -657,96 +749,6 @@
       },
       "original_title": "bioogo/free-api-radar",
       "original_summary": "bioogo/free-api-radar free LLM API radar for dsh",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "ghdeal-st-gr-sail-proxy",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "st-gr/sail-proxy",
-      "summary": "st-gr/sail-proxy 适用于 SAP AI Core 的免费开源 LLM 网关。通过本机 OpenAI、Anthropic、Gemini、Bedrock 和 Ollama API 在 SAP 模型上运行 Claude Code、Codex、GitHub Copilot、Gemini CLI 和您自己的应用程序。 SSO、每用户 API 密钥、SAP 成本分析、配额、PII 假名化、file_search 基础。在 npm、Docker 或 SAP BTP Kyma 上运行。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "st-gr",
-      "url": "https://github.com/st-gr/sail-proxy",
-      "posted_at": "2026-11-09 16:12 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "original_title": "st-gr/sail-proxy",
-      "original_summary": "st-gr/sail-proxy Free, open-source LLM gateway for SAP AI Core. Run Claude Code, Codex, GitHub Copilot, Gemini CLI and your own apps on your SAP models through native OpenAI, Anthropic, Gemini, Bedrock and Ollama APIs. SSO, per-user API keys, SAP cost analytics, quotas, PII pseudonymization, file_search grounding. Runs on npm, Docker or SAP BTP Kyma.",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "ghdeal-royalskynet-orchestrator",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "皇家天网/orchestrator",
-      "summary": "royalskynet/orchestrator Dispatch work orders to any LLM you have (free pools, subscriptions, OmniRoute providers, APIs), ranked by measured pass rate; done = acceptance script passes. 多 LLM 工單調度器。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "royalskynet",
-      "url": "https://github.com/royalskynet/orchestrator",
-      "posted_at": "2026-11-09 16:01 Asia/Shanghai",
-      "engagement": {
-        "stars": 0
-      },
-      "original_title": "royalskynet/orchestrator",
-      "original_summary": "royalskynet/orchestrator Dispatch work orders to any LLM you have (free pools, subscriptions, OmniRoute providers, APIs), ranked by measured pass rate; done = acceptance script passes. 多 LLM 工單調度器。",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "ghdeal-mvalentsev-awesome-free-ai-coding",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "mvalentsev/很棒的免费人工智能编码",
-      "summary": "mvalentsev/awesome-free-ai-coding 📡 合法免费的 LLM API 和编码代理 — 自我更新，每周两次探针验证。免费套餐、无卡试用、免费模型。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "mvalentsev",
-      "url": "https://github.com/mvalentsev/awesome-free-ai-coding",
-      "posted_at": "2026-11-09 15:33 Asia/Shanghai",
-      "engagement": {
-        "stars": 131
-      },
-      "original_title": "mvalentsev/awesome-free-ai-coding",
-      "original_summary": "mvalentsev/awesome-free-ai-coding 📡 Legal free LLM APIs & coding agents — self-updating, probe-verified twice a week. Free tiers, no-card trials, free models.",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "ghdeal-mnfst-awesome-free-llm-apis",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "mnfst/awesome-free-llm-apis",
-      "summary": "mnfst/awesome-free-llm-apis 永久免费 LLM API 列表（API 密钥）",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "mnfst",
-      "url": "https://github.com/mnfst/awesome-free-llm-apis",
-      "posted_at": "2026-11-09 18:08 Asia/Shanghai",
-      "engagement": {
-        "stars": 12712
-      },
-      "original_title": "mnfst/awesome-free-llm-apis",
-      "original_summary": "mnfst/awesome-free-llm-apis List of Permanent Free LLM API  (API Keys)",
-      "translated_by": "free-translate"
-    },
-    {
-      "id": "ghdeal-open-free-llm-api-awesome-freellm-apis",
-      "source": "GitHub",
-      "category": "大模型 API 免费额度",
-      "title": "开放免费 llm-api/awesome-freellm-apis",
-      "summary": "open-free-llm-api/awesome-freellm-apis 来自 40 多个提供商的 134 多个免费 LLM API 和 AI API 密钥。 Google Gemini、NVIDIA NIM、Groq、OpenRouter 等。一键设置 Claude Code、Cursor 和 Codex。",
-      "how": "打开来源链接按页面说明领取/试用；参与前自行核实。",
-      "deadline": null,
-      "author": "open-free-llm-api",
-      "url": "https://github.com/open-free-llm-api/awesome-freellm-apis",
-      "posted_at": "2026-11-09 17:42 Asia/Shanghai",
-      "engagement": {
-        "stars": 5437
-      },
-      "original_title": "open-free-llm-api/awesome-freellm-apis",
-      "original_summary": "open-free-llm-api/awesome-freellm-apis 134+ free LLM APIs & AI API keys from 40+ providers. Google Gemini, NVIDIA NIM, Groq, OpenRouter & more. One-click setup for Claude Code, Cursor and Codex.",
       "translated_by": "free-translate"
     }
   ],
